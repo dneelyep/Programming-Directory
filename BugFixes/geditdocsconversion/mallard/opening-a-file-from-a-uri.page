@@ -1,0 +1,10 @@
+<page xmlns="http://projectmallard.org/1.0/"
+      type="topic"
+      id="opening-a-file-from-a-uri">
+
+  <info>
+    <link type="guide" xref="index#work-files"/>
+  </info>
+
+  <title>Opening a File from a URI</title>
+</page>

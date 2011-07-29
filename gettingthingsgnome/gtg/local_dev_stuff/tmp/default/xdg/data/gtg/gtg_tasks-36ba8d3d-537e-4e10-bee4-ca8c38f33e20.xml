@@ -1,0 +1,250 @@
+<?xml version="1.0" ?>
+<project>
+	<task id="0@1" status="Active" tags="">
+		<title>
+			Getting started with GTG
+		</title>
+		<subtask>
+			1@1
+		</subtask>
+		<subtask>
+			2@1
+		</subtask>
+		<subtask>
+			3@1
+		</subtask>
+		<subtask>
+			4@1
+		</subtask>
+		<subtask>
+			5@1
+		</subtask>
+		<subtask>
+			6@1
+		</subtask>
+		<content>
+			Welcome to Getting Things Gnome!, your new task manager.
+
+In GTG, everything is a task. From building a bridge over the Pacific Ocean to changing a light bulb or organizing a party. When you edit a task, it is automatically saved.
+
+Once a task is done, you can push the &amp;quot;Mark as done&amp;quot; button. If the task is not relevant any-more, simply press &amp;quot;Dismiss&amp;quot;.
+
+A task might be composed of multiple subtasks that appear as links in the description. Simply click on the following link:
+&lt;subtask&gt;1@1&lt;/subtask&gt;
+Once you've read the above subtask, mark it as Done. If you don't want to do the task, mark it as dismissed. Done and Dismissed tasks are kept in the closed tasks pane, hidden by default but you can easily enable it in the View menu.
+
+If you choose to close this current task, subtasks will be automatically closed too. We indeed consider that, if you achieve a given task, you don't need to do the subtask anymore.
+Other stuff you should read:
+&lt;subtask&gt;2@1&lt;/subtask&gt;
+    &lt;subtask&gt;3@1&lt;/subtask&gt;
+    &lt;subtask&gt;4@1&lt;/subtask&gt;
+    &lt;subtask&gt;5@1&lt;/subtask&gt;
+    &lt;subtask&gt;6@1&lt;/subtask&gt;
+We hope that you will appreciate GTG. Please send us bug reports and ideas for improvement using:
+    https://bugs.launchpad.net/gtg
+
+Thank you for trying out GTG :-)
+		</content>
+	</task>
+	<task id="1@1" status="Active" tags="" uuid="13ee3b9a-f19f-4f3a-b795-e7e075e69b13">
+		<title>
+			Learn how to use subtasks
+		</title>
+		<modified>
+			2011-05-02T21:38:13
+		</modified>
+		<content>
+			In the task description (this window), if you begin a line with &amp;quot;-&amp;quot;, it will be considered as a &amp;quot;subtask&amp;quot;, something that needs to be done in order to accomplish your task. Just try to write &amp;quot;- test subtask&amp;quot; on the next line and press enter.
+
+You can also use the &amp;quot;insert subtask&amp;quot; button.
+
+Tasks and subtasks can be re-organized by drag-n-drop in the tasks list.
+
+Some concepts come with subtasks: for example, a subtask's due date can never be after its parent's due date.
+
+Also, marking a parent as done will mark all the subtasks as done.
+
+		</content>
+		<task-remote-ids/>
+	</task>
+	<task id="2@1" status="Active" tags="@to_pay,@money" uuid="a3f5b0df-5e2a-45b0-b53b-9ce79328419c">
+		<title>
+			Learn how to use tags
+		</title>
+		<modified>
+			2011-05-02T21:35:14
+		</modified>
+		<content>
+			A tag is a simple word that begins with &amp;quot;@&amp;quot;.
+
+Try to type a word beginning with @ here:
+
+It becomes yellow, it's a tag.
+
+Tags are useful to sort your tasks. In the view menu, you can enable a sidebar which displays all the tags you are using so you can easily see tasks assigned to a given tag. There's no limit to the number of tags a task can have.
+
+You can drag-n-drop a tag onto another to create &amp;quot;subtags&amp;quot;. As an example, if you drag the tag @to_pay onto the tag @money, every task tagged with &lt;tag&gt;@to_pay&lt;/tag&gt; will also appear in the view of @money (but the &lt;tag&gt;@money&lt;/tag&gt; tag is not added to the task).
+
+If you right click on a tag in the sidebar you can also set its color. It will allow you to have a more colorful list of tasks, if you want it that way.
+
+A new tag is only added to the current task. There's no recursion and the tag is not applied to subtasks. But when you create a new subtask, this subtask will inherit the tags of its parent as a good primary default (it will also be the case if you add a tag to a parent just after creating a subtask). Of course, you can modify at any time the tags of this particular subtask. It will never be changed by the parent.
+		</content>
+		<task-remote-ids/>
+	</task>
+	<task id="3@1" status="Active" tags="" uuid="a824abca-c288-47d2-b95e-8969542640dc">
+		<title>
+			Learn how to use the Workview
+		</title>
+		<modified>
+			2011-05-02T21:33:00
+		</modified>
+		<content>
+			If you press the &amp;quot;Workview&amp;quot; button, only actionable tasks will be displayed.
+
+What is an actionable task? It's a task you can do directly, right now.
+
+It's a task that is already &amp;quot;start-able&amp;quot;, i.e. the start date is already over.
+
+It's a task that doesn't have open subtasks, i.e. you can do the task itself directly.
+
+Thus, the workview will only show you tasks you should do right now.
+
+If you use tags, you can right click on a tag in the sidebar and choose to hide tasks assigned to this particular tag in the workview. It's very useful if you have a tag like &amp;quot;someday&amp;quot; that you use for tasks you would like to do but are not particularly urgent.
+		</content>
+		<task-remote-ids/>
+	</task>
+	<task id="4@1" status="Active" tags="">
+		<title>
+			Learn how to use Plugins
+		</title>
+		<content>
+			GTG has the ability to add plugins to extend it's core functionality.
+
+Some examples of the current plugins are Syncing with Remember the Milk and Evolution, Tomboy/Gnote integration and Geolocalized Tasks.
+You can find the Plugin Manager by selecting Edit in the Menu Bar, then clicking Preferences. You will then see a tab labeled Plugins.
+		</content>
+	</task>
+	<task id="5@1" status="Active" tags="" uuid="e7def533-cdc3-4d09-9fe8-5664662f9235">
+		<title>
+			Reporting bugs
+		</title>
+		<modified>
+			2011-05-02T21:32:48
+		</modified>
+		<content>
+			GTG is still very alpha software. We like it and use it everyday but you will encounter some bugs.
+
+Please, report them on our Launchpad page:
+https://bugs.launchpad.net/gtg
+
+We need you to make this software better. Any contribution, any idea is welcome.
+
+If you have some trouble with GTG, we might be able to help you or to solve your problem really quickly.
+		</content>
+		<task-remote-ids/>
+	</task>
+	<task id="6@1" status="Active" tags="" uuid="5154ee6b-39ab-49ee-9677-cfe5d98944f0">
+		<title>
+			Learn how to use the QuickAdd Entry
+		</title>
+		<modified>
+			2011-05-02T21:32:59
+		</modified>
+		<content>
+			The quickadd entry is the quickest way to create a new task. You can show or hide it in the View menu.
+
+For adding a task you just have to type its title in the entry and press return. The task will be created and selected in the task browser. If a tag is selected in the tag panel, this tag is applied to the task you create.
+
+You can also create a task with the attributes &amp;quot;tags&amp;quot;, &amp;quot;due&amp;quot;, and &amp;quot;defer&amp;quot; in the quickadd entry. The syntax for these attributes is:
+
+tags:tag1,tag2,tag3
+ - This way you can apply as many tags as you wish using comma as separator
+
+due:date 
+defer:date 
+ - This way you can apply a due date or a defer date. date can be yyyy-mm-dd (for example 2009-04-01) or yyyymmdd (20090401) or mmdd (0401, in this case the year is implicitly the current one) or today or tomorrow or a weekday name (due:monday means due next Monday)
+
+Attributes which are added in this way apply but do not appear in the title.
+
+If a word begins with @, it is interpreted as a tag.
+		</content>
+		<task-remote-ids/>
+	</task>
+	<task id="30290855-f571-454a-b001-5779f66966fa" status="Active" tags="gtg-tags-all,@newtag" uuid="3b94455a-0e28-4e03-b4f0-5410e80cff0a">
+		<title>
+			Testtask
+		</title>
+		<modified>
+			2011-05-02T21:33:02
+		</modified>
+		<content>
+			&lt;tag&gt;@newtag&lt;/tag&gt;, 
+		</content>
+		<task-remote-ids/>
+	</task>
+	<task id="3fd9ff22-93d4-451b-b448-748d8dce6ace" status="Active" tags="gtg-tags-all" uuid="d2b230ca-0de0-4748-8465-8445d6585679">
+		<title>
+			My new task
+		</title>
+		<modified>
+			2011-05-02T21:36:58
+		</modified>
+		<subtask>
+			f7c18eab-ea3b-485b-9125-166107045bd1
+		</subtask>
+		<subtask>
+			3885e045-c553-401f-b957-00c49a124cb2
+		</subtask>
+		<subtask>
+			389eae8e-a32e-4e70-ae27-699904c82a43
+		</subtask>
+		<subtask>
+			7a43f97a-2bdc-4b0c-bbee-d6dd79230870
+		</subtask>
+		<content>
+			gtg-tags-all, 
+
+ &lt;subtask&gt;f7c18eab-ea3b-485b-9125-166107045bd1&lt;/subtask&gt;
+ &lt;subtask&gt;3885e045-c553-401f-b957-00c49a124cb2&lt;/subtask&gt;
+ &lt;subtask&gt;389eae8e-a32e-4e70-ae27-699904c82a43&lt;/subtask&gt;
+ &lt;subtask&gt;7a43f97a-2bdc-4b0c-bbee-d6dd79230870&lt;/subtask&gt;
+		</content>
+		<task-remote-ids/>
+	</task>
+	<task id="f7c18eab-ea3b-485b-9125-166107045bd1" status="Active" tags="gtg-tags-all" uuid="7a05a2e4-c0aa-4f81-9e7b-4a457d14b33e">
+		<title>
+			aoeu
+		</title>
+		<modified>
+			2011-05-02T21:37:17
+		</modified>
+		<subtask>
+			d82dafc9-6d8b-4b54-a6f5-f33121b2e073
+		</subtask>
+		<subtask>
+			a8d021d1-4a48-48bc-a6d4-977e3827cab0
+		</subtask>
+		<subtask>
+			f9730d46-f0b9-46c3-8fb9-69ec131b279d
+		</subtask>
+		<subtask>
+			9edcdce4-49c1-44e0-8ffc-6c9bb955c002
+		</subtask>
+		<subtask>
+			0ad8a4bf-d805-459c-97ab-c2c1407f33fb
+		</subtask>
+		<subtask>
+			083b14c1-ea54-4bd0-8aaa-5d050b9f8a20
+		</subtask>
+		<content>
+			gtg-tags-all, 
+ &lt;subtask&gt;d82dafc9-6d8b-4b54-a6f5-f33121b2e073&lt;/subtask&gt;
+ &lt;subtask&gt;a8d021d1-4a48-48bc-a6d4-977e3827cab0&lt;/subtask&gt;
+ &lt;subtask&gt;f9730d46-f0b9-46c3-8fb9-69ec131b279d&lt;/subtask&gt;
+ &lt;subtask&gt;9edcdce4-49c1-44e0-8ffc-6c9bb955c002&lt;/subtask&gt;
+ &lt;subtask&gt;0ad8a4bf-d805-459c-97ab-c2c1407f33fb&lt;/subtask&gt;
+ &lt;subtask&gt;083b14c1-ea54-4bd0-8aaa-5d050b9f8a20&lt;/subtask&gt;
+		</content>
+		<task-remote-ids/>
+	</task>
+</project>

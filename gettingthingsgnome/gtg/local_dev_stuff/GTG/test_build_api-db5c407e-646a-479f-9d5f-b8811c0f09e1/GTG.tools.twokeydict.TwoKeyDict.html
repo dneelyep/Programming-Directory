@@ -1,0 +1,298 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "DTD/xhtml1-strict.dtd">
+<html>
+  <head>
+    <title>GTG.tools.twokeydict.TwoKeyDict : API documentation</title>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type" />
+    <link href="apidocs.css" type="text/css" rel="stylesheet" />
+    
+    
+  </head>
+  <body>
+    <h1 class="class">G.t.t.TwoKeyDict(<span title="object">object</span>) : class documentation</h1>
+    <p>
+      <span id="part">Part of <a href="GTG.html">GTG</a>.<a href="GTG.tools.html">tools</a>.<a href="GTG.tools.twokeydict.html">twokeydict</a></span>
+      
+      <a href="classIndex.html#GTG.tools.twokeydict.TwoKeyDict">View In Hierarchy</a>
+    </p>
+    <div>
+      <p>Known subclasses: <a href="GTG.backends.syncengine.SyncMemes.html">GTG.backends.syncengine.SyncMemes</a></p>
+    </div>
+    <pre>It's a standard Dictionary with a secondary key.
+For example, you can add an element ('2', 'II', two'), where the
+first two arguments are keys and the third is the stored object, and access
+it as:
+    twokey['2'] ==&gt; 'two'
+    twokey['II'] ==&gt; 'two'
+You can also request the other key, given one.
+Function calls start with _ because you'll probably want to rename them when
+you use this dictionary, for the sake of clarity.</pre>
+
+    
+    
+    <div id="splitTables">
+      <table class="children sortable" id="id193">
+  
+  
+<tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.tools.twokeydict.TwoKeyDict.html#__init__">__init__</a></td>
+    <td><span>Creates the TwoKeyDict and optionally populates it with some data</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.tools.twokeydict.TwoKeyDict.html#add">add</a></td>
+    <td><span>Adds a new triplet to the TwoKeyDict</span></td>
+  </tr><tr class="method private">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.tools.twokeydict.TwoKeyDict.html#_get_by_primary">_get_by_primary</a></td>
+    <td><span>Gets the stored data given the primary key</span></td>
+  </tr><tr class="method private">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.tools.twokeydict.TwoKeyDict.html#_get_by_secondary">_get_by_secondary</a></td>
+    <td><span>Gets the stored data given the secondary key</span></td>
+  </tr><tr class="method private">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.tools.twokeydict.TwoKeyDict.html#_remove_by_primary">_remove_by_primary</a></td>
+    <td><span>Removes a triplet given the rpimary key.</span></td>
+  </tr><tr class="method private">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.tools.twokeydict.TwoKeyDict.html#_remove_by_secondary">_remove_by_secondary</a></td>
+    <td><span>Removes a triplet given the rpimary key.</span></td>
+  </tr><tr class="method private">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.tools.twokeydict.TwoKeyDict.html#_get_secondary_key">_get_secondary_key</a></td>
+    <td><span>Gets the secondary key given the primary</span></td>
+  </tr><tr class="method private">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.tools.twokeydict.TwoKeyDict.html#_get_primary_key">_get_primary_key</a></td>
+    <td><span>Gets the primary key given the secondary</span></td>
+  </tr><tr class="method private">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.tools.twokeydict.TwoKeyDict.html#_get_all_primary_keys">_get_all_primary_keys</a></td>
+    <td><span>Returns all primary keys</span></td>
+  </tr><tr class="method private">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.tools.twokeydict.TwoKeyDict.html#_get_all_secondary_keys">_get_all_secondary_keys</a></td>
+    <td><span>Returns all secondary keys</span></td>
+  </tr>
+  
+</table>
+      
+      
+    </div>
+    
+    
+    
+
+    <div class="function">
+  <a name="GTG.tools.twokeydict.TwoKeyDict.__init__">
+    
+  </a>
+  <a name="__init__">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    __init__(self, *triplets):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div>Creates the TwoKeyDict and optionally populates it with some data<table class="fieldTable"><tr class="fieldStart"><td class="fieldName">Unknown Field: oaram</td><td class="fieldArg">triplets</td><td>tuples for populating the TwoKeyDict. Format: ((key1, key2, data_to_store),
+...)
+</td></tr></table></div>
+  </div>
+</div><div class="function">
+  <a name="GTG.tools.twokeydict.TwoKeyDict.add">
+    
+  </a>
+  <a name="add">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    add(self, triplet):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div>Adds a new triplet to the TwoKeyDict<table class="fieldTable"><tr class="fieldStart"><td class="fieldName">Parameters</td><td class="fieldArg">triplet</td><td>a tuple formatted like this: (key1, key2, data_to_store)
+</td></tr></table></div>
+  </div>
+</div><div class="function">
+  <a name="GTG.tools.twokeydict.TwoKeyDict._get_by_primary">
+    
+  </a>
+  <a name="_get_by_primary">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    _get_by_primary(self, primary):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div>Gets the stored data given the primary key<table class="fieldTable"><tr class="fieldStart"><td class="fieldName">Parameters</td><td class="fieldArg">primary</td><td>the primary key
+</td></tr><tr class="fieldStart"><td class="fieldName">Returns</td><td colspan="2">the stored object
+</td></tr></table></div>
+  </div>
+</div><div class="function">
+  <a name="GTG.tools.twokeydict.TwoKeyDict._get_by_secondary">
+    
+  </a>
+  <a name="_get_by_secondary">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    _get_by_secondary(self, secondary):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div>Gets the stored data given the secondary key<table class="fieldTable"><tr class="fieldStart"><td class="fieldName">Parameters</td><td class="fieldArg">secondary</td><td>the primary key
+</td></tr><tr class="fieldStart"><td class="fieldName">Returns</td><td colspan="2">the stored object
+</td></tr></table></div>
+  </div>
+</div><div class="function">
+  <a name="GTG.tools.twokeydict.TwoKeyDict._remove_by_primary">
+    
+  </a>
+  <a name="_remove_by_primary">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    _remove_by_primary(self, primary):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div>Removes a triplet given the rpimary key.<table class="fieldTable"><tr class="fieldStart"><td class="fieldName">Parameters</td><td class="fieldArg">primary</td><td>the primary key
+</td></tr></table></div>
+  </div>
+</div><div class="function">
+  <a name="GTG.tools.twokeydict.TwoKeyDict._remove_by_secondary">
+    
+  </a>
+  <a name="_remove_by_secondary">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    _remove_by_secondary(self, secondary):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div>Removes a triplet given the rpimary key.<table class="fieldTable"><tr class="fieldStart"><td class="fieldName">Parameters</td><td class="fieldArg">secondary</td><td>the primary key
+</td></tr></table></div>
+  </div>
+</div><div class="function">
+  <a name="GTG.tools.twokeydict.TwoKeyDict._get_secondary_key">
+    
+  </a>
+  <a name="_get_secondary_key">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    _get_secondary_key(self, primary):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div>Gets the secondary key given the primary<table class="fieldTable"><tr class="fieldStart"><td class="fieldName">Parameters</td><td class="fieldArg">primary</td><td>the primary key
+</td></tr><tr class="fieldStart"><td class="fieldName">Returns</td><td colspan="2">the secondary key
+</td></tr></table></div>
+  </div>
+</div><div class="function">
+  <a name="GTG.tools.twokeydict.TwoKeyDict._get_primary_key">
+    
+  </a>
+  <a name="_get_primary_key">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    _get_primary_key(self, secondary):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div>Gets the primary key given the secondary<table class="fieldTable"><tr class="fieldStart"><td class="fieldName">Parameters</td><td class="fieldArg">secondary</td><td>the secondary key
+</td></tr><tr class="fieldStart"><td class="fieldName">Returns</td><td colspan="2">the primary key
+</td></tr></table></div>
+  </div>
+</div><div class="function">
+  <a name="GTG.tools.twokeydict.TwoKeyDict._get_all_primary_keys">
+    
+  </a>
+  <a name="_get_all_primary_keys">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    _get_all_primary_keys(self):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div>Returns all primary keys<table class="fieldTable"><tr class="fieldStart"><td class="fieldName">Returns</td><td colspan="2">list of all primary keys
+</td></tr></table></div>
+  </div>
+</div><div class="function">
+  <a name="GTG.tools.twokeydict.TwoKeyDict._get_all_secondary_keys">
+    
+  </a>
+  <a name="_get_all_secondary_keys">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    _get_all_secondary_keys(self):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div>Returns all secondary keys<table class="fieldTable"><tr class="fieldStart"><td class="fieldName">Returns</td><td colspan="2">list of all secondary keys
+</td></tr></table></div>
+  </div>
+</div>
+    <address>
+      <a href="index.html">API Documentation</a> for <a href="http://gtg.fritalk.com/">GTG</a>, generated by <a href="http://codespeak.net/~mwh/pydoctor/">pydoctor</a> at 2011-05-02 21:27:37.
+    </address>
+  </body>
+</html>

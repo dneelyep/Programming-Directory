@@ -1,0 +1,18 @@
+#!/usr/bin/perl
+
+#Write a program that prompts for and reads a string and a number (on separate
+#lines of input) and prints out the string the number of times indicated by the num-
+#ber on separate lines. (Hint: use the x operator.) If the user enters "fred" and "3",
+#the output should be three lines, each saying "fred". If the user enters "fred" and
+#"299792", there may be a lot of output.
+
+print "Hello again young\'un, ready to program some more? Alrighty.\n";
+print "In this program, enter a string you want to print out, followed by the number of times you want it printed out. Pls.\n";
+
+print "The string ya want to print is: ";
+chomp($string = <STDIN>);
+print "And you want to print it how many times? ";
+chomp($print_amount = <STDIN>);
+
+$string_plus_newline = $string . "\n";
+print $string_plus_newline x $print_amount;

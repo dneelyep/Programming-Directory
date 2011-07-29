@@ -1,0 +1,190 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "DTD/xhtml1-strict.dtd">
+<html>
+  <head>
+    <title>GTG.gtk.backends_dialog.parameters_ui.periodui.PeriodUI : API documentation</title>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type" />
+    <link href="apidocs.css" type="text/css" rel="stylesheet" />
+    
+    
+  </head>
+  <body>
+    <h1 class="class">G.g.b.p.p.PeriodUI(<span title="gtk.HBox">gtk.HBox</span>) : class documentation</h1>
+    <p>
+      <span id="part">Part of <a href="GTG.html">GTG</a>.<a href="GTG.gtk.html">gtk</a>.<a href="GTG.gtk.backends_dialog.html">backends_dialog</a>.<a href="GTG.gtk.backends_dialog.parameters_ui.html">parameters_ui</a>.<a href="GTG.gtk.backends_dialog.parameters_ui.periodui.html">periodui</a></span>
+      
+      <a href="classIndex.html#GTG.gtk.backends_dialog.parameters_ui.periodui.PeriodUI">View In Hierarchy</a>
+    </p>
+    <div>
+      
+    </div>
+    <div>A widget to change the frequency of a backend synchronization<table class="fieldTable"></table></div>
+
+    
+    
+    <div id="splitTables">
+      <table class="children sortable" id="id22">
+  
+  
+<tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.gtk.backends_dialog.parameters_ui.periodui.PeriodUI.html#__init__">__init__</a></td>
+    <td><span>Creates the gtk.Adjustment and the related label. Loads the current</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.gtk.backends_dialog.parameters_ui.periodui.PeriodUI.html#commit_changes">commit_changes</a></td>
+    <td><span>Saves the changes to the backend parameter</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.gtk.backends_dialog.parameters_ui.periodui.PeriodUI.html#on_spin_changed">on_spin_changed</a></td>
+    <td><span>Signal callback, executed when the user changes the period.</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.gtk.backends_dialog.parameters_ui.periodui.PeriodUI.html#update_minutes_label">update_minutes_label</a></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="method private">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.gtk.backends_dialog.parameters_ui.periodui.PeriodUI.html#_populate_gtk">_populate_gtk</a></td>
+    <td><span>Creates the gtk widgets</span></td>
+  </tr><tr class="method private">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.gtk.backends_dialog.parameters_ui.periodui.PeriodUI.html#_connect_signals">_connect_signals</a></td>
+    <td><span>Connects the gtk signals</span></td>
+  </tr>
+  
+</table>
+      
+      
+    </div>
+    
+    
+    
+
+    <div class="function">
+  <a name="GTG.gtk.backends_dialog.parameters_ui.periodui.PeriodUI.__init__">
+    
+  </a>
+  <a name="__init__">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    __init__(self, req, backend, width):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div>Creates the gtk.Adjustment and the related label. Loads the current 
+period.<table class="fieldTable"><tr class="fieldStart"><td class="fieldName">Parameters</td><td class="fieldArg">req</td><td>a Requester
+</td></tr><tr><td></td><td class="fieldArg">backend</td><td>a backend object
+</td></tr><tr><td></td><td class="fieldArg">width</td><td>the width of the gtk.Label object
+</td></tr></table></div>
+  </div>
+</div><div class="function">
+  <a name="GTG.gtk.backends_dialog.parameters_ui.periodui.PeriodUI._populate_gtk">
+    
+  </a>
+  <a name="_populate_gtk">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    _populate_gtk(self, width):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div>Creates the gtk widgets<table class="fieldTable"><tr class="fieldStart"><td class="fieldName">Parameters</td><td class="fieldArg">width</td><td>the width of the gtk.Label object
+</td></tr></table></div>
+  </div>
+</div><div class="function">
+  <a name="GTG.gtk.backends_dialog.parameters_ui.periodui.PeriodUI._connect_signals">
+    
+  </a>
+  <a name="_connect_signals">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    _connect_signals(self):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div>Connects the gtk signals<table class="fieldTable"></table></div>
+  </div>
+</div><div class="function">
+  <a name="GTG.gtk.backends_dialog.parameters_ui.periodui.PeriodUI.commit_changes">
+    
+  </a>
+  <a name="commit_changes">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    commit_changes(self):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div>Saves the changes to the backend parameter<table class="fieldTable"></table></div>
+  </div>
+</div><div class="function">
+  <a name="GTG.gtk.backends_dialog.parameters_ui.periodui.PeriodUI.on_spin_changed">
+    
+  </a>
+  <a name="on_spin_changed">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    on_spin_changed(self, sender):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div>Signal callback, executed when the user changes the period. Disables the
+backend. The user will re-enable it to confirm the changes (s)he made.<table class="fieldTable"><tr class="fieldStart"><td class="fieldName">Parameters</td><td class="fieldArg">sender</td><td>not used, only here for signal compatibility
+</td></tr></table></div>
+  </div>
+</div><div class="function">
+  <a name="GTG.gtk.backends_dialog.parameters_ui.periodui.PeriodUI.update_minutes_label">
+    
+  </a>
+  <a name="update_minutes_label">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    update_minutes_label(self):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div class="undocumented">Undocumented</div>
+  </div>
+</div>
+    <address>
+      <a href="index.html">API Documentation</a> for <a href="http://gtg.fritalk.com/">GTG</a>, generated by <a href="http://codespeak.net/~mwh/pydoctor/">pydoctor</a> at 2011-04-15 17:43:34.
+    </address>
+  </body>
+</html>

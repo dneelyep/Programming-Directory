@@ -1,0 +1,1002 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "DTD/xhtml1-strict.dtd">
+<html>
+  <head>
+    <title>GTG.backends.genericbackend.GenericBackend : API documentation</title>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type" />
+    <link href="apidocs.css" type="text/css" rel="stylesheet" />
+    
+    
+  </head>
+  <body>
+    <h1 class="class">G.b.g.GenericBackend(<span title="object">object</span>) : class documentation</h1>
+    <p>
+      <span id="part">Part of <a href="GTG.html">GTG</a>.<a href="GTG.backends.html">backends</a>.<a href="GTG.backends.genericbackend.html">genericbackend</a></span>
+      
+      <a href="classIndex.html#GTG.backends.genericbackend.GenericBackend">View In Hierarchy</a>
+    </p>
+    <div>
+      <p>Known subclasses: <a href="GTG.backends.backend_localfile.Backend.html">GTG.backends.backend_localfile.Backend</a>, <a href="GTG.backends.generictomboy.GenericTomboy.html">GTG.backends.generictomboy.GenericTomboy</a>, <a href="GTG.backends.periodicimportbackend.PeriodicImportBackend.html">GTG.backends.periodicimportbackend.PeriodicImportBackend</a></p>
+    </div>
+    <div>Base class for every backend. It defines the interface a backend must 
+have and takes care of all the operations common to all backends. A 
+particular backend should redefine all the methods marked as such.<table class="fieldTable"></table></div>
+
+    
+    
+    <div id="splitTables">
+      <table class="children sortable" id="id275">
+  
+  
+<tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.backends.genericbackend.GenericBackend.html#initialize">initialize</a></td>
+    <td><span>Called each time it is enabled (including on backend creation).</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.backends.genericbackend.GenericBackend.html#start_get_tasks">start_get_tasks</a></td>
+    <td><span>This function starts submitting the tasks from the backend into GTG</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.backends.genericbackend.GenericBackend.html#set_task">set_task</a></td>
+    <td><span>This function is called from GTG core whenever a task should be</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.backends.genericbackend.GenericBackend.html#remove_task">remove_task</a></td>
+    <td><span>This function is called from GTG core whenever a task must be</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.backends.genericbackend.GenericBackend.html#this_is_the_first_run">this_is_the_first_run</a></td>
+    <td><span>Optional, and almost surely not needed.</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.backends.genericbackend.GenericBackend.html#quit">quit</a></td>
+    <td><span>Called when GTG quits or the user wants to disable the backend.</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.backends.genericbackend.GenericBackend.html#save_state">save_state</a></td>
+    <td><span>It's the last function executed on a quitting backend, after the</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.backends.genericbackend.GenericBackend.html#__init__">__init__</a></td>
+    <td><span>Instantiates a new backend. Please note that this is called also</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.backends.genericbackend.GenericBackend.html#get_attached_tags">get_attached_tags</a></td>
+    <td><span>Returns the list of tags which are handled by this backend</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.backends.genericbackend.GenericBackend.html#set_attached_tags">set_attached_tags</a></td>
+    <td><span>Changes the set of attached tags</span></td>
+  </tr><tr class="classmethod">
+    
+    
+    <td>Class Method</td>
+    <td><a href="GTG.backends.genericbackend.GenericBackend.html#get_static_parameters">get_static_parameters</a></td>
+    <td><span>Returns a dictionary of parameters necessary to create a backend.</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.backends.genericbackend.GenericBackend.html#get_parameters">get_parameters</a></td>
+    <td><span>Returns a dictionary of the current parameters.</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.backends.genericbackend.GenericBackend.html#set_parameter">set_parameter</a></td>
+    <td><span>Change a parameter for this backend</span></td>
+  </tr><tr class="classmethod">
+    
+    
+    <td>Class Method</td>
+    <td><a href="GTG.backends.genericbackend.GenericBackend.html#get_name">get_name</a></td>
+    <td><span>Returns the name of the backend as it should be displayed in the UI</span></td>
+  </tr><tr class="classmethod">
+    
+    
+    <td>Class Method</td>
+    <td><a href="GTG.backends.genericbackend.GenericBackend.html#get_description">get_description</a></td>
+    <td><span>Returns a description of the backend</span></td>
+  </tr><tr class="classmethod">
+    
+    
+    <td>Class Method</td>
+    <td><a href="GTG.backends.genericbackend.GenericBackend.html#get_type">get_type</a></td>
+    <td><span>Returns the backend type(readonly, r/w, import, export)</span></td>
+  </tr><tr class="classmethod">
+    
+    
+    <td>Class Method</td>
+    <td><a href="GTG.backends.genericbackend.GenericBackend.html#get_authors">get_authors</a></td>
+    <td><span>returns the backend author(s)</span></td>
+  </tr><tr class="classmethod">
+    
+    
+    <td>Class Method</td>
+    <td><a href="GTG.backends.genericbackend.GenericBackend.html#cast_param_type_from_string">cast_param_type_from_string</a></td>
+    <td><span>Parameters are saved in a text format, so we have to cast them to 
+the</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.backends.genericbackend.GenericBackend.html#cast_param_type_to_string">cast_param_type_to_string</a></td>
+    <td><span>Inverse of cast_param_type_from_string</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.backends.genericbackend.GenericBackend.html#get_id">get_id</a></td>
+    <td><span>returns the backends id, used in the datastore for indexing backends</span></td>
+  </tr><tr class="classmethod">
+    
+    
+    <td>Class Method</td>
+    <td><a href="GTG.backends.genericbackend.GenericBackend.html#get_human_default_name">get_human_default_name</a></td>
+    <td><span>returns the user friendly default backend name, without eventual 
+user</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.backends.genericbackend.GenericBackend.html#get_human_name">get_human_name</a></td>
+    <td><span>returns the user customized backend name. If the user hasn't</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.backends.genericbackend.GenericBackend.html#set_human_name">set_human_name</a></td>
+    <td><span>sets a custom name for the backend</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.backends.genericbackend.GenericBackend.html#is_enabled">is_enabled</a></td>
+    <td><span>Returns if the backend is enabled</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.backends.genericbackend.GenericBackend.html#is_default">is_default</a></td>
+    <td><span>Returns if the backend is enabled</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.backends.genericbackend.GenericBackend.html#is_initialized">is_initialized</a></td>
+    <td><span>Returns if the backend is up and running</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.backends.genericbackend.GenericBackend.html#get_parameter_type">get_parameter_type</a></td>
+    <td><span>Given the name of a parameter, returns its type. If the parameter is 
+one</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.backends.genericbackend.GenericBackend.html#register_datastore">register_datastore</a></td>
+    <td><span>Setter function to inform the backend about the datastore that's 
+loading</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.backends.genericbackend.GenericBackend.html#launch_setting_thread">launch_setting_thread</a></td>
+    <td><span>This function is launched as a separate thread. Its job is to 
+perform</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.backends.genericbackend.GenericBackend.html#queue_set_task">queue_set_task</a></td>
+    <td><span>Save the task in the backend. In particular, it just enqueues the</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.backends.genericbackend.GenericBackend.html#queue_remove_task">queue_remove_task</a></td>
+    <td><span>Queues task to be removed. In particular, it just enqueues the</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.backends.genericbackend.GenericBackend.html#sync">sync</a></td>
+    <td><span>Helper method. Forces the backend to perform all the pending 
+changes.</span></td>
+  </tr><tr class="classmethod private">
+    
+    
+    <td>Class Method</td>
+    <td><a href="GTG.backends.genericbackend.GenericBackend.html#_get_static_parameters">_get_static_parameters</a></td>
+    <td><span>Helper method, used to obtain the full list of the static_parameters</span></td>
+  </tr><tr class="classmethod private">
+    
+    
+    <td>Class Method</td>
+    <td><a href="GTG.backends.genericbackend.GenericBackend.html#_get_from_general_description">_get_from_general_description</a></td>
+    <td><span>Helper method to extract values from cls._general_description.</span></td>
+  </tr><tr class="method private">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.backends.genericbackend.GenericBackend.html#_store_pickled_file">_store_pickled_file</a></td>
+    <td><span>A helper function to save some object in a file.</span></td>
+  </tr><tr class="method private">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.backends.genericbackend.GenericBackend.html#_load_pickled_file">_load_pickled_file</a></td>
+    <td><span>A helper function to load some object from a file.</span></td>
+  </tr><tr class="method private">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.backends.genericbackend.GenericBackend.html#_gtg_task_is_syncable_per_attached_tags">_gtg_task_is_syncable_per_attached_tags</a></td>
+    <td><span>Helper function which checks if the given task satisfies the 
+filtering</span></td>
+  </tr><tr class="method private">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.backends.genericbackend.GenericBackend.html#__try_launch_setting_thread">__try_launch_setting_thread</a></td>
+    <td><span>Helper function to launch the setting thread, if it's not running.</span></td>
+  </tr>
+  
+</table>
+      
+      
+    </div>
+    
+    
+    
+
+    <div class="function">
+  <a name="GTG.backends.genericbackend.GenericBackend.initialize">
+    
+  </a>
+  <a name="initialize">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    initialize(self):
+    
+  </div>
+  <div class="functionBody">
+    <div class="interfaceinfo">overridden in <a href="GTG.backends.backend_localfile.Backend.html">GTG.backends.backend_localfile.Backend</a>, <a href="GTG.backends.backend_rtm.Backend.html">GTG.backends.backend_rtm.Backend</a>, <a href="GTG.backends.generictomboy.GenericTomboy.html">GTG.backends.generictomboy.GenericTomboy</a></div>
+    <div>Called each time it is enabled (including on backend creation). Please 
+note that a class instance for each disabled backend *is* created, but it's
+not initialized. Optional. NOTE: make sure to call super().initialize()<table class="fieldTable"></table></div>
+  </div>
+</div><div class="function">
+  <a name="GTG.backends.genericbackend.GenericBackend.start_get_tasks">
+    
+  </a>
+  <a name="start_get_tasks">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    start_get_tasks(self):
+    
+  </div>
+  <div class="functionBody">
+    <div class="interfaceinfo">overridden in <a href="GTG.backends.backend_localfile.Backend.html">GTG.backends.backend_localfile.Backend</a>, <a href="GTG.backends.generictomboy.GenericTomboy.html">GTG.backends.generictomboy.GenericTomboy</a>, <a href="GTG.backends.periodicimportbackend.PeriodicImportBackend.html">GTG.backends.periodicimportbackend.PeriodicImportBackend</a></div>
+    <div>This function starts submitting the tasks from the backend into GTG 
+core. It's run as a separate thread.<table class="fieldTable"><tr class="fieldStart"><td class="fieldName">Returns</td><td colspan="2">start_get_tasks() might not return or finish
+</td></tr></table></div>
+  </div>
+</div><div class="function">
+  <a name="GTG.backends.genericbackend.GenericBackend.set_task">
+    
+  </a>
+  <a name="set_task">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    set_task(self, task):
+    
+  </div>
+  <div class="functionBody">
+    <div class="interfaceinfo">overridden in <a href="GTG.backends.backend_evolution.Backend.html">GTG.backends.backend_evolution.Backend</a>, <a href="GTG.backends.backend_localfile.Backend.html">GTG.backends.backend_localfile.Backend</a>, <a href="GTG.backends.backend_rtm.Backend.html">GTG.backends.backend_rtm.Backend</a>, <a href="GTG.backends.generictomboy.GenericTomboy.html">GTG.backends.generictomboy.GenericTomboy</a></div>
+    <div>This function is called from GTG core whenever a task should be saved, 
+either because it's a new one or it has been modified. If the task id is 
+new for the backend, then a new task must be created. No special 
+notification that the task is a new one is given.<table class="fieldTable"><tr class="fieldStart"><td class="fieldName">Parameters</td><td class="fieldArg">task</td><td>the task object to save
+</td></tr></table></div>
+  </div>
+</div><div class="function">
+  <a name="GTG.backends.genericbackend.GenericBackend.remove_task">
+    
+  </a>
+  <a name="remove_task">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    remove_task(self, tid):
+    
+  </div>
+  <div class="functionBody">
+    <div class="interfaceinfo">overridden in <a href="GTG.backends.backend_evolution.Backend.html">GTG.backends.backend_evolution.Backend</a>, <a href="GTG.backends.backend_localfile.Backend.html">GTG.backends.backend_localfile.Backend</a>, <a href="GTG.backends.backend_rtm.Backend.html">GTG.backends.backend_rtm.Backend</a>, <a href="GTG.backends.generictomboy.GenericTomboy.html">GTG.backends.generictomboy.GenericTomboy</a></div>
+    <div>This function is called from GTG core whenever a task must be removed 
+from the backend. Note that the task could be not present here.<table class="fieldTable"><tr class="fieldStart"><td class="fieldName">Parameters</td><td class="fieldArg">tid</td><td>the id of the task to delete
+</td></tr></table></div>
+  </div>
+</div><div class="function">
+  <a name="GTG.backends.genericbackend.GenericBackend.this_is_the_first_run">
+    
+  </a>
+  <a name="this_is_the_first_run">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    this_is_the_first_run(self, xml):
+    
+  </div>
+  <div class="functionBody">
+    <div class="interfaceinfo">overridden in <a href="GTG.backends.backend_localfile.Backend.html">GTG.backends.backend_localfile.Backend</a></div>
+    <div>Optional, and almost surely not needed. Called upon the very first GTG 
+startup. This function is needed only in the default backend (XML 
+localfile, currently). The xml parameter is an object containing GTG 
+default tasks.<table class="fieldTable"><tr class="fieldStart"><td class="fieldName">Parameters</td><td class="fieldArg">xml</td><td>an xml object containing the default tasks.
+</td></tr></table></div>
+  </div>
+</div><div class="function">
+  <a name="GTG.backends.genericbackend.GenericBackend.quit">
+    
+  </a>
+  <a name="quit">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    quit(self, disable=False):
+    
+  </div>
+  <div class="functionBody">
+    <div class="interfaceinfo">overridden in <a href="GTG.backends.generictomboy.GenericTomboy.html">GTG.backends.generictomboy.GenericTomboy</a>, <a href="GTG.backends.periodicimportbackend.PeriodicImportBackend.html">GTG.backends.periodicimportbackend.PeriodicImportBackend</a></div>
+    <div>Called when GTG quits or the user wants to disable the backend.<table class="fieldTable"><tr class="fieldStart"><td class="fieldName">Parameters</td><td class="fieldArg">disable</td><td>If disable is True, the backend won't be automatically loaded when GTG 
+starts
+</td></tr></table></div>
+  </div>
+</div><div class="function">
+  <a name="GTG.backends.genericbackend.GenericBackend.save_state">
+    
+  </a>
+  <a name="save_state">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    save_state(self):
+    
+  </div>
+  <div class="functionBody">
+    <div class="interfaceinfo">overridden in <a href="GTG.backends.backend_evolution.Backend.html">GTG.backends.backend_evolution.Backend</a>, <a href="GTG.backends.backend_identica.Backend.html">GTG.backends.backend_identica.Backend</a>, <a href="GTG.backends.backend_launchpad.Backend.html">GTG.backends.backend_launchpad.Backend</a>, <a href="GTG.backends.backend_rtm.Backend.html">GTG.backends.backend_rtm.Backend</a>, <a href="GTG.backends.backend_twitter.Backend.html">GTG.backends.backend_twitter.Backend</a>, <a href="GTG.backends.generictomboy.GenericTomboy.html">GTG.backends.generictomboy.GenericTomboy</a></div>
+    <div>It's the last function executed on a quitting backend, after the pending
+actions have been done. Useful to ensure that the state is saved in a 
+consistent manner<table class="fieldTable"></table></div>
+  </div>
+</div><div class="function">
+  <a name="GTG.backends.genericbackend.GenericBackend._get_static_parameters">
+    
+  </a>
+  <a name="_get_static_parameters">
+    
+  </a>
+  <div class="functionHeader">
+    @classmethod<br />
+    def
+    _get_static_parameters(cls):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div>Helper method, used to obtain the full list of the static_parameters 
+(user configured and default ones)<table class="fieldTable"><tr class="fieldStart"><td class="fieldName">Returns</td><td colspan="2">the dict containing all the static parameters
+</td></tr></table></div>
+  </div>
+</div><div class="function">
+  <a name="GTG.backends.genericbackend.GenericBackend.__init__">
+    
+  </a>
+  <a name="__init__">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    __init__(self, parameters):
+    
+  </div>
+  <div class="functionBody">
+    <div class="interfaceinfo">overridden in <a href="GTG.backends.backend_localfile.Backend.html">GTG.backends.backend_localfile.Backend</a>, <a href="GTG.backends.generictomboy.GenericTomboy.html">GTG.backends.generictomboy.GenericTomboy</a>, <a href="GTG.backends.periodicimportbackend.PeriodicImportBackend.html">GTG.backends.periodicimportbackend.PeriodicImportBackend</a></div>
+    <div>Instantiates a new backend. Please note that this is called also for 
+disabled backends. Those are not initialized, so you might want to check 
+out the initialize() function.<table class="fieldTable"></table></div>
+  </div>
+</div><div class="function">
+  <a name="GTG.backends.genericbackend.GenericBackend.get_attached_tags">
+    
+  </a>
+  <a name="get_attached_tags">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    get_attached_tags(self):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div>Returns the list of tags which are handled by this backend<table class="fieldTable"></table></div>
+  </div>
+</div><div class="function">
+  <a name="GTG.backends.genericbackend.GenericBackend.set_attached_tags">
+    
+  </a>
+  <a name="set_attached_tags">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    set_attached_tags(self, tags):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div>Changes the set of attached tags<table class="fieldTable"><tr class="fieldStart"><td class="fieldName">Parameters</td><td class="fieldArg">tags</td><td>the new attached_tags set
+</td></tr></table></div>
+  </div>
+</div><div class="function">
+  <a name="GTG.backends.genericbackend.GenericBackend.get_static_parameters">
+    
+  </a>
+  <a name="get_static_parameters">
+    
+  </a>
+  <div class="functionHeader">
+    @classmethod<br />
+    def
+    get_static_parameters(cls):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div>Returns a dictionary of parameters necessary to create a backend.<table class="fieldTable"></table></div>
+  </div>
+</div><div class="function">
+  <a name="GTG.backends.genericbackend.GenericBackend.get_parameters">
+    
+  </a>
+  <a name="get_parameters">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    get_parameters(self):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div>Returns a dictionary of the current parameters.<table class="fieldTable"></table></div>
+  </div>
+</div><div class="function">
+  <a name="GTG.backends.genericbackend.GenericBackend.set_parameter">
+    
+  </a>
+  <a name="set_parameter">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    set_parameter(self, parameter, value):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div>Change a parameter for this backend<table class="fieldTable"><tr class="fieldStart"><td class="fieldName">Parameters</td><td class="fieldArg">parameter</td><td>the parameter name
+</td></tr><tr><td></td><td class="fieldArg">value</td><td>the new value
+</td></tr></table></div>
+  </div>
+</div><div class="function">
+  <a name="GTG.backends.genericbackend.GenericBackend.get_name">
+    
+  </a>
+  <a name="get_name">
+    
+  </a>
+  <div class="functionHeader">
+    @classmethod<br />
+    def
+    get_name(cls):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div>Returns the name of the backend as it should be displayed in the UI<table class="fieldTable"></table></div>
+  </div>
+</div><div class="function">
+  <a name="GTG.backends.genericbackend.GenericBackend.get_description">
+    
+  </a>
+  <a name="get_description">
+    
+  </a>
+  <div class="functionHeader">
+    @classmethod<br />
+    def
+    get_description(cls):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div>Returns a description of the backend<table class="fieldTable"></table></div>
+  </div>
+</div><div class="function">
+  <a name="GTG.backends.genericbackend.GenericBackend.get_type">
+    
+  </a>
+  <a name="get_type">
+    
+  </a>
+  <div class="functionHeader">
+    @classmethod<br />
+    def
+    get_type(cls):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div>Returns the backend type(readonly, r/w, import, export)<table class="fieldTable"></table></div>
+  </div>
+</div><div class="function">
+  <a name="GTG.backends.genericbackend.GenericBackend.get_authors">
+    
+  </a>
+  <a name="get_authors">
+    
+  </a>
+  <div class="functionHeader">
+    @classmethod<br />
+    def
+    get_authors(cls):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div>returns the backend author(s)<table class="fieldTable"></table></div>
+  </div>
+</div><div class="function">
+  <a name="GTG.backends.genericbackend.GenericBackend._get_from_general_description">
+    
+  </a>
+  <a name="_get_from_general_description">
+    
+  </a>
+  <div class="functionHeader">
+    @classmethod<br />
+    def
+    _get_from_general_description(cls, key):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div>Helper method to extract values from cls._general_description.<table class="fieldTable"><tr class="fieldStart"><td class="fieldName">Parameters</td><td class="fieldArg">key</td><td>the key to extract
+</td></tr></table></div>
+  </div>
+</div><div class="function">
+  <a name="GTG.backends.genericbackend.GenericBackend.cast_param_type_from_string">
+    
+  </a>
+  <a name="cast_param_type_from_string">
+    
+  </a>
+  <div class="functionHeader">
+    @classmethod<br />
+    def
+    cast_param_type_from_string(cls, param_value, param_type):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div>Parameters are saved in a text format, so we have to cast them to the 
+appropriate type on loading. This function does exactly that.<table class="fieldTable"><tr class="fieldStart"><td class="fieldName">Parameters</td><td class="fieldArg">param_value</td><td>the actual value of the parameter, in a string format
+</td></tr><tr><td></td><td class="fieldArg">param_type</td><td>the wanted type
+</td></tr><tr class="fieldStart"><td class="fieldName">Returns</td><td colspan="2">the casted param_value
+</td></tr></table></div>
+  </div>
+</div><div class="function">
+  <a name="GTG.backends.genericbackend.GenericBackend.cast_param_type_to_string">
+    
+  </a>
+  <a name="cast_param_type_to_string">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    cast_param_type_to_string(self, param_type, param_value):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div>Inverse of cast_param_type_from_string<table class="fieldTable"><tr class="fieldStart"><td class="fieldName">Parameters</td><td class="fieldArg">param_value</td><td>the actual value of the parameter
+</td></tr><tr><td></td><td class="fieldArg">param_type</td><td>the type of the parameter (password...)
+</td></tr><tr class="fieldStart"><td class="fieldName">Returns</td><td colspan="2">param_value casted to string
+</td></tr></table></div>
+  </div>
+</div><div class="function">
+  <a name="GTG.backends.genericbackend.GenericBackend.get_id">
+    
+  </a>
+  <a name="get_id">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    get_id(self):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div>returns the backends id, used in the datastore for indexing backends<table class="fieldTable"><tr class="fieldStart"><td class="fieldName">Returns</td><td colspan="2">the backend id
+</td></tr></table></div>
+  </div>
+</div><div class="function">
+  <a name="GTG.backends.genericbackend.GenericBackend.get_human_default_name">
+    
+  </a>
+  <a name="get_human_default_name">
+    
+  </a>
+  <div class="functionHeader">
+    @classmethod<br />
+    def
+    get_human_default_name(cls):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div>returns the user friendly default backend name, without eventual user 
+modifications.<table class="fieldTable"><tr class="fieldStart"><td class="fieldName">Returns</td><td colspan="2">the default &quot;human name&quot;
+</td></tr></table></div>
+  </div>
+</div><div class="function">
+  <a name="GTG.backends.genericbackend.GenericBackend.get_human_name">
+    
+  </a>
+  <a name="get_human_name">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    get_human_name(self):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div>returns the user customized backend name. If the user hasn't customized 
+it, returns the default one.<table class="fieldTable"><tr class="fieldStart"><td class="fieldName">Returns</td><td colspan="2">the &quot;human name&quot; of this backend
+</td></tr></table></div>
+  </div>
+</div><div class="function">
+  <a name="GTG.backends.genericbackend.GenericBackend.set_human_name">
+    
+  </a>
+  <a name="set_human_name">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    set_human_name(self, name):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div>sets a custom name for the backend<table class="fieldTable"><tr class="fieldStart"><td class="fieldName">Parameters</td><td class="fieldArg">name</td><td>the new name
+</td></tr></table></div>
+  </div>
+</div><div class="function">
+  <a name="GTG.backends.genericbackend.GenericBackend.is_enabled">
+    
+  </a>
+  <a name="is_enabled">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    is_enabled(self):
+    
+  </div>
+  <div class="functionBody">
+    
+    <pre>Returns if the backend is enabled
+
+@returns bool</pre>
+  </div>
+</div><div class="function">
+  <a name="GTG.backends.genericbackend.GenericBackend.is_default">
+    
+  </a>
+  <a name="is_default">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    is_default(self):
+    
+  </div>
+  <div class="functionBody">
+    
+    <pre>Returns if the backend is enabled
+
+@returns bool</pre>
+  </div>
+</div><div class="function">
+  <a name="GTG.backends.genericbackend.GenericBackend.is_initialized">
+    
+  </a>
+  <a name="is_initialized">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    is_initialized(self):
+    
+  </div>
+  <div class="functionBody">
+    
+    <pre>Returns if the backend is up and running
+
+@returns is_initialized</pre>
+  </div>
+</div><div class="function">
+  <a name="GTG.backends.genericbackend.GenericBackend.get_parameter_type">
+    
+  </a>
+  <a name="get_parameter_type">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    get_parameter_type(self, param_name):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div>Given the name of a parameter, returns its type. If the parameter is one
+of the default ones, it does not have a type: in that case, it returns 
+None<table class="fieldTable"><tr class="fieldStart"><td class="fieldName">Parameters</td><td class="fieldArg">param_name</td><td>the name of the parameter
+</td></tr><tr class="fieldStart"><td class="fieldName">Returns</td><td colspan="2">the type, or None
+</td></tr></table></div>
+  </div>
+</div><div class="function">
+  <a name="GTG.backends.genericbackend.GenericBackend.register_datastore">
+    
+  </a>
+  <a name="register_datastore">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    register_datastore(self, datastore):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div>Setter function to inform the backend about the datastore that's loading
+it.<table class="fieldTable"><tr class="fieldStart"><td class="fieldName">Parameters</td><td class="fieldArg">datastore</td><td>a Datastore
+</td></tr></table></div>
+  </div>
+</div><div class="function">
+  <a name="GTG.backends.genericbackend.GenericBackend._store_pickled_file">
+    
+  </a>
+  <a name="_store_pickled_file">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    _store_pickled_file(self, path, data):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div>A helper function to save some object in a file.<table class="fieldTable"><tr class="fieldStart"><td class="fieldName">Parameters</td><td class="fieldArg">path</td><td>a relative path. A good choice is &quot;backend_name/object_name&quot;
+</td></tr><tr><td></td><td class="fieldArg">data</td><td>the object
+</td></tr></table></div>
+  </div>
+</div><div class="function">
+  <a name="GTG.backends.genericbackend.GenericBackend._load_pickled_file">
+    
+  </a>
+  <a name="_load_pickled_file">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    _load_pickled_file(self, path, default_value=None):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div>A helper function to load some object from a file.<table class="fieldTable"><tr class="fieldStart"><td class="fieldName">Parameters</td><td class="fieldArg">path</td><td>the relative path of the file
+</td></tr><tr><td></td><td class="fieldArg">default_value</td><td>the value to return if the file is missing or corrupt
+</td></tr><tr class="fieldStart"><td class="fieldName">Returns</td><td colspan="2">the needed object, or default_value
+</td></tr></table></div>
+  </div>
+</div><div class="function">
+  <a name="GTG.backends.genericbackend.GenericBackend._gtg_task_is_syncable_per_attached_tags">
+    
+  </a>
+  <a name="_gtg_task_is_syncable_per_attached_tags">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    _gtg_task_is_syncable_per_attached_tags(self, task):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div>Helper function which checks if the given task satisfies the filtering 
+imposed by the tags attached to the backend. That means, if a user wants a 
+backend to sync only tasks tagged @works, this function should be used to 
+check if that is verified.<table class="fieldTable"><tr class="fieldStart"><td class="fieldName">Returns</td><td colspan="2">True if the task should be synced
+</td></tr></table></div>
+  </div>
+</div><div class="function">
+  <a name="GTG.backends.genericbackend.GenericBackend.__try_launch_setting_thread">
+    
+  </a>
+  <a name="__try_launch_setting_thread">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    __try_launch_setting_thread(self):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div>Helper function to launch the setting thread, if it's not running.<table class="fieldTable"></table></div>
+  </div>
+</div><div class="function">
+  <a name="GTG.backends.genericbackend.GenericBackend.launch_setting_thread">
+    
+  </a>
+  <a name="launch_setting_thread">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    launch_setting_thread(self, bypass_quit_request=False):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div>This function is launched as a separate thread. Its job is to perform 
+the changes that have been issued from GTG core. In particular, for each 
+task in the self.to_set queue, a task has to be modified or to be created 
+(if the tid is new), and for each task in the self.to_remove queue, a task 
+has to be deleted<table class="fieldTable"><tr class="fieldStart"><td class="fieldName">Parameters</td><td class="fieldArg">bypass_quit_request</td><td>if True, the thread should not be stopped even if asked by self.please_quit
+= True. It's used when the backend quits, to finish syncing all pending 
+tasks
+</td></tr></table></div>
+  </div>
+</div><div class="function">
+  <a name="GTG.backends.genericbackend.GenericBackend.queue_set_task">
+    
+  </a>
+  <a name="queue_set_task">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    queue_set_task(self, task):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div>Save the task in the backend. In particular, it just enqueues the task 
+in the self.to_set queue. A thread will shortly run to apply the requested 
+changes.<table class="fieldTable"><tr class="fieldStart"><td class="fieldName">Parameters</td><td class="fieldArg">task</td><td>the task that should be saved
+</td></tr></table></div>
+  </div>
+</div><div class="function">
+  <a name="GTG.backends.genericbackend.GenericBackend.queue_remove_task">
+    
+  </a>
+  <a name="queue_remove_task">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    queue_remove_task(self, tid):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div>Queues task to be removed. In particular, it just enqueues the task in 
+the self.to_remove queue. A thread will shortly run to apply the requested 
+changes.<table class="fieldTable"><tr class="fieldStart"><td class="fieldName">Parameters</td><td class="fieldArg">tid</td><td>The Task ID of the task to be removed
+</td></tr></table></div>
+  </div>
+</div><div class="function">
+  <a name="GTG.backends.genericbackend.GenericBackend.sync">
+    
+  </a>
+  <a name="sync">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    sync(self):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div>Helper method. Forces the backend to perform all the pending changes. It
+is usually called upon quitting the backend.<table class="fieldTable"></table></div>
+  </div>
+</div>
+    <address>
+      <a href="index.html">API Documentation</a> for <a href="http://gtg.fritalk.com/">GTG</a>, generated by <a href="http://codespeak.net/~mwh/pydoctor/">pydoctor</a> at 2011-05-02 21:27:37.
+    </address>
+  </body>
+</html>

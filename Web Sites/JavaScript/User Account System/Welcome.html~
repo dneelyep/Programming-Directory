@@ -1,0 +1,63 @@
+<html>
+<head>
+<title>Welcome to the site!</title>
+<script type="text/javascript">
+
+function setCookie(c_name,value,expiredays)
+{
+var exdate=new Date();
+exdate.setDate(exdate.getDate()+expiredays);
+document.cookie=c_name+ "=" +escape(value)+
+((expiredays==null) ? "" : ";expires="+exdate.toUTCString());
+}
+
+function getCookie(c_name)
+{
+if (document.cookie.length>0)
+  {
+  c_start=document.cookie.indexOf(c_name + "=");
+  if (c_start!=-1)
+    {
+    c_start=c_start + c_name.length+1;
+    c_end=document.cookie.indexOf(";",c_start);
+    if (c_end==-1) c_end=document.cookie.length;
+    return unescape(document.cookie.substring(c_start,c_end));
+    }
+  }
+return "";
+}
+
+function checkCookie()
+{
+username=getCookie('username');
+if (username!=null && username!="")
+  {
+  alert('Welcome again '+username+'!');
+  }
+else
+  {
+  username=prompt('Please enter your name:',"");
+  if (username!=null && username!="")
+    {
+    setCookie('username',username,365);
+    }
+  }
+}
+
+</script>
+
+</head>
+<link rel="stylesheet" type="text/css" href="Stylesheet.css" />
+<body onLoad="checkCookie()">
+Hello there and welcome to the web site!<br /><br />
+<div id="loginbox">Please sign in or register below:<br /><br />
+<form action="testing.html">
+Username: <input type="text" /><br />
+Password: <input type="text" /><br />
+</form>
+<a href="Home.html"><input type="submit" value="Sign In" /></a>
+<h6>New user? <a href="Register.html">Register here</a></h6>
+</div>
+<br />
+</body>
+</html>

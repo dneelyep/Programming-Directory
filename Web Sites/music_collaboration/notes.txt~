@@ -1,0 +1,48 @@
+Goal:
+	Online music collaboration software that lets users:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Jotting down some quick ideas I had today:
+
+So projects such as <a href="http://www.musopen.com" title="musopen" target="_blank">Musopen</a> (are there others?) seem to be attempting to create a large library of public domain music. It seems that Musopen at least doesn't have all the recordings it aspires to attain (every single public domain recording I assume).
+
+Anyways, a problem I see might be that there's not very high-quality (that I know of at least) collaboration software in place to allow contributors to effectively contribute to the project. The current system encourages users to upload a complete recording of the work in question, ideally with all instruments recorded and mixed well. Doing things this way, especially for larger works that might require the work of a large number of musicians, plus effective recording of instruments, and the consent of all performers/technical workers to release their work in the public domain. As one can imagine, gathering together this large number of people to work on such a project would probably be quite difficult.
+
+I have a feeling that there are a lot of <strong>individual</strong> performers and skilled mixers/etc. who are interested in Musopen's goals and would like to contribute to its cause. However, an individual person interested in contributing isn't enough to bring large, orchestral works into being.
+
+So, how could this process be improved?
+
+I propose developing some new software that could be used for Musopen and other similar music-collaboration projects. I wouldn't be surprised if this software already exists, so if it does, 'doh!
+
+Some ideas behind the new software would be applying some principles that have helped the Free Software movement create great software to this project, such as the following:
+
+<ul>
+<li>Crowd-sourcing work</li>
+Many hands make light work
+Large number of people with skills that can be used - giving them the ability to feasibly contribute is neccessary
+<li>Generating source and binaries rather than just binaries</li>
+Allows more remixing, mashups, etc.
+Allows alternate mixes of tracks, with emphasis on different instruments, etc.
+Great for people interested in having backing tracks to practice to.
+Could be distributed as either "binaries" (the complete song) or "source" (each individual instrument track), depending on the user's desires.
+If someone can record a better instrument track, makes it possible to reincorporate that better track into the recording, making a better overall final recording.
+Allows "mixers" to freely mix-and-match tracks to create different "interpretations" of compositions
+Turns the work from free as in beer to potentially free as in freedom
+<li>Bug tracking-like system</li>
+With Musopen, goal is a free public domain library of the world's PD music.
+So, a system could be implemented where every PD work is listed, along with completion status, instrument recordings, etc.
+<li>Many people can get involved - barrier to entry low.
+People only need the skill to play the required parts and record their instruments.
+</ul>

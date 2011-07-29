@@ -1,0 +1,89 @@
+body {
+    background-color: green;
+    color: white;
+}
+
+#page_container {
+    background-color: grey;
+    padding: 15px;
+}
+#tic_tac_toe_board {
+    background-color: purple;
+    padding: 15px;
+    display: inline-block;
+}
+#board_and_players {
+    background-color: purple;
+}
+#player_x {
+    display: inline-block;
+}
+#player_x_bar {
+    background-color: yellow;
+}
+#player_o {
+    display: inline-block;
+}
+#player_o_bar {
+    background-color: green;
+}
+
+.box {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+}
+
+/* === Top row === */
+#top_row {
+    padding: 10px;
+    background-color: red;
+}
+#top_box_1 {
+    margin: 10px;
+    background-color: black;
+} 
+#top_box_2 {
+    margin: 10px;
+    background-color: green;
+}
+#top_box_3 {
+    margin: 10px;
+    background-color: yellow;
+}
+
+/* === Middle row === */
+#middle_row {
+    padding: 10px;
+    background-color: yellow;
+}
+#middle_box_1 {
+    margin: 10px;
+    background-color: cyan;
+}
+#middle_box_2 {
+    margin: 10px;
+    background-color: magenta;
+}
+#middle_box_3 {
+    margin: 10px;
+    background-color: grey;
+}
+
+/* === Bottom row === */
+#bottom_row {
+    padding: 10px;
+    background-color: blue;
+}
+#bottom_box_1 {
+    margin: 10px;
+    background-color: orange;
+}
+#bottom_box_2 {
+    margin: 10px;
+    background-color: red;
+}
+#bottom_box_3 {
+    margin: 10px;
+    background-color: yellow;
+}

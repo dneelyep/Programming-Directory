@@ -1,0 +1,162 @@
+html {
+    overflow-y: scroll;
+}
+
+p {
+	font-family: arial, helvetica, sans-serif;
+}
+
+body {
+	margin: 5%;
+}
+
+img {
+	border: none;
+}
+
+li {
+	font-family: arial, helvetica, sans-serif;
+}
+
+/*navmain class: Contains behaviors for the objects in the nav bar, aside from the behavior of the section the user is currently navigated at*/
+.navmain {
+	color: #CCCCCC;
+	display: inline;
+	margin-right: 4%;
+	margin-left: 4%;
+	font-family: arial, helvetica, sans-serif;
+	font-weight: bold;
+}
+
+.navmain ul {
+	list-style-type:none;
+}
+
+.navmain li {
+	display:inline;
+}
+
+.navmain a:link, a:visited {
+	color: #7F7F7F;
+}
+
+.navmain a:hover, a:active {
+       text-decoration: none;
+}
+
+/* navbg class: Class that puts a border with padding around the nav bar */
+
+.navbg {
+	background-color: #0821A3;
+	padding: 15px;
+}
+
+/* navcurrentpage class: Contains behaviors of the object in the nav bar that is currently navigated to (ie, for a user in the About section, this affects the behaviors of only the About section in the nav bar) */
+.navcurrentpage {
+	color: white;
+	display: inline;
+	font-family: arial, helvetica, sans-serif;
+	font-weight: bold;
+	margin-right: 4%;
+	margin-left: 4%;
+}
+
+.navcurrentpage a {
+	text-decoration: none;
+	color: white;
+}
+
+/* navsub class: Contains properties of the sub navigation bar */
+.navsub {
+	color: #FE2530;
+	display: inline;
+}
+
+.navsub a {
+	color: red;
+}
+
+.navsub a:hover, a:active {
+	text-decoration: none;
+}
+
+.navsub  ul {
+	list-style-type: none;
+}
+
+.navsub li {
+	display: inline;
+}
+
+
+/* navsubcurrentpage class: Contains properties of the currently selected page in the sub-nav bar */
+.navsubcurrentpage {
+	color: black;
+	display: inline;
+}
+
+.navsubcurrentpage a {
+	text-decoration: none;
+	color: black;
+}
+
+/* navsubdivider class: Sets the color of the sub-divider and the inlining of text on the divider in the sub-nav bar */
+.navsubdivider {
+	color: #FE2530;
+	display: inline;
+}
+
+/* navsubbg class: Sets a border and spacing around the sub-nav bar */
+.navsubbg {
+	padding: 0;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #FE2530;
+	margin-top: 8px;
+}
+
+/* content class: Sets the properties for text/content in the main content area*/
+.content {
+	font-family: arial, helvetica, sans-serif;
+	margin: 20px;
+}
+
+/* contentheading class: Sets the text centered and stuff for the heading of page content */
+.contentheading {
+	font-family: arial, helvetica, sans-serif;
+	margin: 20px;
+	text-align: center;
+}
+
+/* contentsubheading class: Sets the formatting for the smaller headings on pages */
+.contentsubheading {
+	font-family: arial, helvetica, sans-serif;
+	margin: 20px;
+}
+
+/* contentbg class: Sets a border with padding around the content area*/
+.contentbg {
+	border-style: solid;
+	border-width: 3px;
+	border-color: black;
+	margin-top: 8px;
+}
+
+/* navbottom class: Sets the properties of content displayed below the main content of the page */
+.navbottom {
+	color: #FE2530;
+	text-align: center;
+}
+
+/* navbottombg class: Sets a background/border around the content displayed in the navbottom class */
+.navbottombg {
+	border-style: solid;
+	border-width: 1px;
+	border-color: #FE2530;
+	margin-top: 8px;
+}
+
+/* sublist class: Allows me to set a sub-list item in a UL */
+.sublist li {
+	color: red;
+}

@@ -1,0 +1,17 @@
+#!/usr/bin/perl
+
+#Write a program that reads a list of strings on separate lines until end-of-input
+#and prints out the list in reverse order. If the input comes from the keyboard, you'll
+#probably need to signal the end of the input by pressing Control-D on Unix, or
+#Control-Z on Windows.
+
+print "Ahoy thar again matey! Today you're going to give me multi-line input, and I will reverse it for you. Capiche?\n";
+print "Enter yarr text below:\n";
+
+@input = <STDIN>;
+
+print "\nYour input was:\n";
+print @input;
+
+print "Magic time! Your input reversed is:\n";
+print reverse @input;

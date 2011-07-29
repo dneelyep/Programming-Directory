@@ -1,0 +1,50 @@
+{
+   "browser": {
+      "last_known_google_url": "http://www.google.com/",
+      "last_prompted_google_url": "http://www.google.com/",
+      "last_redirect_origin": "",
+      "window_placement": {
+         "bottom": 856,
+         "left": 416,
+         "maximized": false,
+         "right": 1466,
+         "top": 24,
+         "work_area_bottom": 876,
+         "work_area_left": 0,
+         "work_area_right": 1600,
+         "work_area_top": 24
+      }
+   },
+   "show-minimal-first-run-bubble": true,
+   "show-welcome-page": true,
+   "shutdown": {
+      "num_processes": 0,
+      "num_processes_slow": 0,
+      "type": 0
+   },
+   "uninstall_metrics": {
+      "installation_date2": "1302837347",
+      "launch_count": "1"
+   },
+   "user_experience_metrics": {
+      "session_id": 0,
+      "stability": {
+         "breakpad_registration_fail": 1,
+         "breakpad_registration_ok": 0,
+         "crash_count": 0,
+         "debugger_not_present": 1,
+         "debugger_present": 0,
+         "exited_cleanly": true,
+         "incomplete_session_end_count": 0,
+         "last_timestamp_sec": "1302837362",
+         "launch_count": 1,
+         "launch_time_sec": "1302837353",
+         "page_load_count": 0,
+         "renderer_crash_count": 0,
+         "renderer_hang_count": 0,
+         "session_end_completed": true,
+         "stats_buildtime": "1299884956",
+         "stats_version": "10.0.648.133-devel"
+      }
+   }
+}

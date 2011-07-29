@@ -1,0 +1,21 @@
+a:17:{i:0;s:119:"/*
+       Don't delete this javascript comment because flexy print new line by self then get javascript error.
+       '";i:1;s:32:"';
+       */
+var lostWarning = '";i:2;s:21:"';
+var txtConfPre = '";i:3;s:12:"' + "\n" + '";i:4;s:21:"';	
+var msgChLang = '";i:5;s:24:"';
+var rvsPreviewUrl = "";i:6;s:28:"";
+var rvsSelectStyleUrl = "";i:7;s:25:"";
+var rvsCategoryUrl = "";i:8;s:17:"";
+var rvsUrl = "";i:9;s:17:"";
+var rvsMod = "";i:10;s:21:"";
+var rvsWebRoot = "";i:11;s:17:"";
+var sessID = "";i:12;s:21:"";
+var msgSuccess = '";i:13;s:20:"';
+var msgCancel = '";i:14;s:38:"';
+var msgXmlErrorMemoryAndMaxTime = '";i:15;s:25:"';
+var RVS_AJAX_INDEX = '";i:16;s:72:"';
+var SGL_PRODUCTION = '';
+var confirmTRUE = '';
+var confirmFALSE = '';";}

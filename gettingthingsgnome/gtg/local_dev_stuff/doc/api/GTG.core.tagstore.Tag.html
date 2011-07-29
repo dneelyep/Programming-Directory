@@ -1,0 +1,545 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "DTD/xhtml1-strict.dtd">
+<html>
+  <head>
+    <title>GTG.core.tagstore.Tag : API documentation</title>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type" />
+    <link href="apidocs.css" type="text/css" rel="stylesheet" />
+    
+    
+  </head>
+  <body>
+    <h1 class="class">G.c.t.Tag(<a href="GTG.tools.liblarch.tree.TreeNode.html">TreeNode</a>) : class documentation</h1>
+    <p>
+      <span id="part">Part of <a href="GTG.html">GTG</a>.<a href="GTG.core.html">core</a>.<a href="GTG.core.tagstore.html">tagstore</a></span>
+      
+      <a href="classIndex.html#GTG.core.tagstore.Tag">View In Hierarchy</a>
+    </p>
+    <div>
+      
+    </div>
+    <div>A short name that can be applied to <a 
+href="GTG.core.task.Task.html"><code>Task</code></a>s.</p>
+<p>I mean, surely you must know what a tag is by now. Think Gmail, 
+del.icio.us, Flickr et al.</p>
+<p>A tag is defined by its name, which in most cases is 
+<code>@something</code>. A tag can also have multiple arbitrary attributes.
+The only attribute enforced for tags is <code>name</code>, which always 
+matches <a 
+href="GTG.core.tagstore.Tag.html#get_name"><code>Tag.get_name()</code></a>.<table class="fieldTable"></table></div>
+
+    
+    
+    <div id="splitTables">
+      <table class="children sortable" id="id167">
+  
+  
+<tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.core.tagstore.Tag.html#__init__">__init__</a></td>
+    <td><span>Construct a tag.</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.core.tagstore.Tag.html#get_name">get_name</a></td>
+    <td><span>Return the name of the tag.</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.core.tagstore.Tag.html#set_save_callback">set_save_callback</a></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.core.tagstore.Tag.html#set_attribute">set_attribute</a></td>
+    <td><span>Set an arbitrary attribute.</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.core.tagstore.Tag.html#get_attribute">get_attribute</a></td>
+    <td><span>Get the attribute <code>att_name</code>.</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.core.tagstore.Tag.html#del_attribute">del_attribute</a></td>
+    <td><span>Deletes the attribute <code>att_name</code>.</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.core.tagstore.Tag.html#get_all_attributes">get_all_attributes</a></td>
+    <td><span>Return a list of all attribute names.</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.core.tagstore.Tag.html#get_active_tasks_count">get_active_tasks_count</a></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.core.tagstore.Tag.html#get_total_tasks_count">get_total_tasks_count</a></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.core.tagstore.Tag.html#is_removable">is_removable</a></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.core.tagstore.Tag.html#is_special">is_special</a></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.core.tagstore.Tag.html#is_used">is_used</a></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.core.tagstore.Tag.html#is_actively_used">is_actively_used</a></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.core.tagstore.Tag.html#__str__">__str__</a></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="method private">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.core.tagstore.Tag.html#__get_count">__get_count</a></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr>
+  
+</table>
+      
+        <p>
+          Inherited from <a href="GTG.tools.liblarch.tree.TreeNode.html">TreeNode</a>:
+        </p>
+        <table class="children sortable" id="id168">
+  
+  
+<tr class="basemethod">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.tools.liblarch.tree.TreeNode.html#set_thread">set_thread</a></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="basemethod">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.tools.liblarch.tree.TreeNode.html#modified">modified</a></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="basemethod">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.tools.liblarch.tree.TreeNode.html#set_tree">set_tree</a></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="basemethod">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.tools.liblarch.tree.TreeNode.html#get_tree">get_tree</a></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="basemethod">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.tools.liblarch.tree.TreeNode.html#get_id">get_id</a></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="basemethod">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.tools.liblarch.tree.TreeNode.html#new_relationship">new_relationship</a></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="basemethod">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.tools.liblarch.tree.TreeNode.html#has_parent">has_parent</a></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="basemethod">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.tools.liblarch.tree.TreeNode.html#get_parent">get_parent</a></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="basemethod">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.tools.liblarch.tree.TreeNode.html#get_parents">get_parents</a></td>
+    <td><span>Return a list of parent ids</span></td>
+  </tr><tr class="basemethod">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.tools.liblarch.tree.TreeNode.html#add_parent">add_parent</a></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="basemethod">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.tools.liblarch.tree.TreeNode.html#set_parent">set_parent</a></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="basemethod">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.tools.liblarch.tree.TreeNode.html#remove_parent">remove_parent</a></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="basemethod">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.tools.liblarch.tree.TreeNode.html#has_child">has_child</a></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="basemethod">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.tools.liblarch.tree.TreeNode.html#get_children">get_children</a></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="basemethod">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.tools.liblarch.tree.TreeNode.html#get_n_children">get_n_children</a></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="basemethod">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.tools.liblarch.tree.TreeNode.html#get_nth_child">get_nth_child</a></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="basemethod">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.tools.liblarch.tree.TreeNode.html#get_child">get_child</a></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="basemethod">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.tools.liblarch.tree.TreeNode.html#get_child_index">get_child_index</a></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="basemethod">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.tools.liblarch.tree.TreeNode.html#add_child">add_child</a></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="basemethod">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.tools.liblarch.tree.TreeNode.html#remove_child">remove_child</a></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="basemethod">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.tools.liblarch.tree.TreeNode.html#change_id">change_id</a></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr>
+  
+</table>
+      
+      
+    </div>
+    
+    
+    
+
+    <div class="function">
+  <a name="GTG.core.tagstore.Tag.__init__">
+    
+  </a>
+  <a name="__init__">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    __init__(self, name, req):
+    
+  </div>
+  <div class="functionBody">
+    <div class="interfaceinfo">overrides <a href="GTG.tools.liblarch.tree.TreeNode.html#__init__">GTG.tools.liblarch.tree.TreeNode.__init__</a></div>
+    <div>Construct a tag.<table class="fieldTable"><tr class="fieldStart"><td class="fieldName">Parameters</td><td class="fieldArg">name</td><td>The name of the tag. Should be a string, generally a short one.
+</td></tr></table></div>
+  </div>
+</div><div class="function">
+  <a name="GTG.core.tagstore.Tag.get_name">
+    
+  </a>
+  <a name="get_name">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    get_name(self):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div>Return the name of the tag.<table class="fieldTable"></table></div>
+  </div>
+</div><div class="function">
+  <a name="GTG.core.tagstore.Tag.set_save_callback">
+    
+  </a>
+  <a name="set_save_callback">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    set_save_callback(self, save):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div class="undocumented">Undocumented</div>
+  </div>
+</div><div class="function">
+  <a name="GTG.core.tagstore.Tag.set_attribute">
+    
+  </a>
+  <a name="set_attribute">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    set_attribute(self, att_name, att_value):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div>Set an arbitrary attribute.</p>
+<p>This will call the <code>save_cllbk</code> callback passed to the 
+constructor.<table class="fieldTable"><tr class="fieldStart"><td class="fieldName">Parameters</td><td class="fieldArg">att_name</td><td>The name of the attribute.
+</td></tr><tr><td></td><td class="fieldArg">att_value</td><td>The value of the attribute. Will be converted to a string.
+</td></tr></table></div>
+  </div>
+</div><div class="function">
+  <a name="GTG.core.tagstore.Tag.get_attribute">
+    
+  </a>
+  <a name="get_attribute">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    get_attribute(self, att_name):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div>Get the attribute <code>att_name</code>.</p>
+<p>Returns <code>None</code> if there is no attribute matching 
+<code>att_name</code>.<table class="fieldTable"></table></div>
+  </div>
+</div><div class="function">
+  <a name="GTG.core.tagstore.Tag.del_attribute">
+    
+  </a>
+  <a name="del_attribute">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    del_attribute(self, att_name):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div>Deletes the attribute <code>att_name</code>.<table class="fieldTable"></table></div>
+  </div>
+</div><div class="function">
+  <a name="GTG.core.tagstore.Tag.get_all_attributes">
+    
+  </a>
+  <a name="get_all_attributes">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    get_all_attributes(self, butname=False, withparent=False):
+    
+  </div>
+  <div class="functionBody">
+    
+    <pre>Return a list of all attribute names.
+
+@param butname: If True, exclude C{name} from the list of attribute
+    names.
+#param withparent: If True, the "parent" attribute is attached</pre>
+  </div>
+</div><div class="function">
+  <a name="GTG.core.tagstore.Tag.get_active_tasks_count">
+    
+  </a>
+  <a name="get_active_tasks_count">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    get_active_tasks_count(self):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div class="undocumented">Undocumented</div>
+  </div>
+</div><div class="function">
+  <a name="GTG.core.tagstore.Tag.get_total_tasks_count">
+    
+  </a>
+  <a name="get_total_tasks_count">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    get_total_tasks_count(self):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div class="undocumented">Undocumented</div>
+  </div>
+</div><div class="function">
+  <a name="GTG.core.tagstore.Tag.__get_count">
+    
+  </a>
+  <a name="__get_count">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    __get_count(self, tasktree=None):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div class="undocumented">Undocumented</div>
+  </div>
+</div><div class="function">
+  <a name="GTG.core.tagstore.Tag.is_removable">
+    
+  </a>
+  <a name="is_removable">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    is_removable(self):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div class="undocumented">Undocumented</div>
+  </div>
+</div><div class="function">
+  <a name="GTG.core.tagstore.Tag.is_special">
+    
+  </a>
+  <a name="is_special">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    is_special(self):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div class="undocumented">Undocumented</div>
+  </div>
+</div><div class="function">
+  <a name="GTG.core.tagstore.Tag.is_used">
+    
+  </a>
+  <a name="is_used">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    is_used(self):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div class="undocumented">Undocumented</div>
+  </div>
+</div><div class="function">
+  <a name="GTG.core.tagstore.Tag.is_actively_used">
+    
+  </a>
+  <a name="is_actively_used">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    is_actively_used(self):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div class="undocumented">Undocumented</div>
+  </div>
+</div><div class="function">
+  <a name="GTG.core.tagstore.Tag.__str__">
+    
+  </a>
+  <a name="__str__">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    __str__(self):
+    
+  </div>
+  <div class="functionBody">
+    <div class="interfaceinfo">overrides <a href="GTG.tools.liblarch.tree.TreeNode.html#__str__">GTG.tools.liblarch.tree.TreeNode.__str__</a></div>
+    <div class="undocumented">Undocumented</div>
+  </div>
+</div>
+    <address>
+      <a href="index.html">API Documentation</a> for <a href="http://gtg.fritalk.com/">GTG</a>, generated by <a href="http://codespeak.net/~mwh/pydoctor/">pydoctor</a> at 2011-04-15 17:43:34.
+    </address>
+  </body>
+</html>

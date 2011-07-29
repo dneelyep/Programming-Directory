@@ -1,0 +1,10 @@
+<page xmlns="http://projectmallard.org/1.0/"
+      type="topic"
+      id="piping-output-of-command-to-file">
+
+  <info>
+    <link type="guide" xref="index#program-feat"/>
+  </info>
+
+  <title>Piping the Output of a Command to a File</title>
+</page>

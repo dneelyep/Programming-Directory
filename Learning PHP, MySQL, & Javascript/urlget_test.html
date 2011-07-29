@@ -1,0 +1,12 @@
+<html><head><title>Trying to use some Ajax here...</title>
+</head><body>
+<h1>Ajax below...</h1>
+
+<script>
+    request = new XMLHttpRequest()
+    open("mykey=thisisthevalue","urlget_test.php","true")
+    send()
+    document.getElementById("content_here").innerHTML = responseText
+</script>
+
+<div id='content_here'>Content goes here.</div>

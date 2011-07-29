@@ -1,0 +1,26 @@
+<html>
+  <head>
+    <title>Computers for Mechanics | What is a computer?</title>
+  </head>
+
+  <body>
+    <h2>Computers: What are they?</h2>
+    <p>So, before we get involved in explaining how a computer works, it's important to define what exactly a computer is.</p>
+    <p>It can be tempting to say that a computer is the machine that lets you browse the web, listen to music, view photos and other activities. However, this definition is referring to the personal computer (<!--link to a PC terminology link thing--><a href="">PC</a>), a specific type of computer most suited to the tasks that a home user would want [ambiguos,cleanup].</p>
+    <p>There are computers built for <!--link to article on computer uses--><a href="">all kinds of purposes</a>. There are computers in your car that tell it how to accomplish certain tasks, such as cruise control and antilock brakes. Cell phones work by using computers. Heck, even digital watches and calculators have computers built into them.</p>
+    <p>So if computers can be used for a large number of purposes that are seemingly different on first sight, what do all computers have in common? After all, a PC is different from a cell phone. Although computers may look completely different on the surface, at the core computers are remarkably similar.</p>
+    <h2>What makes up a computer [rephrase]</h2>
+    <p>For practical purposes, a computer has four main components: volatile memory, non-volatile memory, a processor, and Input/Output (<!--terminologylink--><a href="">I/O</a>) devices.</p>
+    <h3>Memory</h3>
+    <p>Memory can be thought as being devices which allow you to store information. You can store a lot of information in memory, such as the instructions to run a program, the files that make up your CD collection, or to files that store your settings. Your hard drive contains a fixed amount of memory (usually referred to by the size of that memory, ie 100 GB hard drive) as well as your RAM. This fixed size of the memory refers to how much information the hard drive/RAM/etc can hold.</p><!-- MAYBE MOVE THIS MEMORY STUFF TO THE ACTUAL MEMORY SECTION? -->
+    <p>One way to think of memory is the idea of a library. In a library, there are shelves that house books, filled with information. The amount and size of the shelves that house the books are equivalent to memory [bold]capacity[/bold]. The more and bigger shelves there are, the more books (information) can be stored. In this way, as the size/number of the bookshelves increase, you can hold more books (information) in your library. In the computer there are two main types of memory, each with different but important purposes, discussed below. [MAYBE A DIAGRAM COMPARING LIBRARY SHELVES TO RAM/HD?]</p>
+    <h4>Volatile memory</h4>
+    <h4>Non-volatile memory</h4>
+    <h3>Processor</h3>
+    <h3>Input & output devices</h3>
+Cite library analogy reference
+<h4>Measuring memory</h4> 
+    <p>So if memory can be thought of as [bold]stored information[/bold], it might be useful to have a standard way to tell how much information a given library can hold. As the number of shelves in the library increase, the library is able to store more information. However, to explain the idea of how informtion is stored, </p>
+<h4>Computers as machines</h4>
+<p>Discuss how computers are really machines, how some of that applies. Might be helpful for understanding.
+</html>

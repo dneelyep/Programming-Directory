@@ -1,0 +1,411 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "DTD/xhtml1-strict.dtd">
+<html>
+  <head>
+    <title>GTG.backends.backend_rtm.RTMProxy : API documentation</title>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type" />
+    <link href="apidocs.css" type="text/css" rel="stylesheet" />
+    
+    
+  </head>
+  <body>
+    <h1 class="class">G.b.b.RTMProxy(<span title="object">object</span>) : class documentation</h1>
+    <p>
+      <span id="part">Part of <a href="GTG.html">GTG</a>.<a href="GTG.backends.html">backends</a>.<a href="GTG.backends.backend_rtm.html">backend_rtm</a></span>
+      
+      <a href="classIndex.html#GTG.backends.backend_rtm.RTMProxy">View In Hierarchy</a>
+    </p>
+    <div>
+      
+    </div>
+    <div><p>The purpose of this class is producing an updated list of RTMTasks. To 
+do that, it handles:</p>
+<ul>
+  <li>
+    authentication to RTM
+  </li>
+  <li>
+    keeping the list fresh
+  </li>
+  <li>
+    downloading the list
+  </li>
+</ul>
+<table class="fieldTable"></table></div>
+
+    
+    
+    <div id="splitTables">
+      <table class="children sortable" id="id247">
+  
+  
+<tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.backends.backend_rtm.RTMProxy.html#__init__">__init__</a></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.backends.backend_rtm.RTMProxy.html#start_authentication">start_authentication</a></td>
+    <td><span>Launches the authentication process</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.backends.backend_rtm.RTMProxy.html#is_authenticated">is_authenticated</a></td>
+    <td><span>Returns true if we've autheticated to RTM</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.backends.backend_rtm.RTMProxy.html#wait_for_authentication">wait_for_authentication</a></td>
+    <td><span>Inhibits the thread until authentication occours</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.backends.backend_rtm.RTMProxy.html#get_auth_token">get_auth_token</a></td>
+    <td><span>Returns the oauth token, or none</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.backends.backend_rtm.RTMProxy.html#unroll_changes">unroll_changes</a></td>
+    <td><span>Roll backs the changes tracked by the list of transaction_ids given</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.backends.backend_rtm.RTMProxy.html#get_rtm_tasks_dict">get_rtm_tasks_dict</a></td>
+    <td><span>Returns a dict of RTMtasks. It will start authetication if 
+necessary.</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.backends.backend_rtm.RTMProxy.html#refresh_rtm_tasks_dict">refresh_rtm_tasks_dict</a></td>
+    <td><span>Builds a list of RTMTasks fetched from RTM</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.backends.backend_rtm.RTMProxy.html#has_rtm_task">has_rtm_task</a></td>
+    <td><span>Returns True if we have seen that task id</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.backends.backend_rtm.RTMProxy.html#create_new_rtm_task">create_new_rtm_task</a></td>
+    <td><span>Creates a new rtm task</span></td>
+  </tr><tr class="method private">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.backends.backend_rtm.RTMProxy.html#_authenticate">_authenticate</a></td>
+    <td><span>authentication main function</span></td>
+  </tr><tr class="method private">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.backends.backend_rtm.RTMProxy.html#_login">_login</a></td>
+    <td><span>Tries to establish a connection to rtm with a token got from the</span></td>
+  </tr><tr class="method private">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.backends.backend_rtm.RTMProxy.html#__getattr_the_rtm_way">__getattr_the_rtm_way</a></td>
+    <td><span>RTM, to compress the XML file they send to you, cuts out all the</span></td>
+  </tr><tr class="method private">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.backends.backend_rtm.RTMProxy.html#__get_rtm_lists">__get_rtm_lists</a></td>
+    <td><span>Gets the list of the RTM Lists (the tabs on the top of rtm website)</span></td>
+  </tr><tr class="method private">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.backends.backend_rtm.RTMProxy.html#__get_rtm_taskseries_in_list">__get_rtm_taskseries_in_list</a></td>
+    <td><span>Gets the list of &quot;taskseries&quot; objects in a rtm list.</span></td>
+  </tr>
+  
+</table>
+      
+      
+    </div>
+    
+    
+    
+
+    <div class="function">
+  <a name="GTG.backends.backend_rtm.RTMProxy.__init__">
+    
+  </a>
+  <a name="__init__">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    __init__(self, auth_confirm_fun, token=None):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div class="undocumented">Undocumented</div>
+  </div>
+</div><div class="function">
+  <a name="GTG.backends.backend_rtm.RTMProxy.start_authentication">
+    
+  </a>
+  <a name="start_authentication">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    start_authentication(self):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div>Launches the authentication process<table class="fieldTable"></table></div>
+  </div>
+</div><div class="function">
+  <a name="GTG.backends.backend_rtm.RTMProxy.is_authenticated">
+    
+  </a>
+  <a name="is_authenticated">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    is_authenticated(self):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div>Returns true if we've autheticated to RTM<table class="fieldTable"></table></div>
+  </div>
+</div><div class="function">
+  <a name="GTG.backends.backend_rtm.RTMProxy.wait_for_authentication">
+    
+  </a>
+  <a name="wait_for_authentication">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    wait_for_authentication(self):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div>Inhibits the thread until authentication occours<table class="fieldTable"></table></div>
+  </div>
+</div><div class="function">
+  <a name="GTG.backends.backend_rtm.RTMProxy.get_auth_token">
+    
+  </a>
+  <a name="get_auth_token">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    get_auth_token(self):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div>Returns the oauth token, or none<table class="fieldTable"></table></div>
+  </div>
+</div><div class="function">
+  <a name="GTG.backends.backend_rtm.RTMProxy._authenticate">
+    
+  </a>
+  <a name="_authenticate">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    _authenticate(self):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div>authentication main function<table class="fieldTable"></table></div>
+  </div>
+</div><div class="function">
+  <a name="GTG.backends.backend_rtm.RTMProxy._login">
+    
+  </a>
+  <a name="_login">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    _login(self):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div>Tries to establish a connection to rtm with a token got from the 
+authentication process<table class="fieldTable"></table></div>
+  </div>
+</div><div class="function">
+  <a name="GTG.backends.backend_rtm.RTMProxy.unroll_changes">
+    
+  </a>
+  <a name="unroll_changes">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    unroll_changes(self, transaction_ids):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div>Roll backs the changes tracked by the list of transaction_ids given<table class="fieldTable"></table></div>
+  </div>
+</div><div class="function">
+  <a name="GTG.backends.backend_rtm.RTMProxy.get_rtm_tasks_dict">
+    
+  </a>
+  <a name="get_rtm_tasks_dict">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    get_rtm_tasks_dict(self):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div>Returns a dict of RTMtasks. It will start authetication if necessary. 
+The dict is kept updated automatically.<table class="fieldTable"></table></div>
+  </div>
+</div><div class="function">
+  <a name="GTG.backends.backend_rtm.RTMProxy.__getattr_the_rtm_way">
+    
+  </a>
+  <a name="__getattr_the_rtm_way">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    __getattr_the_rtm_way(self, an_object, attribute):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div>RTM, to compress the XML file they send to you, cuts out all the 
+unnecessary stuff. Because of that, getting an attribute from an object 
+must check if one of those optimizations has been used. This function 
+always returns a list wrapping the objects found (if any).<table class="fieldTable"></table></div>
+  </div>
+</div><div class="function">
+  <a name="GTG.backends.backend_rtm.RTMProxy.__get_rtm_lists">
+    
+  </a>
+  <a name="__get_rtm_lists">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    __get_rtm_lists(self):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div>Gets the list of the RTM Lists (the tabs on the top of rtm website)<table class="fieldTable"></table></div>
+  </div>
+</div><div class="function">
+  <a name="GTG.backends.backend_rtm.RTMProxy.__get_rtm_taskseries_in_list">
+    
+  </a>
+  <a name="__get_rtm_taskseries_in_list">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    __get_rtm_taskseries_in_list(self, list_id):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div>Gets the list of &quot;taskseries&quot; objects in a rtm list. For an 
+explenation of what are those, see 
+http://www.rememberthemilk.com/services/api/tasks.rtm<table class="fieldTable"></table></div>
+  </div>
+</div><div class="function">
+  <a name="GTG.backends.backend_rtm.RTMProxy.refresh_rtm_tasks_dict">
+    
+  </a>
+  <a name="refresh_rtm_tasks_dict">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    refresh_rtm_tasks_dict(self):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div>Builds a list of RTMTasks fetched from RTM<table class="fieldTable"></table></div>
+  </div>
+</div><div class="function">
+  <a name="GTG.backends.backend_rtm.RTMProxy.has_rtm_task">
+    
+  </a>
+  <a name="has_rtm_task">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    has_rtm_task(self, rtm_task_id):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div>Returns True if we have seen that task id<table class="fieldTable"></table></div>
+  </div>
+</div><div class="function">
+  <a name="GTG.backends.backend_rtm.RTMProxy.create_new_rtm_task">
+    
+  </a>
+  <a name="create_new_rtm_task">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    create_new_rtm_task(self, title, transaction_ids=):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div>Creates a new rtm task<table class="fieldTable"></table></div>
+  </div>
+</div>
+    <address>
+      <a href="index.html">API Documentation</a> for <a href="http://gtg.fritalk.com/">GTG</a>, generated by <a href="http://codespeak.net/~mwh/pydoctor/">pydoctor</a> at 2011-04-15 17:43:34.
+    </address>
+  </body>
+</html>

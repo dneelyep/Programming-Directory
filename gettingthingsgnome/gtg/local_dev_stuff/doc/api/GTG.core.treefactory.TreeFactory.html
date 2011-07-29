@@ -1,0 +1,484 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "DTD/xhtml1-strict.dtd">
+<html>
+  <head>
+    <title>GTG.core.treefactory.TreeFactory : API documentation</title>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type" />
+    <link href="apidocs.css" type="text/css" rel="stylesheet" />
+    
+    
+  </head>
+  <body>
+    <h1 class="class">G.c.t.TreeFactory : class documentation</h1>
+    <p>
+      <span id="part">Part of <a href="GTG.html">GTG</a>.<a href="GTG.core.html">core</a>.<a href="GTG.core.treefactory.html">treefactory</a></span>
+      
+      <a href="classIndex.html#GTG.core.treefactory.TreeFactory">View In Hierarchy</a>
+    </p>
+    <div>
+      
+    </div>
+    <div class="undocumented">No class docstring</div>
+
+    
+    
+    <div id="splitTables">
+      <table class="children sortable" id="id165">
+  
+  
+<tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.core.treefactory.TreeFactory.html#__init__">__init__</a></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.core.treefactory.TreeFactory.html#get_tasks_tree">get_tasks_tree</a></td>
+    <td><span>This create a liblarch tree suitable for tasks,</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.core.treefactory.TreeFactory.html#get_tags_tree">get_tags_tree</a></td>
+    <td><span>This create a liblarch tree suitable for tags,</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.core.treefactory.TreeFactory.html#actively_used_tag">actively_used_tag</a></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.core.treefactory.TreeFactory.html#used_tag">used_tag</a></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.core.treefactory.TreeFactory.html#tag_filter">tag_filter</a></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.core.treefactory.TreeFactory.html#alltag">alltag</a></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.core.treefactory.TreeFactory.html#notag">notag</a></td>
+    <td><span>Filter of tasks without tags</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.core.treefactory.TreeFactory.html#is_leaf">is_leaf</a></td>
+    <td><span>Filter of tasks which have no children</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.core.treefactory.TreeFactory.html#is_workable">is_workable</a></td>
+    <td><span>Filter of tasks that can be worked</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.core.treefactory.TreeFactory.html#is_started">is_started</a></td>
+    <td><span>Filter for tasks that are already started</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.core.treefactory.TreeFactory.html#workview">workview</a></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.core.treefactory.TreeFactory.html#workdue">workdue</a></td>
+    <td><span>Filter for tasks due within the next day</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.core.treefactory.TreeFactory.html#worklate">worklate</a></td>
+    <td><span>Filter for tasks due within the next day</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.core.treefactory.TreeFactory.html#workstarted">workstarted</a></td>
+    <td><span>Filter for workable tasks with a start date specified</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.core.treefactory.TreeFactory.html#worktostart">worktostart</a></td>
+    <td><span>Filter for workable tasks without a start date specified</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.core.treefactory.TreeFactory.html#active">active</a></td>
+    <td><span>Filter of tasks which are active</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.core.treefactory.TreeFactory.html#closed">closed</a></td>
+    <td><span>Filter of tasks which are closed</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.core.treefactory.TreeFactory.html#no_disabled_tag">no_disabled_tag</a></td>
+    <td><span>Filter of task that don't have any disabled/nonworkview tag</span></td>
+  </tr>
+  
+</table>
+      
+      
+    </div>
+    
+    
+    
+
+    <div class="function">
+  <a name="GTG.core.treefactory.TreeFactory.__init__">
+    
+  </a>
+  <a name="__init__">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    __init__(self):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div class="undocumented">Undocumented</div>
+  </div>
+</div><div class="function">
+  <a name="GTG.core.treefactory.TreeFactory.get_tasks_tree">
+    
+  </a>
+  <a name="get_tasks_tree">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    get_tasks_tree(self):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div>This create a liblarch tree suitable for tasks, including default 
+filters For tags, filter are dynamically created at Tag insertion.<table class="fieldTable"></table></div>
+  </div>
+</div><div class="function">
+  <a name="GTG.core.treefactory.TreeFactory.get_tags_tree">
+    
+  </a>
+  <a name="get_tags_tree">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    get_tags_tree(self, req):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div>This create a liblarch tree suitable for tags, including the 
+all_tags_tag and notag_tag.<table class="fieldTable"></table></div>
+  </div>
+</div><div class="function">
+  <a name="GTG.core.treefactory.TreeFactory.actively_used_tag">
+    
+  </a>
+  <a name="actively_used_tag">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    actively_used_tag(self, node, parameters=None):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div class="undocumented">Undocumented</div>
+  </div>
+</div><div class="function">
+  <a name="GTG.core.treefactory.TreeFactory.used_tag">
+    
+  </a>
+  <a name="used_tag">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    used_tag(self, node, parameters=None):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div class="undocumented">Undocumented</div>
+  </div>
+</div><div class="function">
+  <a name="GTG.core.treefactory.TreeFactory.tag_filter">
+    
+  </a>
+  <a name="tag_filter">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    tag_filter(self, node, parameters=None):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div class="undocumented">Undocumented</div>
+  </div>
+</div><div class="function">
+  <a name="GTG.core.treefactory.TreeFactory.alltag">
+    
+  </a>
+  <a name="alltag">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    alltag(self, task, parameters=None):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div class="undocumented">Undocumented</div>
+  </div>
+</div><div class="function">
+  <a name="GTG.core.treefactory.TreeFactory.notag">
+    
+  </a>
+  <a name="notag">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    notag(self, task, parameters=None):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div>Filter of tasks without tags<table class="fieldTable"></table></div>
+  </div>
+</div><div class="function">
+  <a name="GTG.core.treefactory.TreeFactory.is_leaf">
+    
+  </a>
+  <a name="is_leaf">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    is_leaf(self, task, parameters=None):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div>Filter of tasks which have no children<table class="fieldTable"></table></div>
+  </div>
+</div><div class="function">
+  <a name="GTG.core.treefactory.TreeFactory.is_workable">
+    
+  </a>
+  <a name="is_workable">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    is_workable(self, task, parameters=None):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div>Filter of tasks that can be worked<table class="fieldTable"></table></div>
+  </div>
+</div><div class="function">
+  <a name="GTG.core.treefactory.TreeFactory.is_started">
+    
+  </a>
+  <a name="is_started">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    is_started(self, task, parameters=None):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div>Filter for tasks that are already started<table class="fieldTable"></table></div>
+  </div>
+</div><div class="function">
+  <a name="GTG.core.treefactory.TreeFactory.workview">
+    
+  </a>
+  <a name="workview">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    workview(self, task, parameters=None):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div class="undocumented">Undocumented</div>
+  </div>
+</div><div class="function">
+  <a name="GTG.core.treefactory.TreeFactory.workdue">
+    
+  </a>
+  <a name="workdue">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    workdue(self, task):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div>Filter for tasks due within the next day<table class="fieldTable"></table></div>
+  </div>
+</div><div class="function">
+  <a name="GTG.core.treefactory.TreeFactory.worklate">
+    
+  </a>
+  <a name="worklate">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    worklate(self, task):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div>Filter for tasks due within the next day<table class="fieldTable"></table></div>
+  </div>
+</div><div class="function">
+  <a name="GTG.core.treefactory.TreeFactory.workstarted">
+    
+  </a>
+  <a name="workstarted">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    workstarted(self, task):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div>Filter for workable tasks with a start date specified<table class="fieldTable"></table></div>
+  </div>
+</div><div class="function">
+  <a name="GTG.core.treefactory.TreeFactory.worktostart">
+    
+  </a>
+  <a name="worktostart">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    worktostart(self, task):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div>Filter for workable tasks without a start date specified<table class="fieldTable"></table></div>
+  </div>
+</div><div class="function">
+  <a name="GTG.core.treefactory.TreeFactory.active">
+    
+  </a>
+  <a name="active">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    active(self, task, parameters=None):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div>Filter of tasks which are active<table class="fieldTable"></table></div>
+  </div>
+</div><div class="function">
+  <a name="GTG.core.treefactory.TreeFactory.closed">
+    
+  </a>
+  <a name="closed">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    closed(self, task, parameters=None):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div>Filter of tasks which are closed<table class="fieldTable"></table></div>
+  </div>
+</div><div class="function">
+  <a name="GTG.core.treefactory.TreeFactory.no_disabled_tag">
+    
+  </a>
+  <a name="no_disabled_tag">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    no_disabled_tag(self, task, parameters=None):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div>Filter of task that don't have any disabled/nonworkview tag<table class="fieldTable"></table></div>
+  </div>
+</div>
+    <address>
+      <a href="index.html">API Documentation</a> for <a href="http://gtg.fritalk.com/">GTG</a>, generated by <a href="http://codespeak.net/~mwh/pydoctor/">pydoctor</a> at 2011-04-15 17:43:34.
+    </address>
+  </body>
+</html>

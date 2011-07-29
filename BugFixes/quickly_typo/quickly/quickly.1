@@ -1,0 +1,107 @@
+.TH Quickly 1 "08/20/2009" "" "Quickly"
+.\"Created with GNOME Manpages Editor
+.\"http://sourceforge.net/projects/gmanedit2
+
+.SH NAME
+Quickly \- create software programs (and other things) quickly
+
+.SH SYNOPSIS
+.B quickly
+.RI [ options ]
+.RI [ template ]
+.RI command
+.RI [ args ]
+.br
+
+.SH DESCRIPTION
+This manual page explains the \fBquickly\fP program. The \fBquickly\fP program helps you create software programs (and other things) quickly. You can select from a set of application templates and use some simple quickly commands to create, edit code and GUI, and publish your software for others to use. Quickly's templates are easy to write. So if you are a fan of language foo, you can create a foo-project template. Or if you want to help people making plugins for your killer app, you can make a killer-app-plugin template. You can even create a template for managing corporate documents, creating your awesome LaTeX helpers. The sky is the limit!
+.P
+Given the richness and variety of the Linux platform, programming on Linux
+should be easy and fun. However, it's not easy and fun because it is too hard
+to learn. It is too hard to learn because there are too many choices, and too
+much information to wade through. Quickly strives to make programming easy and
+fun by bringing opinionated choices about how to write different kinds of
+programs to developers. Included is a Ubuntu application template for making applications that integrate smoothly into the Ubuntu software infrastructure.
+.P
+GTD is easier with GTQD (Get Things Quickly Done)!
+
+.SH OPTIONS
+Quickly follows  the usual GNU command line syntax, with long options starting with two dashes (‘-’). A summary of options is included below.
+
+.IP \fB\-h\fP
+.IP \fB\--help\fP
+Show help information
+
+.IP \fB\-t\fP
+.IP \fB\--templates\fP
+This option is followed by a template name. It's needed for template commands launched outside a project or can be used in a project for launching commands from another template.
+
+.IP \fB\--staging\fP
+Target launchpad staging server. Can automatically be added for using in multiple command suits if export QUICKLY="staging".
+
+.IP \fB\--verbose\fP
+All commands are launched in verbose. Can automatically be added for using in multiple command suits if export QUICKLY="verbose".
+
+.IP \fB\--version\fP
+Show version information.
+
+.SH COMMANDS
+
+Each command can be launched with or without options.
+
+.TP
+.B command args
+Launch the command with args in the current contexte (inside or outside a project). Some commands needs to be launched inside a quickly project (for instance, quickly save in ubuntu-application template), some other can be launched only outside a project (quickly create) and some can be launched inside or outside a project (quickly quickly)
+.P
+If a command is launched inside a project, the current associated template will be automatically the one used at project creation (probably with quickly create template projectname). You can still launch builtin command (commands that doesn't depend on any template) or command from another template with quickly -t anothertemplate command_from_anothertemplate.
+.P
+Some commands (like quickly create, quickly quickly, quickly help) needs a template after their command name if you aren't in a project directory. This can also be achieved in using the -t template option.
+
+.TP
+.B create [ template ] projectname
+Create a new project from template. Can only be launched outside an existing project.
+.P
+You can also use:
+.RS
+quickly -t template create projectname (equivalent use)
+.RE
+
+.IP \fBcommands\fP
+List all commands available, sorted by template
+
+.IP \fBgetstarted\fP
+Have some info to get started
+
+.TP
+.B quickly [ template ] newtemplate
+Create a new personal template from an existing template. You can then modify this template for your own needs.
+.P
+You can also use:
+.RS
+quickly -t template quickly newtemplate (equivalent use)
+.P
+or:
+.P
+quickly quickly newtemplate if you are in a project. The newtemplate will derivate from associated project template.
+.RE
+
+.TP
+.B help [ template ] command
+Get some help on a command. If no template is provided and you are outside any quickly project, you are only able to get some help from builtin commands.
+If you specify a template (or use quickly help -t template command, or you are in a quickly project directory), you will get some help from the current template context.
+
+.SH ENVIRONMENT
+
+.TP
+.B QUICKLY
+The \fBQUICKLY\fP environment variable can contain multiple tags. The separator is \fB":"\fP.
+
+For example: \fBQUICKLY=staging:verbose\fP
+
+.TP
+.B QUICKLY_TEMPLATES
+This variable contains additional template paths, separated by \fB":"\fP much
+like the \fBPATH\fP environment variable.
+
+E.g.: \fBQUICKLY_TEMPLATES=/home/foo/.quickly/templates:/home/foo/projects/mynewtemplate\fP
+

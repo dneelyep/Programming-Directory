@@ -1,0 +1,274 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "DTD/xhtml1-strict.dtd">
+<html>
+  <head>
+    <title>GTG.gtk.browser.custominfobar.CustomInfoBar : API documentation</title>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type" />
+    <link href="apidocs.css" type="text/css" rel="stylesheet" />
+    
+    
+  </head>
+  <body>
+    <h1 class="class">G.g.b.c.CustomInfoBar(<span title="gtk.InfoBar">gtk.InfoBar</span>) : class documentation</h1>
+    <p>
+      <span id="part">Part of <a href="GTG.html">GTG</a>.<a href="GTG.gtk.html">gtk</a>.<a href="GTG.gtk.browser.html">browser</a>.<a href="GTG.gtk.browser.custominfobar.html">custominfobar</a></span>
+      
+      <a href="classIndex.html#GTG.gtk.browser.custominfobar.CustomInfoBar">View In Hierarchy</a>
+    </p>
+    <div>
+      
+    </div>
+    <div>A gtk.InfoBar specialized for displaying errors and requests for 
+interaction coming from the backends<table class="fieldTable"></table></div>
+
+    
+    
+    <div id="splitTables">
+      <table class="children sortable" id="id40">
+  
+  
+<tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.gtk.browser.custominfobar.CustomInfoBar.html#__init__">__init__</a></td>
+    <td><span>Constructor, Prepares the infobar.</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.gtk.browser.custominfobar.CustomInfoBar.html#get_backend_id">get_backend_id</a></td>
+    <td><span>Getter function to return the id of the backend for which this</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.gtk.browser.custominfobar.CustomInfoBar.html#set_error_code">set_error_code</a></td>
+    <td><span>Sets this infobar to show an error to the user</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.gtk.browser.custominfobar.CustomInfoBar.html#set_interaction_request">set_interaction_request</a></td>
+    <td><span>Sets this infobar to request an interaction from the user</span></td>
+  </tr><tr class="method private">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.gtk.browser.custominfobar.CustomInfoBar.html#_populate">_populate</a></td>
+    <td><span>Setting up gtk widgets</span></td>
+  </tr><tr class="method private">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.gtk.browser.custominfobar.CustomInfoBar.html#_on_error_response">_on_error_response</a></td>
+    <td><span>Signal callback executed when the user acknowledges the error 
+displayed</span></td>
+  </tr><tr class="method private">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.gtk.browser.custominfobar.CustomInfoBar.html#_on_interaction_response">_on_interaction_response</a></td>
+    <td><span>Signal callback executed when the user gives the feedback for a</span></td>
+  </tr><tr class="method private">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.gtk.browser.custominfobar.CustomInfoBar.html#_prepare_textual_interaction">_prepare_textual_interaction</a></td>
+    <td><span>Helper function. gtk calls to populate the infobar in the case of</span></td>
+  </tr><tr class="method private">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.gtk.browser.custominfobar.CustomInfoBar.html#_on_text_confirmed">_on_text_confirmed</a></td>
+    <td><span>Signal callback, used when the interaction needs a textual input to 
+be</span></td>
+  </tr>
+  
+</table>
+      
+      
+    </div>
+    
+    
+    
+
+    <div class="function">
+  <a name="GTG.gtk.browser.custominfobar.CustomInfoBar.__init__">
+    
+  </a>
+  <a name="__init__">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    __init__(self, req, browser, vmanager, backend_id):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div>Constructor, Prepares the infobar.<table class="fieldTable"><tr class="fieldStart"><td class="fieldName">Parameters</td><td class="fieldArg">req</td><td>a Requester object
+</td></tr><tr><td></td><td class="fieldArg">browser</td><td>a TaskBrowser object
+</td></tr><tr><td></td><td class="fieldArg">vmanager</td><td>a ViewManager object
+</td></tr><tr><td></td><td class="fieldArg">backend_id</td><td>the id of the backend linked to the infobar
+</td></tr></table></div>
+  </div>
+</div><div class="function">
+  <a name="GTG.gtk.browser.custominfobar.CustomInfoBar.get_backend_id">
+    
+  </a>
+  <a name="get_backend_id">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    get_backend_id(self):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div>Getter function to return the id of the backend for which this 
+gtk.InfoBar was created<table class="fieldTable"></table></div>
+  </div>
+</div><div class="function">
+  <a name="GTG.gtk.browser.custominfobar.CustomInfoBar._populate">
+    
+  </a>
+  <a name="_populate">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    _populate(self):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div>Setting up gtk widgets<table class="fieldTable"></table></div>
+  </div>
+</div><div class="function">
+  <a name="GTG.gtk.browser.custominfobar.CustomInfoBar._on_error_response">
+    
+  </a>
+  <a name="_on_error_response">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    _on_error_response(self, widget, event):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div>Signal callback executed when the user acknowledges the error displayed 
+in the infobar<table class="fieldTable"><tr class="fieldStart"><td class="fieldName">Parameters</td><td class="fieldArg">widget</td><td>not used, here for compatibility with signals callbacks
+</td></tr><tr><td></td><td class="fieldArg">event</td><td>the code of the gtk response
+</td></tr></table></div>
+  </div>
+</div><div class="function">
+  <a name="GTG.gtk.browser.custominfobar.CustomInfoBar.set_error_code">
+    
+  </a>
+  <a name="set_error_code">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    set_error_code(self, error_code):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div>Sets this infobar to show an error to the user<table class="fieldTable"><tr class="fieldStart"><td class="fieldName">Parameters</td><td class="fieldArg">error_code</td><td>the code of the error to show. Error codes are listed in BackendSignals
+</td></tr></table></div>
+  </div>
+</div><div class="function">
+  <a name="GTG.gtk.browser.custominfobar.CustomInfoBar.set_interaction_request">
+    
+  </a>
+  <a name="set_interaction_request">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    set_interaction_request(self, description, interaction_type, callback):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div>Sets this infobar to request an interaction from the user<table class="fieldTable"><tr class="fieldStart"><td class="fieldName">Parameters</td><td class="fieldArg">description</td><td>a string describing the interaction needed
+</td></tr><tr><td></td><td class="fieldArg">interaction_type</td><td>a string describing the type of interaction (yes/no, only confirm, 
+ok/cancel...)
+</td></tr><tr><td></td><td class="fieldArg">callback</td><td>the function to call when the user provides the feedback
+</td></tr></table></div>
+  </div>
+</div><div class="function">
+  <a name="GTG.gtk.browser.custominfobar.CustomInfoBar._on_interaction_response">
+    
+  </a>
+  <a name="_on_interaction_response">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    _on_interaction_response(self, widget, event):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div>Signal callback executed when the user gives the feedback for a 
+requested interaction<table class="fieldTable"><tr class="fieldStart"><td class="fieldName">Parameters</td><td class="fieldArg">widget</td><td>not used, here for compatibility with signals callbacks
+</td></tr><tr><td></td><td class="fieldArg">event</td><td>the code of the gtk response
+</td></tr></table></div>
+  </div>
+</div><div class="function">
+  <a name="GTG.gtk.browser.custominfobar.CustomInfoBar._prepare_textual_interaction">
+    
+  </a>
+  <a name="_prepare_textual_interaction">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    _prepare_textual_interaction(self):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div>Helper function. gtk calls to populate the infobar in the case of 
+interaction request<table class="fieldTable"></table></div>
+  </div>
+</div><div class="function">
+  <a name="GTG.gtk.browser.custominfobar.CustomInfoBar._on_text_confirmed">
+    
+  </a>
+  <a name="_on_text_confirmed">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    _on_text_confirmed(self, widget):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div>Signal callback, used when the interaction needs a textual input to be 
+completed (e.g, the twitter OAuth, requesting a pin)<table class="fieldTable"><tr class="fieldStart"><td class="fieldName">Parameters</td><td class="fieldArg">widget</td><td>not used, here for signal callback compatibility
+</td></tr></table></div>
+  </div>
+</div>
+    <address>
+      <a href="index.html">API Documentation</a> for <a href="http://gtg.fritalk.com/">GTG</a>, generated by <a href="http://codespeak.net/~mwh/pydoctor/">pydoctor</a> at 2011-05-02 21:27:37.
+    </address>
+  </body>
+</html>

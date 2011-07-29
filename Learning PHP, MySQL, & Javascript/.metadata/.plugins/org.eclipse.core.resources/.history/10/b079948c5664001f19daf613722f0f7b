@@ -1,0 +1,13 @@
+<?php //Overriding a method and using the parent operator
+$object = new Son;
+$object->test();
+$object->test2();
+
+class Dad
+{
+	function test()
+	{
+		echo "[Class Dad] I am your father<br />"
+	}
+}
+?>

@@ -1,0 +1,1384 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "DTD/xhtml1-strict.dtd">
+<html>
+  <head>
+    <title>GTG.core.task.Task : API documentation</title>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type" />
+    <link href="apidocs.css" type="text/css" rel="stylesheet" />
+    
+    
+  </head>
+  <body>
+    <h1 class="class">G.c.t.Task(<a href="GTG.tools.liblarch.tree.TreeNode.html">TreeNode</a>) : class documentation</h1>
+    <p>
+      <span id="part">Part of <a href="GTG.html">GTG</a>.<a href="GTG.core.html">core</a>.<a href="GTG.core.task.html">task</a></span>
+      
+      <a href="classIndex.html#GTG.core.task.Task">View In Hierarchy</a>
+    </p>
+    <div>
+      
+    </div>
+    <div>This class represent a task in GTG. You should never create a Task 
+directly. Use the datastore.new_task() function.<table class="fieldTable"></table></div>
+
+    
+    
+    <div id="splitTables">
+      <table class="children sortable" id="id172">
+  
+  
+<tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.core.task.Task.html#__init__">__init__</a></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.core.task.Task.html#is_loaded">is_loaded</a></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.core.task.Task.html#set_loaded">set_loaded</a></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.core.task.Task.html#set_to_keep">set_to_keep</a></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.core.task.Task.html#is_new">is_new</a></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.core.task.Task.html#get_id">get_id</a></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.core.task.Task.html#set_uuid">set_uuid</a></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.core.task.Task.html#get_uuid">get_uuid</a></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.core.task.Task.html#get_remote_ids">get_remote_ids</a></td>
+    <td><span>A task usually has a different id in all the different backends.</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.core.task.Task.html#add_remote_id">add_remote_id</a></td>
+    <td><span>A task usually has a different id in all the different backends.</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.core.task.Task.html#get_title">get_title</a></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.core.task.Task.html#set_title">set_title</a></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.core.task.Task.html#set_complex_title">set_complex_title</a></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.core.task.Task.html#set_status">set_status</a></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.core.task.Task.html#get_status">get_status</a></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.core.task.Task.html#get_modified">get_modified</a></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.core.task.Task.html#get_modified_string">get_modified_string</a></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.core.task.Task.html#set_modified">set_modified</a></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.core.task.Task.html#set_due_date">set_due_date</a></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.core.task.Task.html#get_due_date">get_due_date</a></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.core.task.Task.html#set_start_date">set_start_date</a></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.core.task.Task.html#get_start_date">get_start_date</a></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.core.task.Task.html#set_closed_date">set_closed_date</a></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.core.task.Task.html#get_closed_date">get_closed_date</a></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.core.task.Task.html#get_days_left">get_days_left</a></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.core.task.Task.html#get_days_late">get_days_late</a></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.core.task.Task.html#get_text">get_text</a></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.core.task.Task.html#get_excerpt">get_excerpt</a></td>
+    <td><span>get_excerpt return the beginning of the content of the task.</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.core.task.Task.html#set_text">set_text</a></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.core.task.Task.html#new_subtask">new_subtask</a></td>
+    <td><span>Add a newly created subtask to this task. Return the task added as</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.core.task.Task.html#add_child">add_child</a></td>
+    <td><span>Add a subtask to this task</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.core.task.Task.html#remove_child">remove_child</a></td>
+    <td><span>Removed a subtask from the task.</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.core.task.Task.html#get_subtasks">get_subtasks</a></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.core.task.Task.html#get_self_and_all_subtasks">get_self_and_all_subtasks</a></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.core.task.Task.html#get_subtask">get_subtask</a></td>
+    <td><span>Return the task corresponding to a given ID.</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.core.task.Task.html#has_parents">has_parents</a></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.core.task.Task.html#set_attribute">set_attribute</a></td>
+    <td><span>Set an arbitrary attribute.</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.core.task.Task.html#get_attribute">get_attribute</a></td>
+    <td><span>Get the attribute <code>att_name</code>.</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.core.task.Task.html#sync">sync</a></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.core.task.Task.html#get_tags_name">get_tags_name</a></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.core.task.Task.html#get_tags">get_tags</a></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.core.task.Task.html#rename_tag">rename_tag</a></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.core.task.Task.html#tag_added">tag_added</a></td>
+    <td><span>Adds a tag. Does not add '@tag' to the contents. See add_tag</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.core.task.Task.html#add_tag">add_tag</a></td>
+    <td><span>Add a tag to the task and insert '@tag' into the task's content</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.core.task.Task.html#remove_tag">remove_tag</a></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.core.task.Task.html#set_only_these_tags">set_only_these_tags</a></td>
+    <td><span>Given a list of strings representing tags, it makes sure that</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.core.task.Task.html#has_tags">has_tags</a></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.core.task.Task.html#get_color">get_color</a></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.core.task.Task.html#__str__">__str__</a></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="method private">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.core.task.Task.html#__strip_content">__strip_content</a></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="method private">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.core.task.Task.html#_modified_update">_modified_update</a></td>
+    <td><span>Updates the modified timestamp</span></td>
+  </tr><tr class="method private">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.core.task.Task.html#_strip_tag">_strip_tag</a></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr>
+  
+</table>
+      
+        <p>
+          Inherited from <a href="GTG.tools.liblarch.tree.TreeNode.html">TreeNode</a>:
+        </p>
+        <table class="children sortable" id="id173">
+  
+  
+<tr class="basemethod">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.tools.liblarch.tree.TreeNode.html#set_thread">set_thread</a></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="basemethod">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.tools.liblarch.tree.TreeNode.html#modified">modified</a></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="basemethod">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.tools.liblarch.tree.TreeNode.html#set_tree">set_tree</a></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="basemethod">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.tools.liblarch.tree.TreeNode.html#get_tree">get_tree</a></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="basemethod">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.tools.liblarch.tree.TreeNode.html#new_relationship">new_relationship</a></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="basemethod">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.tools.liblarch.tree.TreeNode.html#has_parent">has_parent</a></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="basemethod">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.tools.liblarch.tree.TreeNode.html#get_parent">get_parent</a></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="basemethod">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.tools.liblarch.tree.TreeNode.html#get_parents">get_parents</a></td>
+    <td><span>Return a list of parent ids</span></td>
+  </tr><tr class="basemethod">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.tools.liblarch.tree.TreeNode.html#add_parent">add_parent</a></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="basemethod">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.tools.liblarch.tree.TreeNode.html#set_parent">set_parent</a></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="basemethod">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.tools.liblarch.tree.TreeNode.html#remove_parent">remove_parent</a></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="basemethod">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.tools.liblarch.tree.TreeNode.html#has_child">has_child</a></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="basemethod">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.tools.liblarch.tree.TreeNode.html#get_children">get_children</a></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="basemethod">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.tools.liblarch.tree.TreeNode.html#get_n_children">get_n_children</a></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="basemethod">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.tools.liblarch.tree.TreeNode.html#get_nth_child">get_nth_child</a></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="basemethod">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.tools.liblarch.tree.TreeNode.html#get_child">get_child</a></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="basemethod">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.tools.liblarch.tree.TreeNode.html#get_child_index">get_child_index</a></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="basemethod">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.tools.liblarch.tree.TreeNode.html#change_id">change_id</a></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr>
+  
+</table>
+      
+      
+    </div>
+    
+    
+    
+
+    <div class="function">
+  <a name="GTG.core.task.Task.__init__">
+    
+  </a>
+  <a name="__init__">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    __init__(self, ze_id, requester, newtask=False):
+    
+  </div>
+  <div class="functionBody">
+    <div class="interfaceinfo">overrides <a href="GTG.tools.liblarch.tree.TreeNode.html#__init__">GTG.tools.liblarch.tree.TreeNode.__init__</a></div>
+    <div class="undocumented">Undocumented</div>
+  </div>
+</div><div class="function">
+  <a name="GTG.core.task.Task.is_loaded">
+    
+  </a>
+  <a name="is_loaded">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    is_loaded(self):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div class="undocumented">Undocumented</div>
+  </div>
+</div><div class="function">
+  <a name="GTG.core.task.Task.set_loaded">
+    
+  </a>
+  <a name="set_loaded">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    set_loaded(self, signal=True):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div class="undocumented">Undocumented</div>
+  </div>
+</div><div class="function">
+  <a name="GTG.core.task.Task.set_to_keep">
+    
+  </a>
+  <a name="set_to_keep">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    set_to_keep(self):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div class="undocumented">Undocumented</div>
+  </div>
+</div><div class="function">
+  <a name="GTG.core.task.Task.is_new">
+    
+  </a>
+  <a name="is_new">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    is_new(self):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div class="undocumented">Undocumented</div>
+  </div>
+</div><div class="function">
+  <a name="GTG.core.task.Task.get_id">
+    
+  </a>
+  <a name="get_id">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    get_id(self):
+    
+  </div>
+  <div class="functionBody">
+    <div class="interfaceinfo">overrides <a href="GTG.tools.liblarch.tree.TreeNode.html#get_id">GTG.tools.liblarch.tree.TreeNode.get_id</a></div>
+    <div class="undocumented">Undocumented</div>
+  </div>
+</div><div class="function">
+  <a name="GTG.core.task.Task.set_uuid">
+    
+  </a>
+  <a name="set_uuid">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    set_uuid(self, value):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div class="undocumented">Undocumented</div>
+  </div>
+</div><div class="function">
+  <a name="GTG.core.task.Task.get_uuid">
+    
+  </a>
+  <a name="get_uuid">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    get_uuid(self):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div class="undocumented">Undocumented</div>
+  </div>
+</div><div class="function">
+  <a name="GTG.core.task.Task.get_remote_ids">
+    
+  </a>
+  <a name="get_remote_ids">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    get_remote_ids(self):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div>A task usually has a different id in all the different backends. This 
+function returns a dictionary backend_id-&gt;the id the task has in that 
+backend<table class="fieldTable"><tr class="fieldStart"><td class="fieldName">Returns</td><td colspan="2">dictionary backend_id-&gt;task remote id
+</td></tr></table></div>
+  </div>
+</div><div class="function">
+  <a name="GTG.core.task.Task.add_remote_id">
+    
+  </a>
+  <a name="add_remote_id">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    add_remote_id(self, backend_id, task_remote_id):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div>A task usually has a different id in all the different backends. This 
+function adds a relationship backend_id-&gt; remote_id that can be 
+retrieved using get_remote_ids<table class="fieldTable"><tr class="fieldStart"><td class="fieldName">Parameters</td><td class="fieldArg">backend_id</td><td>string representing the backend id
+</td></tr><tr><td></td><td class="fieldArg">task_remote_id</td><td>the id for this task in the backend backend_id
+</td></tr></table></div>
+  </div>
+</div><div class="function">
+  <a name="GTG.core.task.Task.get_title">
+    
+  </a>
+  <a name="get_title">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    get_title(self):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div class="undocumented">Undocumented</div>
+  </div>
+</div><div class="function">
+  <a name="GTG.core.task.Task.set_title">
+    
+  </a>
+  <a name="set_title">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    set_title(self, title):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div class="undocumented">Undocumented</div>
+  </div>
+</div><div class="function">
+  <a name="GTG.core.task.Task.set_complex_title">
+    
+  </a>
+  <a name="set_complex_title">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    set_complex_title(self, text, tags=):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div class="undocumented">Undocumented</div>
+  </div>
+</div><div class="function">
+  <a name="GTG.core.task.Task.set_status">
+    
+  </a>
+  <a name="set_status">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    set_status(self, status, donedate=None):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div class="undocumented">Undocumented</div>
+  </div>
+</div><div class="function">
+  <a name="GTG.core.task.Task.get_status">
+    
+  </a>
+  <a name="get_status">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    get_status(self):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div class="undocumented">Undocumented</div>
+  </div>
+</div><div class="function">
+  <a name="GTG.core.task.Task.get_modified">
+    
+  </a>
+  <a name="get_modified">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    get_modified(self):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div class="undocumented">Undocumented</div>
+  </div>
+</div><div class="function">
+  <a name="GTG.core.task.Task.get_modified_string">
+    
+  </a>
+  <a name="get_modified_string">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    get_modified_string(self):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div class="undocumented">Undocumented</div>
+  </div>
+</div><div class="function">
+  <a name="GTG.core.task.Task.set_modified">
+    
+  </a>
+  <a name="set_modified">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    set_modified(self, modified):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div class="undocumented">Undocumented</div>
+  </div>
+</div><div class="function">
+  <a name="GTG.core.task.Task.set_due_date">
+    
+  </a>
+  <a name="set_due_date">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    set_due_date(self, fulldate):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div class="undocumented">Undocumented</div>
+  </div>
+</div><div class="function">
+  <a name="GTG.core.task.Task.get_due_date">
+    
+  </a>
+  <a name="get_due_date">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    get_due_date(self):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div class="undocumented">Undocumented</div>
+  </div>
+</div><div class="function">
+  <a name="GTG.core.task.Task.set_start_date">
+    
+  </a>
+  <a name="set_start_date">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    set_start_date(self, fulldate):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div class="undocumented">Undocumented</div>
+  </div>
+</div><div class="function">
+  <a name="GTG.core.task.Task.get_start_date">
+    
+  </a>
+  <a name="get_start_date">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    get_start_date(self):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div class="undocumented">Undocumented</div>
+  </div>
+</div><div class="function">
+  <a name="GTG.core.task.Task.set_closed_date">
+    
+  </a>
+  <a name="set_closed_date">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    set_closed_date(self, fulldate):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div class="undocumented">Undocumented</div>
+  </div>
+</div><div class="function">
+  <a name="GTG.core.task.Task.get_closed_date">
+    
+  </a>
+  <a name="get_closed_date">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    get_closed_date(self):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div class="undocumented">Undocumented</div>
+  </div>
+</div><div class="function">
+  <a name="GTG.core.task.Task.get_days_left">
+    
+  </a>
+  <a name="get_days_left">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    get_days_left(self):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div class="undocumented">Undocumented</div>
+  </div>
+</div><div class="function">
+  <a name="GTG.core.task.Task.get_days_late">
+    
+  </a>
+  <a name="get_days_late">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    get_days_late(self):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div class="undocumented">Undocumented</div>
+  </div>
+</div><div class="function">
+  <a name="GTG.core.task.Task.get_text">
+    
+  </a>
+  <a name="get_text">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    get_text(self):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div class="undocumented">Undocumented</div>
+  </div>
+</div><div class="function">
+  <a name="GTG.core.task.Task.get_excerpt">
+    
+  </a>
+  <a name="get_excerpt">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    get_excerpt(self, lines=0, char=0, strip_tags=False, strip_subtasks=True):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div>get_excerpt return the beginning of the content of the task. If 
+&quot;lines&quot; is provided and different than 0, it return the number X 
+of line (or the whole content if it contains less lines) If 
+&quot;char&quot; is provided, it returns the X first chars of content (or 
+the whole contents if it contains less char) If both char and lines are 
+provided, the shorter one is returned. If none of them are provided (or if 
+they are 0), this function is equivalent to get_text with with all XML 
+stripped down. Warning: all markup informations are stripped down. Empty 
+lines are also removed<table class="fieldTable"></table></div>
+  </div>
+</div><div class="function">
+  <a name="GTG.core.task.Task.__strip_content">
+    
+  </a>
+  <a name="__strip_content">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    __strip_content(self, element, strip_subtasks=False):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div class="undocumented">Undocumented</div>
+  </div>
+</div><div class="function">
+  <a name="GTG.core.task.Task.set_text">
+    
+  </a>
+  <a name="set_text">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    set_text(self, texte):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div class="undocumented">Undocumented</div>
+  </div>
+</div><div class="function">
+  <a name="GTG.core.task.Task.new_subtask">
+    
+  </a>
+  <a name="new_subtask">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    new_subtask(self):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div>Add a newly created subtask to this task. Return the task added as a 
+subtask<table class="fieldTable"></table></div>
+  </div>
+</div><div class="function">
+  <a name="GTG.core.task.Task.add_child">
+    
+  </a>
+  <a name="add_child">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    add_child(self, tid):
+    
+  </div>
+  <div class="functionBody">
+    <div class="interfaceinfo">overrides <a href="GTG.tools.liblarch.tree.TreeNode.html#add_child">GTG.tools.liblarch.tree.TreeNode.add_child</a></div>
+    <div>Add a subtask to this task<table class="fieldTable"><tr class="fieldStart"><td class="fieldName">Parameters</td><td class="fieldArg">child</td><td>the added task
+</td></tr></table></div>
+  </div>
+</div><div class="function">
+  <a name="GTG.core.task.Task.remove_child">
+    
+  </a>
+  <a name="remove_child">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    remove_child(self, tid):
+    
+  </div>
+  <div class="functionBody">
+    <div class="interfaceinfo">overrides <a href="GTG.tools.liblarch.tree.TreeNode.html#remove_child">GTG.tools.liblarch.tree.TreeNode.remove_child</a></div>
+    <div>Removed a subtask from the task.<table class="fieldTable"><tr class="fieldStart"><td class="fieldName">Parameters</td><td class="fieldArg">tid</td><td>the ID of the task to remove
+</td></tr></table></div>
+  </div>
+</div><div class="function">
+  <a name="GTG.core.task.Task.get_subtasks">
+    
+  </a>
+  <a name="get_subtasks">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    get_subtasks(self):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div class="undocumented">Undocumented</div>
+  </div>
+</div><div class="function">
+  <a name="GTG.core.task.Task.get_self_and_all_subtasks">
+    
+  </a>
+  <a name="get_self_and_all_subtasks">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    get_self_and_all_subtasks(self, active_only=False, tasks=):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div class="undocumented">Undocumented</div>
+  </div>
+</div><div class="function">
+  <a name="GTG.core.task.Task.get_subtask">
+    
+  </a>
+  <a name="get_subtask">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    get_subtask(self, tid):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div>Return the task corresponding to a given ID.<table class="fieldTable"><tr class="fieldStart"><td class="fieldName">Parameters</td><td class="fieldArg">tid</td><td>the ID of the task to return.
+</td></tr></table></div>
+  </div>
+</div><div class="function">
+  <a name="GTG.core.task.Task.has_parents">
+    
+  </a>
+  <a name="has_parents">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    has_parents(self, tag=None):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div class="undocumented">Undocumented</div>
+  </div>
+</div><div class="function">
+  <a name="GTG.core.task.Task.set_attribute">
+    
+  </a>
+  <a name="set_attribute">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    set_attribute(self, att_name, att_value, namespace=''):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div>Set an arbitrary attribute.<table class="fieldTable"><tr class="fieldStart"><td class="fieldName">Parameters</td><td class="fieldArg">att_name</td><td>The name of the attribute.
+</td></tr><tr><td></td><td class="fieldArg">att_value</td><td>The value of the attribute. Will be converted to a string.
+</td></tr></table></div>
+  </div>
+</div><div class="function">
+  <a name="GTG.core.task.Task.get_attribute">
+    
+  </a>
+  <a name="get_attribute">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    get_attribute(self, att_name, namespace=''):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div>Get the attribute <code>att_name</code>.</p>
+<p>Returns <code>None</code> if there is no attribute matching 
+<code>att_name</code>.<table class="fieldTable"></table></div>
+  </div>
+</div><div class="function">
+  <a name="GTG.core.task.Task.sync">
+    
+  </a>
+  <a name="sync">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    sync(self):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div class="undocumented">Undocumented</div>
+  </div>
+</div><div class="function">
+  <a name="GTG.core.task.Task._modified_update">
+    
+  </a>
+  <a name="_modified_update">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    _modified_update(self):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div>Updates the modified timestamp<table class="fieldTable"></table></div>
+  </div>
+</div><div class="function">
+  <a name="GTG.core.task.Task.get_tags_name">
+    
+  </a>
+  <a name="get_tags_name">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    get_tags_name(self):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div class="undocumented">Undocumented</div>
+  </div>
+</div><div class="function">
+  <a name="GTG.core.task.Task.get_tags">
+    
+  </a>
+  <a name="get_tags">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    get_tags(self):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div class="undocumented">Undocumented</div>
+  </div>
+</div><div class="function">
+  <a name="GTG.core.task.Task.rename_tag">
+    
+  </a>
+  <a name="rename_tag">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    rename_tag(self, old, new):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div class="undocumented">Undocumented</div>
+  </div>
+</div><div class="function">
+  <a name="GTG.core.task.Task.tag_added">
+    
+  </a>
+  <a name="tag_added">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    tag_added(self, tagname):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div>Adds a tag. Does not add '@tag' to the contents. See add_tag<table class="fieldTable"></table></div>
+  </div>
+</div><div class="function">
+  <a name="GTG.core.task.Task.add_tag">
+    
+  </a>
+  <a name="add_tag">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    add_tag(self, tagname):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div>Add a tag to the task and insert '@tag' into the task's content<table class="fieldTable"></table></div>
+  </div>
+</div><div class="function">
+  <a name="GTG.core.task.Task.remove_tag">
+    
+  </a>
+  <a name="remove_tag">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    remove_tag(self, tagname):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div class="undocumented">Undocumented</div>
+  </div>
+</div><div class="function">
+  <a name="GTG.core.task.Task.set_only_these_tags">
+    
+  </a>
+  <a name="set_only_these_tags">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    set_only_these_tags(self, tags_list):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div>Given a list of strings representing tags, it makes sure that this task 
+has those and only those tags.<table class="fieldTable"></table></div>
+  </div>
+</div><div class="function">
+  <a name="GTG.core.task.Task._strip_tag">
+    
+  </a>
+  <a name="_strip_tag">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    _strip_tag(self, text, tagname, newtag=''):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div class="undocumented">Undocumented</div>
+  </div>
+</div><div class="function">
+  <a name="GTG.core.task.Task.has_tags">
+    
+  </a>
+  <a name="has_tags">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    has_tags(self, tag_list=None, notag_only=False):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div class="undocumented">Undocumented</div>
+  </div>
+</div><div class="function">
+  <a name="GTG.core.task.Task.get_color">
+    
+  </a>
+  <a name="get_color">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    get_color(self):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div class="undocumented">Undocumented</div>
+  </div>
+</div><div class="function">
+  <a name="GTG.core.task.Task.__str__">
+    
+  </a>
+  <a name="__str__">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    __str__(self):
+    
+  </div>
+  <div class="functionBody">
+    <div class="interfaceinfo">overrides <a href="GTG.tools.liblarch.tree.TreeNode.html#__str__">GTG.tools.liblarch.tree.TreeNode.__str__</a></div>
+    <div class="undocumented">Undocumented</div>
+  </div>
+</div>
+    <address>
+      <a href="index.html">API Documentation</a> for <a href="http://gtg.fritalk.com/">GTG</a>, generated by <a href="http://codespeak.net/~mwh/pydoctor/">pydoctor</a> at 2011-04-15 17:43:34.
+    </address>
+  </body>
+</html>

@@ -1,0 +1,251 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "DTD/xhtml1-strict.dtd">
+<html>
+  <head>
+    <title>GTG.backends.syncengine.SyncMeme : API documentation</title>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type" />
+    <link href="apidocs.css" type="text/css" rel="stylesheet" />
+    
+    
+  </head>
+  <body>
+    <h1 class="class">G.b.s.SyncMeme(<span title="object">object</span>) : class documentation</h1>
+    <p>
+      <span id="part">Part of <a href="GTG.html">GTG</a>.<a href="GTG.backends.html">backends</a>.<a href="GTG.backends.syncengine.html">syncengine</a></span>
+      
+      <a href="classIndex.html#GTG.backends.syncengine.SyncMeme">View In Hierarchy</a>
+    </p>
+    <div>
+      
+    </div>
+    <div>A SyncMeme is the object storing the data needed to keep track of the 
+state of two objects synchronization. This basic version, that can be 
+expanded as needed by the code using the SyncEngine, just stores the 
+modified date and time of the last synchronization for both objects (local 
+and remote)<table class="fieldTable"></table></div>
+
+    
+    
+    <div id="splitTables">
+      <table class="children sortable" id="id353">
+  
+  
+<tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.backends.syncengine.SyncMeme.html#__init__">__init__</a></td>
+    <td><span>Creates a new SyncMeme, updating the modified times for both the</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.backends.syncengine.SyncMeme.html#set_local_last_modified">set_local_last_modified</a></td>
+    <td><span>Setter function for the local object modified datetime.</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.backends.syncengine.SyncMeme.html#get_local_last_modified">get_local_last_modified</a></td>
+    <td><span>Getter function for the local object modified datetime.</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.backends.syncengine.SyncMeme.html#set_remote_last_modified">set_remote_last_modified</a></td>
+    <td><span>Setter function for the remote object modified datetime.</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.backends.syncengine.SyncMeme.html#get_remote_last_modified">get_remote_last_modified</a></td>
+    <td><span>Getter function for the remote object modified datetime.</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.backends.syncengine.SyncMeme.html#which_is_newest">which_is_newest</a></td>
+    <td><span>Given the updated modified time for both the local and the remote</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.backends.syncengine.SyncMeme.html#get_origin">get_origin</a></td>
+    <td><span>Returns the name of the source that firstly presented the object</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.backends.syncengine.SyncMeme.html#set_origin">set_origin</a></td>
+    <td><span>Sets the source that presented the object for the first time. This</span></td>
+  </tr>
+  
+</table>
+      
+      
+    </div>
+    
+    
+    
+
+    <div class="function">
+  <a name="GTG.backends.syncengine.SyncMeme.__init__">
+    
+  </a>
+  <a name="__init__">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    __init__(self, local_modified=None, remote_modified=None, origin=None):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div>Creates a new SyncMeme, updating the modified times for both the local 
+and remote objects, and sets the given origin. If any of the parameters is 
+set to None, it's ignored.<table class="fieldTable"><tr class="fieldStart"><td class="fieldName">Parameters</td><td class="fieldArg">local_modified</td><td>the modified time for the local object
+</td></tr><tr><td></td><td class="fieldArg">remote_modified</td><td>the modified time for the remote object
+</td></tr><tr><td></td><td class="fieldArg">origin</td><td>an object that identifies whether the local or the remote is the original 
+object, the other one being a copy.
+</td></tr></table></div>
+  </div>
+</div><div class="function">
+  <a name="GTG.backends.syncengine.SyncMeme.set_local_last_modified">
+    
+  </a>
+  <a name="set_local_last_modified">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    set_local_last_modified(self, modified_datetime):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div>Setter function for the local object modified datetime.<table class="fieldTable"><tr class="fieldStart"><td class="fieldName">Parameters</td><td class="fieldArg">modified_datetime</td><td>the local object modified datetime
+</td></tr></table></div>
+  </div>
+</div><div class="function">
+  <a name="GTG.backends.syncengine.SyncMeme.get_local_last_modified">
+    
+  </a>
+  <a name="get_local_last_modified">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    get_local_last_modified(self):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div>Getter function for the local object modified datetime.<table class="fieldTable"></table></div>
+  </div>
+</div><div class="function">
+  <a name="GTG.backends.syncengine.SyncMeme.set_remote_last_modified">
+    
+  </a>
+  <a name="set_remote_last_modified">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    set_remote_last_modified(self, modified_datetime):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div>Setter function for the remote object modified datetime.<table class="fieldTable"><tr class="fieldStart"><td class="fieldName">Parameters</td><td class="fieldArg">modified_datetime</td><td>the remote object modified datetime
+</td></tr></table></div>
+  </div>
+</div><div class="function">
+  <a name="GTG.backends.syncengine.SyncMeme.get_remote_last_modified">
+    
+  </a>
+  <a name="get_remote_last_modified">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    get_remote_last_modified(self):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div>Getter function for the remote object modified datetime.<table class="fieldTable"></table></div>
+  </div>
+</div><div class="function">
+  <a name="GTG.backends.syncengine.SyncMeme.which_is_newest">
+    
+  </a>
+  <a name="which_is_newest">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    which_is_newest(self, local_modified, remote_modified):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div>Given the updated modified time for both the local and the remote 
+objects, it checks them against the stored modified times and then against 
+each other.<table class="fieldTable"><tr class="fieldStart"><td class="fieldName">Returns</td><td colspan="2">&quot;local&quot;- if the local object has been modified and its the newest
+&quot;remote&quot; - the same for the remote object None - if no object 
+modified time is newer than the stored one (the objects have not been 
+modified)
+</td></tr></table></div>
+  </div>
+</div><div class="function">
+  <a name="GTG.backends.syncengine.SyncMeme.get_origin">
+    
+  </a>
+  <a name="get_origin">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    get_origin(self):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div>Returns the name of the source that firstly presented the object<table class="fieldTable"></table></div>
+  </div>
+</div><div class="function">
+  <a name="GTG.backends.syncengine.SyncMeme.set_origin">
+    
+  </a>
+  <a name="set_origin">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    set_origin(self, origin):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div>Sets the source that presented the object for the first time. This 
+source holds the original object, while the other holds the copy. This can 
+be useful in the case of &quot;lost syncability&quot; (see the SyncEngine 
+for an explaination).<table class="fieldTable"><tr class="fieldStart"><td class="fieldName">Parameters</td><td class="fieldArg">origin</td><td>object representing the source
+</td></tr></table></div>
+  </div>
+</div>
+    <address>
+      <a href="index.html">API Documentation</a> for <a href="http://gtg.fritalk.com/">GTG</a>, generated by <a href="http://codespeak.net/~mwh/pydoctor/">pydoctor</a> at 2011-05-02 21:27:37.
+    </address>
+  </body>
+</html>

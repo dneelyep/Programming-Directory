@@ -1,0 +1,7 @@
+<?php //Using the foreach...as loop on an associative array
+$paper = array('copier' = "Copier & Multipurpose",
+			   'inkjet' = "Inkjet Printer",
+			   'laser' = "Laser Printer",
+			   'photo' = "Photographic Paper")
+)
+?>

@@ -1,0 +1,5 @@
+/* Write a function that takes two values a and b, then returns
+   the value of a * b (that is, a times b.) */
+int main ()
+{
+}

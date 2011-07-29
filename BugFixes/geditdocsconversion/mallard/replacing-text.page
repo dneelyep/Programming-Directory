@@ -1,0 +1,10 @@
+<page xmlns="http://projectmallard.org/1.0/"
+      type="topic"
+      id="replacing-text">
+
+  <info>
+    <link type="guide" xref="index#find-replace"/>
+  </info>
+
+  <title>Replacing Text</title>
+</page>

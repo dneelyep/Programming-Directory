@@ -1,0 +1,488 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "DTD/xhtml1-strict.dtd">
+<html>
+  <head>
+    <title>GTG.backends.tweepy.oauth.OAuthRequest : API documentation</title>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type" />
+    <link href="apidocs.css" type="text/css" rel="stylesheet" />
+    
+    
+  </head>
+  <body>
+    <h1 class="class">G.b.t.o.OAuthRequest(<span title="object">object</span>) : class documentation</h1>
+    <p>
+      <span id="part">Part of <a href="GTG.html">GTG</a>.<a href="GTG.backends.html">backends</a>.<a href="GTG.backends.tweepy.html">tweepy</a>.<a href="GTG.backends.tweepy.oauth.html">oauth</a></span>
+      
+      <a href="classIndex.html#GTG.backends.tweepy.oauth.OAuthRequest">View In Hierarchy</a>
+    </p>
+    <div>
+      
+    </div>
+    <div><p>OAuthRequest represents the request and can be serialized.</p>
+<p>OAuth parameters:</p>
+<ul>
+  <li>
+    oauth_consumer_key
+  </li>
+  <li>
+    oauth_token
+  </li>
+  <li>
+    oauth_signature_method
+  </li>
+  <li>
+    oauth_signature
+  </li>
+  <li>
+    oauth_timestamp
+  </li>
+  <li>
+    oauth_nonce
+  </li>
+  <li>
+    oauth_version
+  </li>
+  <li>
+    oauth_verifier ... any additional parameters, as defined by the Service
+    Provider.
+  </li>
+</ul>
+<table class="fieldTable"></table></div>
+
+    
+    
+    <div id="splitTables">
+      <table class="children sortable" id="id316">
+  
+  
+<tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.backends.tweepy.oauth.OAuthRequest.html#__init__">__init__</a></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.backends.tweepy.oauth.OAuthRequest.html#set_parameter">set_parameter</a></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.backends.tweepy.oauth.OAuthRequest.html#get_parameter">get_parameter</a></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.backends.tweepy.oauth.OAuthRequest.html#get_nonoauth_parameters">get_nonoauth_parameters</a></td>
+    <td><span>Get any non-OAuth parameters.</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.backends.tweepy.oauth.OAuthRequest.html#to_header">to_header</a></td>
+    <td><span>Serialize as a header for an HTTPAuth request.</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.backends.tweepy.oauth.OAuthRequest.html#to_postdata">to_postdata</a></td>
+    <td><span>Serialize as post data for a POST request.</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.backends.tweepy.oauth.OAuthRequest.html#to_url">to_url</a></td>
+    <td><span>Serialize as a URL for a GET request.</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.backends.tweepy.oauth.OAuthRequest.html#get_normalized_parameters">get_normalized_parameters</a></td>
+    <td><span>Return a string that contains the parameters that must be signed.</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.backends.tweepy.oauth.OAuthRequest.html#get_normalized_http_method">get_normalized_http_method</a></td>
+    <td><span>Uppercases the http method.</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.backends.tweepy.oauth.OAuthRequest.html#get_normalized_http_url">get_normalized_http_url</a></td>
+    <td><span>Parses the URL and rebuilds it to be scheme://host/path.</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.backends.tweepy.oauth.OAuthRequest.html#sign_request">sign_request</a></td>
+    <td><span>Set the signature parameter to the result of build_signature.</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.backends.tweepy.oauth.OAuthRequest.html#build_signature">build_signature</a></td>
+    <td><span>Calls the build signature method within the signature method.</span></td>
+  </tr><tr class="staticmethod">
+    
+    
+    <td>Static Method</td>
+    <td><a href="GTG.backends.tweepy.oauth.OAuthRequest.html#from_request">from_request</a></td>
+    <td><span>Combines multiple parameter sources.</span></td>
+  </tr><tr class="staticmethod">
+    
+    
+    <td>Static Method</td>
+    <td><a href="GTG.backends.tweepy.oauth.OAuthRequest.html#from_consumer_and_token">from_consumer_and_token</a></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="staticmethod">
+    
+    
+    <td>Static Method</td>
+    <td><a href="GTG.backends.tweepy.oauth.OAuthRequest.html#from_token_and_callback">from_token_and_callback</a></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="method private">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.backends.tweepy.oauth.OAuthRequest.html#_get_timestamp_nonce">_get_timestamp_nonce</a></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="staticmethod private">
+    
+    
+    <td>Static Method</td>
+    <td><a href="GTG.backends.tweepy.oauth.OAuthRequest.html#_split_header">_split_header</a></td>
+    <td><span>Turn Authorization: header into parameters.</span></td>
+  </tr><tr class="staticmethod private">
+    
+    
+    <td>Static Method</td>
+    <td><a href="GTG.backends.tweepy.oauth.OAuthRequest.html#_split_url_string">_split_url_string</a></td>
+    <td><span>Turn URL string into parameters.</span></td>
+  </tr>
+  
+</table>
+      
+      
+    </div>
+    
+    
+    
+
+    <div class="function">
+  <a name="GTG.backends.tweepy.oauth.OAuthRequest.__init__">
+    
+  </a>
+  <a name="__init__">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    __init__(self, http_method=HTTP_METHOD, http_url=None, parameters=None):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div class="undocumented">Undocumented</div>
+  </div>
+</div><div class="function">
+  <a name="GTG.backends.tweepy.oauth.OAuthRequest.set_parameter">
+    
+  </a>
+  <a name="set_parameter">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    set_parameter(self, parameter, value):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div class="undocumented">Undocumented</div>
+  </div>
+</div><div class="function">
+  <a name="GTG.backends.tweepy.oauth.OAuthRequest.get_parameter">
+    
+  </a>
+  <a name="get_parameter">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    get_parameter(self, parameter):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div class="undocumented">Undocumented</div>
+  </div>
+</div><div class="function">
+  <a name="GTG.backends.tweepy.oauth.OAuthRequest._get_timestamp_nonce">
+    
+  </a>
+  <a name="_get_timestamp_nonce">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    _get_timestamp_nonce(self):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div class="undocumented">Undocumented</div>
+  </div>
+</div><div class="function">
+  <a name="GTG.backends.tweepy.oauth.OAuthRequest.get_nonoauth_parameters">
+    
+  </a>
+  <a name="get_nonoauth_parameters">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    get_nonoauth_parameters(self):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div>Get any non-OAuth parameters.<table class="fieldTable"></table></div>
+  </div>
+</div><div class="function">
+  <a name="GTG.backends.tweepy.oauth.OAuthRequest.to_header">
+    
+  </a>
+  <a name="to_header">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    to_header(self, realm=''):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div>Serialize as a header for an HTTPAuth request.<table class="fieldTable"></table></div>
+  </div>
+</div><div class="function">
+  <a name="GTG.backends.tweepy.oauth.OAuthRequest.to_postdata">
+    
+  </a>
+  <a name="to_postdata">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    to_postdata(self):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div>Serialize as post data for a POST request.<table class="fieldTable"></table></div>
+  </div>
+</div><div class="function">
+  <a name="GTG.backends.tweepy.oauth.OAuthRequest.to_url">
+    
+  </a>
+  <a name="to_url">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    to_url(self):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div>Serialize as a URL for a GET request.<table class="fieldTable"></table></div>
+  </div>
+</div><div class="function">
+  <a name="GTG.backends.tweepy.oauth.OAuthRequest.get_normalized_parameters">
+    
+  </a>
+  <a name="get_normalized_parameters">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    get_normalized_parameters(self):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div>Return a string that contains the parameters that must be signed.<table class="fieldTable"></table></div>
+  </div>
+</div><div class="function">
+  <a name="GTG.backends.tweepy.oauth.OAuthRequest.get_normalized_http_method">
+    
+  </a>
+  <a name="get_normalized_http_method">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    get_normalized_http_method(self):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div>Uppercases the http method.<table class="fieldTable"></table></div>
+  </div>
+</div><div class="function">
+  <a name="GTG.backends.tweepy.oauth.OAuthRequest.get_normalized_http_url">
+    
+  </a>
+  <a name="get_normalized_http_url">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    get_normalized_http_url(self):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div>Parses the URL and rebuilds it to be scheme://host/path.<table class="fieldTable"></table></div>
+  </div>
+</div><div class="function">
+  <a name="GTG.backends.tweepy.oauth.OAuthRequest.sign_request">
+    
+  </a>
+  <a name="sign_request">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    sign_request(self, signature_method, consumer, token):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div>Set the signature parameter to the result of build_signature.<table class="fieldTable"></table></div>
+  </div>
+</div><div class="function">
+  <a name="GTG.backends.tweepy.oauth.OAuthRequest.build_signature">
+    
+  </a>
+  <a name="build_signature">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    build_signature(self, signature_method, consumer, token):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div>Calls the build signature method within the signature method.<table class="fieldTable"></table></div>
+  </div>
+</div><div class="function">
+  <a name="GTG.backends.tweepy.oauth.OAuthRequest.from_request">
+    
+  </a>
+  <a name="from_request">
+    
+  </a>
+  <div class="functionHeader">
+    @staticmethod<br />
+    def
+    from_request(http_method, http_url, headers=None, parameters=None, query_string=None):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div>Combines multiple parameter sources.<table class="fieldTable"></table></div>
+  </div>
+</div><div class="function">
+  <a name="GTG.backends.tweepy.oauth.OAuthRequest.from_consumer_and_token">
+    
+  </a>
+  <a name="from_consumer_and_token">
+    
+  </a>
+  <div class="functionHeader">
+    @staticmethod<br />
+    def
+    from_consumer_and_token(oauth_consumer, token=None, callback=None, verifier=None, http_method=HTTP_METHOD, http_url=None, parameters=None):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div class="undocumented">Undocumented</div>
+  </div>
+</div><div class="function">
+  <a name="GTG.backends.tweepy.oauth.OAuthRequest.from_token_and_callback">
+    
+  </a>
+  <a name="from_token_and_callback">
+    
+  </a>
+  <div class="functionHeader">
+    @staticmethod<br />
+    def
+    from_token_and_callback(token, callback=None, http_method=HTTP_METHOD, http_url=None, parameters=None):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div class="undocumented">Undocumented</div>
+  </div>
+</div><div class="function">
+  <a name="GTG.backends.tweepy.oauth.OAuthRequest._split_header">
+    
+  </a>
+  <a name="_split_header">
+    
+  </a>
+  <div class="functionHeader">
+    @staticmethod<br />
+    def
+    _split_header(header):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div>Turn Authorization: header into parameters.<table class="fieldTable"></table></div>
+  </div>
+</div><div class="function">
+  <a name="GTG.backends.tweepy.oauth.OAuthRequest._split_url_string">
+    
+  </a>
+  <a name="_split_url_string">
+    
+  </a>
+  <div class="functionHeader">
+    @staticmethod<br />
+    def
+    _split_url_string(param_str):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div>Turn URL string into parameters.<table class="fieldTable"></table></div>
+  </div>
+</div>
+    <address>
+      <a href="index.html">API Documentation</a> for <a href="http://gtg.fritalk.com/">GTG</a>, generated by <a href="http://codespeak.net/~mwh/pydoctor/">pydoctor</a> at 2011-05-02 21:27:37.
+    </address>
+  </body>
+</html>

@@ -1,0 +1,581 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "DTD/xhtml1-strict.dtd">
+<html>
+  <head>
+    <title>GTG.backends.backend_rtm.RTMTask : API documentation</title>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type" />
+    <link href="apidocs.css" type="text/css" rel="stylesheet" />
+    
+    
+  </head>
+  <body>
+    <h1 class="class">G.b.b.RTMTask(<span title="object">object</span>) : class documentation</h1>
+    <p>
+      <span id="part">Part of <a href="GTG.html">GTG</a>.<a href="GTG.backends.html">backends</a>.<a href="GTG.backends.backend_rtm.html">backend_rtm</a></span>
+      
+      <a href="classIndex.html#GTG.backends.backend_rtm.RTMTask">View In Hierarchy</a>
+    </p>
+    <div>
+      
+    </div>
+    <pre>A proxy object that encapsulates a RTM task, giving an easier API to access
+and modify its attributes.
+This backend already uses a library to interact with RTM, but that is just a
+thin proxy for HTML gets and posts.
+The meaning of all "special words"
+    http://www.rememberthemilk.com/services/api/tasks.rtm</pre>
+
+    
+    
+    <div id="splitTables">
+      <table class="children sortable" id="id248">
+  
+  
+<tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.backends.backend_rtm.RTMTask.html#__init__">__init__</a></td>
+    <td><span>sets up the various parameters needed to interact with a task.</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.backends.backend_rtm.RTMTask.html#get_title">get_title</a></td>
+    <td><span>Returns the title of the task, if any</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.backends.backend_rtm.RTMTask.html#set_title">set_title</a></td>
+    <td><span>Sets the task title</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.backends.backend_rtm.RTMTask.html#get_id">get_id</a></td>
+    <td><span>Return the task id. The taskseries id is *different*</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.backends.backend_rtm.RTMTask.html#get_status">get_status</a></td>
+    <td><span>Returns the task status, in GTG terminology</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.backends.backend_rtm.RTMTask.html#set_status">set_status</a></td>
+    <td><span>Sets the task status, in GTG terminology</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.backends.backend_rtm.RTMTask.html#get_tags">get_tags</a></td>
+    <td><span>Returns the task tags</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.backends.backend_rtm.RTMTask.html#set_tags">set_tags</a></td>
+    <td><span>Sets a new set of tags to a task. Old tags are deleted.</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.backends.backend_rtm.RTMTask.html#get_text">get_text</a></td>
+    <td><span>Gets the content of RTM notes, aggregated in a single string</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.backends.backend_rtm.RTMTask.html#set_text">set_text</a></td>
+    <td><span>deletes all the old notes in a task and sets a single note with the</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.backends.backend_rtm.RTMTask.html#get_due_date">get_due_date</a></td>
+    <td><span>Gets the task due date</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.backends.backend_rtm.RTMTask.html#set_due_date">set_due_date</a></td>
+    <td><span>Sets the task due date</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.backends.backend_rtm.RTMTask.html#get_modified">get_modified</a></td>
+    <td><span>Gets the task modified time, in local time</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.backends.backend_rtm.RTMTask.html#delete">delete</a></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.backends.backend_rtm.RTMTask.html#__str__">__str__</a></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="method private">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.backends.backend_rtm.RTMTask.html#__getattr_the_rtm_way">__getattr_the_rtm_way</a></td>
+    <td><span>RTM, to compress the XML file they send to you, cuts out all the</span></td>
+  </tr><tr class="method private">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.backends.backend_rtm.RTMTask.html#__tz_utc_to_local">__tz_utc_to_local</a></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="method private">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.backends.backend_rtm.RTMTask.html#__tz_local_to_utc">__tz_local_to_utc</a></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="method private">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.backends.backend_rtm.RTMTask.html#__time_rtm_to_datetime">__time_rtm_to_datetime</a></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="method private">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.backends.backend_rtm.RTMTask.html#__time_rtm_to_date">__time_rtm_to_date</a></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="method private">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.backends.backend_rtm.RTMTask.html#__time_datetime_to_rtm">__time_datetime_to_rtm</a></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="method private">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.backends.backend_rtm.RTMTask.html#__time_date_to_rtm">__time_date_to_rtm</a></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr>
+  
+</table>
+      
+      
+    </div>
+    
+    
+    
+
+    <div class="function">
+  <a name="GTG.backends.backend_rtm.RTMTask.__init__">
+    
+  </a>
+  <a name="__init__">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    __init__(self, rtm_task, rtm_taskseries, rtm_list, rtm, timeline):
+    
+  </div>
+  <div class="functionBody">
+    
+    <pre>sets up the various parameters needed to interact with a task.
+
+ @param task: the task object given by the underlying library
+ @param rtm_list: the rtm list the task resides in.
+ @param rtm_taskseries: all the tasks are encapsulated in a taskseries
+                       object. From RTM website:
+                       "A task series is a grouping of tasks generated
+                       by a recurrence pattern (more specifically, a
+                       recurrence pattern of type every – an after type
+                       recurrence generates a new task series for every
+                       occurrence). Task series' share common
+                       properties such as:
+                         Name.
+                         Recurrence pattern.
+                         Tags.
+                         Notes.
+                         Priority."
+@param rtm: a handle of the rtm object, to be able to speak with rtm.
+            Authentication should have already been done.
+@param timeline: a "timeline" is a series of operations rtm can undo in
+                 bulk. We are free of requesting new timelines as we
+                 please, with the obvious drawback of being slower.</pre>
+  </div>
+</div><div class="function">
+  <a name="GTG.backends.backend_rtm.RTMTask.get_title">
+    
+  </a>
+  <a name="get_title">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    get_title(self):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div>Returns the title of the task, if any<table class="fieldTable"></table></div>
+  </div>
+</div><div class="function">
+  <a name="GTG.backends.backend_rtm.RTMTask.set_title">
+    
+  </a>
+  <a name="set_title">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    set_title(self, title, transaction_ids=):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div>Sets the task title<table class="fieldTable"></table></div>
+  </div>
+</div><div class="function">
+  <a name="GTG.backends.backend_rtm.RTMTask.get_id">
+    
+  </a>
+  <a name="get_id">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    get_id(self):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div>Return the task id. The taskseries id is *different*<table class="fieldTable"></table></div>
+  </div>
+</div><div class="function">
+  <a name="GTG.backends.backend_rtm.RTMTask.get_status">
+    
+  </a>
+  <a name="get_status">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    get_status(self):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div>Returns the task status, in GTG terminology<table class="fieldTable"></table></div>
+  </div>
+</div><div class="function">
+  <a name="GTG.backends.backend_rtm.RTMTask.set_status">
+    
+  </a>
+  <a name="set_status">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    set_status(self, gtg_status, transaction_ids=):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div>Sets the task status, in GTG terminology<table class="fieldTable"></table></div>
+  </div>
+</div><div class="function">
+  <a name="GTG.backends.backend_rtm.RTMTask.get_tags">
+    
+  </a>
+  <a name="get_tags">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    get_tags(self):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div>Returns the task tags<table class="fieldTable"></table></div>
+  </div>
+</div><div class="function">
+  <a name="GTG.backends.backend_rtm.RTMTask.__getattr_the_rtm_way">
+    
+  </a>
+  <a name="__getattr_the_rtm_way">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    __getattr_the_rtm_way(self, an_object, attribute):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div>RTM, to compress the XML file they send to you, cuts out all the 
+unnecessary stuff. Because of that, getting an attribute from an object 
+must check if one of those optimizations has been used. This function 
+always returns a list wrapping the objects found (if any).<table class="fieldTable"></table></div>
+  </div>
+</div><div class="function">
+  <a name="GTG.backends.backend_rtm.RTMTask.set_tags">
+    
+  </a>
+  <a name="set_tags">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    set_tags(self, tags, transaction_ids=):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div>Sets a new set of tags to a task. Old tags are deleted.<table class="fieldTable"></table></div>
+  </div>
+</div><div class="function">
+  <a name="GTG.backends.backend_rtm.RTMTask.get_text">
+    
+  </a>
+  <a name="get_text">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    get_text(self):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div>Gets the content of RTM notes, aggregated in a single string<table class="fieldTable"></table></div>
+  </div>
+</div><div class="function">
+  <a name="GTG.backends.backend_rtm.RTMTask.set_text">
+    
+  </a>
+  <a name="set_text">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    set_text(self, text, transaction_ids=):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div>deletes all the old notes in a task and sets a single note with the 
+given text<table class="fieldTable"></table></div>
+  </div>
+</div><div class="function">
+  <a name="GTG.backends.backend_rtm.RTMTask.get_due_date">
+    
+  </a>
+  <a name="get_due_date">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    get_due_date(self):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div>Gets the task due date<table class="fieldTable"></table></div>
+  </div>
+</div><div class="function">
+  <a name="GTG.backends.backend_rtm.RTMTask.set_due_date">
+    
+  </a>
+  <a name="set_due_date">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    set_due_date(self, due, transaction_ids=):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div>Sets the task due date<table class="fieldTable"></table></div>
+  </div>
+</div><div class="function">
+  <a name="GTG.backends.backend_rtm.RTMTask.get_modified">
+    
+  </a>
+  <a name="get_modified">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    get_modified(self):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div>Gets the task modified time, in local time<table class="fieldTable"></table></div>
+  </div>
+</div><div class="function">
+  <a name="GTG.backends.backend_rtm.RTMTask.delete">
+    
+  </a>
+  <a name="delete">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    delete(self):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div class="undocumented">Undocumented</div>
+  </div>
+</div><div class="function">
+  <a name="GTG.backends.backend_rtm.RTMTask.__tz_utc_to_local">
+    
+  </a>
+  <a name="__tz_utc_to_local">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    __tz_utc_to_local(self, dt):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div class="undocumented">Undocumented</div>
+  </div>
+</div><div class="function">
+  <a name="GTG.backends.backend_rtm.RTMTask.__tz_local_to_utc">
+    
+  </a>
+  <a name="__tz_local_to_utc">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    __tz_local_to_utc(self, dt):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div class="undocumented">Undocumented</div>
+  </div>
+</div><div class="function">
+  <a name="GTG.backends.backend_rtm.RTMTask.__time_rtm_to_datetime">
+    
+  </a>
+  <a name="__time_rtm_to_datetime">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    __time_rtm_to_datetime(self, string):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div class="undocumented">Undocumented</div>
+  </div>
+</div><div class="function">
+  <a name="GTG.backends.backend_rtm.RTMTask.__time_rtm_to_date">
+    
+  </a>
+  <a name="__time_rtm_to_date">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    __time_rtm_to_date(self, string):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div class="undocumented">Undocumented</div>
+  </div>
+</div><div class="function">
+  <a name="GTG.backends.backend_rtm.RTMTask.__time_datetime_to_rtm">
+    
+  </a>
+  <a name="__time_datetime_to_rtm">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    __time_datetime_to_rtm(self, timeobject):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div class="undocumented">Undocumented</div>
+  </div>
+</div><div class="function">
+  <a name="GTG.backends.backend_rtm.RTMTask.__time_date_to_rtm">
+    
+  </a>
+  <a name="__time_date_to_rtm">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    __time_date_to_rtm(self, timeobject):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div class="undocumented">Undocumented</div>
+  </div>
+</div><div class="function">
+  <a name="GTG.backends.backend_rtm.RTMTask.__str__">
+    
+  </a>
+  <a name="__str__">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    __str__(self):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div class="undocumented">Undocumented</div>
+  </div>
+</div>
+    <address>
+      <a href="index.html">API Documentation</a> for <a href="http://gtg.fritalk.com/">GTG</a>, generated by <a href="http://codespeak.net/~mwh/pydoctor/">pydoctor</a> at 2011-05-02 21:27:37.
+    </address>
+  </body>
+</html>

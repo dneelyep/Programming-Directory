@@ -1,0 +1,8 @@
+<?php // Making a full name print correctly (fixing user errors)
+echo fix_names("WILLIAM", "henry", "gatES");
+
+function fix_names($n1, $n2, $n3)
+{
+	
+}
+?>

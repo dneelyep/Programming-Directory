@@ -1,0 +1,226 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "DTD/xhtml1-strict.dtd">
+<html>
+  <head>
+    <title>GTG.gtk.crashhandler : API documentation</title>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type" />
+    <link href="apidocs.css" type="text/css" rel="stylesheet" />
+    
+    
+  </head>
+  <body>
+    <h1 class="module">G.g.crashhandler : module documentation</h1>
+    <p>
+      <span id="part">Part of <a href="GTG.html">GTG</a>.<a href="GTG.gtk.html">gtk</a></span>
+      
+      
+    </p>
+    <div>
+      
+    </div>
+    <div>GTK except hook for your applications. To use, simply import this module
+and call gtkcrashhandler.initialize(). Import this module before calling 
+gtk.main().</p>
+<p>If gtkcrashhandler cannot import gtk, pygtk, pango or gobject, 
+gtkcrashhandler will print a warning and use the default excepthook.</p>
+<p>If you're using multiple threads, use gtkcrashhandler_thread 
+decorator.<table class="fieldTable"></table></div>
+
+    
+    
+    <div id="splitTables">
+      <table class="children sortable" id="id5">
+  
+  
+<tr class="function">
+    
+    
+    <td>Function</td>
+    <td><a href="GTG.gtk.crashhandler.html#initialize">initialize</a></td>
+    <td><span>Initialize the except hook built on GTK.</span></td>
+  </tr><tr class="function">
+    
+    
+    <td>Function</td>
+    <td><a href="GTG.gtk.crashhandler.html#show_error_window">show_error_window</a></td>
+    <td><span>Displays an error dialog, and returns the response ID.</span></td>
+  </tr><tr class="function">
+    
+    
+    <td>Function</td>
+    <td><a href="GTG.gtk.crashhandler.html#on_expanded">on_expanded</a></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="function">
+    
+    
+    <td>Function</td>
+    <td><a href="GTG.gtk.crashhandler.html#gtkcrashhandler_thread">gtkcrashhandler_thread</a></td>
+    <td><span>gtkcrashhandler_thread is a decorator for the run() method of</span></td>
+  </tr><tr class="class">
+    
+    
+    <td>Class</td>
+    <td><a href="GTG.gtk.crashhandler.DoNotRunException.html">DoNotRunException</a></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="function">
+    
+    
+    <td>Function</td>
+    <td><a href="GTG.gtk.crashhandler.html#signal_catcher">signal_catcher</a></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="function private">
+    
+    
+    <td>Function</td>
+    <td><a href="GTG.gtk.crashhandler.html#_replacement_excepthook">_replacement_excepthook</a></td>
+    <td><span>This function will replace sys.excepthook.</span></td>
+  </tr>
+  
+</table>
+      
+      
+    </div>
+    
+    
+    
+
+    <div class="function">
+  <a name="GTG.gtk.crashhandler.initialize">
+    
+  </a>
+  <a name="initialize">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    initialize(app_name=None, message=None, use_apport=False):
+    
+  </div>
+  <div class="functionBody">
+    
+    <pre>Initialize the except hook built on GTK.
+
+Keyword arguments:
+app_name   -- The current application's name to be read by humans,
+              untranslated.
+message    -- A message that will be displayed in the error dialog,
+              replacing the default message string. Untranslated.
+              If you don't want a message, pass "".
+use_apport -- If set to True, gtkcrashhandler will override the settings
+              in /etc/default/apport and call apport if possible,
+              silently failing if not.
+              If set to False, the normal behaviour will be executed,
+              which may mean Apport kicking in anyway.</pre>
+  </div>
+</div><div class="function">
+  <a name="GTG.gtk.crashhandler._replacement_excepthook">
+    
+  </a>
+  <a name="_replacement_excepthook">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    _replacement_excepthook(type, value, tracebk, thread=None):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div>This function will replace sys.excepthook.<table class="fieldTable"></table></div>
+  </div>
+</div><div class="function">
+  <a name="GTG.gtk.crashhandler.show_error_window">
+    
+  </a>
+  <a name="show_error_window">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    show_error_window(error_string, add_apport_button=False):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div>Displays an error dialog, and returns the response ID.</p>
+<p>error_string       -- the error's output (usually a traceback) 
+add_apport_button  -- whether to add a 'report with apport' button</p>
+<p>Returns the response ID of the dialog, 1 for ignore, 2 for close and 3 
+for apport.<table class="fieldTable"></table></div>
+  </div>
+</div><div class="function">
+  <a name="GTG.gtk.crashhandler.on_expanded">
+    
+  </a>
+  <a name="on_expanded">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    on_expanded(widget):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div class="undocumented">Undocumented</div>
+  </div>
+</div><div class="function">
+  <a name="GTG.gtk.crashhandler.gtkcrashhandler_thread">
+    
+  </a>
+  <a name="gtkcrashhandler_thread">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    gtkcrashhandler_thread(run):
+    
+  </div>
+  <div class="functionBody">
+    
+    <pre>gtkcrashhandler_thread is a decorator for the run() method of
+threading.Thread.
+
+If you forget to use this decorator, exceptions in threads will be
+printed to standard error output, and GTK's main loop will continue to run.
+
+#Example 1:
+class ExampleThread(threading.Thread):
+    @gtkcrashhandler_thread
+    def run(self):
+        1 / 0 # this error will be caught by gtkcrashhandler
+
+#Example 2:
+def function(arg):
+    arg / 0 # this error will be caught by gtkcrashhandler
+threading.Thread(target=gtkcrashhandler_thread(function), args=(1,)).start()</pre>
+  </div>
+</div><div class="function">
+  <a name="GTG.gtk.crashhandler.signal_catcher">
+    
+  </a>
+  <a name="signal_catcher">
+    
+  </a>
+  <div class="functionHeader">
+    @contextmanager<br />
+    def
+    signal_catcher(callback):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div class="undocumented">Undocumented</div>
+  </div>
+</div>
+    <address>
+      <a href="index.html">API Documentation</a> for <a href="http://gtg.fritalk.com/">GTG</a>, generated by <a href="http://codespeak.net/~mwh/pydoctor/">pydoctor</a> at 2011-05-02 21:27:37.
+    </address>
+  </body>
+</html>

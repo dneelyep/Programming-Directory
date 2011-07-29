@@ -1,0 +1,4 @@
+Notes
+-----
+
+Goal: Create a database of musicians

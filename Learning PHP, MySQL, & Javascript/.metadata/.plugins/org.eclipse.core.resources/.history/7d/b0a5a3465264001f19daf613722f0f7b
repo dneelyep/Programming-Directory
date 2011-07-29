@@ -1,0 +1,11 @@
+<?php /*Defining a property implicitly
+		Here the User class begins with no properties. However, it's not neccessary
+		to declare these properties, because adding new values to the properties
+		implies that these new values should become the default values for the given
+		properties*/
+$object1 = new User();
+$object->name = "Alice";
+echo $object1->name;
+
+class User {}
+?>

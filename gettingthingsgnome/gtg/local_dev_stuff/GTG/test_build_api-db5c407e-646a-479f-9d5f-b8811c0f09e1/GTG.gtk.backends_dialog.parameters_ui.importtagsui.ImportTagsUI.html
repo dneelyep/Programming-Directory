@@ -1,0 +1,220 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "DTD/xhtml1-strict.dtd">
+<html>
+  <head>
+    <title>GTG.gtk.backends_dialog.parameters_ui.importtagsui.ImportTagsUI : API documentation</title>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type" />
+    <link href="apidocs.css" type="text/css" rel="stylesheet" />
+    
+    
+  </head>
+  <body>
+    <h1 class="class">G.g.b.p.i.ImportTagsUI(<span title="gtk.VBox">gtk.VBox</span>) : class documentation</h1>
+    <p>
+      <span id="part">Part of <a href="GTG.html">GTG</a>.<a href="GTG.gtk.html">gtk</a>.<a href="GTG.gtk.backends_dialog.html">backends_dialog</a>.<a href="GTG.gtk.backends_dialog.parameters_ui.html">parameters_ui</a>.<a href="GTG.gtk.backends_dialog.parameters_ui.importtagsui.html">importtagsui</a></span>
+      
+      <a href="classIndex.html#GTG.gtk.backends_dialog.parameters_ui.importtagsui.ImportTagsUI">View In Hierarchy</a>
+    </p>
+    <div>
+      
+    </div>
+    <div>It's a widget displaying a couple of radio buttons, a label and a 
+textbox to let the user change the attached tags (or imported)<table class="fieldTable"></table></div>
+
+    
+    
+    <div id="splitTables">
+      <table class="children sortable" id="id24">
+  
+  
+<tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.gtk.backends_dialog.parameters_ui.importtagsui.ImportTagsUI.html#__init__">__init__</a></td>
+    <td><span>Populates the widgets and refresh the tags to display</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.gtk.backends_dialog.parameters_ui.importtagsui.ImportTagsUI.html#on_changed">on_changed</a></td>
+    <td><span>Signal callback, executed when the user modifies something.</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.gtk.backends_dialog.parameters_ui.importtagsui.ImportTagsUI.html#commit_changes">commit_changes</a></td>
+    <td><span>Saves the changes to the backend parameter</span></td>
+  </tr><tr class="method private">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.gtk.backends_dialog.parameters_ui.importtagsui.ImportTagsUI.html#_populate_gtk">_populate_gtk</a></td>
+    <td><span>Populates the widgets</span></td>
+  </tr><tr class="method private">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.gtk.backends_dialog.parameters_ui.importtagsui.ImportTagsUI.html#_refresh_textbox_state">_refresh_textbox_state</a></td>
+    <td><span>Refreshes the content of the textbox</span></td>
+  </tr><tr class="method private">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.gtk.backends_dialog.parameters_ui.importtagsui.ImportTagsUI.html#_refresh_tags">_refresh_tags</a></td>
+    <td><span>Refreshes the list of tags to display in the textbox, and selects</span></td>
+  </tr><tr class="method private">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.gtk.backends_dialog.parameters_ui.importtagsui.ImportTagsUI.html#_connect_signals">_connect_signals</a></td>
+    <td><span>Connects the gtk signals</span></td>
+  </tr>
+  
+</table>
+      
+      
+    </div>
+    
+    
+    
+
+    <div class="function">
+  <a name="GTG.gtk.backends_dialog.parameters_ui.importtagsui.ImportTagsUI.__init__">
+    
+  </a>
+  <a name="__init__">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    __init__(self, req, backend, width, title, anybox_text, somebox_text, parameter_name):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div>Populates the widgets and refresh the tags to display<table class="fieldTable"><tr class="fieldStart"><td class="fieldName">Parameters</td><td class="fieldArg">req</td><td>a requester
+</td></tr><tr><td></td><td class="fieldArg">backend</td><td>the backend to configure
+</td></tr><tr><td></td><td class="fieldArg">width</td><td>the length of the radio buttons
+</td></tr><tr><td></td><td class="fieldArg">title</td><td>the text for the label describing what this collection of gtk widgets is 
+used for
+</td></tr><tr><td></td><td class="fieldArg">anybox_text</td><td>the text for the &quot;Any tag matches&quot; radio button
+</td></tr><tr><td></td><td class="fieldArg">somebox_text</td><td>the text for the &quot;only this set of tags matches&quot; radio button
+</td></tr><tr><td></td><td class="fieldArg">parameter_name</td><td>the backend parameter this widget should modify
+</td></tr></table></div>
+  </div>
+</div><div class="function">
+  <a name="GTG.gtk.backends_dialog.parameters_ui.importtagsui.ImportTagsUI._populate_gtk">
+    
+  </a>
+  <a name="_populate_gtk">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    _populate_gtk(self, width):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div>Populates the widgets<table class="fieldTable"><tr class="fieldStart"><td class="fieldName">Parameters</td><td class="fieldArg">width</td><td>the length of the radio buttons
+</td></tr></table></div>
+  </div>
+</div><div class="function">
+  <a name="GTG.gtk.backends_dialog.parameters_ui.importtagsui.ImportTagsUI.on_changed">
+    
+  </a>
+  <a name="on_changed">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    on_changed(self, radio, data=None):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div>Signal callback, executed when the user modifies something. Disables the
+backend. The user will re-enable it to confirm the changes (s)he made.<table class="fieldTable"><tr class="fieldStart"><td class="fieldName">Parameters</td><td class="fieldArg">sender</td><td>not used, only here for signal compatibility
+</td></tr><tr><td></td><td class="fieldArg">data</td><td>not used, only here for signal compatibility
+</td></tr></table></div>
+  </div>
+</div><div class="function">
+  <a name="GTG.gtk.backends_dialog.parameters_ui.importtagsui.ImportTagsUI.commit_changes">
+    
+  </a>
+  <a name="commit_changes">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    commit_changes(self):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div>Saves the changes to the backend parameter<table class="fieldTable"></table></div>
+  </div>
+</div><div class="function">
+  <a name="GTG.gtk.backends_dialog.parameters_ui.importtagsui.ImportTagsUI._refresh_textbox_state">
+    
+  </a>
+  <a name="_refresh_textbox_state">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    _refresh_textbox_state(self):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div>Refreshes the content of the textbox<table class="fieldTable"></table></div>
+  </div>
+</div><div class="function">
+  <a name="GTG.gtk.backends_dialog.parameters_ui.importtagsui.ImportTagsUI._refresh_tags">
+    
+  </a>
+  <a name="_refresh_tags">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    _refresh_tags(self):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div>Refreshes the list of tags to display in the textbox, and selects the 
+correct radio button<table class="fieldTable"></table></div>
+  </div>
+</div><div class="function">
+  <a name="GTG.gtk.backends_dialog.parameters_ui.importtagsui.ImportTagsUI._connect_signals">
+    
+  </a>
+  <a name="_connect_signals">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    _connect_signals(self):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div>Connects the gtk signals<table class="fieldTable"></table></div>
+  </div>
+</div>
+    <address>
+      <a href="index.html">API Documentation</a> for <a href="http://gtg.fritalk.com/">GTG</a>, generated by <a href="http://codespeak.net/~mwh/pydoctor/">pydoctor</a> at 2011-05-02 21:27:37.
+    </address>
+  </body>
+</html>

@@ -1,0 +1,383 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "DTD/xhtml1-strict.dtd">
+<html>
+  <head>
+    <title>GTG.backends.backend_gnote.Backend : API documentation</title>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type" />
+    <link href="apidocs.css" type="text/css" rel="stylesheet" />
+    
+    
+  </head>
+  <body>
+    <h1 class="class">G.b.b.Backend(<a href="GTG.backends.generictomboy.GenericTomboy.html">GenericTomboy</a>) : class documentation</h1>
+    <p>
+      <span id="part">Part of <a href="GTG.html">GTG</a>.<a href="GTG.backends.html">backends</a>.<a href="GTG.backends.backend_gnote.html">backend_gnote</a></span>
+      
+      <a href="classIndex.html#GTG.backends.backend_gnote.Backend">View In Hierarchy</a>
+    </p>
+    <div>
+      
+    </div>
+    <div>A simple class that adds some description to the GenericTomboy class. 
+It's done this way since Tomboy and Gnote backends have different 
+descriptions and Dbus addresses but the same backend behind them.<table class="fieldTable"></table></div>
+
+    
+    
+    <div id="splitTables">
+      
+      
+        <p>
+          Inherited from <a href="GTG.backends.generictomboy.GenericTomboy.html">GenericTomboy</a>:
+        </p>
+        <table class="children sortable" id="id272">
+  
+  
+<tr class="basemethod">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.backends.generictomboy.GenericTomboy.html#__init__">__init__</a></td>
+    <td><span>See GenericBackend for an explanation of this function.</span></td>
+  </tr><tr class="basemethod">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.backends.generictomboy.GenericTomboy.html#initialize">initialize</a></td>
+    <td><span>See GenericBackend for an explanation of this function.</span></td>
+  </tr><tr class="basemethod">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.backends.generictomboy.GenericTomboy.html#start_get_tasks">start_get_tasks</a></td>
+    <td><span>See GenericBackend for an explanation of this function.</span></td>
+  </tr><tr class="basemethod">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.backends.generictomboy.GenericTomboy.html#save_state">save_state</a></td>
+    <td><span>Saves the state of the synchronization</span></td>
+  </tr><tr class="basemethod">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.backends.generictomboy.GenericTomboy.html#quit">quit</a></td>
+    <td><span>See GenericBackend for an explanation of this function.</span></td>
+  </tr><tr class="basemethod">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.backends.generictomboy.GenericTomboy.html#on_note_deleted">on_note_deleted</a></td>
+    <td><span>Callback, executed when a tomboy note is deleted.</span></td>
+  </tr><tr class="basemethod">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.backends.generictomboy.GenericTomboy.html#remove_task">remove_task</a></td>
+    <td><span>See GenericBackend for an explanation of this function.</span></td>
+  </tr><tr class="basemethod">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.backends.generictomboy.GenericTomboy.html#set_task">set_task</a></td>
+    <td><span>See GenericBackend for an explanation of this function.</span></td>
+  </tr><tr class="basemethod">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.backends.generictomboy.GenericTomboy.html#on_note_saved">on_note_saved</a></td>
+    <td><span>Callback, executed when a tomboy note is saved by Tomboy itself.</span></td>
+  </tr><tr class="basemethod">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.backends.generictomboy.GenericTomboy.html#get_modified_for_note">get_modified_for_note</a></td>
+    <td><span>Returns the modification time for the given note id.</span></td>
+  </tr><tr class="basemethod">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.backends.generictomboy.GenericTomboy.html#break_relationship">break_relationship</a></td>
+    <td><span>Proxy method for SyncEngine.break_relationship, which also saves the</span></td>
+  </tr><tr class="basemethod">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.backends.generictomboy.GenericTomboy.html#record_relationship">record_relationship</a></td>
+    <td><span>Proxy method for SyncEngine.break_relationship, which also saves the</span></td>
+  </tr><tr class="baseclass">
+    
+    
+    <td>Class</td>
+    <td><a href="GTG.backends.generictomboy.GenericTomboy.TomboyConnection.html">TomboyConnection</a></td>
+    <td><span>TomboyConnection creates a connection to TOMBOY via DBUS and</span></td>
+  </tr><tr class="baseclass">
+    
+    
+    <td>Class</td>
+    <td><a href="GTG.backends.generictomboy.GenericTomboy.DbusWatchdog.html">DbusWatchdog</a></td>
+    <td><span>A simple watchdog to detect stale dbus connections</span></td>
+  </tr><tr class="basemethod private">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.backends.generictomboy.GenericTomboy.html#_exec_lost_syncability">_exec_lost_syncability</a></td>
+    <td><span>Executed when a relationship between tasks loses its syncability</span></td>
+  </tr><tr class="basemethod private">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.backends.generictomboy.GenericTomboy.html#_process_tomboy_note">_process_tomboy_note</a></td>
+    <td><span>Given a tomboy note, finds out if it must be synced to a GTG note 
+and,</span></td>
+  </tr><tr class="basemethod private">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.backends.generictomboy.GenericTomboy.html#_tomboy_note_is_syncable">_tomboy_note_is_syncable</a></td>
+    <td><span>Returns True if this tomboy note should be synced into GTG tasks.</span></td>
+  </tr><tr class="basemethod private">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.backends.generictomboy.GenericTomboy.html#_tomboy_note_exists">_tomboy_note_exists</a></td>
+    <td><span>Returns True if  a tomboy note exists with the given id.</span></td>
+  </tr><tr class="basemethod private">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.backends.generictomboy.GenericTomboy.html#_tomboy_split_title_and_text">_tomboy_split_title_and_text</a></td>
+    <td><span>Tomboy does not have a &quot;getTitle&quot; and &quot;getText&quot; 
+functions to get the</span></td>
+  </tr><tr class="basemethod private">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.backends.generictomboy.GenericTomboy.html#_populate_task">_populate_task</a></td>
+    <td><span>Copies the content of a Tomboy note into a task.</span></td>
+  </tr><tr class="basemethod private">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.backends.generictomboy.GenericTomboy.html#_populate_note">_populate_note</a></td>
+    <td><span>Copies the content of a task into a Tomboy note.</span></td>
+  </tr>
+  
+</table>
+      
+        <p>
+          Inherited from <a href="GTG.backends.genericbackend.GenericBackend.html">GenericBackend</a> (via <a href="GTG.backends.generictomboy.GenericTomboy.html">GenericTomboy</a>):
+        </p>
+        <table class="children sortable" id="id273">
+  
+  
+<tr class="basemethod">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.backends.genericbackend.GenericBackend.html#this_is_the_first_run">this_is_the_first_run</a></td>
+    <td><span>Optional, and almost surely not needed.</span></td>
+  </tr><tr class="basemethod">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.backends.genericbackend.GenericBackend.html#get_attached_tags">get_attached_tags</a></td>
+    <td><span>Returns the list of tags which are handled by this backend</span></td>
+  </tr><tr class="basemethod">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.backends.genericbackend.GenericBackend.html#set_attached_tags">set_attached_tags</a></td>
+    <td><span>Changes the set of attached tags</span></td>
+  </tr><tr class="baseclassmethod">
+    
+    
+    <td>Class Method</td>
+    <td><a href="GTG.backends.genericbackend.GenericBackend.html#get_static_parameters">get_static_parameters</a></td>
+    <td><span>Returns a dictionary of parameters necessary to create a backend.</span></td>
+  </tr><tr class="basemethod">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.backends.genericbackend.GenericBackend.html#get_parameters">get_parameters</a></td>
+    <td><span>Returns a dictionary of the current parameters.</span></td>
+  </tr><tr class="basemethod">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.backends.genericbackend.GenericBackend.html#set_parameter">set_parameter</a></td>
+    <td><span>Change a parameter for this backend</span></td>
+  </tr><tr class="baseclassmethod">
+    
+    
+    <td>Class Method</td>
+    <td><a href="GTG.backends.genericbackend.GenericBackend.html#get_name">get_name</a></td>
+    <td><span>Returns the name of the backend as it should be displayed in the UI</span></td>
+  </tr><tr class="baseclassmethod">
+    
+    
+    <td>Class Method</td>
+    <td><a href="GTG.backends.genericbackend.GenericBackend.html#get_description">get_description</a></td>
+    <td><span>Returns a description of the backend</span></td>
+  </tr><tr class="baseclassmethod">
+    
+    
+    <td>Class Method</td>
+    <td><a href="GTG.backends.genericbackend.GenericBackend.html#get_type">get_type</a></td>
+    <td><span>Returns the backend type(readonly, r/w, import, export)</span></td>
+  </tr><tr class="baseclassmethod">
+    
+    
+    <td>Class Method</td>
+    <td><a href="GTG.backends.genericbackend.GenericBackend.html#get_authors">get_authors</a></td>
+    <td><span>returns the backend author(s)</span></td>
+  </tr><tr class="baseclassmethod">
+    
+    
+    <td>Class Method</td>
+    <td><a href="GTG.backends.genericbackend.GenericBackend.html#cast_param_type_from_string">cast_param_type_from_string</a></td>
+    <td><span>Parameters are saved in a text format, so we have to cast them to 
+the</span></td>
+  </tr><tr class="basemethod">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.backends.genericbackend.GenericBackend.html#cast_param_type_to_string">cast_param_type_to_string</a></td>
+    <td><span>Inverse of cast_param_type_from_string</span></td>
+  </tr><tr class="basemethod">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.backends.genericbackend.GenericBackend.html#get_id">get_id</a></td>
+    <td><span>returns the backends id, used in the datastore for indexing backends</span></td>
+  </tr><tr class="baseclassmethod">
+    
+    
+    <td>Class Method</td>
+    <td><a href="GTG.backends.genericbackend.GenericBackend.html#get_human_default_name">get_human_default_name</a></td>
+    <td><span>returns the user friendly default backend name, without eventual 
+user</span></td>
+  </tr><tr class="basemethod">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.backends.genericbackend.GenericBackend.html#get_human_name">get_human_name</a></td>
+    <td><span>returns the user customized backend name. If the user hasn't</span></td>
+  </tr><tr class="basemethod">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.backends.genericbackend.GenericBackend.html#set_human_name">set_human_name</a></td>
+    <td><span>sets a custom name for the backend</span></td>
+  </tr><tr class="basemethod">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.backends.genericbackend.GenericBackend.html#is_enabled">is_enabled</a></td>
+    <td><span>Returns if the backend is enabled</span></td>
+  </tr><tr class="basemethod">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.backends.genericbackend.GenericBackend.html#is_default">is_default</a></td>
+    <td><span>Returns if the backend is enabled</span></td>
+  </tr><tr class="basemethod">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.backends.genericbackend.GenericBackend.html#is_initialized">is_initialized</a></td>
+    <td><span>Returns if the backend is up and running</span></td>
+  </tr><tr class="basemethod">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.backends.genericbackend.GenericBackend.html#get_parameter_type">get_parameter_type</a></td>
+    <td><span>Given the name of a parameter, returns its type. If the parameter is 
+one</span></td>
+  </tr><tr class="basemethod">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.backends.genericbackend.GenericBackend.html#register_datastore">register_datastore</a></td>
+    <td><span>Setter function to inform the backend about the datastore that's 
+loading</span></td>
+  </tr><tr class="basemethod">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.backends.genericbackend.GenericBackend.html#launch_setting_thread">launch_setting_thread</a></td>
+    <td><span>This function is launched as a separate thread. Its job is to 
+perform</span></td>
+  </tr><tr class="basemethod">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.backends.genericbackend.GenericBackend.html#queue_set_task">queue_set_task</a></td>
+    <td><span>Save the task in the backend. In particular, it just enqueues the</span></td>
+  </tr><tr class="basemethod">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.backends.genericbackend.GenericBackend.html#queue_remove_task">queue_remove_task</a></td>
+    <td><span>Queues task to be removed. In particular, it just enqueues the</span></td>
+  </tr><tr class="basemethod">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.backends.genericbackend.GenericBackend.html#sync">sync</a></td>
+    <td><span>Helper method. Forces the backend to perform all the pending 
+changes.</span></td>
+  </tr><tr class="baseclassmethod private">
+    
+    
+    <td>Class Method</td>
+    <td><a href="GTG.backends.genericbackend.GenericBackend.html#_get_static_parameters">_get_static_parameters</a></td>
+    <td><span>Helper method, used to obtain the full list of the static_parameters</span></td>
+  </tr><tr class="baseclassmethod private">
+    
+    
+    <td>Class Method</td>
+    <td><a href="GTG.backends.genericbackend.GenericBackend.html#_get_from_general_description">_get_from_general_description</a></td>
+    <td><span>Helper method to extract values from cls._general_description.</span></td>
+  </tr><tr class="basemethod private">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.backends.genericbackend.GenericBackend.html#_store_pickled_file">_store_pickled_file</a></td>
+    <td><span>A helper function to save some object in a file.</span></td>
+  </tr><tr class="basemethod private">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.backends.genericbackend.GenericBackend.html#_load_pickled_file">_load_pickled_file</a></td>
+    <td><span>A helper function to load some object from a file.</span></td>
+  </tr><tr class="basemethod private">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.backends.genericbackend.GenericBackend.html#_gtg_task_is_syncable_per_attached_tags">_gtg_task_is_syncable_per_attached_tags</a></td>
+    <td><span>Helper function which checks if the given task satisfies the 
+filtering</span></td>
+  </tr><tr class="basemethod private">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.backends.genericbackend.GenericBackend.html#__try_launch_setting_thread">__try_launch_setting_thread</a></td>
+    <td><span>Helper function to launch the setting thread, if it's not running.</span></td>
+  </tr>
+  
+</table>
+      
+      
+    </div>
+    
+    
+    
+
+    
+    <address>
+      <a href="index.html">API Documentation</a> for <a href="http://gtg.fritalk.com/">GTG</a>, generated by <a href="http://codespeak.net/~mwh/pydoctor/">pydoctor</a> at 2011-04-15 17:43:34.
+    </address>
+  </body>
+</html>

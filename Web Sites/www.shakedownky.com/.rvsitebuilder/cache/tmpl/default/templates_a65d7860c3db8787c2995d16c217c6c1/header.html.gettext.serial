@@ -1,0 +1,6 @@
+a:13:{i:0;s:13:"@import url("";i:1;s:12:"/www/themes/";i:2;s:35:"/sitebuilder/css/style.php?charset=";i:4;s:8:"/themes/";i:6;s:20:"var SGL_JS_WEBROOT="";i:7;s:32:"";
+        var SGL_JS_WINHEIGHT=";i:8;s:30:";
+        var SGL_JS_WINWIDTH=";i:9;s:29:";
+        var SGL_JS_SESSID="";i:10;s:31:"";
+        var SGL_JS_CURRURL="";i:11;s:31:"";
+        var SGL_JS_INDEX = "";i:12;s:11:"sgl.ready("";i:13;s:28:"window.onload = function() {";i:14;s:30:"window.onunload = function() {";}

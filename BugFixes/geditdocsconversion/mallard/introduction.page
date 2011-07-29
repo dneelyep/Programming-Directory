@@ -1,0 +1,20 @@
+<page xmlns="http://projectmallard.org/1.0/"
+      type="topic"
+      id="introduction">
+
+  <info>
+    <link type="guide" xref="index"/>
+  </info>
+
+  <title>Introduction</title>
+
+  <p>Welcome to the Help for gedit! By looking through this document you should be able to:</p>
+
+  <steps>
+    <item><p>Do 1 thing</p></item>
+    <item><p>...and a second thing...</p></item>
+    <item><p>AND ANOTHER!</p></item>
+  </steps>
+
+  <p>HASFUN!</p>
+</page>

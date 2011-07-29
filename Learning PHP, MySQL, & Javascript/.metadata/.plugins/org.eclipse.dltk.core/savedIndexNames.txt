@@ -1,0 +1,2 @@
+/home/daniel/Desktop/Programming/Learning PHP, MySQL, & Javascript/.metadata/.plugins/org.eclipse.dltk.core/4076651304.index
+/home/daniel/Desktop/Programming/Learning PHP, MySQL, & Javascript/.metadata/.plugins/org.eclipse.dltk.core/1556433318.index

@@ -1,0 +1,3 @@
+def print_two_time(value):
+    print value
+    print value

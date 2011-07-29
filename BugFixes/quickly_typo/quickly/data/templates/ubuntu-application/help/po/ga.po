@@ -1,0 +1,2244 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2011-03-31 08:11-0400\n"
+"PO-Revision-Date: 2011-02-16 02:07+0000\n"
+"Last-Translator: Michael Terry <michael.terry@canonical.com>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2011-04-01 04:51+0000\n"
+"X-Generator: Launchpad (build 12559)\n"
+
+#: data/templates/ubuntu-application/help/tutorial.xml:13(firstname)
+msgid "Shane"
+msgstr ""
+
+#: data/templates/ubuntu-application/help/tutorial.xml:14(surname)
+msgid "Fagan"
+msgstr ""
+
+#: data/templates/ubuntu-application/help/tutorial.xml:17(firstname)
+msgid "Rick"
+msgstr ""
+
+#: data/templates/ubuntu-application/help/tutorial.xml:18(surname)
+msgid "Spencer"
+msgstr ""
+
+#: data/templates/ubuntu-application/help/tutorial.xml:20(corpauthor)
+msgid "Canonical ltd"
+msgstr ""
+
+#: data/templates/ubuntu-application/help/tutorial.xml:24(date) data/templates/ubuntu-application/help/tutorial.xml:29(invpartnumber)
+msgid "2010"
+msgstr ""
+
+#: data/templates/ubuntu-application/help/tutorial.xml:0(application) data/templates/ubuntu-application/help/tutorial.xml:1144(application) data/templates/ubuntu-application/help/tutorial.xml:1144(application) data/templates/ubuntu-application/help/tutorial.xml:1147(application)
+msgid "Quickly"
+msgstr ""
+
+#: data/templates/ubuntu-application/help/tutorial.xml:28(productnumber)
+msgid "0.6.1"
+msgstr ""
+
+#: data/templates/ubuntu-application/help/tutorial.xml:30(title)
+msgid "<application>Quickly</application> 0.6.1 User Guide"
+msgstr ""
+
+#: data/templates/ubuntu-application/help/tutorial.xml:35(title)
+msgid "About This Guide"
+msgstr "Maidir leis an treoir"
+
+#: data/templates/ubuntu-application/help/tutorial.xml:36(para)
+msgid ""
+"<application>Quickly</application> is a set of choices about writing apps "
+"for Ubuntu. Out of all the wonderful richness and variety of programming for "
+"Linux, <application>Quickly</application> make some very opinionated choices "
+"about what tools to use, and how to combine them. The criteria for these "
+"choices was to make it easy and fun to write and release Linux applications, "
+"even if it's your first time trying, but also in a way that delivers the "
+"full power and flexibility of the platform. One benefit of these choices, is "
+"that it's also easier to write tools that make it even easier and more fun. "
+"So <application>Quickly</application> is also a set of commands."
+msgstr ""
+
+#: data/templates/ubuntu-application/help/tutorial.xml:39(link) data/templates/ubuntu-application/help/tutorial.xml:45(title)
+msgid "Getting Started"
+msgstr ""
+
+#: data/templates/ubuntu-application/help/tutorial.xml:46(para)
+msgid ""
+"This part 1 of the <application>Quickly</application> tutorial. This part is "
+"will introduce some key <application>Quickly</application> commands, editing "
+"a user interface in Glade, and editing code in Gedit. This part of the "
+"tutorial will familiarize you with these three tools, and how they work "
+"together with python and pygtk so that you can "
+"<application>Quickly</application> build applications."
+msgstr ""
+
+#: data/templates/ubuntu-application/help/tutorial.xml:48(title)
+msgid "Creating a <application>Quickly</application> Project"
+msgstr ""
+
+#: data/templates/ubuntu-application/help/tutorial.xml:48(para)
+msgid ""
+"<placeholder-1/>Creating an empty but working program couldn't be simpler. "
+"First, open a terminal window to type commands into. When it's open, type "
+"the command:"
+msgstr ""
+
+#: data/templates/ubuntu-application/help/tutorial.xml:49(programlisting)
+#, no-wrap
+msgid "quickly create ubuntu-application jotty"
+msgstr ""
+
+#: data/templates/ubuntu-application/help/tutorial.xml:53(para)
+msgid ""
+"This will create a jotty sub directory containing a complete directory tree "
+"and files for an empty python application. The command finishes by running "
+"the newly created empty application."
+msgstr ""
+
+#: data/templates/ubuntu-application/help/tutorial.xml:57(title)
+msgid "Testing the Empty Application"
+msgstr ""
+
+#: data/templates/ubuntu-application/help/tutorial.xml:57(para)
+msgid ""
+"<placeholder-1/> In the window that pops up you have a menubar, text and a "
+"statusbar. Notice that <application>Quickly</application> inferred that the "
+"application title is \"Jotty\". Only a few of menu items do anything in the "
+"empty application, Help-&gt;About, Edit-&gt;Preferences, and File-&gt;Quit."
+msgstr ""
+
+#: data/templates/ubuntu-application/help/tutorial.xml:61(title)
+msgid "Running the Application"
+msgstr ""
+
+#: data/templates/ubuntu-application/help/tutorial.xml:61(para)
+msgid ""
+"<placeholder-1/> Close the application by closing the window or using the "
+"File-&gt;Quit menu item. Since the empty application isn't actually "
+"installed, you can't start the application from the application menu yet. To "
+"start the applicaton, use the terminal to first cd into the new "
+"subdirectory, and then use \"quickly run\" to start the program."
+msgstr ""
+
+#: data/templates/ubuntu-application/help/tutorial.xml:63(programlisting)
+#, no-wrap
+msgid ""
+"\n"
+"cd jotty\n"
+"quickly run\n"
+msgstr ""
+
+#: data/templates/ubuntu-application/help/tutorial.xml:70(title)
+msgid "Editing an Application"
+msgstr ""
+
+#: data/templates/ubuntu-application/help/tutorial.xml:71(title)
+msgid "Edit the User Interface in Glade"
+msgstr ""
+
+#: data/templates/ubuntu-application/help/tutorial.xml:71(para)
+msgid ""
+"<placeholder-1/><application>Quickly</application> programs use Glade to "
+"edit the user interface. Start Glade with \"quickly design\" in order to set "
+"up Glade for editing the empty applicaton. Don't start glade directly, or it "
+"won't load the necessary catalogue files for editing the classes that were "
+"automaticaly generated by <application>Quickly</application>."
+msgstr ""
+
+#: data/templates/ubuntu-application/help/tutorial.xml:73(programlisting) data/templates/ubuntu-application/help/tutorial.xml:128(programlisting)
+#, no-wrap
+msgid "quickly design"
+msgstr ""
+
+#: data/templates/ubuntu-application/help/tutorial.xml:77(para)
+msgid "Glade will open with the project loaded up and ready to edit."
+msgstr ""
+
+#: data/templates/ubuntu-application/help/tutorial.xml:81(para)
+msgid "Use the Projects Menu to choose \"JottytWindow.ui\" for editing."
+msgstr ""
+
+#: data/templates/ubuntu-application/help/tutorial.xml:85(para)
+msgid ""
+"The first thing we want to do is create a text area for typing into. There "
+"are some default Widgets added to the Window already, but we won't need "
+"these so we'll start with deleting them. Click on the label, and press "
+"delete, and it will disappear from the window."
+msgstr ""
+
+#: data/templates/ubuntu-application/help/tutorial.xml:92(para)
+msgid "Do the same with the image widget. This leave us two free slots."
+msgstr ""
+
+#: data/templates/ubuntu-application/help/tutorial.xml:96(para)
+msgid ""
+"We'll use the bottom slot to add a TextView widget for the user to type "
+"into. In the toolbox, click on the TextView widget. Then click in the empty "
+"slot."
+msgstr ""
+
+#: data/templates/ubuntu-application/help/tutorial.xml:100(para)
+msgid ""
+"Make sure you save the file in Glade, or your changes won't save! Then run "
+"the application from the terminal again. The window now has a place where "
+"the user can type."
+msgstr ""
+
+#: data/templates/ubuntu-application/help/tutorial.xml:104(para)
+msgid ""
+"Now we'll add the entry field for the title, and also a label for it. We'll "
+"use the top empty slot for that. First, click on Horizontal Box (HBox) from "
+"the \"Containers\" section of the pallette, and then click on the top slot. "
+"A dialog box will open, tell it that you want two items."
+msgstr ""
+
+#: data/templates/ubuntu-application/help/tutorial.xml:108(para)
+msgid ""
+"The HBox is a container that arranges whatever is in it horizontally. Add a "
+"label to the empty left hand box, and a Text Entry to the right hand one."
+msgstr ""
+
+#: data/templates/ubuntu-application/help/tutorial.xml:112(para)
+msgid ""
+"Before going on, let's clean up the UI just a tad here. Select the new HBox "
+"from the list on the right. Then go to the Packing tab in the bottom right, "
+"and set Expand and Fill to \"No\"."
+msgstr ""
+
+#: data/templates/ubuntu-application/help/tutorial.xml:116(para)
+msgid "Go to the General tab, and set spacing to 5."
+msgstr ""
+
+#: data/templates/ubuntu-application/help/tutorial.xml:120(para)
+msgid ""
+"Select the label. On the general tab, set \"Label\" to \"Name:\". Set expand "
+"and fill to \"no\" for the label, but keep them as \"yes\" for the entry. "
+"Set the padding for both to 5 (also on the Packing tab)."
+msgstr ""
+
+#: data/templates/ubuntu-application/help/tutorial.xml:124(title)
+msgid "Add the Save, Open, and New Features"
+msgstr ""
+
+#: data/templates/ubuntu-application/help/tutorial.xml:124(para)
+msgid ""
+"<placeholder-1/> After the user types something, they may want to save it. A "
+"File-&gt;Save menu item was automatically created when the empty applicaton "
+"was created, but it's not hooked up to any code. To make Save work, we need "
+"tell the menu item what function to call, and then create a function to "
+"actually do the saving."
+msgstr ""
+
+#: data/templates/ubuntu-application/help/tutorial.xml:126(title)
+msgid "Set the Signal Handler in Glade"
+msgstr ""
+
+#: data/templates/ubuntu-application/help/tutorial.xml:126(para)
+msgid ""
+"<placeholder-1/> To tell the menu item what function to call. If glade is "
+"not still open, open up the application in glade:"
+msgstr ""
+
+#: data/templates/ubuntu-application/help/tutorial.xml:129(para)
+msgid ""
+"Click on the file menu, and the menu opens as if the application were "
+"running."
+msgstr ""
+
+#: data/templates/ubuntu-application/help/tutorial.xml:133(para)
+msgid "Choose the Save menu item, and it will be selected in Glade."
+msgstr ""
+
+#: data/templates/ubuntu-application/help/tutorial.xml:137(para)
+msgid ""
+"Then choose the Signals tab in the bottom right, near the Packing tab that "
+"we used earlier."
+msgstr ""
+
+#: data/templates/ubuntu-application/help/tutorial.xml:141(para)
+msgid ""
+"In pygtk, menu items are \"activated\" when a user chooses the item from the "
+"menu. Since we want a function to run when the user chooses Save, we want to "
+"specify a function to respond to the activate signal from the menu item. "
+"We'll call the function \"save_file\". Simply type the function name into "
+"the box for the \"activate\" signal. Make sure to save the glade file."
+msgstr ""
+
+#: data/templates/ubuntu-application/help/tutorial.xml:145(para)
+msgid ""
+"Note that you will need to setup the \"open_file\" signal and the "
+"\"new_file\" signal as well when you get to those functions later."
+msgstr ""
+
+#: data/templates/ubuntu-application/help/tutorial.xml:146(title)
+msgid "Edit the Code in Gedit"
+msgstr ""
+
+#: data/templates/ubuntu-application/help/tutorial.xml:147(title)
+msgid "Create the Save File Signal Handler"
+msgstr ""
+
+#: data/templates/ubuntu-application/help/tutorial.xml:147(para)
+msgid ""
+"<placeholder-1/> Now you're ready to write some code. Of course just telling "
+"the glade file what signal to emit won't make the file actually save, "
+"because we haven't created the \"save_file\" function yet. The code for "
+"JottyWindow is stored in the file \"jotty\". jotty is a special python file "
+"that is the entry point for your application. Other python files in your "
+"application have the \".py\" suffix."
+msgstr ""
+
+#: data/templates/ubuntu-application/help/tutorial.xml:149(para)
+msgid ""
+"Use the <application>Quickly</application> edit command to start editing "
+"your code files:"
+msgstr ""
+
+#: data/templates/ubuntu-application/help/tutorial.xml:150(programlisting)
+#, no-wrap
+msgid "quickly edit"
+msgstr ""
+
+#: data/templates/ubuntu-application/help/tutorial.xml:151(para)
+msgid ""
+"This will open the default Ubuntu text editor \"Gedit\" with all the default "
+"python files in the <application>Jotty</application> directory."
+msgstr ""
+
+#: data/templates/ubuntu-application/help/tutorial.xml:155(para)
+msgid ""
+"JottyWindow.ui is now expecting to find a function JottyWindow.save_file(), "
+"so we simply add one to the JottyWindow class in the jotty file right under "
+"the preferences_updated funtion.:"
+msgstr ""
+
+#: data/templates/ubuntu-application/help/tutorial.xml:157(programlisting)
+#, no-wrap
+msgid ""
+"\n"
+"    def save_file(self, widget, data=None):\n"
+"        print \"save\"\n"
+"\n"
+msgstr ""
+
+#: data/templates/ubuntu-application/help/tutorial.xml:163(para)
+msgid ""
+"This will print the word \"save\" to the terminal when run. The method "
+"signature is the standard signature expected in a signal handler. If you are "
+"new to python, be sure to copy the indentations exactly, as the indentation "
+"level is very important in python."
+msgstr ""
+
+#: data/templates/ubuntu-application/help/tutorial.xml:164(para)
+msgid "Save the file, and run it again:"
+msgstr ""
+
+#: data/templates/ubuntu-application/help/tutorial.xml:165(programlisting)
+#, no-wrap
+msgid ""
+" \n"
+"quickly run\n"
+msgstr ""
+
+#: data/templates/ubuntu-application/help/tutorial.xml:168(para)
+msgid ""
+"Choose \"File-&gt;Save\" from the menu, and you'll see the word \"save\" "
+"printing out interminal. That's all there is to hooking up the functions!"
+msgstr ""
+
+#: data/templates/ubuntu-application/help/tutorial.xml:172(title)
+msgid "Implementing Save"
+msgstr ""
+
+#: data/templates/ubuntu-application/help/tutorial.xml:172(para)
+msgid ""
+"<placeholder-1/> Now we'll write a little code in the signal handler to "
+"actually save the text. Because we want it to be easy for users to do things "
+"like syncronize their Jotty documents between computers, back it up, etc... "
+"we'll use couchdb as our backend, and we'll use desktopcouch for our api. "
+"We'll also use a widget from the Quickly Widgets library to make it really "
+"easy to use desktopcouch. Desktop couch and the desktopcouch records API "
+"should be installed for you already, but you may need to install Quickly "
+"Widgets. The fastest way to do this is from the terminal:"
+msgstr ""
+
+#: data/templates/ubuntu-application/help/tutorial.xml:175(programlisting)
+#, no-wrap
+msgid ""
+"\n"
+"sudo apt-get install quickly-widgets\n"
+msgstr ""
+
+#: data/templates/ubuntu-application/help/tutorial.xml:178(para)
+msgid ""
+"This will install the api, and everything you need for the api to run. After "
+"everything is installed, you can write the code. The code will do the "
+"following:"
+msgstr ""
+
+#: data/templates/ubuntu-application/help/tutorial.xml:181(para)
+msgid "Import the stuff you'll need from Quickly Widgets and desktopcouch."
+msgstr ""
+
+#: data/templates/ubuntu-application/help/tutorial.xml:184(para)
+msgid "Get a reference to the couchdb database to save into."
+msgstr ""
+
+#: data/templates/ubuntu-application/help/tutorial.xml:187(para)
+msgid "Get the title of the document and the text from the user interface."
+msgstr ""
+
+#: data/templates/ubuntu-application/help/tutorial.xml:190(para)
+msgid ""
+"Check if there is already a document with the same title, and if so "
+"overwrite it."
+msgstr ""
+
+#: data/templates/ubuntu-application/help/tutorial.xml:193(para)
+msgid "If there is not a document already, create one."
+msgstr ""
+
+#: data/templates/ubuntu-application/help/tutorial.xml:196(title)
+msgid "Import the stuff you'll need from python-desktopcouch-records."
+msgstr ""
+
+#: data/templates/ubuntu-application/help/tutorial.xml:196(para)
+msgid ""
+"<placeholder-1/> Add these import statements near the other imports at the "
+"top of the jotty file:"
+msgstr ""
+
+#: data/templates/ubuntu-application/help/tutorial.xml:199(programlisting)
+#, no-wrap
+msgid ""
+"\n"
+"from desktopcouch.records.server import CouchDatabase\n"
+"from desktopcouch.records.record import Record\n"
+msgstr ""
+
+#: data/templates/ubuntu-application/help/tutorial.xml:203(title)
+msgid "Get a Reference to the Database"
+msgstr ""
+
+#: data/templates/ubuntu-application/help/tutorial.xml:203(para)
+msgid ""
+"<placeholder-1/> Desktopcouch will set up a database for us, or create a new "
+"one if it's needed. We'll use \"jotty\" for the name of the database. Since "
+"we want this line to run every time the Jotty Window is created, put it at "
+"the end of the finish_initializing function:"
+msgstr ""
+
+#: data/templates/ubuntu-application/help/tutorial.xml:205(programlisting)
+#, no-wrap
+msgid ""
+" \n"
+"        self.database = CouchDatabase(\"jotty\", create=True)\n"
+msgstr ""
+
+#: data/templates/ubuntu-application/help/tutorial.xml:208(para)
+msgid ""
+"Now that we have an instance-wide reference to the database, we'll add code "
+"to the save_file function to run whenever the Save command is issued."
+msgstr ""
+
+#: data/templates/ubuntu-application/help/tutorial.xml:209(para)
+msgid "Here's the code to pull the title out of the title entry:"
+msgstr ""
+
+#: data/templates/ubuntu-application/help/tutorial.xml:212(programlisting)
+#, no-wrap
+msgid ""
+"\n"
+"        #get the title for the note\n"
+"        title = self.ui.entry1.get_text()\n"
+msgstr ""
+
+#: data/templates/ubuntu-application/help/tutorial.xml:216(title)
+msgid "Here's the code to get pull the text out of the TextView:"
+msgstr ""
+
+#: data/templates/ubuntu-application/help/tutorial.xml:216(para)
+msgid ""
+"<placeholder-1/> In pygtk, TextView widgets have a text buffer that stores "
+"the text. So you ask the TextView for it's TextBuffer, and then you ask the "
+"TextBuffer for the text. You use iters to determine from which part of the "
+"text buffer you want text. Since we want all the text, it's easy to just get "
+"the start and end iters."
+msgstr ""
+
+#: data/templates/ubuntu-application/help/tutorial.xml:219(programlisting)
+#, no-wrap
+msgid ""
+"\n"
+"        #get the string\n"
+"        buff = self.ui.textview1.get_buffer()\n"
+"        start_iter = buff.get_start_iter()\n"
+"        end_iter = buff.get_end_iter()\n"
+"        text = buff.get_text(start_iter,end_iter)\n"
+msgstr ""
+
+#: data/templates/ubuntu-application/help/tutorial.xml:226(title)
+msgid "Saving a document to Couchdb"
+msgstr ""
+
+#: data/templates/ubuntu-application/help/tutorial.xml:226(para)
+msgid ""
+"<placeholder-1/> A record in desktopcouch is essentially a python dictionary "
+"with some extra key/value pairs to make the database work. So we can save "
+"the document to couch like this:"
+msgstr ""
+
+#: data/templates/ubuntu-application/help/tutorial.xml:229(programlisting)
+#, no-wrap
+msgid ""
+"\n"
+"        record_type = \"http://wiki.ubuntu.com/Quickly/JottyDoc\"\n"
+"        new_rec = Record({\"record_type\": record_type,\"title\":title, "
+"\"text\":text})\n"
+"        self.database.put(new_rec)\n"
+msgstr ""
+
+#: data/templates/ubuntu-application/help/tutorial.xml:234(para)
+msgid ""
+"The \"record_type\" field is not strictly required, but among other things, "
+"it makes it easy to fetch the documents later. By convention, we use a url "
+"to specify the record type. This provides a place for other developers to go "
+"to read about the record type. The description only needs to be human "
+"readable. Couchdb is not a typed database, so don't expect that the url will "
+"have any kind of schema definition or anything. You can use whatever url you "
+"want, and put whatever you want at that URL."
+msgstr ""
+
+#: data/templates/ubuntu-application/help/tutorial.xml:237(title)
+msgid "Check for a pre-existing note with the same title"
+msgstr ""
+
+#: data/templates/ubuntu-application/help/tutorial.xml:235(para)
+msgid ""
+"<placeholder-1/> Before we just write the new document though, we have to "
+"take note of the fact that desktopcouch will allow you to create as many "
+"documents as you want with the same title. We probably don't want this, so "
+"we'll have to write a little code to check if there is already a document in "
+"desktopcouch with the same title, and if there is, update that document "
+"rather than create a new one."
+msgstr ""
+
+#: data/templates/ubuntu-application/help/tutorial.xml:241(para)
+msgid ""
+"In CouchDB, you don't do a lot of data processing in the database like you "
+"would with a relational database. To be most efficient, we could use the "
+"desktopcouch API to create a view in CouchDB, but it's probably simplest "
+"just to do the necessary processing on the client for now. To do this, we'll "
+"use a desktopcouch function to retrieve all of the records of a specified "
+"record type."
+msgstr ""
+
+#: data/templates/ubuntu-application/help/tutorial.xml:243(para)
+msgid "To find and update documents with a matching title we will:"
+msgstr ""
+
+#: data/templates/ubuntu-application/help/tutorial.xml:246(para) data/templates/ubuntu-application/help/tutorial.xml:315(para)
+msgid ""
+"Retrieve all of the documents with the CouchDatabase.get_records function."
+msgstr ""
+
+#: data/templates/ubuntu-application/help/tutorial.xml:249(para) data/templates/ubuntu-application/help/tutorial.xml:318(para)
+msgid "Check each of the returned records for a matching title."
+msgstr ""
+
+#: data/templates/ubuntu-application/help/tutorial.xml:252(para)
+msgid ""
+"If there is a match, update the record using the CouchDatabase.update_fields "
+"function and return."
+msgstr ""
+
+#: data/templates/ubuntu-application/help/tutorial.xml:255(para)
+msgid ""
+"This all may sound very weird, but in code, it's not quite so complicated:"
+msgstr ""
+
+#: data/templates/ubuntu-application/help/tutorial.xml:257(programlisting)
+#, no-wrap
+msgid ""
+"\n"
+"        #get all the records\n"
+"        record_type = \"http://wiki.ubuntu.com/Quickly/JottyDoc\"\n"
+"        results = self.database.get_records(record_type = "
+"record_type,create_view = True)\n"
+"        #update a record that has the same title\n"
+"        for result in results:\n"
+"            document = result.value\n"
+"            if document[\"title\"] == title:\n"
+"                key = document[\"_id\"]\n"
+"                self.database.update_fields(key, {\"text\":text})\n"
+"                return\n"
+"\n"
+msgstr ""
+
+#: data/templates/ubuntu-application/help/tutorial.xml:270(para)
+msgid "So the whole function should look like this:"
+msgstr ""
+
+#: data/templates/ubuntu-application/help/tutorial.xml:272(programlisting)
+#, no-wrap
+msgid ""
+"\n"
+"    def save_file(self, widget, data=None): \n"
+"        #get the title for the note \n"
+"        title = self.ui.entry1.get_text() \n"
+"\n"
+"        #get the text to save \n"
+"        buff = self.ui.textview1.get_buffer() \n"
+"        start_iter = buff.get_start_iter() \n"
+"        end_iter = buff.get_end_iter() \n"
+"        text = buff.get_text(start_iter,end_iter) \n"
+"\n"
+"        #get all the records \n"
+"        record_type = \"http://wiki.ubuntu.com/Quickly/JottyDoc\" \n"
+"        results = self.database.get_records(record_type = "
+"record_type,create_view = True) \n"
+"\n"
+"        #update a record that has the same title \n"
+"        for result in results: \n"
+"            document = result.value \n"
+"            if document[\"title\"] == title: \n"
+"                key = document[\"_id\"]\n"
+"                self.database.update_fields(key, {\"text\":text}) \n"
+"                return\n"
+" \n"
+"        #if no records had the title, create it \n"
+"        new_rec = Record({\"record_type\":record_type,\"title\":title, "
+"\"text\":text})\n"
+"        self.database.put_record(new_rec)\n"
+msgstr ""
+
+#: data/templates/ubuntu-application/help/tutorial.xml:300(para)
+msgid ""
+"Couchdb makes it really easy to see if your save function is working. You "
+"can just point your web browser at it and explore the database:"
+msgstr ""
+
+#: data/templates/ubuntu-application/help/tutorial.xml:301(para)
+msgid "file:///home/your_user_name/.local/share/desktop-couch/couchdb.html"
+msgstr ""
+
+#: data/templates/ubuntu-application/help/tutorial.xml:305(para)
+msgid ""
+"If you are redirected to a page that doesn't work, you probably just need to "
+"clear your browser cache and try again."
+msgstr ""
+
+#: data/templates/ubuntu-application/help/tutorial.xml:306(title)
+msgid "Implementing Open and New"
+msgstr ""
+
+#: data/templates/ubuntu-application/help/tutorial.xml:306(para)
+msgid ""
+"<placeholder-1/> To open a saved document, the user will type the title of "
+"the document that they want to open in the text entry, and choose \"Open\" "
+"from the main menu. If there is no matching document there, it will just "
+"clear out the text view, ready for input. This is probably not too "
+"intuitive, so we'll add a dialog box for prompting the user for the title, "
+"but that's for later in the tutorial. For now, we'll just use the same text "
+"entry field."
+msgstr ""
+
+#: data/templates/ubuntu-application/help/tutorial.xml:308(title)
+msgid "Implementing Open is essentially the reverse of Save:"
+msgstr ""
+
+#: data/templates/ubuntu-application/help/tutorial.xml:308(para)
+msgid "<placeholder-1/> Follow these steps:"
+msgstr ""
+
+#: data/templates/ubuntu-application/help/tutorial.xml:312(para)
+msgid "Add the open_file signal to the menu item in Glade."
+msgstr ""
+
+#: data/templates/ubuntu-application/help/tutorial.xml:321(para)
+msgid ""
+"If there is a match, pull out the text and display it in the text view."
+msgstr ""
+
+#: data/templates/ubuntu-application/help/tutorial.xml:324(para)
+msgid "So the open_file function looks like so:"
+msgstr ""
+
+#: data/templates/ubuntu-application/help/tutorial.xml:326(programlisting)
+#, no-wrap
+msgid ""
+"\n"
+"    def open_file(self, widget, data=None):\n"
+"        #get the name of the document to open\n"
+"        title = self.ui.entry1.get_text()\n"
+"        text = \"\"\n"
+" \n"
+"        #get all the records\n"
+"        record_type = \"http://wiki.ubuntu.com/Quickly/JottyDoc\"\n"
+"        results = self.database.get_records(record_type = "
+"record_type,create_view = True)\n"
+" \n"
+"        #get the text if there is a matching title\n"
+"        for result in results:\n"
+"            document = result.value\n"
+"            if document[\"title\"] == title:\n"
+"                text = document[\"text\"]\n"
+"        \n"
+"        #set the UI to display the string\n"
+"        buff = self.ui.textview1.get_buffer()\n"
+"        buff.set_text(text)\n"
+msgstr ""
+
+#: data/templates/ubuntu-application/help/tutorial.xml:346(title)
+msgid "Implement New"
+msgstr ""
+
+#: data/templates/ubuntu-application/help/tutorial.xml:346(para)
+msgid ""
+"<placeholder-1/> First, add the new_file signal to the menu item in Glade, "
+"then add this code to clear out the text:"
+msgstr ""
+
+#: data/templates/ubuntu-application/help/tutorial.xml:349(programlisting)
+#, no-wrap
+msgid ""
+"\n"
+"    def new_file(self, widget, data=None):\n"
+"        self.ui.entry1.set_text(\"Note Title\")\n"
+"        buff = self.ui.textview1.get_buffer()\n"
+"        buff.set_text(\"\")\n"
+msgstr ""
+
+#: data/templates/ubuntu-application/help/tutorial.xml:355(para)
+msgid ""
+"To make them work, add these functions to the JottyWindow class, and save. "
+"Then go back and connect the functions to the \"activate\" signals for the "
+"Open and New menu items."
+msgstr ""
+
+#: data/templates/ubuntu-application/help/tutorial.xml:356(ulink)
+msgid "Complete jotty file"
+msgstr ""
+
+#: data/templates/ubuntu-application/help/tutorial.xml:357(title)
+msgid "Saving Your Work"
+msgstr ""
+
+#: data/templates/ubuntu-application/help/tutorial.xml:357(para)
+msgid ""
+"<placeholder-1/> When <application>Quickly</application> created your "
+"application, it automatically added it to Bazaar, a source code versioning "
+"system. You can use Bazaar to roll back mistakes, see code history, compare "
+"versions, etc... <application>Quickly</application> has a convenience "
+"function for backing up your work:"
+msgstr ""
+
+#: data/templates/ubuntu-application/help/tutorial.xml:359(programlisting)
+#, no-wrap
+msgid ""
+" \n"
+"<application>Quickly</application> save \"First working version of Jotty\"\n"
+msgstr ""
+
+#: data/templates/ubuntu-application/help/tutorial.xml:362(programlisting)
+#, no-wrap
+msgid "bzr add"
+msgstr ""
+
+#: data/templates/ubuntu-application/help/tutorial.xml:362(programlisting)
+#, no-wrap
+msgid "bzr commit -m [your message]"
+msgstr ""
+
+#: data/templates/ubuntu-application/help/tutorial.xml:362(para)
+msgid "This will call <placeholder-1/> and then <placeholder-2/> for you."
+msgstr ""
+
+#: data/templates/ubuntu-application/help/tutorial.xml:365(title)
+msgid "Using Dialogs"
+msgstr ""
+
+#: data/templates/ubuntu-application/help/tutorial.xml:366(para)
+msgid ""
+"In part 1, we created an application that can read and write text files, and "
+"persist them in the couchdb backend. However, the application has a hideous "
+"usability flaw, the text box for specifying titles when saving and opening "
+"files is very confusing. In part 2, we'll fix that by adding a save and an "
+"open dialog."
+msgstr ""
+
+#: data/templates/ubuntu-application/help/tutorial.xml:368(title)
+msgid "Creating an Empty Dialog"
+msgstr ""
+
+#: data/templates/ubuntu-application/help/tutorial.xml:368(para)
+msgid ""
+"<placeholder-1/> It's simple to add an empty, but working dialog to your "
+"project. Simply specify the name of the new dialog, and it will be added "
+"automatically. Assuming that you are in the jotty project directory:"
+msgstr ""
+
+#: data/templates/ubuntu-application/help/tutorial.xml:370(programlisting)
+#, no-wrap
+msgid ""
+"\n"
+"quickly add dialog save\n"
+msgstr ""
+
+#: data/templates/ubuntu-application/help/tutorial.xml:373(para)
+msgid "This will add the dialog to your project."
+msgstr ""
+
+#: data/templates/ubuntu-application/help/tutorial.xml:374(title) data/templates/ubuntu-application/help/tutorial.xml:495(title)
+msgid "Editing the New Dialog"
+msgstr ""
+
+#: data/templates/ubuntu-application/help/tutorial.xml:374(para)
+msgid ""
+"<placeholder-1/> To edit the UI for the dialog, you'll need to load it into "
+"Glade again. If you already have an instance of glade running, you might "
+"want to go ahead and close it first, as it may get confusing if you have "
+"more than one open at a time. After closing glade, simply open it again:"
+msgstr ""
+
+#: data/templates/ubuntu-application/help/tutorial.xml:376(programlisting) data/templates/ubuntu-application/help/tutorial.xml:497(programlisting)
+#, no-wrap
+msgid ""
+"\n"
+"quickly design\n"
+msgstr ""
+
+#: data/templates/ubuntu-application/help/tutorial.xml:379(para)
+msgid ""
+"Then use the Projects menu to switch to newly created SaveDialog.ui file."
+msgstr ""
+
+#: data/templates/ubuntu-application/help/tutorial.xml:383(para)
+msgid ""
+"Then add some widgets for the UI. Start with a Vertical Box (VBox) with two "
+"items. Put a label in the top, and an HBox in the bottom slot. In the HBox, "
+"add a label and a text widget, just like you did for JottyWindow in part 1. "
+"Set the padding and expand properties as well."
+msgstr ""
+
+#: data/templates/ubuntu-application/help/tutorial.xml:387(title)
+msgid "Code the Dialog"
+msgstr ""
+
+#: data/templates/ubuntu-application/help/tutorial.xml:387(para)
+msgid ""
+"<placeholder-1/> You can use the \"<application>Quickly</application> edit\" "
+"command to open the SaveDialog.py file. This dialog needs very little "
+"additional code to work. Essentially, you just need a way to retrieve the "
+"string specified by the user. We'll add a quick accessor method for this:"
+msgstr ""
+
+#: data/templates/ubuntu-application/help/tutorial.xml:390(programlisting)
+#, no-wrap
+msgid ""
+"\n"
+"    @property\n"
+"    def title_text(self):\n"
+"        return self.ui.entry1.get_text()\n"
+msgstr ""
+
+#: data/templates/ubuntu-application/help/tutorial.xml:395(para)
+msgid ""
+"We don't need to write any code for the Ok and Cancel buttons, as they were "
+"automatically hooked up by <application>Quickly</application> when it "
+"created the dialog."
+msgstr ""
+
+#: data/templates/ubuntu-application/help/tutorial.xml:396(para)
+msgid ""
+"Before we go on to invoking the dialog, delete HBox from JottyWindow that "
+"holds the text entry and label, as we won't be needing those."
+msgstr ""
+
+#: data/templates/ubuntu-application/help/tutorial.xml:400(title)
+msgid "Calling the Save Dialog"
+msgstr ""
+
+#: data/templates/ubuntu-application/help/tutorial.xml:400(para)
+msgid ""
+"<placeholder-1/> To use the dialog in JottyWindow, we need to follow these "
+"steps:"
+msgstr ""
+
+#: data/templates/ubuntu-application/help/tutorial.xml:404(para)
+msgid "Import SaveDialog in JottyWindow"
+msgstr ""
+
+#: data/templates/ubuntu-application/help/tutorial.xml:407(para)
+msgid "In the save_file function, create an instance of SaveDialog"
+msgstr ""
+
+#: data/templates/ubuntu-application/help/tutorial.xml:410(para) data/templates/ubuntu-application/help/tutorial.xml:583(para)
+msgid "Run the Dialog"
+msgstr ""
+
+#: data/templates/ubuntu-application/help/tutorial.xml:413(para)
+msgid "Get the String"
+msgstr ""
+
+#: data/templates/ubuntu-application/help/tutorial.xml:416(para) data/templates/ubuntu-application/help/tutorial.xml:589(para)
+msgid "Destroy the dialog"
+msgstr ""
+
+#: data/templates/ubuntu-application/help/tutorial.xml:420(title)
+msgid "Importing the SaveDialog"
+msgstr ""
+
+#: data/templates/ubuntu-application/help/tutorial.xml:420(para)
+msgid ""
+"<placeholder-1/> Add the SaveDialog to the list of the imported modules at "
+"the top of the jotty file, so it looks like this:"
+msgstr ""
+
+#: data/templates/ubuntu-application/help/tutorial.xml:422(programlisting)
+#, no-wrap
+msgid ""
+"\n"
+"from jotty import (BaseJottyWindow, SaveDialog)\n"
+msgstr ""
+
+#: data/templates/ubuntu-application/help/tutorial.xml:426(title) data/templates/ubuntu-application/help/tutorial.xml:608(title)
+msgid "Create an instance of the dialog and run it"
+msgstr ""
+
+#: data/templates/ubuntu-application/help/tutorial.xml:426(para)
+msgid ""
+"<placeholder-1/> When the user chooses Save, we want to open the SaveDialog "
+"and collect the title of the note from the user. So we need to modify our "
+"save_file function."
+msgstr ""
+
+#: data/templates/ubuntu-application/help/tutorial.xml:429(para)
+msgid "First, create an instance of the SaveDialog like this:"
+msgstr ""
+
+#: data/templates/ubuntu-application/help/tutorial.xml:430(programlisting)
+#, no-wrap
+msgid ""
+"\n"
+"        saver = SaveDialog.SaveDialog()\n"
+msgstr ""
+
+#: data/templates/ubuntu-application/help/tutorial.xml:433(para)
+msgid ""
+"To make the dialog appear, simply use the run() method. However, we want to "
+"check the result, so we'll need to store that in a variable. After it runs, "
+"we want to collect the string from the user, like this:"
+msgstr ""
+
+#: data/templates/ubuntu-application/help/tutorial.xml:434(programlisting)
+#, no-wrap
+msgid ""
+"\n"
+"        result = saver.run()\n"
+"        title = saver.title_text\n"
+msgstr ""
+
+#: data/templates/ubuntu-application/help/tutorial.xml:438(title)
+msgid "Clean up the dialog"
+msgstr ""
+
+#: data/templates/ubuntu-application/help/tutorial.xml:438(para)
+msgid ""
+"<placeholder-1/> We need to tell the dialog to not show itself anymore. We "
+"could call saver.hide() to make it hide, but since we don't need it hanging "
+"around, we'll just destroy it. Before we go on, though, we need to ensure "
+"that the user actually wants to save, so if we didn't get the Ok result, we "
+"should just return out of the function:"
+msgstr ""
+
+#: data/templates/ubuntu-application/help/tutorial.xml:441(programlisting)
+#, no-wrap
+msgid ""
+"\n"
+"        saver.destroy()\n"
+"        if result != gtk.RESPONSE_OK:\n"
+"            return\n"
+msgstr ""
+
+#: data/templates/ubuntu-application/help/tutorial.xml:447(para)
+msgid ""
+"Since we're now getting the title from the dialog instead of the text entry, "
+"we should delete the line of the code that gets it from the text entry. So "
+"except for the addition of the dialog code, the save_file function looks "
+"pretty much the same as it did in part 1:"
+msgstr ""
+
+#: data/templates/ubuntu-application/help/tutorial.xml:450(programlisting)
+#, no-wrap
+msgid ""
+"\n"
+"    def save_file(self, widget, data=None):\n"
+"        #get the title from the user\n"
+"        saver = SaveDialog.SaveDialog()\n"
+"        result = saver.run()\n"
+"        title = saver.title_text\n"
+"\n"
+"        saver.destroy()\n"
+"        if result != gtk.RESPONSE_OK:\n"
+"            return\n"
+"\n"
+"        #get the text to save\n"
+"        buff = self.ui.textview1.get_buffer()\n"
+"        start_iter = buff.get_start_iter()\n"
+"        end_iter = buff.get_end_iter()\n"
+"        text = buff.get_text(start_iter,end_iter)\n"
+"\n"
+"        #get all the records\n"
+"        record_type = \"http://wiki.ubuntu.com/Quickly/JottyDoc\"\n"
+"        results = self.database.get_records(record_type = "
+"record_type,create_view = True)\n"
+"\n"
+"        #update a record that has the same title\n"
+"        for result in results:\n"
+"            record = result.value\n"
+"            if record[\"title\"] == title:\n"
+"                key = result.key\n"
+"                self.database.update_fields(key, {\"text\":text})\n"
+"                return\n"
+"        \n"
+"        #if no records had the title, create it  \n"
+"        new_rec = Record({\"record_type\":record_type,\"title\":title, "
+"\"text\":text})\n"
+"        self.database.put_record(new_rec)\n"
+msgstr ""
+
+#: data/templates/ubuntu-application/help/tutorial.xml:483(para)
+msgid "Now when we choose save, we get the SaveDialog instead:"
+msgstr ""
+
+#: data/templates/ubuntu-application/help/tutorial.xml:488(title)
+msgid "Creating a Dialog with a CouchGrid"
+msgstr ""
+
+#: data/templates/ubuntu-application/help/tutorial.xml:488(para)
+msgid ""
+"<placeholder-1/> We'll use a similar approach in the Open dialog that we did "
+"with Save. However, there is one big difference, we want to provide the user "
+"with a list of documents that you could choose to open. We'll use a widget "
+"called CouchGrid, which is included in the quickly-widgets package for this."
+msgstr ""
+
+#: data/templates/ubuntu-application/help/tutorial.xml:491(title)
+msgid "Create the Open Dialog"
+msgstr ""
+
+#: data/templates/ubuntu-application/help/tutorial.xml:492(programlisting)
+#, no-wrap
+msgid ""
+"\n"
+"quickly add dialog open\n"
+msgstr ""
+
+#: data/templates/ubuntu-application/help/tutorial.xml:495(para)
+msgid ""
+"<placeholder-1/> Start out by closing, and then reopening glade again:"
+msgstr ""
+
+#: data/templates/ubuntu-application/help/tutorial.xml:500(para)
+msgid ""
+"Start by adding a VBox and a label in the same manner as in the Save Dialog "
+"above. Leave an empty space in the VBox, We will use code to put the "
+"CouchGrid there."
+msgstr ""
+
+#: data/templates/ubuntu-application/help/tutorial.xml:504(title)
+msgid "Coding the Open Dialog"
+msgstr ""
+
+#: data/templates/ubuntu-application/help/tutorial.xml:505(title)
+msgid "Creating and Adding a CouchGrid"
+msgstr ""
+
+#: data/templates/ubuntu-application/help/tutorial.xml:505(para)
+msgid ""
+"<placeholder-1/> It just takes a little bit of code to add a CouchGrid to "
+"the dialog. We need to:"
+msgstr ""
+
+#: data/templates/ubuntu-application/help/tutorial.xml:509(para)
+msgid "Import the CouchGrid class."
+msgstr ""
+
+#: data/templates/ubuntu-application/help/tutorial.xml:512(para)
+msgid ""
+"Create a CouchGrid pointing at the jotty database, and the desired record "
+"type."
+msgstr ""
+
+#: data/templates/ubuntu-application/help/tutorial.xml:515(para)
+msgid "Add the CouchGrid to the dialog."
+msgstr ""
+
+#: data/templates/ubuntu-application/help/tutorial.xml:519(title)
+msgid "Import the CouchGrid class"
+msgstr ""
+
+#: data/templates/ubuntu-application/help/tutorial.xml:519(para)
+msgid ""
+"<placeholder-1/> CouchGrid is part of the quickly.widgets api, so we import "
+"it like this:"
+msgstr ""
+
+#: data/templates/ubuntu-application/help/tutorial.xml:521(programlisting)
+#, no-wrap
+msgid ""
+"\n"
+"from quickly.widgets.couch_grid import CouchGrid\n"
+msgstr ""
+
+#: data/templates/ubuntu-application/help/tutorial.xml:524(title)
+msgid "Create the CouchGrid"
+msgstr ""
+
+#: data/templates/ubuntu-application/help/tutorial.xml:524(para)
+msgid ""
+"<placeholder-1/> A CouchGrid needs to know three things, the name of the "
+"database, the name of the record type, and the name of the keys to use. "
+"\"keys\" is a list of fields that the widget will display, and by default "
+"will also use the same text for the heading of any columns. This set up "
+"should be done in the OpenDialog's finish_initalizing function. All this is "
+"easily done in code like this:"
+msgstr ""
+
+#: data/templates/ubuntu-application/help/tutorial.xml:528(programlisting)
+#, no-wrap
+msgid ""
+"\n"
+"        database = \"jotty\"\n"
+"        keys = [\"title\"]\n"
+"        record_type = \"http://wiki.ubuntu.com/Quickly/JottyDoc\"\n"
+"        self.couchgrid = CouchGrid(database, "
+"record_type=record_type,keys=keys)\n"
+"\n"
+msgstr ""
+
+#: data/templates/ubuntu-application/help/tutorial.xml:535(title)
+msgid "Add the CouchGrid to the Dialog"
+msgstr ""
+
+#: data/templates/ubuntu-application/help/tutorial.xml:535(para)
+msgid ""
+"<placeholder-1/> we added the VBox to the dialog, we left an open space at "
+"the bottom. We'll use this by \"packing\" the CouchGrid into the VBox. We "
+"need to show it as well. So add the following lines to the "
+"finish_initializing function as well:"
+msgstr ""
+
+#: data/templates/ubuntu-application/help/tutorial.xml:539(programlisting)
+#, no-wrap
+msgid ""
+"\n"
+"        self.couchgrid.show()\n"
+"        self.ui.vbox1.pack_end(self.couchgrid)\n"
+"\n"
+msgstr ""
+
+#: data/templates/ubuntu-application/help/tutorial.xml:545(title)
+msgid "Create the get_selection function"
+msgstr ""
+
+#: data/templates/ubuntu-application/help/tutorial.xml:545(para)
+msgid ""
+"<placeholder-1/> The dialog still needs a bit more code to work. It needs to "
+"return the user's selection, if there is one. To do this, we need to ask the "
+"CouchGrid what is selected. This is easy using the widgets "
+"selected_record_ids function. But the CouchGrid supports multiple selection, "
+"so we'll do the following:"
+msgstr ""
+
+#: data/templates/ubuntu-application/help/tutorial.xml:549(para)
+msgid "Use a decorator to define the function as a property accessor."
+msgstr ""
+
+#: data/templates/ubuntu-application/help/tutorial.xml:552(para)
+msgid "Get all the selected record ids."
+msgstr ""
+
+#: data/templates/ubuntu-application/help/tutorial.xml:555(para)
+msgid "If none are selected, return None."
+msgstr ""
+
+#: data/templates/ubuntu-application/help/tutorial.xml:558(para)
+msgid "Pick the first one and return it."
+msgstr ""
+
+#: data/templates/ubuntu-application/help/tutorial.xml:561(para)
+msgid "So the function to add to OpenDialog looks like this:"
+msgstr ""
+
+#: data/templates/ubuntu-application/help/tutorial.xml:563(programlisting)
+#, no-wrap
+msgid ""
+"\n"
+"    @property\n"
+"    def selected_record_id(self):\n"
+"        ids = self.couchgrid.selected_record_ids\n"
+"        if len(ids) &lt; 1:\n"
+"            return None\n"
+"        else:\n"
+"            return ids[0]\n"
+"\n"
+msgstr ""
+
+#: data/templates/ubuntu-application/help/tutorial.xml:573(title)
+msgid "Using the Open Dialog"
+msgstr ""
+
+#: data/templates/ubuntu-application/help/tutorial.xml:573(para)
+msgid ""
+"<placeholder-1/> Now we want to use the Open Dialog in the JottyWindow "
+"open_file function. To use it,we'll follow these steps:"
+msgstr ""
+
+#: data/templates/ubuntu-application/help/tutorial.xml:577(para)
+msgid "Import OpenDialog in JottyWindow"
+msgstr ""
+
+#: data/templates/ubuntu-application/help/tutorial.xml:580(para)
+msgid "In the open_file function, create an instance of OpenDialog"
+msgstr ""
+
+#: data/templates/ubuntu-application/help/tutorial.xml:586(para) data/templates/ubuntu-application/help/tutorial.xml:614(title)
+msgid "Get the id for the selected title"
+msgstr ""
+
+#: data/templates/ubuntu-application/help/tutorial.xml:592(para)
+msgid "Check the response before proceeding"
+msgstr ""
+
+#: data/templates/ubuntu-application/help/tutorial.xml:595(para) data/templates/ubuntu-application/help/tutorial.xml:626(title)
+msgid "Use the id to get the record from CouchDB"
+msgstr ""
+
+#: data/templates/ubuntu-application/help/tutorial.xml:598(para) data/templates/ubuntu-application/help/tutorial.xml:636(title)
+msgid "Update the UI"
+msgstr ""
+
+#: data/templates/ubuntu-application/help/tutorial.xml:602(title)
+msgid "Import OpenDialog"
+msgstr ""
+
+#: data/templates/ubuntu-application/help/tutorial.xml:602(para)
+msgid ""
+"<placeholder-1/> Just like the SaveDialog, add the import line to the list "
+"of imports:"
+msgstr ""
+
+#: data/templates/ubuntu-application/help/tutorial.xml:604(programlisting)
+#, no-wrap
+msgid ""
+"\n"
+"from jotty import (BaseJottyWindow, SaveDialog, OpenDialog)\n"
+msgstr ""
+
+#: data/templates/ubuntu-application/help/tutorial.xml:608(para)
+msgid ""
+"<placeholder-1/> So now we're ready to call the dialog from the "
+"JottyWindow's open_file function. Creating the OpenDialog is exactly the "
+"same as creating the SaveDialog, except we also want to tell it to load the "
+"titles before we run it:"
+msgstr ""
+
+#: data/templates/ubuntu-application/help/tutorial.xml:611(programlisting)
+#, no-wrap
+msgid ""
+"opener = OpenDialog.OpenDialog()\n"
+"        result = opener.run()"
+msgstr ""
+
+#: data/templates/ubuntu-application/help/tutorial.xml:614(para)
+msgid ""
+"<placeholder-1/> Now use the property that we created to retrieve the title "
+"and text from the dialog. Don't forget to check the response type before "
+"going on."
+msgstr ""
+
+#: data/templates/ubuntu-application/help/tutorial.xml:617(programlisting)
+#, no-wrap
+msgid ""
+"\n"
+"        rec_id = opener.selected_record_id\n"
+"\n"
+"        #close the dialog, and check whether to proceed\n"
+"        opener.destroy()\n"
+"        if result != gtk.RESPONSE_OK:\n"
+"            return"
+msgstr ""
+
+#: data/templates/ubuntu-application/help/tutorial.xml:626(para)
+msgid ""
+"<placeholder-1/> If nothing was selected, we'll just return. Otherwise, "
+"we'll retrieve the record from CouchDB and pull out the text for the "
+"document:"
+msgstr ""
+
+#: data/templates/ubuntu-application/help/tutorial.xml:629(programlisting)
+#, no-wrap
+msgid ""
+"\n"
+"        #get the record from CouchDB and extract the text\n"
+"        if rec_id == None:\n"
+"            return\n"
+"        record = self.database.get_record(rec_id)\n"
+"        text = record[\"text\"]"
+msgstr ""
+
+#: data/templates/ubuntu-application/help/tutorial.xml:636(para)
+msgid "<placeholder-1/> Now just put the text into the texview:"
+msgstr ""
+
+#: data/templates/ubuntu-application/help/tutorial.xml:639(programlisting)
+#, no-wrap
+msgid ""
+"\n"
+"        #set the UI to display the string\n"
+"        buff = self.ui.textview1.get_buffer()\n"
+"        buff.set_text(text)"
+msgstr ""
+
+#: data/templates/ubuntu-application/help/tutorial.xml:643(para)
+msgid ""
+"That's all there is to it. So the whole open_file function looks like this:"
+msgstr ""
+
+#: data/templates/ubuntu-application/help/tutorial.xml:645(programlisting)
+#, no-wrap
+msgid ""
+"\n"
+"    def open_file(self, widget, data=None):\n"
+"        #run the open dialog\n"
+"        opener = OpenDialog.OpenDialog()\n"
+"        result = opener.run()\n"
+"\n"
+"        #get the record id from the dialog\n"
+"        rec_id = opener.selected_record_id\n"
+"\n"
+"        #close the dialog, and check whether to proceed\n"
+"        opener.destroy()\n"
+"        if result != gtk.RESPONSE_OK:\n"
+"            return\n"
+"\n"
+"        #get the record from CouchDB and extract the text\n"
+"        if rec_id == None:\n"
+"            return\n"
+"        record = self.database.get_record(rec_id)\n"
+"        text = record[\"text\"]\n"
+"\n"
+"        #set the UI to display the string\n"
+"        buff = self.ui.textview1.get_buffer()\n"
+"        buff.set_text(text)\n"
+"\n"
+msgstr ""
+
+#: data/templates/ubuntu-application/help/tutorial.xml:670(para)
+msgid "Now users get a nice open dialog:"
+msgstr ""
+
+#: data/templates/ubuntu-application/help/tutorial.xml:675(para)
+msgid ""
+"However, the application is not complete. There are a few things left for "
+"you to do:"
+msgstr ""
+
+#: data/templates/ubuntu-application/help/tutorial.xml:678(para)
+msgid ""
+"Set the title of the JottyWindow to display the note title. Try "
+"self.set_text(title)."
+msgstr ""
+
+#: data/templates/ubuntu-application/help/tutorial.xml:681(para)
+msgid ""
+"The Save command works more like \"Save As\". The application probably "
+"shouldn't pop up a SaveDialog every time you want to save. If it's already "
+"been saved, you probably just want to save it, but use a SaveDialog when the "
+"user choose Save As, or is saving a document for the first time."
+msgstr ""
+
+#: data/templates/ubuntu-application/help/tutorial.xml:684(para)
+msgid ""
+"The OpenDialog should probably return when the user double clicks on an item "
+"in the list. Try connecting to the \"select-cursor-row\" signal on the "
+"TreeView, and calling self.response(gtk.RESPONSE_OK) in the handler."
+msgstr ""
+
+#: data/templates/ubuntu-application/help/tutorial.xml:687(para)
+msgid ""
+"Perhaps the Ok button in the OpenDialog should be disabled if nothing is "
+"selected. Try setting the \"sensitivity\" in Glade, and the set_sensitive "
+"function for the Ok button."
+msgstr ""
+
+#: data/templates/ubuntu-application/help/tutorial.xml:690(para)
+msgid ""
+"It would be more consistent for the Open and Close dialogs to have \"Open\" "
+"and \"Close\" for buttons instead of \"Ok\". You can set a different type in "
+"the properties window in Glade."
+msgstr ""
+
+#: data/templates/ubuntu-application/help/tutorial.xml:693(para)
+msgid ""
+"Loading every document into the open dialog is probably a bit inefficient. "
+"Perhaps storing the document id and using that to retrieve the document "
+"would be a better implementation."
+msgstr ""
+
+#: data/templates/ubuntu-application/help/tutorial.xml:699(title)
+msgid "Packaging"
+msgstr ""
+
+#: data/templates/ubuntu-application/help/tutorial.xml:700(para)
+msgid ""
+"In parts 1 and 2, we showed how to create a simple Ubuntu application using "
+"<application>Quickly</application>. This section will cover how to package "
+"an application so that it is easy for you to share, and easy for other "
+"people to install."
+msgstr ""
+
+#: data/templates/ubuntu-application/help/tutorial.xml:701(title)
+msgid "License your Application"
+msgstr ""
+
+#: data/templates/ubuntu-application/help/tutorial.xml:701(para)
+msgid ""
+"<placeholder-1/> It's important to license your code so users and other "
+"programmers know their rights in terms of redistributing or modifying it. To "
+"<application>Quickly</application> grant a GPL license to your code, simply:"
+msgstr ""
+
+#: data/templates/ubuntu-application/help/tutorial.xml:705(para)
+msgid "Specify your name and email address in the AUTHORS file."
+msgstr ""
+
+#: data/templates/ubuntu-application/help/tutorial.xml:708(para)
+msgid "Run the \"license\" command."
+msgstr ""
+
+#: data/templates/ubuntu-application/help/tutorial.xml:712(title)
+msgid "Specify your name and email"
+msgstr ""
+
+#: data/templates/ubuntu-application/help/tutorial.xml:712(para)
+msgid ""
+"<placeholder-1/> When <application>Quickly</application> created your ubuntu "
+"application, it added a file named AUTHORS in the top level of the "
+"directory. Open this file in your text editor, and modify the top line so it "
+"has your name and email included. For example, I would change the entire "
+"file to look like this:"
+msgstr ""
+
+#: data/templates/ubuntu-application/help/tutorial.xml:715(programlisting)
+#, no-wrap
+msgid "Copyright (C) 2009 Rick Spencer rick.spencer@canonical.com"
+msgstr ""
+
+#: data/templates/ubuntu-application/help/tutorial.xml:716(title)
+msgid "Run the \"License\" Command"
+msgstr ""
+
+#: data/templates/ubuntu-application/help/tutorial.xml:716(para)
+msgid ""
+"<placeholder-1/> By default, <application>Quickly</application> will use a "
+"GPL 3 license for your project. To use this license, use this command:"
+msgstr ""
+
+#: data/templates/ubuntu-application/help/tutorial.xml:718(programlisting) data/templates/ubuntu-application/help/tutorial.xml:735(programlisting)
+#, no-wrap
+msgid ""
+"\n"
+"<application>Quickly</application> license\n"
+msgstr ""
+
+#: data/templates/ubuntu-application/help/tutorial.xml:721(para)
+msgid ""
+"This will add the GPL 3 license to all of your code files that you've added "
+"to your project using <application>Quickly</application>."
+msgstr ""
+
+#: data/templates/ubuntu-application/help/tutorial.xml:722(para)
+msgid "Keep in mind a couple of things:"
+msgstr ""
+
+#: data/templates/ubuntu-application/help/tutorial.xml:725(para)
+msgid ""
+"This is a one way trip. Once you license the project, changes to the license "
+"must be done manually."
+msgstr ""
+
+#: data/templates/ubuntu-application/help/tutorial.xml:728(para)
+msgid ""
+"If you prefer a GPL 2 license, you can specify that when you issue the "
+"license command:"
+msgstr ""
+
+#: data/templates/ubuntu-application/help/tutorial.xml:729(programlisting)
+#, no-wrap
+msgid ""
+"\n"
+"<application>Quickly</application> license GPL-2\n"
+msgstr ""
+
+#: data/templates/ubuntu-application/help/tutorial.xml:734(para)
+msgid ""
+"<application>Quickly</application> doesn't care what license you use, but "
+"only knows natively what files and headers to include for BSD, GPL-2, GPL-3, "
+"LGPL-2 and LGPL-3. If you prefer another license, you can simply add "
+"whatever you license you like by creating a COPYING file and putting it "
+"there. Then run:"
+msgstr ""
+
+#: data/templates/ubuntu-application/help/tutorial.xml:738(para)
+msgid "to license every file."
+msgstr ""
+
+#: data/templates/ubuntu-application/help/tutorial.xml:741(para)
+msgid ""
+"If you've added code files or other files to your project manually, you will "
+"need to add the license to those files manually or add those tags at the "
+"beginning of the file:"
+msgstr ""
+
+#: data/templates/ubuntu-application/help/tutorial.xml:743(programlisting)
+#, no-wrap
+msgid ""
+"### BEGIN LICENSE\n"
+"### END LICENSE"
+msgstr ""
+
+#: data/templates/ubuntu-application/help/tutorial.xml:748(title)
+msgid "Translate Your Application"
+msgstr ""
+
+#: data/templates/ubuntu-application/help/tutorial.xml:748(para)
+msgid ""
+"<placeholder-1/> To allow for users from other countries to use your "
+"application you may want to translate it. Glade automatically creates a pot "
+"file for you but to translate strings in your code you have to:"
+msgstr ""
+
+#: data/templates/ubuntu-application/help/tutorial.xml:750(programlisting)
+#, no-wrap
+msgid "import gettext"
+msgstr ""
+
+#: data/templates/ubuntu-application/help/tutorial.xml:751(programlisting)
+#, no-wrap
+msgid "gettext.gettext(\"What you want translated\")"
+msgstr ""
+
+#: data/templates/ubuntu-application/help/tutorial.xml:753(title)
+msgid "Specify Application Settings"
+msgstr ""
+
+#: data/templates/ubuntu-application/help/tutorial.xml:753(para)
+msgid ""
+"<placeholder-1/> You should personalize your application a little before "
+"creating the archive. This is very easy to do, as all of the files that you "
+"need have already been created, and only need a few lines changed to make "
+"them your own. To do this you should:"
+msgstr ""
+
+#: data/templates/ubuntu-application/help/tutorial.xml:757(para)
+msgid "Personalize the Application Icon"
+msgstr ""
+
+#: data/templates/ubuntu-application/help/tutorial.xml:758(para) data/templates/ubuntu-application/help/tutorial.xml:772(title)
+msgid "Edit the Desktop File"
+msgstr ""
+
+#: data/templates/ubuntu-application/help/tutorial.xml:759(para)
+msgid "Edit the setup.py File"
+msgstr ""
+
+#: data/templates/ubuntu-application/help/tutorial.xml:762(title)
+msgid "Personalize your Application Icon"
+msgstr ""
+
+#: data/templates/ubuntu-application/help/tutorial.xml:762(para)
+msgid ""
+"<placeholder-1/> When users install your application, Ubuntu will display an "
+"icon next to it in the menus. You can create your own icon or edit the file "
+"called \"jotty.svg\" in the media directory (jotty/data/media). Ubuntu comes "
+"with a great image editing program called \"Inkscape.\" So you can go:"
+msgstr ""
+
+#: data/templates/ubuntu-application/help/tutorial.xml:764(programlisting)
+#, no-wrap
+msgid ""
+"\n"
+"inkscape data/media/jotty.svg\n"
+msgstr ""
+
+#: data/templates/ubuntu-application/help/tutorial.xml:770(para)
+msgid ""
+"If you don't personalize the icon, it's ok, your app will just have the "
+"default icon, such as in the image below."
+msgstr ""
+
+#: data/templates/ubuntu-application/help/tutorial.xml:772(para)
+msgid ""
+"<placeholder-1/> By default, <application>Quickly</application> Ubuntu "
+"applications are classified as \"utilities\", so they show up under the "
+"Accessories menu in Ubuntu. If we wanted to make Jotty show up in another "
+"category, we can do this by editing the desktop file. A desktop file is a "
+"file that describes your application to a Linux desktop. The file "
+"\"jottydesktop.in\" was automatically created in the jotty project "
+"directory. To change Jotty from a Utility to an Office application, edit "
+"jotty.desktop.in and change this:"
+msgstr ""
+
+#: data/templates/ubuntu-application/help/tutorial.xml:776(programlisting)
+#, no-wrap
+msgid ""
+"[Desktop Entry]\n"
+"Name=Jotty\n"
+"Comment=Jotty application\n"
+"Categories=GNOME;Utility;\n"
+"Exec=jotty\n"
+"Icon=jotty\n"
+"Terminal=false\n"
+"Type=Application\n"
+msgstr ""
+
+#: data/templates/ubuntu-application/help/tutorial.xml:786(para)
+msgid "to this:"
+msgstr ""
+
+#: data/templates/ubuntu-application/help/tutorial.xml:790(programlisting)
+#, no-wrap
+msgid ""
+"[Desktop Entry]\n"
+"Name=Jotty\n"
+"Comment=Jotty application\n"
+"Categories=GNOME;Office;\n"
+"Exec=jotty\n"
+"Icon=jotty\n"
+"Terminal=false\n"
+"Type=Application"
+msgstr ""
+
+#: data/templates/ubuntu-application/help/tutorial.xml:798(para)
+msgid ""
+"There are lots more categories that you can use, all defined by the "
+"FreeDesktop spec. You can see the complete list in the <ulink "
+"url=\"http://standards.freedesktop.org/menu-spec/latest/apa.html\">menu "
+"spec</ulink>."
+msgstr ""
+
+#: data/templates/ubuntu-application/help/tutorial.xml:802(title)
+msgid "Edit Setup.py"
+msgstr ""
+
+#: data/templates/ubuntu-application/help/tutorial.xml:801(para)
+msgid ""
+"<placeholder-1/> Finally, you should include some information in the "
+"setup.py file to tell your users a little about yourself. The setup.py file "
+"was created for you, just like the desktop file. Most of of the setup.py "
+"file shouldn't be modified, as it is just boiler plate that makes your "
+"application work properly after it has been installed. However, there is a "
+"section at the bottom of the setup.py file that you should edit to describe "
+"yourself and the application."
+msgstr ""
+
+#: data/templates/ubuntu-application/help/tutorial.xml:805(para)
+msgid "So I would change this section:"
+msgstr ""
+
+#: data/templates/ubuntu-application/help/tutorial.xml:809(programlisting)
+#, no-wrap
+msgid ""
+"DistUtilsExtra.auto.setup(\n"
+"    name='jotty',\n"
+"    version='0.1',\n"
+"    license='GPL v3',\n"
+"    #author='Your Name',\n"
+"    #author_email='email@ubuntu.com',\n"
+"    #description='UI for managing …',\n"
+"    #long_description='Here a longer description',\n"
+"    #url='https://launchpad.net/jotty',\n"
+"    cmdclass={'install': InstallAndUpdateDataDirectory}\n"
+"    )\n"
+msgstr ""
+
+#: data/templates/ubuntu-application/help/tutorial.xml:821(para)
+msgid "To look like this:"
+msgstr ""
+
+#: data/templates/ubuntu-application/help/tutorial.xml:825(programlisting)
+#, no-wrap
+msgid ""
+"DistUtilsExtra.auto.setup(\n"
+"    name='jotty',\n"
+"    version='0.1',\n"
+"    license='GPL v3',\n"
+"    author='Rick Spencer',\n"
+"    author_email='rick.spencer@canonical.com',\n"
+"    description='Note taking application',\n"
+"    long_description='Note taking application that uses CouchDB as the "
+"backend.',\n"
+"    #url='https://launchpad.net/jotty',\n"
+"    cmdclass={'install': InstallAndUpdateDataDirectory}\n"
+"    )"
+msgstr ""
+
+#: data/templates/ubuntu-application/help/tutorial.xml:836(para)
+msgid ""
+"Note that the license has already been set up for you, author and "
+"author_email are updated each time you connect to Launchpad (with "
+"<application>Quickly</application> release or "
+"<application>Quickly</application> share) with your Launchpad real name and "
+"preferred email adress."
+msgstr ""
+
+#: data/templates/ubuntu-application/help/tutorial.xml:837(para)
+msgid ""
+"Notice that Jotty doesn't have a web page yet, so I just left that line "
+"commented out. Also, you don't have to increment version number as "
+"<application>Quickly</application> share and "
+"<application>Quickly</application> release commands will make it for you.."
+msgstr ""
+
+#: data/templates/ubuntu-application/help/tutorial.xml:841(title)
+msgid "Create and Test the Debian Archive"
+msgstr ""
+
+#: data/templates/ubuntu-application/help/tutorial.xml:841(para)
+msgid ""
+"<placeholder-1/> After personalizing the project, we are now ready to create "
+"the package. This is easily done by issuing the package command:"
+msgstr ""
+
+#: data/templates/ubuntu-application/help/tutorial.xml:844(programlisting) data/templates/ubuntu-application/help/tutorial.xml:1046(programlisting)
+#, no-wrap
+msgid ""
+"\n"
+"<application>Quickly</application> package\n"
+msgstr ""
+
+#: data/templates/ubuntu-application/help/tutorial.xml:847(para)
+msgid ""
+"This command will take a little while to discover dependencies and create "
+"all the required archives, etc... It will also report some errors as we "
+"haven't created a PGP key, for instance. None the less, when it is done, the "
+"package will be created. Using the file browser, you can see the created "
+"package next to the project directory:"
+msgstr ""
+
+#: data/templates/ubuntu-application/help/tutorial.xml:851(para)
+msgid ""
+"Right now, the specific file we are interested in is \"jotty_0.1_all.deb\". "
+"To test it out, double click on it, to open it in Ubuntu's graphical "
+"installer program:"
+msgstr ""
+
+#: data/templates/ubuntu-application/help/tutorial.xml:855(para)
+msgid ""
+"Click \"Install Package\" to see how it installs onto your desktop. After "
+"chugging for a bit, you'll see that it is installed in the Applications-"
+"&gt;Office menu. If you customized your icon, you'll see that the menu uses "
+"your custom icon as well."
+msgstr ""
+
+#: data/templates/ubuntu-application/help/tutorial.xml:859(title)
+msgid "Now that you have a package"
+msgstr ""
+
+#: data/templates/ubuntu-application/help/tutorial.xml:859(para)
+msgid ""
+"<placeholder-1/> Now that you've packaged your application, you can share "
+"the .deb file. However, if your users install your application this way, and "
+"you update the application, your users will have to find this out and "
+"reinstall the newer version themselves. This hassle can be avoided in Ubuntu "
+"by using Personal Package Archives (or PPAs). Distrubuting your applications "
+"in this manner is covered in section 4 (not yet available)."
+msgstr ""
+
+#: data/templates/ubuntu-application/help/tutorial.xml:863(title)
+msgid ""
+"<application>Quickly</application>: <application>Quickly</application> "
+"Command Reference"
+msgstr ""
+
+#: data/templates/ubuntu-application/help/tutorial.xml:864(para)
+msgid ""
+"The ubuntu-application template template contains the following commands."
+msgstr ""
+
+#: data/templates/ubuntu-application/help/tutorial.xml:867(xref) data/templates/ubuntu-application/help/tutorial.xml:900(title) data/templates/ubuntu-application/help/tutorial.xml:901(title)
+msgid "create"
+msgstr ""
+
+#: data/templates/ubuntu-application/help/tutorial.xml:870(xref) data/templates/ubuntu-application/help/tutorial.xml:927(title)
+msgid "add dialog"
+msgstr ""
+
+#: data/templates/ubuntu-application/help/tutorial.xml:873(xref) data/templates/ubuntu-application/help/tutorial.xml:972(title) data/templates/ubuntu-application/help/tutorial.xml:973(title)
+msgid "edit"
+msgstr ""
+
+#: data/templates/ubuntu-application/help/tutorial.xml:876(xref) data/templates/ubuntu-application/help/tutorial.xml:983(title) data/templates/ubuntu-application/help/tutorial.xml:984(title)
+msgid "design"
+msgstr ""
+
+#: data/templates/ubuntu-application/help/tutorial.xml:879(xref) data/templates/ubuntu-application/help/tutorial.xml:996(title) data/templates/ubuntu-application/help/tutorial.xml:997(title)
+msgid "help"
+msgstr ""
+
+#: data/templates/ubuntu-application/help/tutorial.xml:882(xref) data/templates/ubuntu-application/help/tutorial.xml:1005(title) data/templates/ubuntu-application/help/tutorial.xml:1006(title)
+msgid "license"
+msgstr ""
+
+#: data/templates/ubuntu-application/help/tutorial.xml:885(xref) data/templates/ubuntu-application/help/tutorial.xml:1044(title) data/templates/ubuntu-application/help/tutorial.xml:1045(title)
+msgid "package"
+msgstr ""
+
+#: data/templates/ubuntu-application/help/tutorial.xml:888(xref) data/templates/ubuntu-application/help/tutorial.xml:1061(title) data/templates/ubuntu-application/help/tutorial.xml:1062(title)
+msgid "release"
+msgstr ""
+
+#: data/templates/ubuntu-application/help/tutorial.xml:891(xref) data/templates/ubuntu-application/help/tutorial.xml:1096(title) data/templates/ubuntu-application/help/tutorial.xml:1097(title)
+msgid "run"
+msgstr ""
+
+#: data/templates/ubuntu-application/help/tutorial.xml:894(xref) data/templates/ubuntu-application/help/tutorial.xml:1106(title) data/templates/ubuntu-application/help/tutorial.xml:1107(title)
+msgid "save"
+msgstr ""
+
+#: data/templates/ubuntu-application/help/tutorial.xml:897(xref) data/templates/ubuntu-application/help/tutorial.xml:1121(title) data/templates/ubuntu-application/help/tutorial.xml:1123(title)
+msgid "share"
+msgstr ""
+
+#: data/templates/ubuntu-application/help/tutorial.xml:901(para) data/templates/ubuntu-application/help/tutorial.xml:928(para) data/templates/ubuntu-application/help/tutorial.xml:973(para) data/templates/ubuntu-application/help/tutorial.xml:984(para) data/templates/ubuntu-application/help/tutorial.xml:997(para) data/templates/ubuntu-application/help/tutorial.xml:1006(para) data/templates/ubuntu-application/help/tutorial.xml:1045(para) data/templates/ubuntu-application/help/tutorial.xml:1062(para) data/templates/ubuntu-application/help/tutorial.xml:1097(para) data/templates/ubuntu-application/help/tutorial.xml:1107(para) data/templates/ubuntu-application/help/tutorial.xml:1122(para)
+msgid "<placeholder-1/> Usage:"
+msgstr ""
+
+#: data/templates/ubuntu-application/help/tutorial.xml:903(programlisting)
+#, no-wrap
+msgid ""
+"\n"
+"<application>Quickly</application> create ubuntu-application "
+"path/to/project_name"
+msgstr ""
+
+#: data/templates/ubuntu-application/help/tutorial.xml:905(para)
+msgid ""
+"where \"project_name\" is one or more words separated by an underscore and "
+"path/to can be any existing path."
+msgstr ""
+
+#: data/templates/ubuntu-application/help/tutorial.xml:908(para)
+msgid ""
+"This will create and run a new project, including Python code, Glade files, "
+"and packaging files to make the project work. After creating the project, "
+"get started by:"
+msgstr ""
+
+#: data/templates/ubuntu-application/help/tutorial.xml:914(para)
+msgid "Changing your working directory to the new project:"
+msgstr ""
+
+#: data/templates/ubuntu-application/help/tutorial.xml:916(programlisting)
+#, no-wrap
+msgid "cd path/to/project_name"
+msgstr ""
+
+#: data/templates/ubuntu-application/help/tutorial.xml:918(para)
+msgid "Edit the UI with Glade:"
+msgstr ""
+
+#: data/templates/ubuntu-application/help/tutorial.xml:919(programlisting)
+#, no-wrap
+msgid "<application>Quickly</application> design"
+msgstr ""
+
+#: data/templates/ubuntu-application/help/tutorial.xml:921(para)
+msgid "Edit the Python code:"
+msgstr ""
+
+#: data/templates/ubuntu-application/help/tutorial.xml:922(programlisting) data/templates/ubuntu-application/help/tutorial.xml:951(programlisting)
+#, no-wrap
+msgid "<application>Quickly</application> edit"
+msgstr ""
+
+#: data/templates/ubuntu-application/help/tutorial.xml:928(title)
+msgid "dialog"
+msgstr ""
+
+#: data/templates/ubuntu-application/help/tutorial.xml:930(programlisting)
+#, no-wrap
+msgid "<application>Quickly</application> add dialog dialog_name"
+msgstr ""
+
+#: data/templates/ubuntu-application/help/tutorial.xml:931(para)
+msgid "where dialog_name is one or more words seperated with underscore"
+msgstr ""
+
+#: data/templates/ubuntu-application/help/tutorial.xml:932(para)
+msgid "This will create:"
+msgstr ""
+
+#: data/templates/ubuntu-application/help/tutorial.xml:936(para)
+msgid ""
+"A subclass of gtk.Dialog called DialogNameDialog in the module "
+"DialogNameDialog.py"
+msgstr ""
+
+#: data/templates/ubuntu-application/help/tutorial.xml:939(para)
+msgid "A glade file called DialogNameDialog.ui in the ui directory"
+msgstr ""
+
+#: data/templates/ubuntu-application/help/tutorial.xml:942(para)
+msgid "A catalog file called dialog_name_dialog.xml also in the ui directory"
+msgstr ""
+
+#: data/templates/ubuntu-application/help/tutorial.xml:945(para)
+msgid "To edit the UI for the dialog, run:"
+msgstr ""
+
+#: data/templates/ubuntu-application/help/tutorial.xml:947(programlisting)
+#, no-wrap
+msgid "<application>Quickly</application> design\n"
+msgstr ""
+
+#: data/templates/ubuntu-application/help/tutorial.xml:949(para)
+msgid "To edit the behavior, run:"
+msgstr ""
+
+#: data/templates/ubuntu-application/help/tutorial.xml:952(para)
+msgid "To use the dialog you have to invoke it from another python file:"
+msgstr ""
+
+#: data/templates/ubuntu-application/help/tutorial.xml:956(programlisting)
+#, no-wrap
+msgid ""
+"\n"
+"Import the dialog\n"
+"import DialogNameDialog\n"
+msgstr ""
+
+#: data/templates/ubuntu-application/help/tutorial.xml:960(programlisting)
+#, no-wrap
+msgid ""
+"\n"
+"Create an instance of the dialog\n"
+"dialog = DialogNameDialog.NewDialogNameDialog()\n"
+msgstr ""
+
+#: data/templates/ubuntu-application/help/tutorial.xml:964(programlisting)
+#, no-wrap
+msgid ""
+"\n"
+"Run the dialog and hide the dialog\n"
+"result = dialog.run()\n"
+"dialog.hide()\n"
+msgstr ""
+
+#: data/templates/ubuntu-application/help/tutorial.xml:975(programlisting)
+#, no-wrap
+msgid ""
+"\n"
+"<application>Quickly</application> edit\n"
+msgstr ""
+
+#: data/templates/ubuntu-application/help/tutorial.xml:977(para)
+msgid ""
+"A convenience command to open all of your python files in your project "
+"directory in your default editor, ready for editing."
+msgstr ""
+
+#: data/templates/ubuntu-application/help/tutorial.xml:985(programlisting)
+#, no-wrap
+msgid ""
+"\n"
+"<application>Quickly</application> design\n"
+msgstr ""
+
+#: data/templates/ubuntu-application/help/tutorial.xml:987(para)
+msgid ""
+"Opens Glade UI editor so that you can edit the UI for dialogs and windows in "
+"your project. Note that you *must* open Glade in this manner for "
+"<application>Quickly</application> to work. If you try to open Glade "
+"directly, and the open the UI files, Glade will throw errors and won't open "
+"the files."
+msgstr ""
+
+#: data/templates/ubuntu-application/help/tutorial.xml:998(programlisting)
+#, no-wrap
+msgid ""
+"\n"
+"<application>Quickly</application> help\n"
+msgstr ""
+
+#: data/templates/ubuntu-application/help/tutorial.xml:1000(para)
+msgid "Opens a web browser with the help index."
+msgstr ""
+
+#: data/templates/ubuntu-application/help/tutorial.xml:1007(programlisting)
+#, no-wrap
+msgid ""
+"\n"
+"<application>Quickly</application> license &lt;Your_Licence=\n"
+msgstr ""
+
+#: data/templates/ubuntu-application/help/tutorial.xml:1009(para)
+msgid "Adds license to project files. Before using this command, you should:"
+msgstr ""
+
+#: data/templates/ubuntu-application/help/tutorial.xml:1013(para)
+msgid ""
+"run <application>Quickly</application> save in case something goes wrong"
+msgstr ""
+
+#: data/templates/ubuntu-application/help/tutorial.xml:1016(para)
+msgid "Edit the file Copyright to include your authorship."
+msgstr ""
+
+#: data/templates/ubuntu-application/help/tutorial.xml:1018(para)
+msgid ""
+"If you want to put your own <application>Quickly</application> unsupported "
+"Licence, remove and replace the tags ### BEGIN AUTOMATIC LICENCE GENERATION "
+"and ### END AUTOMATIC LICENCE GENERATION in it by your own licence."
+msgstr ""
+
+#: data/templates/ubuntu-application/help/tutorial.xml:1023(programlisting)
+#, no-wrap
+msgid "<application>Quickly</application> license"
+msgstr ""
+
+#: data/templates/ubuntu-application/help/tutorial.xml:1023(programlisting)
+#, no-wrap
+msgid "<application>Quickly</application> licence &lt;License="
+msgstr ""
+
+#: data/templates/ubuntu-application/help/tutorial.xml:1022(para)
+msgid ""
+"Executes either <placeholder-1/> or <placeholder-2/> where &lt;License= can "
+"be either: - GPL-3 (default) - GPL-2"
+msgstr ""
+
+#: data/templates/ubuntu-application/help/tutorial.xml:1029(para)
+msgid ""
+"This will modify the Copyright file with the chosen licence (with GPL-3 by "
+"default). Updating previous chosen Licence if needed. If you previously "
+"removed the tags to add your own licence, it will leave it pristine. If no "
+"name is attributed to the Copyright, it will try to retrieve it from "
+"Launchpad (in <application>Quickly</application> release or "
+"<application>Quickly</application> share command only)"
+msgstr ""
+
+#: data/templates/ubuntu-application/help/tutorial.xml:1035(para)
+msgid "Finally, this will copy the Copyright at the head of every files."
+msgstr ""
+
+#: data/templates/ubuntu-application/help/tutorial.xml:1037(para)
+msgid ""
+"Note that if you don't run <application>Quickly</application> licence before "
+"calling <application>Quickly</application> release or "
+"<application>Quickly</application> share, this one will execute it for you "
+"and guess the copyright holder from your launchpad account if you didn't "
+"update it."
+msgstr ""
+
+#: data/templates/ubuntu-application/help/tutorial.xml:1048(para)
+msgid ""
+"Creates a debian file (deb) from your project. Before running the package "
+"command you can edit the Icon and Category entry of *.desktop.in file, where "
+"* is the name of your project."
+msgstr ""
+
+#: data/templates/ubuntu-application/help/tutorial.xml:1052(para)
+msgid ""
+"Note that if you didn't run <application>Quickly</application> release, "
+"<application>Quickly</application> share or "
+"<application>Quickly</application> change-lp-project you may miss the name, "
+"email in setup.py. You can edit them if you don't want to use any of these "
+"commands afterwards. Those changes are not a mandatory at all for testing "
+"purpose."
+msgstr ""
+
+#: data/templates/ubuntu-application/help/tutorial.xml:1063(programlisting)
+#, no-wrap
+msgid ""
+"\n"
+"<application>Quickly</application> release\n"
+msgstr ""
+
+#: data/templates/ubuntu-application/help/tutorial.xml:1065(para)
+msgid ""
+"Posts a release of your project to a PPA on launchpad so that users can "
+"install the application on their system."
+msgstr ""
+
+#: data/templates/ubuntu-application/help/tutorial.xml:1070(programlisting) data/templates/ubuntu-application/help/tutorial.xml:1073(programlisting)
+#, no-wrap
+msgid "<application>Quickly</application> release &lt;release_number="
+msgstr ""
+
+#: data/templates/ubuntu-application/help/tutorial.xml:1068(para)
+msgid ""
+"You can also execute: <placeholder-1/> of you don't want to use current "
+"release_number. The release_number must be a number."
+msgstr ""
+
+#: data/templates/ubuntu-application/help/tutorial.xml:1072(para)
+msgid ""
+"<placeholder-1/> notes about changes where \"notes about changes\" is "
+"optional text describing what changes were made since the last save"
+msgstr ""
+
+#: data/templates/ubuntu-application/help/tutorial.xml:1076(para)
+msgid ""
+"Before running <application>Quickly</application> release, you should: "
+"create your account and a project page on http://launchpad.net. You also "
+"have to add a PPA to your launchpad account."
+msgstr ""
+
+#: data/templates/ubuntu-application/help/tutorial.xml:1080(para)
+msgid ""
+"Name, email and version setup.py will be automatically changed. (version "
+"will be &lt;current_release= and bzr will commit and tagged. Once the "
+"release is done, &lt;current_release= will be incremented by 0.1 to be ready "
+"for next release."
+msgstr ""
+
+#: data/templates/ubuntu-application/help/tutorial.xml:1085(para)
+msgid ""
+"If you previously used <application>Quickly</application> shared "
+"&lt;current_release=~publicX will be dropped to release &lt;current_release= "
+"version (&lt;current_release=~publicX &lt;current_release=) You can modify "
+"the description and long description if you wish."
+msgstr ""
+
+#: data/templates/ubuntu-application/help/tutorial.xml:1091(programlisting)
+#, no-wrap
+msgid "<application>Quickly</application> package"
+msgstr ""
+
+#: data/templates/ubuntu-application/help/tutorial.xml:1090(para)
+msgid ""
+"You can run <placeholder-1/> and test your package to make sure it installs "
+"as expected. (This is not mandatory)"
+msgstr ""
+
+#: data/templates/ubuntu-application/help/tutorial.xml:1098(programlisting)
+#, no-wrap
+msgid ""
+"\n"
+"<application>Quickly</application> run\n"
+msgstr ""
+
+#: data/templates/ubuntu-application/help/tutorial.xml:1100(para)
+msgid ""
+"Runs your application. This is the best way to try test it out while you are "
+"developing it. It starts up the main project window."
+msgstr ""
+
+#: data/templates/ubuntu-application/help/tutorial.xml:1108(programlisting)
+#, no-wrap
+msgid ""
+"\n"
+"<application>Quickly</application> save notes about changes\n"
+msgstr ""
+
+#: data/templates/ubuntu-application/help/tutorial.xml:1110(para)
+msgid ""
+"where \"notes about changes\" is optional text describing what changes were "
+"made since the last save."
+msgstr ""
+
+#: data/templates/ubuntu-application/help/tutorial.xml:1117(programlisting)
+#, no-wrap
+msgid "bzr help"
+msgstr ""
+
+#: data/templates/ubuntu-application/help/tutorial.xml:1113(para)
+msgid ""
+"This command commits all changes since the last save to bzr. Note that it "
+"does not push changes to any back up location. If you need revert or "
+"otherwise use the revision control, use bzr directly: <placeholder-1/>"
+msgstr ""
+
+#: data/templates/ubuntu-application/help/tutorial.xml:1124(programlisting)
+#, no-wrap
+msgid ""
+"\n"
+"<application>Quickly</application> share"
+msgstr ""
+
+#: data/templates/ubuntu-application/help/tutorial.xml:1126(para)
+msgid "Updates your PPA with the the latest saved project changes."
+msgstr ""
+
+#: data/templates/ubuntu-application/help/tutorial.xml:1128(para)
+msgid ""
+"Before running <application>Quickly</application> release, you should: "
+"create your account on http://launchpad.net. You also have to add a PPA to "
+"your launchpad account."
+msgstr ""
+
+#: data/templates/ubuntu-application/help/tutorial.xml:1132(para)
+msgid ""
+"Name, email and version setup.py will be automatically changed. (version "
+"will be &lt;current_release~publicX= where X will be incremented at each "
+"<application>Quickly</application> share execution) You can modify the "
+"description and long description if you wish."
+msgstr ""
+
+#: data/templates/ubuntu-application/help/tutorial.xml:1142(title)
+msgid "Links"
+msgstr ""
+
+#: data/templates/ubuntu-application/help/tutorial.xml:1144(link)
+msgid "<placeholder-1/>: <placeholder-2/> Command Reference"
+msgstr ""
+
+#: data/templates/ubuntu-application/help/tutorial.xml:1147(ulink)
+msgid "Blog post on <placeholder-1/>"
+msgstr ""
+
+#: data/templates/ubuntu-application/help/tutorial.xml:1150(ulink)
+msgid "Language: Python Language Reference"
+msgstr ""
+
+#: data/templates/ubuntu-application/help/tutorial.xml:1153(ulink)
+msgid "Core Library: Python 2.6 Library Reference"
+msgstr ""
+
+#: data/templates/ubuntu-application/help/tutorial.xml:1156(ulink)
+msgid "UI Library: PyGtk"
+msgstr ""
+
+#: data/templates/ubuntu-application/help/tutorial.xml:1159(ulink)
+msgid "Database: CouchDB Reference"
+msgstr ""
+
+#: data/templates/ubuntu-application/help/tutorial.xml:1162(ulink)
+msgid "UI Editing: Glade User Documenation"
+msgstr ""
+
+#: data/templates/ubuntu-application/help/tutorial.xml:1165(ulink)
+msgid "Editor: Gedit Help"
+msgstr ""
+
+#: data/templates/ubuntu-application/help/tutorial.xml:1168(ulink)
+msgid "Version Control: Bazaar"
+msgstr ""
+
+#. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2
+#: data/templates/ubuntu-application/help/tutorial.xml:0(None)
+msgid "translator-credits"
+msgstr ""
+"Launchpad Contributions:\n"
+"  Michael Terry https://launchpad.net/~mterry"

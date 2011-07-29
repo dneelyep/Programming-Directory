@@ -1,0 +1,6 @@
+<?php //Returning values in global variables
+$a1 = "WILLIAMS";
+$a2 = "henry";
+$a3 = "gatES";
+
+?>

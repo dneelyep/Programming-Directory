@@ -1,0 +1,23 @@
+#!/usr/bin/perl
+
+#Write a program that reads a list of numbers (on separate lines) until end-of-
+#input and then prints for each number the corresponding person's name from the
+#list shown below. (Hardcode this list of names into your program. That is, it should
+#appear in your program's source code.) For example, if the input numbers were
+#1, 2, 4, and 2, the output names would be fred, betty, dino, and betty:
+#    fred betty barney dino wilma pebbles bamm-bamm
+
+@names = qw ( betty barney dino wilma pebbles bamm-bamm );
+
+print "We meet again. It seems yer improvin\' at this software stuff a little. Hrrmmphh.\n";
+print "Check out these following names:\n";
+
+#This is a workaround. Ideally I should be able to just print the list itself, rather than hand-typing it.
+print "betty barney dino wilma pebbles bamm-bamm\n\n";
+
+print "Now, enter the number of the one of those you want to print out. IE: 0 for betty, 5 for bamm-bamm, etc.\n";
+chomp($name_selection = <STDIN>);
+
+print "\nNow the corresponding name:\n;"
+print $names[$name_selection];
+print "\n";

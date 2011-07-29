@@ -1,0 +1,35 @@
+How to make this work:
+
+Goal:
+	- Have a system set up where a user can:
+		- Create their own username and a few more fields
+		- Register that username into a database (or browser cookie?)
+		- Log in with that username
+		- While logged in, view a page that displays the fields they entered above
+		- After registered, be able to edit the values they originally entered [optional]
+
+What I need to implement:
+	- A Welcome page, prompting the user to register or log in
+	- A register page
+	- A "thanks for registering" page
+	- An account home page for the user
+	- A page to edit account details for the user [optional]
+
+Breakdown:
+	- Welcome page
+		- A welcome message, which prompts the user to Sign In or Register
+			- Should consist of a box with two input fields - Username and Password
+			- In bottom of box, include a Register link to the Register page
+			- Below all this, a Submit button to sign in
+				- Clicking submit sends the user to their account home page
+	- Register page
+		- Has Username and Password input fields for the user to add these
+		- Includes other miscellaneous fields as well
+		- A Submit button which, when clicked, logs the user in with their new account and sends them to the
+			Thanks page
+	- Thanks page
+		- Display a "Thanks for registering" message and redirect the user to their account home page
+	- Account home page
+		- Displays the user's Username and any other miscellaneous fields they have added
+			- Beside all fields beside Username, the user can click a button to change the field's value
+	- Edit account details page [optional]

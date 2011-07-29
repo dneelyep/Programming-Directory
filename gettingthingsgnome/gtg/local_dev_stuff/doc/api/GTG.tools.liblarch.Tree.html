@@ -1,0 +1,382 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "DTD/xhtml1-strict.dtd">
+<html>
+  <head>
+    <title>GTG.tools.liblarch.Tree : API documentation</title>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type" />
+    <link href="apidocs.css" type="text/css" rel="stylesheet" />
+    
+    
+  </head>
+  <body>
+    <h1 class="class">G.t.l.Tree : class documentation</h1>
+    <p>
+      <span id="part">Part of <a href="GTG.html">GTG</a>.<a href="GTG.tools.html">tools</a>.<a href="GTG.tools.liblarch.html">liblarch</a></span>
+      
+      <a href="classIndex.html#GTG.tools.liblarch.Tree">View In Hierarchy</a>
+    </p>
+    <div>
+      
+    </div>
+    <div>A thin wrapper to MainTree that adds filtering capabilities. It also 
+provides a few methods to operate complex operation on the MainTree (e.g, 
+move_node)<table class="fieldTable"></table></div>
+
+    
+    
+    <div id="splitTables">
+      <table class="children sortable" id="id222">
+  
+  
+<tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.tools.liblarch.Tree.html#__init__">__init__</a></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.tools.liblarch.Tree.html#get_node">get_node</a></td>
+    <td><span>return the node object defined by the Node id nid.</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.tools.liblarch.Tree.html#has_node">has_node</a></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.tools.liblarch.Tree.html#add_node">add_node</a></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.tools.liblarch.Tree.html#del_node">del_node</a></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.tools.liblarch.Tree.html#refresh_node">refresh_node</a></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.tools.liblarch.Tree.html#refresh_all">refresh_all</a></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.tools.liblarch.Tree.html#move_node">move_node</a></td>
+    <td><span>Move the node to a new parent (dismissing all other parents)</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.tools.liblarch.Tree.html#add_parent">add_parent</a></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.tools.liblarch.Tree.html#get_main_view">get_main_view</a></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.tools.liblarch.Tree.html#get_viewtree">get_viewtree</a></td>
+    <td><span>This returns a viewtree.</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.tools.liblarch.Tree.html#list_filters">list_filters</a></td>
+    <td><span>List, by name, all available filters</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.tools.liblarch.Tree.html#add_filter">add_filter</a></td>
+    <td><span>Adds a filter to the filter bank</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.tools.liblarch.Tree.html#remove_filter">remove_filter</a></td>
+    <td><span>Remove a filter from the bank.</span></td>
+  </tr>
+  
+</table>
+      
+      
+    </div>
+    
+    
+    
+
+    <div class="function">
+  <a name="GTG.tools.liblarch.Tree.__init__">
+    
+  </a>
+  <a name="__init__">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    __init__(self):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div class="undocumented">Undocumented</div>
+  </div>
+</div><div class="function">
+  <a name="GTG.tools.liblarch.Tree.get_node">
+    
+  </a>
+  <a name="get_node">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    get_node(self, nid):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div>return the node object defined by the Node id nid. raises a ValueError 
+if the node doesn't exist in the tree<table class="fieldTable"></table></div>
+  </div>
+</div><div class="function">
+  <a name="GTG.tools.liblarch.Tree.has_node">
+    
+  </a>
+  <a name="has_node">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    has_node(self, nid):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div class="undocumented">Undocumented</div>
+  </div>
+</div><div class="function">
+  <a name="GTG.tools.liblarch.Tree.add_node">
+    
+  </a>
+  <a name="add_node">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    add_node(self, node, parent_id=None):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div class="undocumented">Undocumented</div>
+  </div>
+</div><div class="function">
+  <a name="GTG.tools.liblarch.Tree.del_node">
+    
+  </a>
+  <a name="del_node">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    del_node(self, nid, recursive=False):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div class="undocumented">Undocumented</div>
+  </div>
+</div><div class="function">
+  <a name="GTG.tools.liblarch.Tree.refresh_node">
+    
+  </a>
+  <a name="refresh_node">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    refresh_node(self, nid):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div class="undocumented">Undocumented</div>
+  </div>
+</div><div class="function">
+  <a name="GTG.tools.liblarch.Tree.refresh_all">
+    
+  </a>
+  <a name="refresh_all">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    refresh_all(self):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div class="undocumented">Undocumented</div>
+  </div>
+</div><div class="function">
+  <a name="GTG.tools.liblarch.Tree.move_node">
+    
+  </a>
+  <a name="move_node">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    move_node(self, nid, new_parent_id=None):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div>Move the node to a new parent (dismissing all other parents) use pid 
+None to move it to the root<table class="fieldTable"></table></div>
+  </div>
+</div><div class="function">
+  <a name="GTG.tools.liblarch.Tree.add_parent">
+    
+  </a>
+  <a name="add_parent">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    add_parent(self, nid, new_parent_id=None):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div class="undocumented">Undocumented</div>
+  </div>
+</div><div class="function">
+  <a name="GTG.tools.liblarch.Tree.get_main_view">
+    
+  </a>
+  <a name="get_main_view">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    get_main_view(self):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div class="undocumented">Undocumented</div>
+  </div>
+</div><div class="function">
+  <a name="GTG.tools.liblarch.Tree.get_viewtree">
+    
+  </a>
+  <a name="get_viewtree">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    get_viewtree(self, name=None, refresh=True):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div>This returns a viewtree. If name is given and a view of that name 
+already exists, that existing view is returned. Else, a view with that name
+is created. If name is None, the view is not remembered. If refresh is 
+False, the view is not initialized (meaning that it will probably not 
+reflect the Tree. This is useful as an optimization if you plan to apply 
+filter.<table class="fieldTable"></table></div>
+  </div>
+</div><div class="function">
+  <a name="GTG.tools.liblarch.Tree.list_filters">
+    
+  </a>
+  <a name="list_filters">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    list_filters(self):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div>List, by name, all available filters<table class="fieldTable"></table></div>
+  </div>
+</div><div class="function">
+  <a name="GTG.tools.liblarch.Tree.add_filter">
+    
+  </a>
+  <a name="add_filter">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    add_filter(self, filter_name, filter_func, parameters=None):
+    
+  </div>
+  <div class="functionBody">
+    
+    <pre>Adds a filter to the filter bank 
+@filter_name : name to give to the filter
+@filter_func : the function that will filter the nodes
+@parameters : some default parameters fot that filter
+Return True if the filter was added
+Return False if the filter_name was already in the bank</pre>
+  </div>
+</div><div class="function">
+  <a name="GTG.tools.liblarch.Tree.remove_filter">
+    
+  </a>
+  <a name="remove_filter">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    remove_filter(self, filter_name):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div>Remove a filter from the bank. Only custom filters that were added here 
+can be removed Return False if the filter was not removed<table class="fieldTable"></table></div>
+  </div>
+</div>
+    <address>
+      <a href="index.html">API Documentation</a> for <a href="http://gtg.fritalk.com/">GTG</a>, generated by <a href="http://codespeak.net/~mwh/pydoctor/">pydoctor</a> at 2011-04-15 17:43:34.
+    </address>
+  </body>
+</html>

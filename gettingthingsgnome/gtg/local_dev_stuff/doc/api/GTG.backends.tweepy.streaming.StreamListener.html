@@ -1,0 +1,208 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "DTD/xhtml1-strict.dtd">
+<html>
+  <head>
+    <title>GTG.backends.tweepy.streaming.StreamListener : API documentation</title>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type" />
+    <link href="apidocs.css" type="text/css" rel="stylesheet" />
+    
+    
+  </head>
+  <body>
+    <h1 class="class">G.b.t.s.StreamListener(<span title="object">object</span>) : class documentation</h1>
+    <p>
+      <span id="part">Part of <a href="GTG.html">GTG</a>.<a href="GTG.backends.html">backends</a>.<a href="GTG.backends.tweepy.html">tweepy</a>.<a href="GTG.backends.tweepy.streaming.html">streaming</a></span>
+      
+      <a href="classIndex.html#GTG.backends.tweepy.streaming.StreamListener">View In Hierarchy</a>
+    </p>
+    <div>
+      
+    </div>
+    <div class="undocumented">No class docstring</div>
+
+    
+    
+    <div id="splitTables">
+      <table class="children sortable" id="id310">
+  
+  
+<tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.backends.tweepy.streaming.StreamListener.html#__init__">__init__</a></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.backends.tweepy.streaming.StreamListener.html#on_data">on_data</a></td>
+    <td><span>Called when raw data is received from connection.</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.backends.tweepy.streaming.StreamListener.html#on_status">on_status</a></td>
+    <td><span>Called when a new status arrives</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.backends.tweepy.streaming.StreamListener.html#on_delete">on_delete</a></td>
+    <td><span>Called when a delete notice arrives for a status</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.backends.tweepy.streaming.StreamListener.html#on_limit">on_limit</a></td>
+    <td><span>Called when a limitation notice arrvies</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.backends.tweepy.streaming.StreamListener.html#on_error">on_error</a></td>
+    <td><span>Called when a non-200 status code is returned</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.backends.tweepy.streaming.StreamListener.html#on_timeout">on_timeout</a></td>
+    <td><span>Called when stream connection times out</span></td>
+  </tr>
+  
+</table>
+      
+      
+    </div>
+    
+    
+    
+
+    <div class="function">
+  <a name="GTG.backends.tweepy.streaming.StreamListener.__init__">
+    
+  </a>
+  <a name="__init__">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    __init__(self, api=None):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div class="undocumented">Undocumented</div>
+  </div>
+</div><div class="function">
+  <a name="GTG.backends.tweepy.streaming.StreamListener.on_data">
+    
+  </a>
+  <a name="on_data">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    on_data(self, data):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div>Called when raw data is received from connection.</p>
+<p>Override this method if you wish to manually handle the stream data. 
+Return False to stop stream and close connection.<table class="fieldTable"></table></div>
+  </div>
+</div><div class="function">
+  <a name="GTG.backends.tweepy.streaming.StreamListener.on_status">
+    
+  </a>
+  <a name="on_status">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    on_status(self, status):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div>Called when a new status arrives<table class="fieldTable"></table></div>
+  </div>
+</div><div class="function">
+  <a name="GTG.backends.tweepy.streaming.StreamListener.on_delete">
+    
+  </a>
+  <a name="on_delete">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    on_delete(self, status_id, user_id):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div>Called when a delete notice arrives for a status<table class="fieldTable"></table></div>
+  </div>
+</div><div class="function">
+  <a name="GTG.backends.tweepy.streaming.StreamListener.on_limit">
+    
+  </a>
+  <a name="on_limit">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    on_limit(self, track):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div>Called when a limitation notice arrvies<table class="fieldTable"></table></div>
+  </div>
+</div><div class="function">
+  <a name="GTG.backends.tweepy.streaming.StreamListener.on_error">
+    
+  </a>
+  <a name="on_error">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    on_error(self, status_code):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div>Called when a non-200 status code is returned<table class="fieldTable"></table></div>
+  </div>
+</div><div class="function">
+  <a name="GTG.backends.tweepy.streaming.StreamListener.on_timeout">
+    
+  </a>
+  <a name="on_timeout">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    on_timeout(self):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div>Called when stream connection times out<table class="fieldTable"></table></div>
+  </div>
+</div>
+    <address>
+      <a href="index.html">API Documentation</a> for <a href="http://gtg.fritalk.com/">GTG</a>, generated by <a href="http://codespeak.net/~mwh/pydoctor/">pydoctor</a> at 2011-04-15 17:43:34.
+    </address>
+  </body>
+</html>

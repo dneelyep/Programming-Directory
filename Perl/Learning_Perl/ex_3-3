@@ -1,0 +1,25 @@
+#!/usr/bin/perl
+
+#Write a program that reads a list of strings (on separate lines) until end-of-input.
+#Then it should print the strings in ASCIIbetical order. That is, if you enter the
+#strings fred, barney, wilma, betty, the output should show barney betty fred
+#wilma. Are all of the strings on one line in the output or on separate lines? Could you
+#make the output appear in either style?
+
+print "Yea, yea, yea. So this program should read your input, separated by lines, and sort it in ASCIIbetical order.\n";
+print "Also, you can pick if you want all the output on one line or separate lines. Let\'s get started.\n";
+
+@input = <STDIN>;
+
+print "\nDo you want your output on one line(0) or separate lines(1)?\n";
+$line_input = <STDIN>;
+
+if ($line_input == 0) {
+    print "\nYour input, in ASCIIbetical order and on a single line is:\n";
+    @input_sorted = sort @input;
+    print $input_sorted[0..10];
+} else {
+    print "\nYour input, in ASCIIbetical order and on separate lines is:\n";
+    @input_sorted = sort @input;
+    print @input_sorted;
+}

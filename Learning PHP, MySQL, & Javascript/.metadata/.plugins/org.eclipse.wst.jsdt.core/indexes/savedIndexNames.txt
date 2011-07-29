@@ -1,0 +1,7 @@
+INDEX VERSION 1.121+/home/daniel/Desktop/Programming/Learning PHP, MySQL, & Javascript/.metadata/.plugins/org.eclipse.wst.jsdt.core/indexes
+3999488017.index
+1556433318.index
+2840102731.index
+3027400189.index
+10583060.index
+4076651304.index

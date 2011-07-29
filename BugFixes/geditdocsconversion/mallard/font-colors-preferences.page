@@ -1,0 +1,10 @@
+<page xmlns="http://projectmallard.org/1.0/"
+      type="topic"
+      id="font-colors-preferences">
+
+  <info>
+    <link type="guide" xref="index#preferences"/>
+  </info>
+
+  <title>Font and Colors Preferences</title>
+</page>

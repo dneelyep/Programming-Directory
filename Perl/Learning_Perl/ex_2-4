@@ -1,0 +1,17 @@
+#!/usr/bin/perl
+
+#Write a program that prompts for and reads two numbers (on separate lines of
+#input) and prints out the product of the two numbers multiplied together.
+
+print "Hello thar. Give me two numbers and I'll multiple \'em fer ya. Aarrr.\n";
+
+print "What be yer first number matey? ";
+chomp($first_num = <STDIN>);
+
+print "And...YYYAAARRRR...second? ";
+chomp($second_num = <STDIN>);
+
+print "... Calculating ...\n";
+
+print "$first_num times $second_num is:\n";
+print $first_num * $second_num . "\n";

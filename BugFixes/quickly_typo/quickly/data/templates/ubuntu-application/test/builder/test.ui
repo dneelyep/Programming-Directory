@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interface>
+  <requires lib="gtk+" version="2.16"/>
+  <!-- interface-naming-policy project-wide -->
+  <object class="GtkWindow" id="window">
+    <signal name="show" handler="window_show_cb"/>
+    <child>
+      <object class="GtkLabel" id="label">
+        <property name="visible">True</property>
+        <property name="label" translatable="yes">label</property>
+        <signal name="show" handler="on_label_show"/>
+      </object>
+    </child>
+  </object>
+  <object class="GtkFileFilter" id="filefilter"/>
+  <object class="GtkWindow" id="wind?o-w two">
+    <child>
+      <object class="GtkLabel" id="wind_o_w_two">
+        <property name="visible">True</property>
+        <property name="label" translatable="yes">label</property>
+      </object>
+    </child>
+  </object>
+  <object class="GtkWindow" id="1wind-o w/3">
+    <child>
+      <placeholder/>
+    </child>
+  </object>
+</interface>

@@ -1,0 +1,267 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "DTD/xhtml1-strict.dtd">
+<html>
+  <head>
+    <title>GTG.tools.bidict.BiDict : API documentation</title>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type" />
+    <link href="apidocs.css" type="text/css" rel="stylesheet" />
+    
+    
+  </head>
+  <body>
+    <h1 class="class">G.t.b.BiDict(<span title="object">object</span>) : class documentation</h1>
+    <p>
+      <span id="part">Part of <a href="GTG.html">GTG</a>.<a href="GTG.tools.html">tools</a>.<a href="GTG.tools.bidict.html">bidict</a></span>
+      
+      <a href="classIndex.html#GTG.tools.bidict.BiDict">View In Hierarchy</a>
+    </p>
+    <div>
+      
+    </div>
+    <div>Bidirectional dictionary: the pairs stored can be accessed using either 
+the first or the second element as key (named key1 and key2). You don't 
+need this if there is no clash between the domains of the first and second 
+element of the pairs.<table class="fieldTable"></table></div>
+
+    
+    
+    <div id="splitTables">
+      <table class="children sortable" id="id208">
+  
+  
+<tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.tools.bidict.BiDict.html#__init__">__init__</a></td>
+    <td><span>Initialization of the bidirectional dictionary</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.tools.bidict.BiDict.html#add">add</a></td>
+    <td><span>Adds a pair (key1, key2) to the dictionary</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.tools.bidict.BiDict.html#__str__">__str__</a></td>
+    <td><span>returns a string representing the content of this BiDict</span></td>
+  </tr><tr class="method private">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.tools.bidict.BiDict.html#_get_by_first">_get_by_first</a></td>
+    <td><span>Gets the key2 given key1</span></td>
+  </tr><tr class="method private">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.tools.bidict.BiDict.html#_get_by_second">_get_by_second</a></td>
+    <td><span>Gets the key1 given key2</span></td>
+  </tr><tr class="method private">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.tools.bidict.BiDict.html#_remove_by_first">_remove_by_first</a></td>
+    <td><span>Removes a pair given the first key</span></td>
+  </tr><tr class="method private">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.tools.bidict.BiDict.html#_remove_by_second">_remove_by_second</a></td>
+    <td><span>Removes a pair given the second key</span></td>
+  </tr><tr class="method private">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.tools.bidict.BiDict.html#_get_all_first">_get_all_first</a></td>
+    <td><span>Returns the list of all first keys</span></td>
+  </tr><tr class="method private">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.tools.bidict.BiDict.html#_get_all_second">_get_all_second</a></td>
+    <td><span>Returns the list of all second keys</span></td>
+  </tr>
+  
+</table>
+      
+      
+    </div>
+    
+    
+    
+
+    <div class="function">
+  <a name="GTG.tools.bidict.BiDict.__init__">
+    
+  </a>
+  <a name="__init__">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    __init__(self, *pairs):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div>Initialization of the bidirectional dictionary<table class="fieldTable"><tr class="fieldStart"><td class="fieldName">Parameters</td><td class="fieldArg">pairs</td><td>optional. A list of pairs to add to the dictionary
+</td></tr></table></div>
+  </div>
+</div><div class="function">
+  <a name="GTG.tools.bidict.BiDict.add">
+    
+  </a>
+  <a name="add">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    add(self, pair):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div>Adds a pair (key1, key2) to the dictionary<table class="fieldTable"><tr class="fieldStart"><td class="fieldName">Parameters</td><td class="fieldArg">pair</td><td>the pair formatted as (key1, key2)
+</td></tr></table></div>
+  </div>
+</div><div class="function">
+  <a name="GTG.tools.bidict.BiDict._get_by_first">
+    
+  </a>
+  <a name="_get_by_first">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    _get_by_first(self, key):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div>Gets the key2 given key1<table class="fieldTable"><tr class="fieldStart"><td class="fieldName">Parameters</td><td class="fieldArg">key</td><td>the first key
+</td></tr></table></div>
+  </div>
+</div><div class="function">
+  <a name="GTG.tools.bidict.BiDict._get_by_second">
+    
+  </a>
+  <a name="_get_by_second">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    _get_by_second(self, key):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div>Gets the key1 given key2<table class="fieldTable"><tr class="fieldStart"><td class="fieldName">Parameters</td><td class="fieldArg">key</td><td>the second key
+</td></tr></table></div>
+  </div>
+</div><div class="function">
+  <a name="GTG.tools.bidict.BiDict._remove_by_first">
+    
+  </a>
+  <a name="_remove_by_first">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    _remove_by_first(self, first):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div>Removes a pair given the first key<table class="fieldTable"><tr class="fieldStart"><td class="fieldName">Parameters</td><td class="fieldArg">key</td><td>the first key
+</td></tr></table></div>
+  </div>
+</div><div class="function">
+  <a name="GTG.tools.bidict.BiDict._remove_by_second">
+    
+  </a>
+  <a name="_remove_by_second">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    _remove_by_second(self, second):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div>Removes a pair given the second key<table class="fieldTable"><tr class="fieldStart"><td class="fieldName">Parameters</td><td class="fieldArg">key</td><td>the second key
+</td></tr></table></div>
+  </div>
+</div><div class="function">
+  <a name="GTG.tools.bidict.BiDict._get_all_first">
+    
+  </a>
+  <a name="_get_all_first">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    _get_all_first(self):
+    
+  </div>
+  <div class="functionBody">
+    
+    <pre>Returns the list of all first keys
+
+@returns list</pre>
+  </div>
+</div><div class="function">
+  <a name="GTG.tools.bidict.BiDict._get_all_second">
+    
+  </a>
+  <a name="_get_all_second">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    _get_all_second(self):
+    
+  </div>
+  <div class="functionBody">
+    
+    <pre>Returns the list of all second keys
+
+@returns list</pre>
+  </div>
+</div><div class="function">
+  <a name="GTG.tools.bidict.BiDict.__str__">
+    
+  </a>
+  <a name="__str__">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    __str__(self):
+    
+  </div>
+  <div class="functionBody">
+    
+    <pre>returns a string representing the content of this BiDict
+
+@returns string</pre>
+  </div>
+</div>
+    <address>
+      <a href="index.html">API Documentation</a> for <a href="http://gtg.fritalk.com/">GTG</a>, generated by <a href="http://codespeak.net/~mwh/pydoctor/">pydoctor</a> at 2011-05-02 21:27:37.
+    </address>
+  </body>
+</html>

@@ -1,0 +1,42 @@
+<page xmlns="http://projectmallard.org/1.0/"
+      type="guide"
+      id="index">
+
+  <title>gedit Help</title>
+
+  <section id="get-start" style="2column">
+    <title>Getting Started</title>
+  </section>
+
+  <section id="work-files" style="2column">
+    <title>Working with Files</title>
+  </section>
+
+  <section id="work-text" style="2column">
+    <title>Working with Text</title>
+  </section>
+
+  <section id="find-replace" style="2column">
+    <title>Finding and Replacing</title>
+  </section>
+
+  <section id="printing" style="2column">
+    <title>Printing</title>
+  </section>
+
+  <section id="program-feat" style="2column">
+    <title>Programming Features</title>
+  </section>
+
+  <section id="shortcut-keys">
+    <title>Shortcut Keys</title>
+  </section>
+
+  <section id="preferences" style="2column">
+    <title>Preferences</title>
+  </section>
+
+  <section id="plugins" style="2column">
+    <title>Plugins</title>
+  </section>
+</page>

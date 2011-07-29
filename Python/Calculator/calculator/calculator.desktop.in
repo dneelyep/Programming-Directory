@@ -1,0 +1,8 @@
+[Desktop Entry]
+_Name=Calculator
+_Comment=Calculator application
+Categories=GNOME;Utility;
+Exec=calculator
+Icon=calculator
+Terminal=false
+Type=Application

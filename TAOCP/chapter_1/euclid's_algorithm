@@ -1,0 +1,19 @@
+In pseudo-code:
+
+Ask for user input.
+Set first input = m
+Set second input = n
+
+function euclids_algorithm ()
+{
+	divide m by n;
+	Set the remainder of above to r;
+	if (r == 0) {
+	    print "GCD is" r;
+	}
+	else {
+	     set m = n;
+	     set n = r;
+	     euclids_algorithm();
+	}
+}

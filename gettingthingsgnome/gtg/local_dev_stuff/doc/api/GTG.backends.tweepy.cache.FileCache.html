@@ -1,0 +1,392 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "DTD/xhtml1-strict.dtd">
+<html>
+  <head>
+    <title>GTG.backends.tweepy.cache.FileCache : API documentation</title>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type" />
+    <link href="apidocs.css" type="text/css" rel="stylesheet" />
+    
+    
+  </head>
+  <body>
+    <h1 class="class">G.b.t.c.FileCache(<a href="GTG.backends.tweepy.cache.Cache.html">Cache</a>) : class documentation</h1>
+    <p>
+      <span id="part">Part of <a href="GTG.html">GTG</a>.<a href="GTG.backends.html">backends</a>.<a href="GTG.backends.tweepy.html">tweepy</a>.<a href="GTG.backends.tweepy.cache.html">cache</a></span>
+      
+      <a href="classIndex.html#GTG.backends.tweepy.cache.FileCache">View In Hierarchy</a>
+    </p>
+    <div>
+      
+    </div>
+    <div>File-based cache<table class="fieldTable"></table></div>
+
+    
+    
+    <div id="splitTables">
+      <table class="children sortable" id="id329">
+  
+  
+<tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.backends.tweepy.cache.FileCache.html#__init__">__init__</a></td>
+    <td><span>Initialize the cache</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.backends.tweepy.cache.FileCache.html#store">store</a></td>
+    <td><span>Add new record to cache</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.backends.tweepy.cache.FileCache.html#get">get</a></td>
+    <td><span>Get cached entry if exists and not expired</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.backends.tweepy.cache.FileCache.html#count">count</a></td>
+    <td><span>Get count of entries currently stored in cache</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.backends.tweepy.cache.FileCache.html#cleanup">cleanup</a></td>
+    <td><span>Delete any expired entries in cache.</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.backends.tweepy.cache.FileCache.html#flush">flush</a></td>
+    <td><span>Delete all cached entries</span></td>
+  </tr><tr class="method private">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.backends.tweepy.cache.FileCache.html#_get_path">_get_path</a></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="method private">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.backends.tweepy.cache.FileCache.html#_lock_file_dummy">_lock_file_dummy</a></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="method private">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.backends.tweepy.cache.FileCache.html#_unlock_file_dummy">_unlock_file_dummy</a></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="method private">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.backends.tweepy.cache.FileCache.html#_lock_file_posix">_lock_file_posix</a></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="method private">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.backends.tweepy.cache.FileCache.html#_unlock_file_posix">_unlock_file_posix</a></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="method private">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.backends.tweepy.cache.FileCache.html#_lock_file_win32">_lock_file_win32</a></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="method private">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.backends.tweepy.cache.FileCache.html#_unlock_file_win32">_unlock_file_win32</a></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="method private">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.backends.tweepy.cache.FileCache.html#_delete_file">_delete_file</a></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="method private">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.backends.tweepy.cache.FileCache.html#_get">_get</a></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr>
+  
+</table>
+      
+      
+    </div>
+    
+    
+    
+
+    <div class="function">
+  <a name="GTG.backends.tweepy.cache.FileCache.__init__">
+    
+  </a>
+  <a name="__init__">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    __init__(self, cache_dir, timeout=60):
+    
+  </div>
+  <div class="functionBody">
+    <div class="interfaceinfo">overrides <a href="GTG.backends.tweepy.cache.Cache.html#__init__">GTG.backends.tweepy.cache.Cache.__init__</a></div>
+    <div>Initialize the cache timeout: number of seconds to keep a cached 
+entry<table class="fieldTable"></table></div>
+  </div>
+</div><div class="function">
+  <a name="GTG.backends.tweepy.cache.FileCache._get_path">
+    
+  </a>
+  <a name="_get_path">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    _get_path(self, key):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div class="undocumented">Undocumented</div>
+  </div>
+</div><div class="function">
+  <a name="GTG.backends.tweepy.cache.FileCache._lock_file_dummy">
+    
+  </a>
+  <a name="_lock_file_dummy">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    _lock_file_dummy(self, path, exclusive=True):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div class="undocumented">Undocumented</div>
+  </div>
+</div><div class="function">
+  <a name="GTG.backends.tweepy.cache.FileCache._unlock_file_dummy">
+    
+  </a>
+  <a name="_unlock_file_dummy">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    _unlock_file_dummy(self, lock):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div class="undocumented">Undocumented</div>
+  </div>
+</div><div class="function">
+  <a name="GTG.backends.tweepy.cache.FileCache._lock_file_posix">
+    
+  </a>
+  <a name="_lock_file_posix">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    _lock_file_posix(self, path, exclusive=True):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div class="undocumented">Undocumented</div>
+  </div>
+</div><div class="function">
+  <a name="GTG.backends.tweepy.cache.FileCache._unlock_file_posix">
+    
+  </a>
+  <a name="_unlock_file_posix">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    _unlock_file_posix(self, lock):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div class="undocumented">Undocumented</div>
+  </div>
+</div><div class="function">
+  <a name="GTG.backends.tweepy.cache.FileCache._lock_file_win32">
+    
+  </a>
+  <a name="_lock_file_win32">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    _lock_file_win32(self, path, exclusive=True):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div class="undocumented">Undocumented</div>
+  </div>
+</div><div class="function">
+  <a name="GTG.backends.tweepy.cache.FileCache._unlock_file_win32">
+    
+  </a>
+  <a name="_unlock_file_win32">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    _unlock_file_win32(self, lock):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div class="undocumented">Undocumented</div>
+  </div>
+</div><div class="function">
+  <a name="GTG.backends.tweepy.cache.FileCache._delete_file">
+    
+  </a>
+  <a name="_delete_file">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    _delete_file(self, path):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div class="undocumented">Undocumented</div>
+  </div>
+</div><div class="function">
+  <a name="GTG.backends.tweepy.cache.FileCache.store">
+    
+  </a>
+  <a name="store">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    store(self, key, value):
+    
+  </div>
+  <div class="functionBody">
+    <div class="interfaceinfo">overrides <a href="GTG.backends.tweepy.cache.Cache.html#store">GTG.backends.tweepy.cache.Cache.store</a></div>
+    <div>Add new record to cache key: entry key value: data of entry<table class="fieldTable"></table></div>
+  </div>
+</div><div class="function">
+  <a name="GTG.backends.tweepy.cache.FileCache.get">
+    
+  </a>
+  <a name="get">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    get(self, key, timeout=None):
+    
+  </div>
+  <div class="functionBody">
+    <div class="interfaceinfo">overrides <a href="GTG.backends.tweepy.cache.Cache.html#get">GTG.backends.tweepy.cache.Cache.get</a></div>
+    <div>Get cached entry if exists and not expired key: which entry to get 
+timeout: override timeout with this value [optional]<table class="fieldTable"></table></div>
+  </div>
+</div><div class="function">
+  <a name="GTG.backends.tweepy.cache.FileCache._get">
+    
+  </a>
+  <a name="_get">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    _get(self, path, timeout):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div class="undocumented">Undocumented</div>
+  </div>
+</div><div class="function">
+  <a name="GTG.backends.tweepy.cache.FileCache.count">
+    
+  </a>
+  <a name="count">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    count(self):
+    
+  </div>
+  <div class="functionBody">
+    <div class="interfaceinfo">overrides <a href="GTG.backends.tweepy.cache.Cache.html#count">GTG.backends.tweepy.cache.Cache.count</a></div>
+    <div>Get count of entries currently stored in cache<table class="fieldTable"></table></div>
+  </div>
+</div><div class="function">
+  <a name="GTG.backends.tweepy.cache.FileCache.cleanup">
+    
+  </a>
+  <a name="cleanup">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    cleanup(self):
+    
+  </div>
+  <div class="functionBody">
+    <div class="interfaceinfo">overrides <a href="GTG.backends.tweepy.cache.Cache.html#cleanup">GTG.backends.tweepy.cache.Cache.cleanup</a></div>
+    <div>Delete any expired entries in cache.<table class="fieldTable"></table></div>
+  </div>
+</div><div class="function">
+  <a name="GTG.backends.tweepy.cache.FileCache.flush">
+    
+  </a>
+  <a name="flush">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    flush(self):
+    
+  </div>
+  <div class="functionBody">
+    <div class="interfaceinfo">overrides <a href="GTG.backends.tweepy.cache.Cache.html#flush">GTG.backends.tweepy.cache.Cache.flush</a></div>
+    <div>Delete all cached entries<table class="fieldTable"></table></div>
+  </div>
+</div>
+    <address>
+      <a href="index.html">API Documentation</a> for <a href="http://gtg.fritalk.com/">GTG</a>, generated by <a href="http://codespeak.net/~mwh/pydoctor/">pydoctor</a> at 2011-04-15 17:43:34.
+    </address>
+  </body>
+</html>

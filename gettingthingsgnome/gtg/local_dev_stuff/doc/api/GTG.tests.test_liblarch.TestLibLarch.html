@@ -1,0 +1,1249 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "DTD/xhtml1-strict.dtd">
+<html>
+  <head>
+    <title>GTG.tests.test_liblarch.TestLibLarch : API documentation</title>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type" />
+    <link href="apidocs.css" type="text/css" rel="stylesheet" />
+    
+    
+  </head>
+  <body>
+    <h1 class="class">G.t.t.TestLibLarch(<span title="unittest.TestCase">unittest.TestCase</span>) : class documentation</h1>
+    <p>
+      <span id="part">Part of <a href="GTG.html">GTG</a>.<a href="GTG.tests.html">tests</a>.<a href="GTG.tests.test_liblarch.html">test_liblarch</a></span>
+      
+      <a href="classIndex.html#GTG.tests.test_liblarch.TestLibLarch">View In Hierarchy</a>
+    </p>
+    <div>
+      
+    </div>
+    <div>Tests for `Tree`.<table class="fieldTable"></table></div>
+
+    
+    
+    <div id="splitTables">
+      <table class="children sortable" id="id160">
+  
+  
+<tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.tests.test_liblarch.TestLibLarch.html#caller_name">caller_name</a></td>
+    <td><span>Returns the filename and the line of the calling function.</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.tests.test_liblarch.TestLibLarch.html#assertSignal">assertSignal</a></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.tests.test_liblarch.TestLibLarch.html#test_assertSignal">test_assertSignal</a></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.tests.test_liblarch.TestLibLarch.html#setUp">setUp</a></td>
+    <td><span>Set up a dummy tree with filters and nodes.</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.tests.test_liblarch.TestLibLarch.html#tearDown">tearDown</a></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.tests.test_liblarch.TestLibLarch.html#is_blue">is_blue</a></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.tests.test_liblarch.TestLibLarch.html#is_green">is_green</a></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.tests.test_liblarch.TestLibLarch.html#is_red">is_red</a></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.tests.test_liblarch.TestLibLarch.html#is_leaf">is_leaf</a></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.tests.test_liblarch.TestLibLarch.html#test_get_node">test_get_node</a></td>
+    <td><span>Test that one node can be retrieved from the tree</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.tests.test_liblarch.TestLibLarch.html#test_add_remove_node">test_add_remove_node</a></td>
+    <td><span>Test the adding and removal of nodes</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.tests.test_liblarch.TestLibLarch.html#test_modifying_node">test_modifying_node</a></td>
+    <td><span>Modifying a node and see if the change is reflected in filters</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.tests.test_liblarch.TestLibLarch.html#test_removing_parent">test_removing_parent</a></td>
+    <td><span>Test behavior of node when its parent goes away.</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.tests.test_liblarch.TestLibLarch.html#test_adding_to_late_parent">test_adding_to_late_parent</a></td>
+    <td><span>Add a node to a parent not yet in the tree</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.tests.test_liblarch.TestLibLarch.html#test_adding_to_late_parent2">test_adding_to_late_parent2</a></td>
+    <td><span>Another tricky case with late parent. This was</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.tests.test_liblarch.TestLibLarch.html#test_adding_to_late_parent3">test_adding_to_late_parent3</a></td>
+    <td><span>Another tricky case with late parent. This was</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.tests.test_liblarch.TestLibLarch.html#test_multiple_children">test_multiple_children</a></td>
+    <td><span>We test a node with two children.</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.tests.test_liblarch.TestLibLarch.html#test_clean_multiple_parents">test_clean_multiple_parents</a></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.tests.test_liblarch.TestLibLarch.html#test_adding_to_late_parent_with_leaf_filter">test_adding_to_late_parent_with_leaf_filter</a></td>
+    <td><span>Add a node to a parent not yet in the tree</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.tests.test_liblarch.TestLibLarch.html#test_updating_parent">test_updating_parent</a></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.tests.test_liblarch.TestLibLarch.html#test_addchild_with_late_parent">test_addchild_with_late_parent</a></td>
+    <td><span>Add a child to a node which is not yet in the tree.</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.tests.test_liblarch.TestLibLarch.html#test_addparent_with_late_child">test_addparent_with_late_child</a></td>
+    <td><span>Add a child not yet in the tree to a node</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.tests.test_liblarch.TestLibLarch.html#test_more_late_child">test_more_late_child</a></td>
+    <td><span>This one is trickier. We add a node with some children.</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.tests.test_liblarch.TestLibLarch.html#test_late_first_child">test_late_first_child</a></td>
+    <td><span>Futur2 is the child of parent</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.tests.test_liblarch.TestLibLarch.html#test_move_node_to_a_multiple_parent">test_move_node_to_a_multiple_parent</a></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.tests.test_liblarch.TestLibLarch.html#test_recursive_removing_parent">test_recursive_removing_parent</a></td>
+    <td><span>Test behavior of node when its parent goes away.</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.tests.test_liblarch.TestLibLarch.html#test_move_node">test_move_node</a></td>
+    <td><span>Test node movement from parents.</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.tests.test_liblarch.TestLibLarch.html#test_add_parent">test_add_parent</a></td>
+    <td><span>Test that a node can have two parents.</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.tests.test_liblarch.TestLibLarch.html#test_cyclic_paradox">test_cyclic_paradox</a></td>
+    <td><span>Try to add a node as a child of one of its grand-children.</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.tests.test_liblarch.TestLibLarch.html#test_mainview">test_mainview</a></td>
+    <td><span>Verify mainview behavior</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.tests.test_liblarch.TestLibLarch.html#test_viewtree_get_n_nodes">test_viewtree_get_n_nodes</a></td>
+    <td><span>Test get_n_nodes() method of TreeView</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.tests.test_liblarch.TestLibLarch.html#test_viewtree_get_n_nodes_with_cache">test_viewtree_get_n_nodes_with_cache</a></td>
+    <td><span>Testing the cache of the get_n_nodes</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.tests.test_liblarch.TestLibLarch.html#test_viewtree_get_all_nodes">test_viewtree_get_all_nodes</a></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.tests.test_liblarch.TestLibLarch.html#test_viewtree_get_node_for_path">test_viewtree_get_node_for_path</a></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.tests.test_liblarch.TestLibLarch.html#test_viewtree_get_paths_for_node">test_viewtree_get_paths_for_node</a></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.tests.test_liblarch.TestLibLarch.html#test_viewtree_next_node">test_viewtree_next_node</a></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.tests.test_liblarch.TestLibLarch.html#test_viewtree_node_has_child">test_viewtree_node_has_child</a></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.tests.test_liblarch.TestLibLarch.html#test_viewtree_node_all_children">test_viewtree_node_all_children</a></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.tests.test_liblarch.TestLibLarch.html#test_viewtree_node_nth_child">test_viewtree_node_nth_child</a></td>
+    <td><span>Test node_nth_child() for TreeView.</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.tests.test_liblarch.TestLibLarch.html#test_viewtree_node_parents">test_viewtree_node_parents</a></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.tests.test_liblarch.TestLibLarch.html#test_viewtree_is_displayed">test_viewtree_is_displayed</a></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.tests.test_liblarch.TestLibLarch.html#test_simple_filter">test_simple_filter</a></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.tests.test_liblarch.TestLibLarch.html#test_leaf_filter">test_leaf_filter</a></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.tests.test_liblarch.TestLibLarch.html#test_flatleaves_filters">test_flatleaves_filters</a></td>
+    <td><span>We apply a leaves + flat filter and the result</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.tests.test_liblarch.TestLibLarch.html#test_flat_filters">test_flat_filters</a></td>
+    <td><span>Test a flat filter.</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.tests.test_liblarch.TestLibLarch.html#test_transparent_filters">test_transparent_filters</a></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.tests.test_liblarch.TestLibLarch.html#test_view_signals">test_view_signals</a></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.tests.test_liblarch.TestLibLarch.html#test_update_callback">test_update_callback</a></td>
+    <td><span>We test the update callbacks and we check that the path</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.tests.test_liblarch.TestLibLarch.html#test_torture">test_torture</a></td>
+    <td><span>This is a torture test, where we will do whatever</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.tests.test_liblarch.TestLibLarch.html#test_copypasting_child">test_copypasting_child</a></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.tests.test_liblarch.TestLibLarch.html#test_speed">test_speed</a></td>
+    <td><span>Performance tests. Patches that reduce performance too much are not</span></td>
+  </tr>
+  
+</table>
+      
+      
+    </div>
+    
+    
+    
+
+    <div class="function">
+  <a name="GTG.tests.test_liblarch.TestLibLarch.caller_name">
+    
+  </a>
+  <a name="caller_name">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    caller_name(self):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div>Returns the filename and the line of the calling function. Precisely, it
+returns the calling calling function (because you're calling this one).<table class="fieldTable"></table></div>
+  </div>
+</div><div class="function">
+  <a name="GTG.tests.test_liblarch.TestLibLarch.assertSignal">
+    
+  </a>
+  <a name="assertSignal">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    assertSignal(self, generator, signal_name, function, how_many_signals=1):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div class="undocumented">Undocumented</div>
+  </div>
+</div><div class="function">
+  <a name="GTG.tests.test_liblarch.TestLibLarch.test_assertSignal">
+    
+  </a>
+  <a name="test_assertSignal">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    test_assertSignal(self):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div class="undocumented">Undocumented</div>
+  </div>
+</div><div class="function">
+  <a name="GTG.tests.test_liblarch.TestLibLarch.setUp">
+    
+  </a>
+  <a name="setUp">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    setUp(self):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div>Set up a dummy tree with filters and nodes.</p>
+<p>Construct a Tree for testing, with some filters for testing, including 
+filters with parameters 'flat' and 'transparent'.  Create a collection of 
+nodes with some of the properties these filters filter on.<table class="fieldTable"></table></div>
+  </div>
+</div><div class="function">
+  <a name="GTG.tests.test_liblarch.TestLibLarch.tearDown">
+    
+  </a>
+  <a name="tearDown">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    tearDown(self):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div class="undocumented">Undocumented</div>
+  </div>
+</div><div class="function">
+  <a name="GTG.tests.test_liblarch.TestLibLarch.is_blue">
+    
+  </a>
+  <a name="is_blue">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    is_blue(self, node, parameters=None):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div class="undocumented">Undocumented</div>
+  </div>
+</div><div class="function">
+  <a name="GTG.tests.test_liblarch.TestLibLarch.is_green">
+    
+  </a>
+  <a name="is_green">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    is_green(self, node, parameters=None):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div class="undocumented">Undocumented</div>
+  </div>
+</div><div class="function">
+  <a name="GTG.tests.test_liblarch.TestLibLarch.is_red">
+    
+  </a>
+  <a name="is_red">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    is_red(self, node, parameters=None):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div class="undocumented">Undocumented</div>
+  </div>
+</div><div class="function">
+  <a name="GTG.tests.test_liblarch.TestLibLarch.is_leaf">
+    
+  </a>
+  <a name="is_leaf">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    is_leaf(self, node, parameters=None):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div class="undocumented">Undocumented</div>
+  </div>
+</div><div class="function">
+  <a name="GTG.tests.test_liblarch.TestLibLarch.test_get_node">
+    
+  </a>
+  <a name="test_get_node">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    test_get_node(self):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div>Test that one node can be retrieved from the tree<table class="fieldTable"></table></div>
+  </div>
+</div><div class="function">
+  <a name="GTG.tests.test_liblarch.TestLibLarch.test_add_remove_node">
+    
+  </a>
+  <a name="test_add_remove_node">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    test_add_remove_node(self):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div>Test the adding and removal of nodes<table class="fieldTable"></table></div>
+  </div>
+</div><div class="function">
+  <a name="GTG.tests.test_liblarch.TestLibLarch.test_modifying_node">
+    
+  </a>
+  <a name="test_modifying_node">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    test_modifying_node(self):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div>Modifying a node and see if the change is reflected in filters<table class="fieldTable"></table></div>
+  </div>
+</div><div class="function">
+  <a name="GTG.tests.test_liblarch.TestLibLarch.test_removing_parent">
+    
+  </a>
+  <a name="test_removing_parent">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    test_removing_parent(self):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div>Test behavior of node when its parent goes away.</p>
+<p>When you remove a parent, the child nodes should be added to the root if
+they don't have any other parents.<table class="fieldTable"></table></div>
+  </div>
+</div><div class="function">
+  <a name="GTG.tests.test_liblarch.TestLibLarch.test_adding_to_late_parent">
+    
+  </a>
+  <a name="test_adding_to_late_parent">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    test_adding_to_late_parent(self):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div>Add a node to a parent not yet in the tree then add the parent later<table class="fieldTable"></table></div>
+  </div>
+</div><div class="function">
+  <a name="GTG.tests.test_liblarch.TestLibLarch.test_adding_to_late_parent2">
+    
+  </a>
+  <a name="test_adding_to_late_parent2">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    test_adding_to_late_parent2(self):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div>Another tricky case with late parent. This was a very rare but existing 
+crash<table class="fieldTable"></table></div>
+  </div>
+</div><div class="function">
+  <a name="GTG.tests.test_liblarch.TestLibLarch.test_adding_to_late_parent3">
+    
+  </a>
+  <a name="test_adding_to_late_parent3">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    test_adding_to_late_parent3(self):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div>Another tricky case with late parent. This was a very rare but existing 
+crash<table class="fieldTable"></table></div>
+  </div>
+</div><div class="function">
+  <a name="GTG.tests.test_liblarch.TestLibLarch.test_multiple_children">
+    
+  </a>
+  <a name="test_multiple_children">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    test_multiple_children(self):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div>We test a node with two children.<table class="fieldTable"></table></div>
+  </div>
+</div><div class="function">
+  <a name="GTG.tests.test_liblarch.TestLibLarch.test_clean_multiple_parents">
+    
+  </a>
+  <a name="test_clean_multiple_parents">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    test_clean_multiple_parents(self):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div class="undocumented">Undocumented</div>
+  </div>
+</div><div class="function">
+  <a name="GTG.tests.test_liblarch.TestLibLarch.test_adding_to_late_parent_with_leaf_filter">
+    
+  </a>
+  <a name="test_adding_to_late_parent_with_leaf_filter">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    test_adding_to_late_parent_with_leaf_filter(self):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div>Add a node to a parent not yet in the tree then add the parent later<table class="fieldTable"></table></div>
+  </div>
+</div><div class="function">
+  <a name="GTG.tests.test_liblarch.TestLibLarch.test_updating_parent">
+    
+  </a>
+  <a name="test_updating_parent">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    test_updating_parent(self):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div class="undocumented">Undocumented</div>
+  </div>
+</div><div class="function">
+  <a name="GTG.tests.test_liblarch.TestLibLarch.test_addchild_with_late_parent">
+    
+  </a>
+  <a name="test_addchild_with_late_parent">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    test_addchild_with_late_parent(self):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div>Add a child to a node which is not yet in the tree. We also check with a
+callback that the path sent is well corresponding to the nid received.<table class="fieldTable"></table></div>
+  </div>
+</div><div class="function">
+  <a name="GTG.tests.test_liblarch.TestLibLarch.test_addparent_with_late_child">
+    
+  </a>
+  <a name="test_addparent_with_late_child">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    test_addparent_with_late_child(self):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div>Add a child not yet in the tree to a node<table class="fieldTable"></table></div>
+  </div>
+</div><div class="function">
+  <a name="GTG.tests.test_liblarch.TestLibLarch.test_more_late_child">
+    
+  </a>
+  <a name="test_more_late_child">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    test_more_late_child(self):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div>This one is trickier. We add a node with some children. Then, we add 
+later a new child between the existing children.<table class="fieldTable"></table></div>
+  </div>
+</div><div class="function">
+  <a name="GTG.tests.test_liblarch.TestLibLarch.test_late_first_child">
+    
+  </a>
+  <a name="test_late_first_child">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    test_late_first_child(self):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div>Futur2 is the child of parent Futur1 is both the child of parent and 
+futur2 Futur1 will be added later, forcing a reorganization.<table class="fieldTable"></table></div>
+  </div>
+</div><div class="function">
+  <a name="GTG.tests.test_liblarch.TestLibLarch.test_move_node_to_a_multiple_parent">
+    
+  </a>
+  <a name="test_move_node_to_a_multiple_parent">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    test_move_node_to_a_multiple_parent(self):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div class="undocumented">Undocumented</div>
+  </div>
+</div><div class="function">
+  <a name="GTG.tests.test_liblarch.TestLibLarch.test_recursive_removing_parent">
+    
+  </a>
+  <a name="test_recursive_removing_parent">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    test_recursive_removing_parent(self):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div>Test behavior of node when its parent goes away.</p>
+<p>When you remove a parent recursively, all the children are also removed 
+!<table class="fieldTable"></table></div>
+  </div>
+</div><div class="function">
+  <a name="GTG.tests.test_liblarch.TestLibLarch.test_move_node">
+    
+  </a>
+  <a name="test_move_node">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    test_move_node(self):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div>Test node movement from parents.</p>
+<p>Check that node can be moved from one node to another, and to root.  
+When moved to root, verify it has no parents.<table class="fieldTable"></table></div>
+  </div>
+</div><div class="function">
+  <a name="GTG.tests.test_liblarch.TestLibLarch.test_add_parent">
+    
+  </a>
+  <a name="test_add_parent">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    test_add_parent(self):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div>Test that a node can have two parents.</p>
+<p>Verify that when a node with a parent gets a second parent, the node can
+be found in both parent nodes.<table class="fieldTable"></table></div>
+  </div>
+</div><div class="function">
+  <a name="GTG.tests.test_liblarch.TestLibLarch.test_cyclic_paradox">
+    
+  </a>
+  <a name="test_cyclic_paradox">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    test_cyclic_paradox(self):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div>Try to add a node as a child of one of its grand-children.<table class="fieldTable"></table></div>
+  </div>
+</div><div class="function">
+  <a name="GTG.tests.test_liblarch.TestLibLarch.test_mainview">
+    
+  </a>
+  <a name="test_mainview">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    test_mainview(self):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div>Verify mainview behavior</p>
+<p>Test that mainview is always up-to-date and raise exception when trying 
+to add filters on it<table class="fieldTable"></table></div>
+  </div>
+</div><div class="function">
+  <a name="GTG.tests.test_liblarch.TestLibLarch.test_viewtree_get_n_nodes">
+    
+  </a>
+  <a name="test_viewtree_get_n_nodes">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    test_viewtree_get_n_nodes(self):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div>Test get_n_nodes() method of TreeView</p>
+<p>Check that retrieving counts of nodes with various filters returns the 
+expected collections.<table class="fieldTable"></table></div>
+  </div>
+</div><div class="function">
+  <a name="GTG.tests.test_liblarch.TestLibLarch.test_viewtree_get_n_nodes_with_cache">
+    
+  </a>
+  <a name="test_viewtree_get_n_nodes_with_cache">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    test_viewtree_get_n_nodes_with_cache(self):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div>Testing the cache of the get_n_nodes<table class="fieldTable"></table></div>
+  </div>
+</div><div class="function">
+  <a name="GTG.tests.test_liblarch.TestLibLarch.test_viewtree_get_all_nodes">
+    
+  </a>
+  <a name="test_viewtree_get_all_nodes">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    test_viewtree_get_all_nodes(self):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div class="undocumented">Undocumented</div>
+  </div>
+</div><div class="function">
+  <a name="GTG.tests.test_liblarch.TestLibLarch.test_viewtree_get_node_for_path">
+    
+  </a>
+  <a name="test_viewtree_get_node_for_path">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    test_viewtree_get_node_for_path(self):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div class="undocumented">Undocumented</div>
+  </div>
+</div><div class="function">
+  <a name="GTG.tests.test_liblarch.TestLibLarch.test_viewtree_get_paths_for_node">
+    
+  </a>
+  <a name="test_viewtree_get_paths_for_node">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    test_viewtree_get_paths_for_node(self):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div class="undocumented">Undocumented</div>
+  </div>
+</div><div class="function">
+  <a name="GTG.tests.test_liblarch.TestLibLarch.test_viewtree_next_node">
+    
+  </a>
+  <a name="test_viewtree_next_node">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    test_viewtree_next_node(self):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div class="undocumented">Undocumented</div>
+  </div>
+</div><div class="function">
+  <a name="GTG.tests.test_liblarch.TestLibLarch.test_viewtree_node_has_child">
+    
+  </a>
+  <a name="test_viewtree_node_has_child">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    test_viewtree_node_has_child(self):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div class="undocumented">Undocumented</div>
+  </div>
+</div><div class="function">
+  <a name="GTG.tests.test_liblarch.TestLibLarch.test_viewtree_node_all_children">
+    
+  </a>
+  <a name="test_viewtree_node_all_children">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    test_viewtree_node_all_children(self):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div class="undocumented">Undocumented</div>
+  </div>
+</div><div class="function">
+  <a name="GTG.tests.test_liblarch.TestLibLarch.test_viewtree_node_nth_child">
+    
+  </a>
+  <a name="test_viewtree_node_nth_child">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    test_viewtree_node_nth_child(self):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div>Test node_nth_child() for TreeView.</p>
+<p>Verify that when retrieving a given child node, that it is returned, 
+except when requesting a node not in the tree or that is not present due 
+being filtered out.<table class="fieldTable"></table></div>
+  </div>
+</div><div class="function">
+  <a name="GTG.tests.test_liblarch.TestLibLarch.test_viewtree_node_parents">
+    
+  </a>
+  <a name="test_viewtree_node_parents">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    test_viewtree_node_parents(self):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div class="undocumented">Undocumented</div>
+  </div>
+</div><div class="function">
+  <a name="GTG.tests.test_liblarch.TestLibLarch.test_viewtree_is_displayed">
+    
+  </a>
+  <a name="test_viewtree_is_displayed">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    test_viewtree_is_displayed(self):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div class="undocumented">Undocumented</div>
+  </div>
+</div><div class="function">
+  <a name="GTG.tests.test_liblarch.TestLibLarch.test_simple_filter">
+    
+  </a>
+  <a name="test_simple_filter">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    test_simple_filter(self):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div class="undocumented">Undocumented</div>
+  </div>
+</div><div class="function">
+  <a name="GTG.tests.test_liblarch.TestLibLarch.test_leaf_filter">
+    
+  </a>
+  <a name="test_leaf_filter">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    test_leaf_filter(self):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div class="undocumented">Undocumented</div>
+  </div>
+</div><div class="function">
+  <a name="GTG.tests.test_liblarch.TestLibLarch.test_flatleaves_filters">
+    
+  </a>
+  <a name="test_flatleaves_filters">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    test_flatleaves_filters(self):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div>We apply a leaves + flat filter and the result should be the same as a 
+simple leaf filter.<table class="fieldTable"></table></div>
+  </div>
+</div><div class="function">
+  <a name="GTG.tests.test_liblarch.TestLibLarch.test_flat_filters">
+    
+  </a>
+  <a name="test_flat_filters">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    test_flat_filters(self):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div>Test a flat filter.</p>
+<p>Green nodes are in &quot;stairs&quot; (each one being the child of 
+another) By applying a filter with the flat properties, we test that all 
+the nodes are now seen &quot;flately&quot;.<table class="fieldTable"></table></div>
+  </div>
+</div><div class="function">
+  <a name="GTG.tests.test_liblarch.TestLibLarch.test_transparent_filters">
+    
+  </a>
+  <a name="test_transparent_filters">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    test_transparent_filters(self):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div class="undocumented">Undocumented</div>
+  </div>
+</div><div class="function">
+  <a name="GTG.tests.test_liblarch.TestLibLarch.test_view_signals">
+    
+  </a>
+  <a name="test_view_signals">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    test_view_signals(self):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div class="undocumented">Undocumented</div>
+  </div>
+</div><div class="function">
+  <a name="GTG.tests.test_liblarch.TestLibLarch.test_update_callback">
+    
+  </a>
+  <a name="test_update_callback">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    test_update_callback(self):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div>We test the update callbacks and we check that the path received is well
+corresponding to the nid received<table class="fieldTable"></table></div>
+  </div>
+</div><div class="function">
+  <a name="GTG.tests.test_liblarch.TestLibLarch.test_torture">
+    
+  </a>
+  <a name="test_torture">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    test_torture(self):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div>This is a torture test, where we will do whatever we want in random 
+order.<table class="fieldTable"></table></div>
+  </div>
+</div><div class="function">
+  <a name="GTG.tests.test_liblarch.TestLibLarch.test_copypasting_child">
+    
+  </a>
+  <a name="test_copypasting_child">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    test_copypasting_child(self):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div class="undocumented">Undocumented</div>
+  </div>
+</div><div class="function">
+  <a name="GTG.tests.test_liblarch.TestLibLarch.test_speed">
+    
+  </a>
+  <a name="test_speed">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    test_speed(self):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div>Performance tests. Patches that reduce performance too much are not 
+acceptable<table class="fieldTable"></table></div>
+  </div>
+</div>
+    <address>
+      <a href="index.html">API Documentation</a> for <a href="http://gtg.fritalk.com/">GTG</a>, generated by <a href="http://codespeak.net/~mwh/pydoctor/">pydoctor</a> at 2011-04-15 17:43:34.
+    </address>
+  </body>
+</html>

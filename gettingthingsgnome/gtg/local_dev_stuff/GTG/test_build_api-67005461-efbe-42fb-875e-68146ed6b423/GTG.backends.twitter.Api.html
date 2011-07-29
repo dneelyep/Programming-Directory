@@ -1,0 +1,1676 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "DTD/xhtml1-strict.dtd">
+<html>
+  <head>
+    <title>GTG.backends.twitter.Api : API documentation</title>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type" />
+    <link href="apidocs.css" type="text/css" rel="stylesheet" />
+    
+    
+  </head>
+  <body>
+    <h1 class="class">G.b.t.Api(<span title="object">object</span>) : class documentation</h1>
+    <p>
+      <span id="part">Part of <a href="GTG.html">GTG</a>.<a href="GTG.backends.html">backends</a>.<a href="GTG.backends.twitter.html">twitter</a></span>
+      
+      <a href="classIndex.html#GTG.backends.twitter.Api">View In Hierarchy</a>
+    </p>
+    <div>
+      
+    </div>
+    <pre>A python interface into the Twitter API
+
+By default, the Api caches results for 1 minute.
+
+Example usage:
+
+  To create an instance of the twitter.Api class, with no authentication:
+
+    &gt;&gt;&gt; import twitter
+    &gt;&gt;&gt; api = twitter.Api()
+
+  To fetch the most recently posted public twitter status messages:
+
+    &gt;&gt;&gt; statuses = api.GetPublicTimeline()
+    &gt;&gt;&gt; print [s.user.name for s in statuses]
+    [u'DeWitt', u'Kesuke Miyagi', u'ev', u'Buzz Andersen', u'Biz Stone'] #...
+
+  To fetch a single user's public status messages, where "user" is either
+  a Twitter "short name" or their user id.
+
+    &gt;&gt;&gt; statuses = api.GetUserTimeline(user)
+    &gt;&gt;&gt; print [s.text for s in statuses]
+
+  To use authentication, instantiate the twitter.Api class with a
+  username and password:
+
+    &gt;&gt;&gt; api = twitter.Api(username='twitter user', password='twitter pass')
+
+  To fetch your friends (after being authenticated):
+
+    &gt;&gt;&gt; users = api.GetFriends()
+    &gt;&gt;&gt; print [u.name for u in users]
+
+  To post a twitter status message (after being authenticated):
+
+    &gt;&gt;&gt; status = api.PostUpdate('I love python-twitter!')
+    &gt;&gt;&gt; print status.text
+    I love python-twitter!
+
+  There are many other methods, including:
+
+    &gt;&gt;&gt; api.PostUpdates(status)
+    &gt;&gt;&gt; api.PostDirectMessage(user, text)
+    &gt;&gt;&gt; api.GetUser(user)
+    &gt;&gt;&gt; api.GetReplies()
+    &gt;&gt;&gt; api.GetUserTimeline(user)
+    &gt;&gt;&gt; api.GetStatus(id)
+    &gt;&gt;&gt; api.DestroyStatus(id)
+    &gt;&gt;&gt; api.GetFriendsTimeline(user)
+    &gt;&gt;&gt; api.GetFriends(user)
+    &gt;&gt;&gt; api.GetFollowers()
+    &gt;&gt;&gt; api.GetFeatured()
+    &gt;&gt;&gt; api.GetDirectMessages()
+    &gt;&gt;&gt; api.PostDirectMessage(user, text)
+    &gt;&gt;&gt; api.DestroyDirectMessage(id)
+    &gt;&gt;&gt; api.DestroyFriendship(user)
+    &gt;&gt;&gt; api.CreateFriendship(user)
+    &gt;&gt;&gt; api.GetUserByEmail(email)
+    &gt;&gt;&gt; api.VerifyCredentials()</pre>
+
+    
+    
+    <div id="splitTables">
+      <table class="children sortable" id="id258">
+  
+  
+<tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.backends.twitter.Api.html#__init__">__init__</a></td>
+    <td><span>Instantiate a new twitter.Api object.</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.backends.twitter.Api.html#GetPublicTimeline">GetPublicTimeline</a></td>
+    <td><span>Fetch the sequnce of public twitter.Status message for all users.</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.backends.twitter.Api.html#FilterPublicTimeline">FilterPublicTimeline</a></td>
+    <td><span>Filter the public twitter timeline by a given search term on</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.backends.twitter.Api.html#GetSearch">GetSearch</a></td>
+    <td><span>Return twitter search results for a given term.</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.backends.twitter.Api.html#GetFriendsTimeline">GetFriendsTimeline</a></td>
+    <td><span>Fetch the sequence of twitter.Status messages for a user's friends</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.backends.twitter.Api.html#GetUserTimeline">GetUserTimeline</a></td>
+    <td><span>Fetch the sequence of public Status messages for a single user.</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.backends.twitter.Api.html#GetStatus">GetStatus</a></td>
+    <td><span>Returns a single status message.</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.backends.twitter.Api.html#DestroyStatus">DestroyStatus</a></td>
+    <td><span>Destroys the status specified by the required ID parameter.</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.backends.twitter.Api.html#PostUpdate">PostUpdate</a></td>
+    <td><span>Post a twitter status message from the authenticated user.</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.backends.twitter.Api.html#PostUpdates">PostUpdates</a></td>
+    <td><span>Post one or more twitter status messages from the authenticated 
+user.</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.backends.twitter.Api.html#GetReplies">GetReplies</a></td>
+    <td><span>Get a sequence of status messages representing the 20 most recent</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.backends.twitter.Api.html#GetFriends">GetFriends</a></td>
+    <td><span>Fetch the sequence of twitter.User instances, one for each friend.</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.backends.twitter.Api.html#GetFriendIDs">GetFriendIDs</a></td>
+    <td><span>Returns a list of twitter user id's for every person</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.backends.twitter.Api.html#GetFollowers">GetFollowers</a></td>
+    <td><span>Fetch the sequence of twitter.User instances, one for each follower</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.backends.twitter.Api.html#GetFeatured">GetFeatured</a></td>
+    <td><span>Fetch the sequence of twitter.User instances featured on twitter.com</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.backends.twitter.Api.html#GetUser">GetUser</a></td>
+    <td><span>Returns a single user.</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.backends.twitter.Api.html#GetDirectMessages">GetDirectMessages</a></td>
+    <td><span>Returns a list of the direct messages sent to the authenticating 
+user.</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.backends.twitter.Api.html#PostDirectMessage">PostDirectMessage</a></td>
+    <td><span>Post a twitter direct message from the authenticated user</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.backends.twitter.Api.html#DestroyDirectMessage">DestroyDirectMessage</a></td>
+    <td><span>Destroys the direct message specified in the required ID parameter.</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.backends.twitter.Api.html#CreateFriendship">CreateFriendship</a></td>
+    <td><span>Befriends the user specified in the user parameter as the authenticating
+user.</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.backends.twitter.Api.html#DestroyFriendship">DestroyFriendship</a></td>
+    <td><span>Discontinues friendship with the user specified in the user 
+parameter.</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.backends.twitter.Api.html#CreateFavorite">CreateFavorite</a></td>
+    <td><span>Favorites the status specified in the status parameter as the 
+authenticating user.</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.backends.twitter.Api.html#DestroyFavorite">DestroyFavorite</a></td>
+    <td><span>Un-favorites the status specified in the ID parameter as the 
+authenticating user.</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.backends.twitter.Api.html#GetFavorites">GetFavorites</a></td>
+    <td><span>Return a list of Status objects representing favorited tweets.</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.backends.twitter.Api.html#GetMentions">GetMentions</a></td>
+    <td><span>Returns the 20 most recent mentions (status containing @username)</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.backends.twitter.Api.html#GetUserByEmail">GetUserByEmail</a></td>
+    <td><span>Returns a single user by email address.</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.backends.twitter.Api.html#VerifyCredentials">VerifyCredentials</a></td>
+    <td><span>Returns a twitter.User instance if the authenticating user is valid.</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.backends.twitter.Api.html#SetCredentials">SetCredentials</a></td>
+    <td><span>Set the username and password for this instance</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.backends.twitter.Api.html#ClearCredentials">ClearCredentials</a></td>
+    <td><span>Clear the username and password for this instance</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.backends.twitter.Api.html#SetCache">SetCache</a></td>
+    <td><span>Override the default cache.  Set to None to prevent caching.</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.backends.twitter.Api.html#SetUrllib">SetUrllib</a></td>
+    <td><span>Override the default urllib implementation.</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.backends.twitter.Api.html#SetCacheTimeout">SetCacheTimeout</a></td>
+    <td><span>Override the default cache timeout.</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.backends.twitter.Api.html#SetUserAgent">SetUserAgent</a></td>
+    <td><span>Override the default user agent</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.backends.twitter.Api.html#SetXTwitterHeaders">SetXTwitterHeaders</a></td>
+    <td><span>Set the X-Twitter HTTP headers that will be sent to the server.</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.backends.twitter.Api.html#SetSource">SetSource</a></td>
+    <td><span>Suggest the &quot;from source&quot; value to be displayed on the Twitter
+web site.</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.backends.twitter.Api.html#GetRateLimitStatus">GetRateLimitStatus</a></td>
+    <td><span>Fetch the rate limit status for the currently authorized user.</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.backends.twitter.Api.html#MaximumHitFrequency">MaximumHitFrequency</a></td>
+    <td><span>Determines the minimum number of seconds that a program must wait 
+before</span></td>
+  </tr><tr class="method private">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.backends.twitter.Api.html#_BuildUrl">_BuildUrl</a></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="method private">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.backends.twitter.Api.html#_InitializeRequestHeaders">_InitializeRequestHeaders</a></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="method private">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.backends.twitter.Api.html#_InitializeUserAgent">_InitializeUserAgent</a></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="method private">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.backends.twitter.Api.html#_InitializeDefaultParameters">_InitializeDefaultParameters</a></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="method private">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.backends.twitter.Api.html#_AddAuthorizationHeader">_AddAuthorizationHeader</a></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="method private">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.backends.twitter.Api.html#_RemoveAuthorizationHeader">_RemoveAuthorizationHeader</a></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="method private">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.backends.twitter.Api.html#_DecompressGzippedResponse">_DecompressGzippedResponse</a></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="method private">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.backends.twitter.Api.html#_GetOpener">_GetOpener</a></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="method private">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.backends.twitter.Api.html#_Encode">_Encode</a></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="method private">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.backends.twitter.Api.html#_EncodeParameters">_EncodeParameters</a></td>
+    <td><span>Return a string in key=value&amp;key=value form</span></td>
+  </tr><tr class="method private">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.backends.twitter.Api.html#_EncodePostData">_EncodePostData</a></td>
+    <td><span>Return a string in key=value&amp;key=value form</span></td>
+  </tr><tr class="method private">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.backends.twitter.Api.html#_CheckForTwitterError">_CheckForTwitterError</a></td>
+    <td><span>Raises a TwitterError if twitter returns an error message.</span></td>
+  </tr><tr class="method private">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.backends.twitter.Api.html#_FetchUrl">_FetchUrl</a></td>
+    <td><span>Fetch a URL, optionally caching for a specified time.</span></td>
+  </tr>
+  
+</table>
+      
+      
+    </div>
+    
+    
+    
+
+    <div class="function">
+  <a name="GTG.backends.twitter.Api.__init__">
+    
+  </a>
+  <a name="__init__">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    __init__(self, username=None, password=None, input_encoding=None, request_headers=None, cache=DEFAULT_CACHE, shortner=None, base_url=None, use_gzip_compression=False):
+    
+  </div>
+  <div class="functionBody">
+    
+    <pre>Instantiate a new twitter.Api object.
+
+Args:
+  username:
+    The username of the twitter account.  [optional]
+  password:
+    The password for the twitter account. [optional]
+  input_encoding:
+    The encoding used to encode input strings. [optional]
+  request_header:
+    A dictionary of additional HTTP request headers. [optional]
+  cache:
+    The cache instance to use. Defaults to DEFAULT_CACHE.
+    Use None to disable caching. [optional]
+  shortner:
+    The shortner instance to use.  Defaults to None.
+    See shorten_url.py for an example shortner. [optional]
+  base_url:
+    The base URL to use to contact the Twitter API.
+    Defaults to https://twitter.com. [optional]
+  use_gzip_compression:
+    Set to True to tell enable gzip compression for any call
+    made to Twitter.  Defaults to False. [optional]</pre>
+  </div>
+</div><div class="function">
+  <a name="GTG.backends.twitter.Api.GetPublicTimeline">
+    
+  </a>
+  <a name="GetPublicTimeline">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    GetPublicTimeline(self, since_id=None):
+    
+  </div>
+  <div class="functionBody">
+    
+    <pre>Fetch the sequnce of public twitter.Status message for all users.
+
+Args:
+  since_id:
+    Returns only public statuses with an ID greater than
+    (that is, more recent than) the specified ID. [optional]
+
+Returns:
+  An sequence of twitter.Status instances, one for each message</pre>
+  </div>
+</div><div class="function">
+  <a name="GTG.backends.twitter.Api.FilterPublicTimeline">
+    
+  </a>
+  <a name="FilterPublicTimeline">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    FilterPublicTimeline(self, term, since_id=None):
+    
+  </div>
+  <div class="functionBody">
+    
+    <pre>Filter the public twitter timeline by a given search term on
+the local machine.
+
+Args:
+  term:
+    term to search by.
+  since_id:
+    Returns only public statuses with an ID greater than
+    (that is, more recent than) the specified ID. [optional]
+
+Returns:
+  A sequence of twitter.Status instances, one for each message
+  containing the term</pre>
+  </div>
+</div><div class="function">
+  <a name="GTG.backends.twitter.Api.GetSearch">
+    
+  </a>
+  <a name="GetSearch">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    GetSearch(self, term, geocode=None, since_id=None, per_page=15, page=1, lang='en', show_user='true', query_users=False):
+    
+  </div>
+  <div class="functionBody">
+    
+    <pre>Return twitter search results for a given term.
+
+Args:
+  term:
+    term to search by.
+  since_id:
+    Returns only public statuses with an ID greater than
+    (that is, more recent than) the specified ID. [optional]
+  geocode:
+    geolocation information in the form (latitude, longitude, radius)
+    [optional]
+  per_page:
+    number of results to return.  Default is 15 [optional]
+  page:
+    which page of search results to return
+  lang:
+    language for results.  Default is English [optional]
+  show_user:
+    prefixes screen name in status
+  query_users:
+    If set to False, then all users only have screen_name and
+    profile_image_url available.
+    If set to True, all information of users are available,
+    but it uses lots of request quota, one per status.
+Returns:
+  A sequence of twitter.Status instances, one for each message containing
+  the term</pre>
+  </div>
+</div><div class="function">
+  <a name="GTG.backends.twitter.Api.GetFriendsTimeline">
+    
+  </a>
+  <a name="GetFriendsTimeline">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    GetFriendsTimeline(self, user=None, count=None, since=None, since_id=None):
+    
+  </div>
+  <div class="functionBody">
+    
+    <pre>Fetch the sequence of twitter.Status messages for a user's friends
+
+The twitter.Api instance must be authenticated if the user is private.
+
+Args:
+  user:
+    Specifies the ID or screen name of the user for whom to return
+    the friends_timeline.  If unspecified, the username and password
+    must be set in the twitter.Api instance.  [Optional]
+  count: 
+    Specifies the number of statuses to retrieve. May not be
+    greater than 200. [Optional]
+  since:
+    Narrows the returned results to just those statuses created
+    after the specified HTTP-formatted date. [Optional]
+  since_id:
+    Returns only public statuses with an ID greater than (that is,
+    more recent than) the specified ID. [Optional]
+
+Returns:
+  A sequence of twitter.Status instances, one for each message</pre>
+  </div>
+</div><div class="function">
+  <a name="GTG.backends.twitter.Api.GetUserTimeline">
+    
+  </a>
+  <a name="GetUserTimeline">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    GetUserTimeline(self, id=None, user_id=None, screen_name=None, since_id=None, max_id=None, count=None, page=None):
+    
+  </div>
+  <div class="functionBody">
+    
+    <pre>Fetch the sequence of public Status messages for a single user.
+
+The twitter.Api instance must be authenticated if the user is private.
+
+Args:
+  id:
+    Specifies the ID or screen name of the user for whom to return
+    the user_timeline. [optional]
+  user_id:
+    Specfies the ID of the user for whom to return the
+    user_timeline. Helpful for disambiguating when a valid user ID
+    is also a valid screen name. [optional]
+  screen_name:
+    Specfies the screen name of the user for whom to return the
+    user_timeline. Helpful for disambiguating when a valid screen
+    name is also a user ID. [optional]
+  since_id:
+    Returns only public statuses with an ID greater than (that is,
+    more recent than) the specified ID. [optional]
+  max_id:
+    Returns only statuses with an ID less than (that is, older
+    than) or equal to the specified ID. [optional]
+  count:
+    Specifies the number of statuses to retrieve. May not be
+    greater than 200.  [optional]
+  page:
+     Specifies the page of results to retrieve. Note: there are
+     pagination limits. [optional]
+
+Returns:
+  A sequence of Status instances, one for each message up to count</pre>
+  </div>
+</div><div class="function">
+  <a name="GTG.backends.twitter.Api.GetStatus">
+    
+  </a>
+  <a name="GetStatus">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    GetStatus(self, id):
+    
+  </div>
+  <div class="functionBody">
+    
+    <pre>Returns a single status message.
+
+The twitter.Api instance must be authenticated if the status message is private.
+
+Args:
+  id: The numerical ID of the status you're trying to retrieve.
+
+Returns:
+  A twitter.Status instance representing that status message</pre>
+  </div>
+</div><div class="function">
+  <a name="GTG.backends.twitter.Api.DestroyStatus">
+    
+  </a>
+  <a name="DestroyStatus">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    DestroyStatus(self, id):
+    
+  </div>
+  <div class="functionBody">
+    
+    <pre>Destroys the status specified by the required ID parameter.
+
+The twitter.Api instance must be authenticated and thee
+authenticating user must be the author of the specified status.
+
+Args:
+  id: The numerical ID of the status you're trying to destroy.
+
+Returns:
+  A twitter.Status instance representing the destroyed status message</pre>
+  </div>
+</div><div class="function">
+  <a name="GTG.backends.twitter.Api.PostUpdate">
+    
+  </a>
+  <a name="PostUpdate">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    PostUpdate(self, status, in_reply_to_status_id=None):
+    
+  </div>
+  <div class="functionBody">
+    
+    <pre>Post a twitter status message from the authenticated user.
+
+The twitter.Api instance must be authenticated.
+
+Args:
+  status:
+    The message text to be posted.  Must be less than or equal to
+    140 characters.
+  in_reply_to_status_id:
+    The ID of an existing status that the status to be posted is
+    in reply to.  This implicitly sets the in_reply_to_user_id
+    attribute of the resulting status to the user ID of the
+    message being replied to.  Invalid/missing status IDs will be
+    ignored. [Optional]
+Returns:
+  A twitter.Status instance representing the message posted.</pre>
+  </div>
+</div><div class="function">
+  <a name="GTG.backends.twitter.Api.PostUpdates">
+    
+  </a>
+  <a name="PostUpdates">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    PostUpdates(self, status, continuation=None, **kwargs):
+    
+  </div>
+  <div class="functionBody">
+    
+    <pre>Post one or more twitter status messages from the authenticated user.
+
+Unlike api.PostUpdate, this method will post multiple status updates
+if the message is longer than 140 characters.
+
+The twitter.Api instance must be authenticated.
+
+Args:
+  status:
+    The message text to be posted.  May be longer than 140 characters.
+  continuation:
+    The character string, if any, to be appended to all but the
+    last message.  Note that Twitter strips trailing '...' strings
+    from messages.  Consider using the unicode \u2026 character
+    (horizontal ellipsis) instead. [Defaults to None]
+  **kwargs:
+    See api.PostUpdate for a list of accepted parameters.
+Returns:
+  A of list twitter.Status instance representing the messages posted.</pre>
+  </div>
+</div><div class="function">
+  <a name="GTG.backends.twitter.Api.GetReplies">
+    
+  </a>
+  <a name="GetReplies">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    GetReplies(self, since=None, since_id=None, page=None):
+    
+  </div>
+  <div class="functionBody">
+    
+    <pre>Get a sequence of status messages representing the 20 most recent
+replies (status updates prefixed with @username) to the authenticating
+user.
+
+Args:
+  page: 
+  since:
+    Narrows the returned results to just those statuses created
+    after the specified HTTP-formatted date. [optional]
+  since_id:
+    Returns only public statuses with an ID greater than (that is,
+    more recent than) the specified ID. [Optional]
+
+Returns:
+  A sequence of twitter.Status instances, one for each reply to the user.</pre>
+  </div>
+</div><div class="function">
+  <a name="GTG.backends.twitter.Api.GetFriends">
+    
+  </a>
+  <a name="GetFriends">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    GetFriends(self, user=None, page=None):
+    
+  </div>
+  <div class="functionBody">
+    
+    <pre>Fetch the sequence of twitter.User instances, one for each friend.
+
+Args:
+  user: the username or id of the user whose friends you are fetching.  If
+  not specified, defaults to the authenticated user. [optional]
+
+The twitter.Api instance must be authenticated.
+
+Returns:
+  A sequence of twitter.User instances, one for each friend</pre>
+  </div>
+</div><div class="function">
+  <a name="GTG.backends.twitter.Api.GetFriendIDs">
+    
+  </a>
+  <a name="GetFriendIDs">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    GetFriendIDs(self, user=None, page=None):
+    
+  </div>
+  <div class="functionBody">
+    
+    <pre>Returns a list of twitter user id's for every person
+the specified user is following.
+
+Args:
+  user:
+    The id or screen_name of the user to retrieve the id list for
+    [optional]
+  page:
+    Specifies the page number of the results beginning at 1.
+    A single page contains 5000 ids. This is recommended for users
+    with large id lists. If not provided all id's are returned. 
+    (Please note that the result set isn't guaranteed to be 5000 
+    every time as suspended users will be filtered.)
+    [optional]
+
+Returns:
+  A list of integers, one for each user id.</pre>
+  </div>
+</div><div class="function">
+  <a name="GTG.backends.twitter.Api.GetFollowers">
+    
+  </a>
+  <a name="GetFollowers">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    GetFollowers(self, page=None):
+    
+  </div>
+  <div class="functionBody">
+    
+    <pre>Fetch the sequence of twitter.User instances, one for each follower
+
+The twitter.Api instance must be authenticated.
+
+Returns:
+  A sequence of twitter.User instances, one for each follower</pre>
+  </div>
+</div><div class="function">
+  <a name="GTG.backends.twitter.Api.GetFeatured">
+    
+  </a>
+  <a name="GetFeatured">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    GetFeatured(self):
+    
+  </div>
+  <div class="functionBody">
+    
+    <pre>Fetch the sequence of twitter.User instances featured on twitter.com
+
+The twitter.Api instance must be authenticated.
+
+Returns:
+  A sequence of twitter.User instances</pre>
+  </div>
+</div><div class="function">
+  <a name="GTG.backends.twitter.Api.GetUser">
+    
+  </a>
+  <a name="GetUser">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    GetUser(self, user):
+    
+  </div>
+  <div class="functionBody">
+    
+    <pre>Returns a single user.
+
+The twitter.Api instance must be authenticated.
+
+Args:
+  user: The username or id of the user to retrieve.
+
+Returns:
+  A twitter.User instance representing that user</pre>
+  </div>
+</div><div class="function">
+  <a name="GTG.backends.twitter.Api.GetDirectMessages">
+    
+  </a>
+  <a name="GetDirectMessages">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    GetDirectMessages(self, since=None, since_id=None, page=None):
+    
+  </div>
+  <div class="functionBody">
+    
+    <pre>Returns a list of the direct messages sent to the authenticating user.
+
+The twitter.Api instance must be authenticated.
+
+Args:
+  since:
+    Narrows the returned results to just those statuses created
+    after the specified HTTP-formatted date. [optional]
+  since_id:
+    Returns only public statuses with an ID greater than (that is,
+    more recent than) the specified ID. [Optional]
+
+Returns:
+  A sequence of twitter.DirectMessage instances</pre>
+  </div>
+</div><div class="function">
+  <a name="GTG.backends.twitter.Api.PostDirectMessage">
+    
+  </a>
+  <a name="PostDirectMessage">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    PostDirectMessage(self, user, text):
+    
+  </div>
+  <div class="functionBody">
+    
+    <pre>Post a twitter direct message from the authenticated user
+
+The twitter.Api instance must be authenticated.
+
+Args:
+  user: The ID or screen name of the recipient user.
+  text: The message text to be posted.  Must be less than 140 characters.
+
+Returns:
+  A twitter.DirectMessage instance representing the message posted</pre>
+  </div>
+</div><div class="function">
+  <a name="GTG.backends.twitter.Api.DestroyDirectMessage">
+    
+  </a>
+  <a name="DestroyDirectMessage">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    DestroyDirectMessage(self, id):
+    
+  </div>
+  <div class="functionBody">
+    
+    <pre>Destroys the direct message specified in the required ID parameter.
+
+The twitter.Api instance must be authenticated, and the
+authenticating user must be the recipient of the specified direct
+message.
+
+Args:
+  id: The id of the direct message to be destroyed
+
+Returns:
+  A twitter.DirectMessage instance representing the message destroyed</pre>
+  </div>
+</div><div class="function">
+  <a name="GTG.backends.twitter.Api.CreateFriendship">
+    
+  </a>
+  <a name="CreateFriendship">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    CreateFriendship(self, user):
+    
+  </div>
+  <div class="functionBody">
+    
+    <pre>Befriends the user specified in the user parameter as the authenticating user.
+
+The twitter.Api instance must be authenticated.
+
+Args:
+  The ID or screen name of the user to befriend.
+Returns:
+  A twitter.User instance representing the befriended user.</pre>
+  </div>
+</div><div class="function">
+  <a name="GTG.backends.twitter.Api.DestroyFriendship">
+    
+  </a>
+  <a name="DestroyFriendship">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    DestroyFriendship(self, user):
+    
+  </div>
+  <div class="functionBody">
+    
+    <pre>Discontinues friendship with the user specified in the user parameter.
+
+The twitter.Api instance must be authenticated.
+
+Args:
+  The ID or screen name of the user  with whom to discontinue friendship.
+Returns:
+  A twitter.User instance representing the discontinued friend.</pre>
+  </div>
+</div><div class="function">
+  <a name="GTG.backends.twitter.Api.CreateFavorite">
+    
+  </a>
+  <a name="CreateFavorite">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    CreateFavorite(self, status):
+    
+  </div>
+  <div class="functionBody">
+    
+    <pre>Favorites the status specified in the status parameter as the authenticating user.
+Returns the favorite status when successful.
+
+The twitter.Api instance must be authenticated.
+
+Args:
+  The twitter.Status instance to mark as a favorite.
+Returns:
+  A twitter.Status instance representing the newly-marked favorite.</pre>
+  </div>
+</div><div class="function">
+  <a name="GTG.backends.twitter.Api.DestroyFavorite">
+    
+  </a>
+  <a name="DestroyFavorite">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    DestroyFavorite(self, status):
+    
+  </div>
+  <div class="functionBody">
+    
+    <pre>Un-favorites the status specified in the ID parameter as the authenticating user.
+Returns the un-favorited status in the requested format when successful.
+
+The twitter.Api instance must be authenticated.
+
+Args:
+  The twitter.Status to unmark as a favorite.
+Returns:
+  A twitter.Status instance representing the newly-unmarked favorite.</pre>
+  </div>
+</div><div class="function">
+  <a name="GTG.backends.twitter.Api.GetFavorites">
+    
+  </a>
+  <a name="GetFavorites">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    GetFavorites(self, user=None, page=None):
+    
+  </div>
+  <div class="functionBody">
+    
+    <pre>Return a list of Status objects representing favorited tweets.
+By default, returns the (up to) 20 most recent tweets for the
+authenticated user.
+
+Args:
+  user:
+    The username or id of the user whose favorites you are fetching.
+    If not specified, defaults to the authenticated user. [optional]
+
+  page:
+    Retrieves the 20 next most recent favorite statuses. [optional]</pre>
+  </div>
+</div><div class="function">
+  <a name="GTG.backends.twitter.Api.GetMentions">
+    
+  </a>
+  <a name="GetMentions">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    GetMentions(self, since_id=None, max_id=None, page=None):
+    
+  </div>
+  <div class="functionBody">
+    
+    <pre>Returns the 20 most recent mentions (status containing @username)
+for the authenticating user.
+
+Args:
+  since_id:
+    Returns only public statuses with an ID greater than
+    (that is, more recent than) the specified ID. [optional]
+
+  max_id:
+    Returns only statuses with an ID less than
+    (that is, older than) the specified ID.  [optional]
+
+  page:
+    Retrieves the 20 next most recent replies. [optional]
+
+Returns:
+  A sequence of twitter.Status instances, one for each mention of the user.
+  see: http://apiwiki.twitter.com/REST-API-Documentation#statuses/mentions</pre>
+  </div>
+</div><div class="function">
+  <a name="GTG.backends.twitter.Api.GetUserByEmail">
+    
+  </a>
+  <a name="GetUserByEmail">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    GetUserByEmail(self, email):
+    
+  </div>
+  <div class="functionBody">
+    
+    <pre>Returns a single user by email address.
+
+Args:
+  email: The email of the user to retrieve.
+Returns:
+  A twitter.User instance representing that user</pre>
+  </div>
+</div><div class="function">
+  <a name="GTG.backends.twitter.Api.VerifyCredentials">
+    
+  </a>
+  <a name="VerifyCredentials">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    VerifyCredentials(self):
+    
+  </div>
+  <div class="functionBody">
+    
+    <pre>Returns a twitter.User instance if the authenticating user is valid.
+
+Returns: 
+  A twitter.User instance representing that user if the
+  credentials are valid, None otherwise.</pre>
+  </div>
+</div><div class="function">
+  <a name="GTG.backends.twitter.Api.SetCredentials">
+    
+  </a>
+  <a name="SetCredentials">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    SetCredentials(self, username, password):
+    
+  </div>
+  <div class="functionBody">
+    
+    <pre>Set the username and password for this instance
+
+Args:
+  username: The twitter username.
+  password: The twitter password.</pre>
+  </div>
+</div><div class="function">
+  <a name="GTG.backends.twitter.Api.ClearCredentials">
+    
+  </a>
+  <a name="ClearCredentials">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    ClearCredentials(self):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div>Clear the username and password for this instance<table class="fieldTable"></table></div>
+  </div>
+</div><div class="function">
+  <a name="GTG.backends.twitter.Api.SetCache">
+    
+  </a>
+  <a name="SetCache">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    SetCache(self, cache):
+    
+  </div>
+  <div class="functionBody">
+    
+    <pre>Override the default cache.  Set to None to prevent caching.
+
+Args:
+  cache: an instance that supports the same API as the twitter._FileCache</pre>
+  </div>
+</div><div class="function">
+  <a name="GTG.backends.twitter.Api.SetUrllib">
+    
+  </a>
+  <a name="SetUrllib">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    SetUrllib(self, urllib):
+    
+  </div>
+  <div class="functionBody">
+    
+    <pre>Override the default urllib implementation.
+
+Args:
+  urllib: an instance that supports the same API as the urllib2 module</pre>
+  </div>
+</div><div class="function">
+  <a name="GTG.backends.twitter.Api.SetCacheTimeout">
+    
+  </a>
+  <a name="SetCacheTimeout">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    SetCacheTimeout(self, cache_timeout):
+    
+  </div>
+  <div class="functionBody">
+    
+    <pre>Override the default cache timeout.
+
+Args:
+  cache_timeout: time, in seconds, that responses should be reused.</pre>
+  </div>
+</div><div class="function">
+  <a name="GTG.backends.twitter.Api.SetUserAgent">
+    
+  </a>
+  <a name="SetUserAgent">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    SetUserAgent(self, user_agent):
+    
+  </div>
+  <div class="functionBody">
+    
+    <pre>Override the default user agent
+
+Args:
+  user_agent: a string that should be send to the server as the User-agent</pre>
+  </div>
+</div><div class="function">
+  <a name="GTG.backends.twitter.Api.SetXTwitterHeaders">
+    
+  </a>
+  <a name="SetXTwitterHeaders">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    SetXTwitterHeaders(self, client, url, version):
+    
+  </div>
+  <div class="functionBody">
+    
+    <pre>Set the X-Twitter HTTP headers that will be sent to the server.
+
+Args:
+  client:
+     The client name as a string.  Will be sent to the server as
+     the 'X-Twitter-Client' header.
+  url:
+     The URL of the meta.xml as a string.  Will be sent to the server
+     as the 'X-Twitter-Client-URL' header.
+  version:
+     The client version as a string.  Will be sent to the server
+     as the 'X-Twitter-Client-Version' header.</pre>
+  </div>
+</div><div class="function">
+  <a name="GTG.backends.twitter.Api.SetSource">
+    
+  </a>
+  <a name="SetSource">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    SetSource(self, source):
+    
+  </div>
+  <div class="functionBody">
+    
+    <pre>Suggest the "from source" value to be displayed on the Twitter web site.
+
+The value of the 'source' parameter must be first recognized by
+the Twitter server.  New source values are authorized on a case by
+case basis by the Twitter development team.
+
+Args:
+  source:
+    The source name as a string.  Will be sent to the server as
+    the 'source' parameter.</pre>
+  </div>
+</div><div class="function">
+  <a name="GTG.backends.twitter.Api.GetRateLimitStatus">
+    
+  </a>
+  <a name="GetRateLimitStatus">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    GetRateLimitStatus(self):
+    
+  </div>
+  <div class="functionBody">
+    
+    <pre>Fetch the rate limit status for the currently authorized user.
+
+Returns:
+  A dictionary containing the time the limit will reset (reset_time),
+  the number of remaining hits allowed before the reset (remaining_hits),
+  the number of hits allowed in a 60-minute period (hourly_limit), and the
+  time of the reset in seconds since The Epoch (reset_time_in_seconds).</pre>
+  </div>
+</div><div class="function">
+  <a name="GTG.backends.twitter.Api.MaximumHitFrequency">
+    
+  </a>
+  <a name="MaximumHitFrequency">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    MaximumHitFrequency(self):
+    
+  </div>
+  <div class="functionBody">
+    
+    <pre>Determines the minimum number of seconds that a program must wait before
+hitting the server again without exceeding the rate_limit imposed for the
+currently authenticated user.
+
+Returns:
+  The minimum second interval that a program must use so as to not exceed
+  the rate_limit imposed for the user.</pre>
+  </div>
+</div><div class="function">
+  <a name="GTG.backends.twitter.Api._BuildUrl">
+    
+  </a>
+  <a name="_BuildUrl">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    _BuildUrl(self, url, path_elements=None, extra_params=None):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div class="undocumented">Undocumented</div>
+  </div>
+</div><div class="function">
+  <a name="GTG.backends.twitter.Api._InitializeRequestHeaders">
+    
+  </a>
+  <a name="_InitializeRequestHeaders">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    _InitializeRequestHeaders(self, request_headers):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div class="undocumented">Undocumented</div>
+  </div>
+</div><div class="function">
+  <a name="GTG.backends.twitter.Api._InitializeUserAgent">
+    
+  </a>
+  <a name="_InitializeUserAgent">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    _InitializeUserAgent(self):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div class="undocumented">Undocumented</div>
+  </div>
+</div><div class="function">
+  <a name="GTG.backends.twitter.Api._InitializeDefaultParameters">
+    
+  </a>
+  <a name="_InitializeDefaultParameters">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    _InitializeDefaultParameters(self):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div class="undocumented">Undocumented</div>
+  </div>
+</div><div class="function">
+  <a name="GTG.backends.twitter.Api._AddAuthorizationHeader">
+    
+  </a>
+  <a name="_AddAuthorizationHeader">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    _AddAuthorizationHeader(self, username, password):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div class="undocumented">Undocumented</div>
+  </div>
+</div><div class="function">
+  <a name="GTG.backends.twitter.Api._RemoveAuthorizationHeader">
+    
+  </a>
+  <a name="_RemoveAuthorizationHeader">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    _RemoveAuthorizationHeader(self):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div class="undocumented">Undocumented</div>
+  </div>
+</div><div class="function">
+  <a name="GTG.backends.twitter.Api._DecompressGzippedResponse">
+    
+  </a>
+  <a name="_DecompressGzippedResponse">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    _DecompressGzippedResponse(self, response):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div class="undocumented">Undocumented</div>
+  </div>
+</div><div class="function">
+  <a name="GTG.backends.twitter.Api._GetOpener">
+    
+  </a>
+  <a name="_GetOpener">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    _GetOpener(self, url, username=None, password=None):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div class="undocumented">Undocumented</div>
+  </div>
+</div><div class="function">
+  <a name="GTG.backends.twitter.Api._Encode">
+    
+  </a>
+  <a name="_Encode">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    _Encode(self, s):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div class="undocumented">Undocumented</div>
+  </div>
+</div><div class="function">
+  <a name="GTG.backends.twitter.Api._EncodeParameters">
+    
+  </a>
+  <a name="_EncodeParameters">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    _EncodeParameters(self, parameters):
+    
+  </div>
+  <div class="functionBody">
+    
+    <pre>Return a string in key=value&amp;key=value form
+
+Values of None are not included in the output string.
+
+Args:
+  parameters:
+    A dict of (key, value) tuples, where value is encoded as
+    specified by self._encoding
+Returns:
+  A URL-encoded string in "key=value&amp;key=value" form</pre>
+  </div>
+</div><div class="function">
+  <a name="GTG.backends.twitter.Api._EncodePostData">
+    
+  </a>
+  <a name="_EncodePostData">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    _EncodePostData(self, post_data):
+    
+  </div>
+  <div class="functionBody">
+    
+    <pre>Return a string in key=value&amp;key=value form
+
+Values are assumed to be encoded in the format specified by self._encoding,
+and are subsequently URL encoded.
+
+Args:
+  post_data:
+    A dict of (key, value) tuples, where value is encoded as
+    specified by self._encoding
+Returns:
+  A URL-encoded string in "key=value&amp;key=value" form</pre>
+  </div>
+</div><div class="function">
+  <a name="GTG.backends.twitter.Api._CheckForTwitterError">
+    
+  </a>
+  <a name="_CheckForTwitterError">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    _CheckForTwitterError(self, data):
+    
+  </div>
+  <div class="functionBody">
+    
+    <pre>Raises a TwitterError if twitter returns an error message.
+
+Args:
+  data: A python dict created from the Twitter json response
+Raises:
+  TwitterError wrapping the twitter error message if one exists.</pre>
+  </div>
+</div><div class="function">
+  <a name="GTG.backends.twitter.Api._FetchUrl">
+    
+  </a>
+  <a name="_FetchUrl">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    _FetchUrl(self, url, post_data=None, parameters=None, no_cache=None, use_gzip_compression=None):
+    
+  </div>
+  <div class="functionBody">
+    
+    <pre>Fetch a URL, optionally caching for a specified time.
+
+Args:
+  url:
+    The URL to retrieve
+  post_data:
+    A dict of (str, unicode) key/value pairs.
+    If set, POST will be used.
+  parameters:
+    A dict whose key/value pairs should encoded and added
+    to the query string. [optional]
+  no_cache:
+    If true, overrides the cache on the current request
+  use_gzip_compression:
+    If True, tells the server to gzip-compress the response.
+    It does not apply to POST requests.
+    Defaults to None, which will get the value to use from
+    the instance variable self._use_gzip [optional]
+
+Returns:
+  A string containing the body of the response.</pre>
+  </div>
+</div>
+    <address>
+      <a href="index.html">API Documentation</a> for <a href="http://gtg.fritalk.com/">GTG</a>, generated by <a href="http://codespeak.net/~mwh/pydoctor/">pydoctor</a> at 2011-05-02 21:27:37.
+    </address>
+  </body>
+</html>

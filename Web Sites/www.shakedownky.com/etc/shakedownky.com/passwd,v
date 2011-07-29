@@ -1,0 +1,25 @@
+head	1.1;
+access;
+symbols;
+locks
+	shaknee7:1.1; strict;
+comment	@# @;
+
+
+1.1
+date	2009.11.22.00.05.57;	author shaknee7;	state Exp;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.1
+log
+@"Modified by /usr/local/cpanel/cpanel "
+@
+text
+@admin:x:659:659::/home/shaknee7/mail/shakedownky.com/admin:/usr/local/cpanel/bin/noshell
+@

@@ -1,0 +1,10 @@
+<?php //Same as 6-1, but using explicit locations - NOTE: bad idea usually, makes
+	  //the list harder to maintain if you want to add extra items that will change
+	  //the order of the list
+$paper[] = "Copier";
+$paper[] = "Inkjet";
+$paper[] = "Laser";
+$paper[] = "Photo";
+
+print_r($paper);
+?>

@@ -1,0 +1,66 @@
+<html><head><title>Ajax Example</title>
+</head><body><center />
+<h1>Loading a web page into a DIV</h1>
+<div id='info'>This sentence will be replaced</div>
+<script>
+
+params = "url=oreilly.com"
+request = new ajaxRequest()
+request.open("POST", "urlpost.php", true)
+request.setRequestHeader("Content-type", "application/x-www-form-urlencoded")
+request.setRequestHeader("Content-length", params.length)
+request.setRequestHeader("Connection", "close")
+
+request.onreadystatechange = function ()
+{
+    if (this.readyState == 4)
+    // Only run this function when, after a status change in the XMLHttpRequest, the status of the request == 4, which means "Completed"
+    {
+        if (this.status == 200)
+        // status 200 means the call succeeded. Don't run code if the call did not succeed.
+        {
+            if (this.responseText != null)
+	    // Make sure the responseText is not empty/invalid
+            {
+                document.getElementById('info').innerHTML = this.responseText
+            }
+            else alert("Ajax error: No data received")
+        }
+        else alert( "Ajax error: " + this.statusText)
+    }
+}
+
+request.send(params)
+// Finally, send the request to the server
+
+function ajaxRequest()
+// Create a new XMLHttpRequest object. Attempts to do so in multiple ways to account for older browsers.
+{
+    try
+    // Should work on modern browsers
+    {
+        var request = new XMLHttpRequest()
+    }
+    catch(e1)
+    {
+        try
+        // For IE 6+ (I think)
+        {
+            request = new ActiveXObject("Msxml2.XMLHTTP")
+        }
+        catch(e2)
+        {
+            try
+	    // For IE 5
+            {
+                request = new ActiveXObject("Microsoft.XMLHTTP")
+            }
+            catch(e3)
+            {
+                request = false
+            }
+        }
+    }
+    return request
+}
+</script></body></html>

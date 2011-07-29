@@ -1,0 +1,93 @@
+<html>
+  <head>
+    <title>Tic-Tac_Toe!</title>
+    <link rel="stylesheet" type="text/css" href="stylesheet.css" />
+    <script language="JavaScript" type="text/javascript">
+      function testing(id) {
+          document.getElementById(id).style.backgroundColor = "red";
+      }
+
+      function set_first_player() {
+         var roll = Math.random() * 9.9;
+         document.getElementById("dice").innerHTML += "The roll was: " + roll;
+
+         if roll % 2 == 0 {
+             document.getElementById("dice").innerHTML += "X goes first!";
+         }
+         else {
+             document.getElementById("dice").innerHTML += "O goes first!";
+         }
+      }
+
+      function set_current_player(x_or_o) {
+          if (x_or_o == "player_x_bar") {
+              document.getElementById("player_x_bar").style.backgroundColor = "black";
+              document.getElementById("player_o_bar").style.backgroundColor = "yellow";
+          }
+          else if (x_or_o == "player_o_bar") {
+              document.getElementById("player_x_bar").style.backgroundColor = "yellow";
+              document.getElementById("player_o_bar").style.backgroundColor = "black";
+          }
+          else {
+              document.write("Error!");
+          }
+      }
+    </script>
+  </head>
+  <body onload="set_first_player()">
+    <div id="page_container">
+      <div id="dice">
+	Hello kiddies. If I roll an even number, X gets to go first. Odd, O gets to go first. Capiche?
+      </div>
+      <div id="board_and_players">
+	<div id="player_x">
+	  <img src="player_x.jpg" alt="Player X" />
+	  <div id="player_x_bar" onmouseover="set_current_player('player_x_bar')">
+	    Bar...
+	  </div>
+	</div>
+	<div id="tic_tac_toe_board">
+	  <div id="top_row">
+	    <span id="top_box_1" class="box" onmouseover="testing('top_box_1')">
+	      T1
+	    </span>
+	    <span id="top_box_2" class="box" onmouseover="testing('top_box_2')">
+	      T2
+	    </span>
+	    <span id="top_box_3" class="box" onmouseover="testing('top_box_3')">
+	      T3
+	    </span>
+	  </div>
+	  <div id="middle_row">
+	    <span id="middle_box_1" class="box" onmouseover="testing('middle_box_1')">
+	      M1
+	    </span>
+	    <span id="middle_box_2" class="box" onmouseover="testing('middle_box_2')">
+	      M2
+	    </span>
+	    <span id="middle_box_3" class="box" onmouseover="testing('middle_box_3')">
+	      M3
+	    </span>
+	  </div>
+	  <div id="bottom_row">
+	    <span id="bottom_box_1" class="box" onmouseover="testing('bottom_box_1')">
+	      B1
+	    </span>
+	    <span id="bottom_box_2" class="box" onmouseover="testing('bottom_box_2')">
+	      B2
+	    </span>
+	    <span id="bottom_box_3" class="box" onmouseover="testing('bottom_box_3')">
+	      B3
+	    </span>
+	  </div>
+	</div>
+	<div id="player_o">
+	  <img src="player_o.jpg" alt="Player O" />
+	  <div id="player_o_bar" onmouseover="set_current_player('player_o_bar')">
+	    bar...
+	  </div>
+	</div>
+      </div>
+    </div>
+  </body>
+</html>

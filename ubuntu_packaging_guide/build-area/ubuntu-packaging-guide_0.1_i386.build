@@ -1,0 +1,21 @@
+ dpkg-buildpackage -rfakeroot -D -us -uc
+dpkg-buildpackage: export CFLAGS from dpkg-buildflags (origin: vendor): -g -O2
+dpkg-buildpackage: export CPPFLAGS from dpkg-buildflags (origin: vendor): 
+dpkg-buildpackage: export CXXFLAGS from dpkg-buildflags (origin: vendor): -g -O2
+dpkg-buildpackage: export FFLAGS from dpkg-buildflags (origin: vendor): -g -O2
+dpkg-buildpackage: export LDFLAGS from dpkg-buildflags (origin: vendor): -Wl,-Bsymbolic-functions
+dpkg-buildpackage: source package ubuntu-packaging-guide
+dpkg-buildpackage: source version 0.1
+dpkg-buildpackage: source changed by Daniel Holbach <daniel.holbach@ubuntu.com>
+ dpkg-source --before-build ubuntu-packaging-guide-0.1
+dpkg-buildpackage: host architecture i386
+dpkg-checkbuilddeps: warning: can't parse dependency libobasis34-en_us-math
+dpkg-checkbuilddeps: warning: can't parse dependency libobasis34-en_us-base
+dpkg-checkbuilddeps: warning: can't parse dependency libobasis34-en_us-binfilter
+dpkg-checkbuilddeps: warning: can't parse dependency libobasis34-en_us-writer
+dpkg-checkbuilddeps: warning: can't parse dependency libobasis34-en_us
+dpkg-checkbuilddeps: warning: can't parse dependency libobasis34-en_us-calc
+dpkg-checkbuilddeps: warning: can't parse dependency libobasis34-en_us-res
+dpkg-checkbuilddeps: Unmet build dependencies: python-sphinx (>= 1.0~)
+dpkg-buildpackage: warning: Build dependencies/conflicts unsatisfied; aborting.
+dpkg-buildpackage: warning: (Use -d flag to override.)

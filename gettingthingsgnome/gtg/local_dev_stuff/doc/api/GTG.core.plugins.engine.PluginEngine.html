@@ -1,0 +1,301 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "DTD/xhtml1-strict.dtd">
+<html>
+  <head>
+    <title>GTG.core.plugins.engine.PluginEngine : API documentation</title>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type" />
+    <link href="apidocs.css" type="text/css" rel="stylesheet" />
+    
+    
+  </head>
+  <body>
+    <h1 class="class">G.c.p.e.PluginEngine(<a href="GTG.tools.borg.Borg.html">Borg</a>) : class documentation</h1>
+    <p>
+      <span id="part">Part of <a href="GTG.html">GTG</a>.<a href="GTG.core.html">core</a>.<a href="GTG.core.plugins.html">plugins</a>.<a href="GTG.core.plugins.engine.html">engine</a></span>
+      
+      <a href="classIndex.html#GTG.core.plugins.engine.PluginEngine">View In Hierarchy</a>
+    </p>
+    <div>
+      
+    </div>
+    <div>A class to manage plugins. Only one can exist.<table class="fieldTable"></table></div>
+
+    
+    
+    <div id="splitTables">
+      <table class="children sortable" id="id187">
+  
+  
+<tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.core.plugins.engine.PluginEngine.html#__init__">__init__</a></td>
+    <td><span>Initialize the plugin engine.</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.core.plugins.engine.PluginEngine.html#get_plugin">get_plugin</a></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.core.plugins.engine.PluginEngine.html#get_plugins">get_plugins</a></td>
+    <td><span>Returns a list of plugins</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.core.plugins.engine.PluginEngine.html#register_api">register_api</a></td>
+    <td><span>Adds a plugin api to the list of currently loaded apis</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.core.plugins.engine.PluginEngine.html#remove_api">remove_api</a></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.core.plugins.engine.PluginEngine.html#activate_plugins">activate_plugins</a></td>
+    <td><span>Activate plugins.</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.core.plugins.engine.PluginEngine.html#deactivate_plugins">deactivate_plugins</a></td>
+    <td><span>Deactivate plugins.</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.core.plugins.engine.PluginEngine.html#onTaskLoad">onTaskLoad</a></td>
+    <td><span>Pass the onTaskLoad signal to all active plugins.</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.core.plugins.engine.PluginEngine.html#onTaskClose">onTaskClose</a></td>
+    <td><span>Pass the onTaskClose signal to all active plugins.</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.core.plugins.engine.PluginEngine.html#recheck_plugins">recheck_plugins</a></td>
+    <td><span>Check plugins to make sure their states are consistent.</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.core.plugins.engine.PluginEngine.html#recheck_plugin_errors">recheck_plugin_errors</a></td>
+    <td><span>Attempt a reload of plugins with errors, or all plugins.</span></td>
+  </tr>
+  
+</table>
+      
+      
+    </div>
+    
+    
+    
+
+    <div class="function">
+  <a name="GTG.core.plugins.engine.PluginEngine.__init__">
+    
+  </a>
+  <a name="__init__">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    __init__(self, plugin_path=None):
+    
+  </div>
+  <div class="functionBody">
+    <div class="interfaceinfo">overrides <a href="GTG.tools.borg.Borg.html#__init__">GTG.tools.borg.Borg.__init__</a></div>
+    <div>Initialize the plugin engine.<table class="fieldTable"></table></div>
+  </div>
+</div><div class="function">
+  <a name="GTG.core.plugins.engine.PluginEngine.get_plugin">
+    
+  </a>
+  <a name="get_plugin">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    get_plugin(self, module_name):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div class="undocumented">Undocumented</div>
+  </div>
+</div><div class="function">
+  <a name="GTG.core.plugins.engine.PluginEngine.get_plugins">
+    
+  </a>
+  <a name="get_plugins">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    get_plugins(self, kind_of_plugins='all'):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div>Returns a list of plugins filtering only a kind of plugin<table class="fieldTable"><tr class="fieldStart"><td class="fieldName">Parameters</td><td class="fieldArg">kind_of_plugins</td><td>one of &quot;active&quot;, &quot;inactive&quot;, &quot;enabled&quot;, 
+&quot;disabled&quot;, &quot;all&quot;
+</td></tr></table></div>
+  </div>
+</div><div class="function">
+  <a name="GTG.core.plugins.engine.PluginEngine.register_api">
+    
+  </a>
+  <a name="register_api">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    register_api(self, api):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div>Adds a plugin api to the list of currently loaded apis<table class="fieldTable"></table></div>
+  </div>
+</div><div class="function">
+  <a name="GTG.core.plugins.engine.PluginEngine.remove_api">
+    
+  </a>
+  <a name="remove_api">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    remove_api(self, api):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div class="undocumented">Undocumented</div>
+  </div>
+</div><div class="function">
+  <a name="GTG.core.plugins.engine.PluginEngine.activate_plugins">
+    
+  </a>
+  <a name="activate_plugins">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    activate_plugins(self, plugins=):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div>Activate plugins.<table class="fieldTable"></table></div>
+  </div>
+</div><div class="function">
+  <a name="GTG.core.plugins.engine.PluginEngine.deactivate_plugins">
+    
+  </a>
+  <a name="deactivate_plugins">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    deactivate_plugins(self, plugins=):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div>Deactivate plugins.<table class="fieldTable"></table></div>
+  </div>
+</div><div class="function">
+  <a name="GTG.core.plugins.engine.PluginEngine.onTaskLoad">
+    
+  </a>
+  <a name="onTaskLoad">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    onTaskLoad(self, plugin_api):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div>Pass the onTaskLoad signal to all active plugins.<table class="fieldTable"></table></div>
+  </div>
+</div><div class="function">
+  <a name="GTG.core.plugins.engine.PluginEngine.onTaskClose">
+    
+  </a>
+  <a name="onTaskClose">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    onTaskClose(self, plugin_api):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div>Pass the onTaskClose signal to all active plugins.<table class="fieldTable"></table></div>
+  </div>
+</div><div class="function">
+  <a name="GTG.core.plugins.engine.PluginEngine.recheck_plugins">
+    
+  </a>
+  <a name="recheck_plugins">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    recheck_plugins(self, plugin_apis):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div>Check plugins to make sure their states are consistent.</p>
+<p>TODO: somehow make this unnecessary?<table class="fieldTable"></table></div>
+  </div>
+</div><div class="function">
+  <a name="GTG.core.plugins.engine.PluginEngine.recheck_plugin_errors">
+    
+  </a>
+  <a name="recheck_plugin_errors">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    recheck_plugin_errors(self, check_all=False):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div>Attempt a reload of plugins with errors, or all plugins.<table class="fieldTable"></table></div>
+  </div>
+</div>
+    <address>
+      <a href="index.html">API Documentation</a> for <a href="http://gtg.fritalk.com/">GTG</a>, generated by <a href="http://codespeak.net/~mwh/pydoctor/">pydoctor</a> at 2011-04-15 17:43:34.
+    </address>
+  </body>
+</html>

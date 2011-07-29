@@ -1,0 +1,4 @@
+main ()
+{
+  add_two_numbers ();
+}

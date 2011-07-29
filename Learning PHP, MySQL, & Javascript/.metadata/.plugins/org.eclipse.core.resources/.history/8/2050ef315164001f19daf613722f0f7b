@@ -1,0 +1,2 @@
+<?php //Creating and accessing a static method - static methods can only access the
+	  //properties of a class, not an object [an instance of a class]

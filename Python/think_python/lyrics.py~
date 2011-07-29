@@ -1,0 +1,6 @@
+def print_lyrics():
+    print "Yep, lyrics"
+    print "Line 2..."
+
+def repeat_lyrics():
+    print_lyrics() * 2

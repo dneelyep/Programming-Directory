@@ -1,0 +1,9 @@
+<?php //Valid and invalid property declarations, within a class
+class Test
+{
+	public $name	= "Paul Smith"; //Valid
+	public $age		= 42;		   //Valid
+	public $time	= time();	   //Invalid - calls a function, not a constant value
+	public $score	= $level * 2;  //Invalid - uses an expression, not a constant value
+}
+?>

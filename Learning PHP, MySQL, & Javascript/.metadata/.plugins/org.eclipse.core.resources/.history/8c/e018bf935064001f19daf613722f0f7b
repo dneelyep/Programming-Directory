@@ -1,0 +1,11 @@
+<?php //Using the $this variable within a method
+class User
+{
+	public $name, $password;
+	
+	function get_password()
+	{
+		return $this->password;  //Returns the value of $this (the User class) 
+								 //variable 'password'
+	}
+} 

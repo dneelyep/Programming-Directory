@@ -1,0 +1,1 @@
+print("Enter two positive integers:");

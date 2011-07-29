@@ -1,0 +1,20 @@
+#!/usr/bin/perl
+
+#Excercise 2-1:
+#Write a program that computes the circumference of a circle with a radius of
+#12.5. Circumference is 2pi times the radius (~2 times 3.141592654).
+#Should get about 78.5.
+
+$pi = 3.141592654;
+
+print "This is a program to calculate the circumference of a circle, when you provide the radius.\n";
+print "The radius I want to calculate for is ";
+chomp($radius = <STDIN>) . "\n";
+
+if($radius >= 0){
+    print "Circumference = 2pi * radius\n";
+    print "The circumference of a circle with a radius of " . $radius . " is:\n";
+    print 2 * $pi * $radius . "\n";
+} else{
+    print "No negative radii allowed dumbo!\n";
+}

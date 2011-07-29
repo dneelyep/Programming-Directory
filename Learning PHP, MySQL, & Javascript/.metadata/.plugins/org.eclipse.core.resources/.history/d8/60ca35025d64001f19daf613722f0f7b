@@ -1,0 +1,3 @@
+<?php //Walking through a numeric array using the foreach...as loop
+$paper = array("Copier", "Inkjet", "Laser", "Photo");
+?>

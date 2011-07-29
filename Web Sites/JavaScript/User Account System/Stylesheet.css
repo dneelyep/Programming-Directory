@@ -1,0 +1,12 @@
+body{
+	background-color:red;
+}
+
+#loginbox{
+	text-align:center;
+	border:3px;
+	border-style:solid;
+	padding:5px;
+	margin-left:20%;
+	margin-right:20%;
+}

@@ -1,0 +1,31 @@
+a:3:{i:0;s:336:"function displayValidateImport()
+{
+	document.getElementById('validateImportProject').style.display = '';
+	document.getElementById('confirmImport').style.display = 'none';	
+}
+
+
+function setFormActionForConfirmImport()
+{
+	objFormImport = document.getElementById('FrmImportProject');
+	document.getElementById('FrmImportProject').action = "";i:1;s:562:"";
+}
+
+function displayProgessBar(visible)
+{
+    document.getElementById('ProgessBar').style.display = visible;
+    
+    if (visible == 'none') {
+        document.getElementById('validateImportProject').style.display = '';
+     } else {
+        document.getElementById('validateImportProject').style.display = 'none';
+     }
+}
+
+function backToStart()
+{
+    document.getElementById('ProgessBar').style.display = 'none';
+    document.getElementById('validateImportProject').style.display = 'none';
+    document.getElementById('confirmImport').style.display = '';
+
+}";i:2;s:18:"&nbsp;&nbsp;&nbsp;";}

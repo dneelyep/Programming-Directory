@@ -1,0 +1,30 @@
+####################################
+Another Text Game - Design Document#
+####################################
+
+Story:
+	This game takes place in the same universe as the original Text Game.
+	You wake up in a daze in dark, wet cave. There's a nearly un-noticeable blue glow hanging in the air. Suddenly, a crash in the adjoining room.
+		Maybe you should check it out...if you're ready...
+
+	The player walks into a steaming-hot room filled with lava and smoke. The player pushes through the fog, stumbling and comes upon a clearing...
+		Half-man, half-fish like creatures with tridents are pushing back at some giant demon who has emerged from the lava...
+		The demon is slaughtering the creatures mercilessly. They are all destroyed, the demon waits a minute...
+			"Ooops" you lose your footing...the demon sees you...
+			If player's attack is high enough, scares away demon
+			If player's attack is super high, one-shots the demon
+			If player's attack is too low, player loses, must restart game
+
+Commands:
+	observe - lets the player observe an object or event
+	go - lets the player go to a defined place
+	practice attack - lets the player practice their attack skill to increase it
+	viewattack - lets the player view their current attack level
+	attack - lets the player attack something
+	getcommands - lets the player view a list of all possible commands
+	getstarted - lets the player start the game
+
+Game Should Demonstrate:
+	Ability to save and use certain variables:
+		- player's character name
+		- player's stats (attack, defense)	

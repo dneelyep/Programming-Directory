@@ -1,0 +1,5 @@
+<?php // Three different string functions
+echo strrev(" .RAHTIAH");	 // Reverses the string in quotes
+echo str_repeat("Blah ", 3); // Repeats the string in quotes
+echo strtoupper("woooooo!"); // Puts the string in upper case (stringtoupper)
+?>

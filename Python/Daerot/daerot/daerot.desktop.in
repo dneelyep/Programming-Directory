@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=Daerot
+Comment=Daerot application
+Categories=GNOME;Utility;
+Exec=daerot
+Icon=daerot
+Terminal=false
+Type=Application

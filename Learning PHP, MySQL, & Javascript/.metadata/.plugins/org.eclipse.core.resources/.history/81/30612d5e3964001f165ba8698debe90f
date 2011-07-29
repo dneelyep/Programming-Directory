@@ -1,0 +1,9 @@
+<?php //Returning values in global variables
+$a1 = "WILLIAMS";
+$a2 = "henry";
+$a3 = "gatES";
+
+echo $a1 . " " . $a2 . " " . $a3 . "<br />";
+fix_names();
+echo $a1 . " " . $a2 . " " . $a3 . "<br />";
+?>

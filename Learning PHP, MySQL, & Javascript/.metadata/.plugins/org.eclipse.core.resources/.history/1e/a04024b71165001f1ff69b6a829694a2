@@ -1,0 +1,11 @@
+<?php //Creating a multidimensional, associative array
+$products = array(
+	'paper' =>	array(),
+
+	'pens' => array(),
+
+	'misc' => array());
+
+
+)
+?>

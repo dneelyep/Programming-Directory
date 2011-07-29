@@ -1,0 +1,8 @@
+[Desktop Entry]
+_Name=Typing
+_Comment=Typing application
+Categories=GNOME;Utility;
+Exec=typing
+Icon=typing
+Terminal=false
+Type=Application

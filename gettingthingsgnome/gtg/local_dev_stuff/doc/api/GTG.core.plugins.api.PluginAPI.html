@@ -1,0 +1,409 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "DTD/xhtml1-strict.dtd">
+<html>
+  <head>
+    <title>GTG.core.plugins.api.PluginAPI : API documentation</title>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type" />
+    <link href="apidocs.css" type="text/css" rel="stylesheet" />
+    
+    
+  </head>
+  <body>
+    <h1 class="class">G.c.p.a.PluginAPI : class documentation</h1>
+    <p>
+      <span id="part">Part of <a href="GTG.html">GTG</a>.<a href="GTG.core.html">core</a>.<a href="GTG.core.plugins.html">plugins</a>.<a href="GTG.core.plugins.api.html">api</a></span>
+      
+      <a href="classIndex.html#GTG.core.plugins.api.PluginAPI">View In Hierarchy</a>
+    </p>
+    <div>
+      
+    </div>
+    <div>The plugin engine's API.</p>
+<p><a href="GTG.core.plugins.api.PluginAPI.html"><code>PluginAPI</code></a>
+is a object that provides a nice API for plugins to interact with GTG.</p>
+<p>Multiple <a 
+href="GTG.core.plugins.api.PluginAPI.html"><code>PluginAPI</code></a>s can 
+exist. A instance is created to be used with the task browser and another 
+instance is created to be used with the task editor.<table class="fieldTable"></table></div>
+
+    
+    
+    <div id="splitTables">
+      <table class="children sortable" id="id184">
+  
+  
+<tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.core.plugins.api.PluginAPI.html#__init__">__init__</a></td>
+    <td><span>Construct a PluginAPI object.</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.core.plugins.api.PluginAPI.html#is_editor">is_editor</a></td>
+    <td><span>Returns true if this is an Editor API</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.core.plugins.api.PluginAPI.html#is_browser">is_browser</a></td>
+    <td><span>Returns true if this is a Browser API</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.core.plugins.api.PluginAPI.html#get_view_manager">get_view_manager</a></td>
+    <td><span>returns a GTG.gtk.manager.Manager</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.core.plugins.api.PluginAPI.html#get_requester">get_requester</a></td>
+    <td><span>returns a GTG.core.requester.Requester</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.core.plugins.api.PluginAPI.html#get_gtk_builder">get_gtk_builder</a></td>
+    <td><span>Returns the gtk builder for the parent window</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.core.plugins.api.PluginAPI.html#get_ui">get_ui</a></td>
+    <td><span>Returns a Browser or an Editor</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.core.plugins.api.PluginAPI.html#add_menu_item">add_menu_item</a></td>
+    <td><span>Adds a menu entry to the Plugin Menu of the Main Window</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.core.plugins.api.PluginAPI.html#remove_menu_item">remove_menu_item</a></td>
+    <td><span>Removes a menu entry from the Plugin Menu of the Main Window</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.core.plugins.api.PluginAPI.html#add_toolbar_item">add_toolbar_item</a></td>
+    <td><span>Adds a button to the task browser's toolbar or the task editor</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.core.plugins.api.PluginAPI.html#remove_toolbar_item">remove_toolbar_item</a></td>
+    <td><span>Remove a widget from the toolbar.</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.core.plugins.api.PluginAPI.html#add_widget_to_taskeditor">add_widget_to_taskeditor</a></td>
+    <td><span>Adds a widget to the bottom of the task editor dialog</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.core.plugins.api.PluginAPI.html#remove_widget_from_taskeditor">remove_widget_from_taskeditor</a></td>
+    <td><span>Remove a widget from the bottom of the task editor dialog</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.core.plugins.api.PluginAPI.html#load_configuration_object">load_configuration_object</a></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.core.plugins.api.PluginAPI.html#save_configuration_object">save_configuration_object</a></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr>
+  
+</table>
+      
+      
+    </div>
+    
+    
+    
+
+    <div class="function">
+  <a name="GTG.core.plugins.api.PluginAPI.__init__">
+    
+  </a>
+  <a name="__init__">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    __init__(self, requester, view_manager, taskeditor=None):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div>Construct a PluginAPI object.<table class="fieldTable"><tr class="fieldStart"><td class="fieldName">Parameters</td><td class="fieldArg">requester</td><td>The requester.
+</td></tr><tr><td></td><td class="fieldArg">view_manager</td><td>The view manager
+</td></tr><tr><td></td><td class="fieldArg">task_id</td><td>The Editor, if we are in one otherwise.
+</td></tr></table></div>
+  </div>
+</div><div class="function">
+  <a name="GTG.core.plugins.api.PluginAPI.is_editor">
+    
+  </a>
+  <a name="is_editor">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    is_editor(self):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div>Returns true if this is an Editor API<table class="fieldTable"></table></div>
+  </div>
+</div><div class="function">
+  <a name="GTG.core.plugins.api.PluginAPI.is_browser">
+    
+  </a>
+  <a name="is_browser">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    is_browser(self):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div>Returns true if this is a Browser API<table class="fieldTable"></table></div>
+  </div>
+</div><div class="function">
+  <a name="GTG.core.plugins.api.PluginAPI.get_view_manager">
+    
+  </a>
+  <a name="get_view_manager">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    get_view_manager(self):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div>returns a GTG.gtk.manager.Manager<table class="fieldTable"></table></div>
+  </div>
+</div><div class="function">
+  <a name="GTG.core.plugins.api.PluginAPI.get_requester">
+    
+  </a>
+  <a name="get_requester">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    get_requester(self):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div>returns a GTG.core.requester.Requester<table class="fieldTable"></table></div>
+  </div>
+</div><div class="function">
+  <a name="GTG.core.plugins.api.PluginAPI.get_gtk_builder">
+    
+  </a>
+  <a name="get_gtk_builder">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    get_gtk_builder(self):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div>Returns the gtk builder for the parent window<table class="fieldTable"></table></div>
+  </div>
+</div><div class="function">
+  <a name="GTG.core.plugins.api.PluginAPI.get_ui">
+    
+  </a>
+  <a name="get_ui">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    get_ui(self):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div>Returns a Browser or an Editor<table class="fieldTable"></table></div>
+  </div>
+</div><div class="function">
+  <a name="GTG.core.plugins.api.PluginAPI.add_menu_item">
+    
+  </a>
+  <a name="add_menu_item">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    add_menu_item(self, item):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div>Adds a menu entry to the Plugin Menu of the Main Window (task 
+browser).<table class="fieldTable"><tr class="fieldStart"><td class="fieldName">Parameters</td><td class="fieldArg">item</td><td>The gtk.MenuItem that is going to be added.
+</td></tr></table></div>
+  </div>
+</div><div class="function">
+  <a name="GTG.core.plugins.api.PluginAPI.remove_menu_item">
+    
+  </a>
+  <a name="remove_menu_item">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    remove_menu_item(self, item):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div>Removes a menu entry from the Plugin Menu of the Main Window (task 
+browser).<table class="fieldTable"><tr class="fieldStart"><td class="fieldName">Parameters</td><td class="fieldArg">item</td><td>The gtk.MenuItem that is going to be removed.
+</td></tr><tr class="fieldStart"><td class="fieldName">Returns</td><td colspan="2">Returns <code>True</code> if the operation has sucess or c{False} if it 
+fails.
+</td></tr></table></div>
+  </div>
+</div><div class="function">
+  <a name="GTG.core.plugins.api.PluginAPI.add_toolbar_item">
+    
+  </a>
+  <a name="add_toolbar_item">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    add_toolbar_item(self, widget):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div>Adds a button to the task browser's toolbar or the task editor toolbar, 
+depending on which plugin api it's being used.<table class="fieldTable"><tr class="fieldStart"><td class="fieldName">Parameters</td><td class="fieldArg">widget</td><td>The gtk.ToolButton that is going to be added to the toolbar.
+</td></tr></table></div>
+  </div>
+</div><div class="function">
+  <a name="GTG.core.plugins.api.PluginAPI.remove_toolbar_item">
+    
+  </a>
+  <a name="remove_toolbar_item">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    remove_toolbar_item(self, widget):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div>Remove a widget from the toolbar.<table class="fieldTable"></table></div>
+  </div>
+</div><div class="function">
+  <a name="GTG.core.plugins.api.PluginAPI.add_widget_to_taskeditor">
+    
+  </a>
+  <a name="add_widget_to_taskeditor">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    add_widget_to_taskeditor(self, widget):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div>Adds a widget to the bottom of the task editor dialog<table class="fieldTable"><tr class="fieldStart"><td class="fieldName">Parameters</td><td class="fieldArg">widget</td><td>The gtk.Widget that is going to be added.
+</td></tr></table></div>
+  </div>
+</div><div class="function">
+  <a name="GTG.core.plugins.api.PluginAPI.remove_widget_from_taskeditor">
+    
+  </a>
+  <a name="remove_widget_from_taskeditor">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    remove_widget_from_taskeditor(self, widg_id):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div>Remove a widget from the bottom of the task editor dialog<table class="fieldTable"><tr class="fieldStart"><td class="fieldName">Parameters</td><td class="fieldArg">widget</td><td>The gtk.Widget that is going to be removed
+</td></tr></table></div>
+  </div>
+</div><div class="function">
+  <a name="GTG.core.plugins.api.PluginAPI.load_configuration_object">
+    
+  </a>
+  <a name="load_configuration_object">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    load_configuration_object(self, plugin_name, filename, basedir=xdg_config_home):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div class="undocumented">Undocumented</div>
+  </div>
+</div><div class="function">
+  <a name="GTG.core.plugins.api.PluginAPI.save_configuration_object">
+    
+  </a>
+  <a name="save_configuration_object">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    save_configuration_object(self, plugin_name, filename, item, basedir=xdg_config_home):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div class="undocumented">Undocumented</div>
+  </div>
+</div>
+    <address>
+      <a href="index.html">API Documentation</a> for <a href="http://gtg.fritalk.com/">GTG</a>, generated by <a href="http://codespeak.net/~mwh/pydoctor/">pydoctor</a> at 2011-04-15 17:43:34.
+    </address>
+  </body>
+</html>

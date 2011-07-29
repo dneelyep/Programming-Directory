@@ -1,0 +1,762 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "DTD/xhtml1-strict.dtd">
+<html>
+  <head>
+    <title>GTG.core.requester.Requester : API documentation</title>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type" />
+    <link href="apidocs.css" type="text/css" rel="stylesheet" />
+    
+    
+  </head>
+  <body>
+    <h1 class="class">G.c.r.Requester(<span title="gobject.GObject">gobject.GObject</span>) : class documentation</h1>
+    <p>
+      <span id="part">Part of <a href="GTG.html">GTG</a>.<a href="GTG.core.html">core</a>.<a href="GTG.core.requester.html">requester</a></span>
+      
+      <a href="classIndex.html#GTG.core.requester.Requester">View In Hierarchy</a>
+    </p>
+    <div>
+      
+    </div>
+    <div>A view on a GTG datastore.</p>
+<p><a href="GTG.core.requester.Requester.html"><code>Requester</code></a> 
+is a stateless object that simply provides a nice API for user interfaces 
+to use for datastore operations.</p>
+<p>Multiple <a 
+href="GTG.core.requester.Requester.html"><code>Requester</code></a>s can 
+exist on the same datastore, so they should never have state of their 
+own.<table class="fieldTable"></table></div>
+
+    
+    
+    <div id="splitTables">
+      <table class="children sortable" id="id170">
+  
+  
+<tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.core.requester.Requester.html#__init__">__init__</a></td>
+    <td><span>Construct a <a 
+href="GTG.core.requester.Requester.html"><code>Requester</code></a>.</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.core.requester.Requester.html#get_tasks_tree">get_tasks_tree</a></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.core.requester.Requester.html#get_main_view">get_main_view</a></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.core.requester.Requester.html#is_displayed">is_displayed</a></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.core.requester.Requester.html#list_filters">list_filters</a></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.core.requester.Requester.html#add_filter">add_filter</a></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.core.requester.Requester.html#remove_filter">remove_filter</a></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.core.requester.Requester.html#has_task">has_task</a></td>
+    <td><span>Does the task 'tid' exist?</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.core.requester.Requester.html#get_task">get_task</a></td>
+    <td><span>Get the task with the given <code>tid</code>.</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.core.requester.Requester.html#new_task">new_task</a></td>
+    <td><span>Create a new task.</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.core.requester.Requester.html#delete_task">delete_task</a></td>
+    <td><span>Delete the task 'tid' and, by default, delete recursively</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.core.requester.Requester.html#get_tag_tree">get_tag_tree</a></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.core.requester.Requester.html#new_tag">new_tag</a></td>
+    <td><span>Create a new tag called 'tagname'.</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.core.requester.Requester.html#rename_tag">rename_tag</a></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.core.requester.Requester.html#get_tag">get_tag</a></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.core.requester.Requester.html#get_notag_tag">get_notag_tag</a></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.core.requester.Requester.html#get_alltag_tag">get_alltag_tag</a></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.core.requester.Requester.html#get_used_tags">get_used_tags</a></td>
+    <td><span>Return tags currently used by a task.</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.core.requester.Requester.html#get_all_backends">get_all_backends</a></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.core.requester.Requester.html#register_backend">register_backend</a></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.core.requester.Requester.html#flush_all_tasks">flush_all_tasks</a></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.core.requester.Requester.html#get_backend">get_backend</a></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.core.requester.Requester.html#set_backend_enabled">set_backend_enabled</a></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.core.requester.Requester.html#remove_backend">remove_backend</a></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.core.requester.Requester.html#backend_change_attached_tags">backend_change_attached_tags</a></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.core.requester.Requester.html#save_datastore">save_datastore</a></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.core.requester.Requester.html#get_global_config">get_global_config</a></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.core.requester.Requester.html#get_config">get_config</a></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.core.requester.Requester.html#save_config">save_config</a></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="method private">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.core.requester.Requester.html#_task_loaded">_task_loaded</a></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr>
+  
+</table>
+      
+      
+    </div>
+    
+    
+    
+
+    <div class="function">
+  <a name="GTG.core.requester.Requester.__init__">
+    
+  </a>
+  <a name="__init__">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    __init__(self, datastore, global_conf):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div>Construct a <a 
+href="GTG.core.requester.Requester.html"><code>Requester</code></a>.<table class="fieldTable"></table></div>
+  </div>
+</div><div class="function">
+  <a name="GTG.core.requester.Requester._task_loaded">
+    
+  </a>
+  <a name="_task_loaded">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    _task_loaded(self, tid):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div class="undocumented">Undocumented</div>
+  </div>
+</div><div class="function">
+  <a name="GTG.core.requester.Requester.get_tasks_tree">
+    
+  </a>
+  <a name="get_tasks_tree">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    get_tasks_tree(self, name='active', refresh=True):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div class="undocumented">Undocumented</div>
+  </div>
+</div><div class="function">
+  <a name="GTG.core.requester.Requester.get_main_view">
+    
+  </a>
+  <a name="get_main_view">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    get_main_view(self):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div class="undocumented">Undocumented</div>
+  </div>
+</div><div class="function">
+  <a name="GTG.core.requester.Requester.is_displayed">
+    
+  </a>
+  <a name="is_displayed">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    is_displayed(self, task):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div class="undocumented">Undocumented</div>
+  </div>
+</div><div class="function">
+  <a name="GTG.core.requester.Requester.list_filters">
+    
+  </a>
+  <a name="list_filters">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    list_filters(self):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div class="undocumented">Undocumented</div>
+  </div>
+</div><div class="function">
+  <a name="GTG.core.requester.Requester.add_filter">
+    
+  </a>
+  <a name="add_filter">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    add_filter(self, filter_name, filter_func):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div class="undocumented">Undocumented</div>
+  </div>
+</div><div class="function">
+  <a name="GTG.core.requester.Requester.remove_filter">
+    
+  </a>
+  <a name="remove_filter">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    remove_filter(self, filter_name):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div class="undocumented">Undocumented</div>
+  </div>
+</div><div class="function">
+  <a name="GTG.core.requester.Requester.has_task">
+    
+  </a>
+  <a name="has_task">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    has_task(self, tid):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div>Does the task 'tid' exist?<table class="fieldTable"></table></div>
+  </div>
+</div><div class="function">
+  <a name="GTG.core.requester.Requester.get_task">
+    
+  </a>
+  <a name="get_task">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    get_task(self, tid):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div>Get the task with the given <code>tid</code>.</p>
+<p>If no such task exists, create it and force the tid to be 
+<code>tid</code>.<table class="fieldTable"><tr class="fieldStart"><td class="fieldName">Parameters</td><td class="fieldArg">tid</td><td>The task id.
+</td></tr><tr class="fieldStart"><td class="fieldName">Returns</td><td colspan="2">A task.
+</td></tr></table></div>
+  </div>
+</div><div class="function">
+  <a name="GTG.core.requester.Requester.new_task">
+    
+  </a>
+  <a name="new_task">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    new_task(self, tags=None, newtask=True):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div>Create a new task.</p>
+<p>Note: this modifies the datastore.<table class="fieldTable"><tr class="fieldStart"><td class="fieldName">Parameters</td><td class="fieldArg">pid</td><td>The project where the new task will be created.
+</td></tr><tr><td></td><td class="fieldArg">tags</td><td>The tags for the new task. If not provided, then the task will have no 
+tags. Tags must be an iterator type containing the tags tids
+</td></tr><tr><td></td><td class="fieldArg">newtask</td><td><code>True</code> if this is creating a new task that never existed, 
+<code>False</code> if importing an existing task from a backend.
+</td></tr><tr class="fieldStart"><td class="fieldName">Returns</td><td colspan="2">A task from the data store
+</td></tr></table></div>
+  </div>
+</div><div class="function">
+  <a name="GTG.core.requester.Requester.delete_task">
+    
+  </a>
+  <a name="delete_task">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    delete_task(self, tid, recursive=True):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div>Delete the task 'tid' and, by default, delete recursively all the 
+childrens.</p>
+<p>Note: this modifies the datastore.<table class="fieldTable"><tr class="fieldStart"><td class="fieldName">Parameters</td><td class="fieldArg">tid</td><td>The id of the task to be deleted.
+</td></tr></table></div>
+  </div>
+</div><div class="function">
+  <a name="GTG.core.requester.Requester.get_tag_tree">
+    
+  </a>
+  <a name="get_tag_tree">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    get_tag_tree(self):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div class="undocumented">Undocumented</div>
+  </div>
+</div><div class="function">
+  <a name="GTG.core.requester.Requester.new_tag">
+    
+  </a>
+  <a name="new_tag">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    new_tag(self, tagname):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div>Create a new tag called 'tagname'.</p>
+<p>Note: this modifies the datastore.<table class="fieldTable"><tr class="fieldStart"><td class="fieldName">Parameters</td><td class="fieldArg">tagname</td><td>The name of the new tag.
+</td></tr><tr class="fieldStart"><td class="fieldName">Returns</td><td colspan="2">The newly-created tag.
+</td></tr></table></div>
+  </div>
+</div><div class="function">
+  <a name="GTG.core.requester.Requester.rename_tag">
+    
+  </a>
+  <a name="rename_tag">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    rename_tag(self, oldname, newname):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div class="undocumented">Undocumented</div>
+  </div>
+</div><div class="function">
+  <a name="GTG.core.requester.Requester.get_tag">
+    
+  </a>
+  <a name="get_tag">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    get_tag(self, tagname):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div class="undocumented">Undocumented</div>
+  </div>
+</div><div class="function">
+  <a name="GTG.core.requester.Requester.get_notag_tag">
+    
+  </a>
+  <a name="get_notag_tag">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    get_notag_tag(self):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div class="undocumented">Undocumented</div>
+  </div>
+</div><div class="function">
+  <a name="GTG.core.requester.Requester.get_alltag_tag">
+    
+  </a>
+  <a name="get_alltag_tag">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    get_alltag_tag(self):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div class="undocumented">Undocumented</div>
+  </div>
+</div><div class="function">
+  <a name="GTG.core.requester.Requester.get_used_tags">
+    
+  </a>
+  <a name="get_used_tags">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    get_used_tags(self):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div>Return tags currently used by a task.<table class="fieldTable"><tr class="fieldStart"><td class="fieldName">Returns</td><td colspan="2">A list of tag names used by a task.
+</td></tr></table></div>
+  </div>
+</div><div class="function">
+  <a name="GTG.core.requester.Requester.get_all_backends">
+    
+  </a>
+  <a name="get_all_backends">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    get_all_backends(self, disabled=False):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div class="undocumented">Undocumented</div>
+  </div>
+</div><div class="function">
+  <a name="GTG.core.requester.Requester.register_backend">
+    
+  </a>
+  <a name="register_backend">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    register_backend(self, dic):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div class="undocumented">Undocumented</div>
+  </div>
+</div><div class="function">
+  <a name="GTG.core.requester.Requester.flush_all_tasks">
+    
+  </a>
+  <a name="flush_all_tasks">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    flush_all_tasks(self, backend_id):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div class="undocumented">Undocumented</div>
+  </div>
+</div><div class="function">
+  <a name="GTG.core.requester.Requester.get_backend">
+    
+  </a>
+  <a name="get_backend">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    get_backend(self, backend_id):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div class="undocumented">Undocumented</div>
+  </div>
+</div><div class="function">
+  <a name="GTG.core.requester.Requester.set_backend_enabled">
+    
+  </a>
+  <a name="set_backend_enabled">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    set_backend_enabled(self, backend_id, state):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div class="undocumented">Undocumented</div>
+  </div>
+</div><div class="function">
+  <a name="GTG.core.requester.Requester.remove_backend">
+    
+  </a>
+  <a name="remove_backend">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    remove_backend(self, backend_id):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div class="undocumented">Undocumented</div>
+  </div>
+</div><div class="function">
+  <a name="GTG.core.requester.Requester.backend_change_attached_tags">
+    
+  </a>
+  <a name="backend_change_attached_tags">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    backend_change_attached_tags(self, backend_id, tags):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div class="undocumented">Undocumented</div>
+  </div>
+</div><div class="function">
+  <a name="GTG.core.requester.Requester.save_datastore">
+    
+  </a>
+  <a name="save_datastore">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    save_datastore(self):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div class="undocumented">Undocumented</div>
+  </div>
+</div><div class="function">
+  <a name="GTG.core.requester.Requester.get_global_config">
+    
+  </a>
+  <a name="get_global_config">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    get_global_config(self):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div class="undocumented">Undocumented</div>
+  </div>
+</div><div class="function">
+  <a name="GTG.core.requester.Requester.get_config">
+    
+  </a>
+  <a name="get_config">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    get_config(self, name):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div class="undocumented">Undocumented</div>
+  </div>
+</div><div class="function">
+  <a name="GTG.core.requester.Requester.save_config">
+    
+  </a>
+  <a name="save_config">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    save_config(self):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div class="undocumented">Undocumented</div>
+  </div>
+</div>
+    <address>
+      <a href="index.html">API Documentation</a> for <a href="http://gtg.fritalk.com/">GTG</a>, generated by <a href="http://codespeak.net/~mwh/pydoctor/">pydoctor</a> at 2011-05-02 21:27:37.
+    </address>
+  </body>
+</html>

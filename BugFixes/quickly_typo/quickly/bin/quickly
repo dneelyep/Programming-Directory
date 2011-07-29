@@ -1,0 +1,102 @@
+#!/usr/bin/python
+# -*- Mode: Python; coding: utf-8; indent-tabs-mode: nil; tab-width: 4 -*-
+# Copyright 2009 Didier Roche
+#
+# This file is part of Quickly
+#
+#This program is free software: you can redistribute it and/or modify it 
+#under the terms of the GNU General Public License version 3, as published 
+#by the Free Software Foundation.
+
+#This program is distributed in the hope that it will be useful, but 
+#WITHOUT ANY WARRANTY; without even the implied warranties of 
+#MERCHANTABILITY, SATISFACTORY QUALITY, or FITNESS FOR A PARTICULAR 
+#PURPOSE.  See the GNU General Public License for more details.
+
+#You should have received a copy of the GNU General Public License along 
+#with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+
+import os, re
+import sys
+import subprocess
+import gettext
+from gettext import gettext as _
+
+# add quickly root directory (enable symlink, and trunk execution)
+quickly_bin_directory = os.path.dirname(os.path.realpath(sys.argv[0]))
+quickly_root_directory_name = os.path.dirname(quickly_bin_directory)
+quickly_root_directory = os.path.abspath(quickly_root_directory_name)
+if os.path.exists(os.path.join(quickly_root_directory, 'quickly')) and quickly_root_directory not in sys.path:
+    sys.path.insert(0, quickly_root_directory)
+    os.putenv('PYTHONPATH', quickly_root_directory) # for subprocesses
+
+from quickly import commands, configurationhandler, quicklyconfig, coreupgrade, templatetools, tools, version
+
+gettext.textdomain('quickly')
+
+def main():
+    """Main ubuntu command line processor
+
+    :return: exit code of quickly command.
+    """
+
+    (opt_command, opt_template) = tools.process_command_line(sys.argv[1:])
+    command_name = opt_command[0]
+    
+    # try to get the template from the project directory if we are in a project (if not already provided by the -t option)
+    if not opt_template and configurationhandler.loadConfig(can_stop=False) == 0:
+        try:
+            opt_template = configurationhandler.project_config['template']
+        except KeyError:
+            pass
+
+    # check that the command exists in current template
+    if opt_template:
+        if not tools.check_template_exists(opt_template):
+            templatetools.usage_error(_("Template %s does not exist.") % (opt_template), show_templates_for=command_name)
+
+        # with this search, we are sure that only one command: (name,template) is unique
+        command = commands.get_command(command_name, opt_template)
+        if not command:
+            templatetools.usage_error(_("No %s command found in template %s.") % (command_name, opt_template), template=opt_template)
+
+    # from this line, if we don't have a template, only builtins commands and template command followed_by_template are candidates
+    else:
+        # check for a builtin command (again, one solution only)
+        command = commands.get_command(command_name, 'builtins')
+        if not command:
+            # so, check for a template command followed by template
+            if len(opt_command) > 1 and tools.check_template_exists(opt_command[1]):
+                command = commands.get_command(command_name, opt_command[1], followed_by_template=True)
+                if command:
+                    opt_template = opt_command[1]
+                    opt_command.remove(opt_template)
+            if not command:
+                # to help the user, we can search if this command_name corresponds to a command in a template
+                possible_commands = commands.get_commands_by_criteria(name=command_name, followed_by_template=True)
+                if possible_commands:
+                    templatetools.usage_error(_("No template specified for command %s." % command_name), cmd=possible_commands[0], show_templates_for=command_name)
+                else:
+                    # there is really not such command, in any template
+                    templatetools.usage_error(_("No %s command found.") % command_name)
+
+    command_args = tools.check_for_followed_by_args(command, opt_command[1:], opt_template)
+
+    return(command.launch(os.getcwd(), command_args, opt_template))
+
+
+if __name__ == '__main__':
+
+    if len(sys.argv) == 1:
+        tools.usage()
+        sys.exit(1)
+    # core upgrade (very early in the process to upgrade even in shell completion)
+    coreupgrade.upgrade()
+    # process the command line to send the right instructions
+    if sys.argv[1] == 'shell-completion':
+        print(" ".join(tools.get_completion_in_context(sys.argv)))
+        exit(0)
+    else:
+        exit(main())
+

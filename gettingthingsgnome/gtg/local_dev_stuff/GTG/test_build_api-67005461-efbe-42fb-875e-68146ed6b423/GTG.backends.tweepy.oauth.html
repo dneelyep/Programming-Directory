@@ -1,0 +1,261 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "DTD/xhtml1-strict.dtd">
+<html>
+  <head>
+    <title>GTG.backends.tweepy.oauth : API documentation</title>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type" />
+    <link href="apidocs.css" type="text/css" rel="stylesheet" />
+    
+    
+  </head>
+  <body>
+    <h1 class="module">G.b.t.oauth : module documentation</h1>
+    <p>
+      <span id="part">Part of <a href="GTG.html">GTG</a>.<a href="GTG.backends.html">backends</a>.<a href="GTG.backends.tweepy.html">tweepy</a></span>
+      
+      
+    </p>
+    <div>
+      
+    </div>
+    <div>The MIT License</p>
+<p>Copyright (c) 2007 Leah Culver</p>
+<p>Permission is hereby granted, free of charge, to any person obtaining a 
+copy of this software and associated documentation files (the 
+&quot;Software&quot;), to deal in the Software without restriction, 
+including without limitation the rights to use, copy, modify, merge, 
+publish, distribute, sublicense, and/or sell copies of the Software, and to
+permit persons to whom the Software is furnished to do so, subject to the 
+following conditions:</p>
+<p>The above copyright notice and this permission notice shall be included 
+in all copies or substantial portions of the Software.</p>
+<p>THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY 
+KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF 
+MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN 
+NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, 
+DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR 
+OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE 
+USE OR OTHER DEALINGS IN THE SOFTWARE.<table class="fieldTable"></table></div>
+
+    
+    
+    <div id="splitTables">
+      <table class="children sortable" id="id312">
+  
+  
+<tr class="class">
+    
+    
+    <td>Class</td>
+    <td><a href="GTG.backends.tweepy.oauth.OAuthError.html">OAuthError</a></td>
+    <td><span>Generic exception class.</span></td>
+  </tr><tr class="function">
+    
+    
+    <td>Function</td>
+    <td><a href="GTG.backends.tweepy.oauth.html#build_authenticate_header">build_authenticate_header</a></td>
+    <td><span>Optional WWW-Authenticate header (401 error)</span></td>
+  </tr><tr class="function">
+    
+    
+    <td>Function</td>
+    <td><a href="GTG.backends.tweepy.oauth.html#escape">escape</a></td>
+    <td><span>Escape a URL including any /.</span></td>
+  </tr><tr class="function">
+    
+    
+    <td>Function</td>
+    <td><a href="GTG.backends.tweepy.oauth.html#generate_timestamp">generate_timestamp</a></td>
+    <td><span>Get seconds since epoch (UTC).</span></td>
+  </tr><tr class="function">
+    
+    
+    <td>Function</td>
+    <td><a href="GTG.backends.tweepy.oauth.html#generate_nonce">generate_nonce</a></td>
+    <td><span>Generate pseudorandom number.</span></td>
+  </tr><tr class="function">
+    
+    
+    <td>Function</td>
+    <td><a href="GTG.backends.tweepy.oauth.html#generate_verifier">generate_verifier</a></td>
+    <td><span>Generate pseudorandom number.</span></td>
+  </tr><tr class="class">
+    
+    
+    <td>Class</td>
+    <td><a href="GTG.backends.tweepy.oauth.OAuthConsumer.html">OAuthConsumer</a></td>
+    <td><span>Consumer of OAuth authentication.</span></td>
+  </tr><tr class="class">
+    
+    
+    <td>Class</td>
+    <td><a href="GTG.backends.tweepy.oauth.OAuthToken.html">OAuthToken</a></td>
+    <td><span>OAuthToken is a data type that represents an End User via either an 
+access</span></td>
+  </tr><tr class="class">
+    
+    
+    <td>Class</td>
+    <td><a href="GTG.backends.tweepy.oauth.OAuthRequest.html">OAuthRequest</a></td>
+    <td><span>OAuthRequest represents the request and can be serialized.</span></td>
+  </tr><tr class="class">
+    
+    
+    <td>Class</td>
+    <td><a href="GTG.backends.tweepy.oauth.OAuthServer.html">OAuthServer</a></td>
+    <td><span>A worker to check the validity of a request against a data store.</span></td>
+  </tr><tr class="class">
+    
+    
+    <td>Class</td>
+    <td><a href="GTG.backends.tweepy.oauth.OAuthClient.html">OAuthClient</a></td>
+    <td><span>OAuthClient is a worker to attempt to execute a request.</span></td>
+  </tr><tr class="class">
+    
+    
+    <td>Class</td>
+    <td><a href="GTG.backends.tweepy.oauth.OAuthDataStore.html">OAuthDataStore</a></td>
+    <td><span>A database abstraction used to lookup consumers and tokens.</span></td>
+  </tr><tr class="class">
+    
+    
+    <td>Class</td>
+    <td><a href="GTG.backends.tweepy.oauth.OAuthSignatureMethod.html">OAuthSignatureMethod</a></td>
+    <td><span>A strategy class that implements a signature method.</span></td>
+  </tr><tr class="class">
+    
+    
+    <td>Class</td>
+    <td><a href="GTG.backends.tweepy.oauth.OAuthSignatureMethod_HMAC_SHA1.html">OAuthSignatureMethod_HMAC_SHA1</a></td>
+    <td><span class="undocumented">No class docstring; 1/3 methods documented</span></td>
+  </tr><tr class="class">
+    
+    
+    <td>Class</td>
+    <td><a href="GTG.backends.tweepy.oauth.OAuthSignatureMethod_PLAINTEXT.html">OAuthSignatureMethod_PLAINTEXT</a></td>
+    <td><span class="undocumented">No class docstring; 1/3 methods documented</span></td>
+  </tr><tr class="function private">
+    
+    
+    <td>Function</td>
+    <td><a href="GTG.backends.tweepy.oauth.html#_utf8_str">_utf8_str</a></td>
+    <td><span>Convert unicode to utf-8.</span></td>
+  </tr>
+  
+</table>
+      
+      
+    </div>
+    
+    
+    
+
+    <div class="function">
+  <a name="GTG.backends.tweepy.oauth.build_authenticate_header">
+    
+  </a>
+  <a name="build_authenticate_header">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    build_authenticate_header(realm=''):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div>Optional WWW-Authenticate header (401 error)<table class="fieldTable"></table></div>
+  </div>
+</div><div class="function">
+  <a name="GTG.backends.tweepy.oauth.escape">
+    
+  </a>
+  <a name="escape">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    escape(s):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div>Escape a URL including any /.<table class="fieldTable"></table></div>
+  </div>
+</div><div class="function">
+  <a name="GTG.backends.tweepy.oauth._utf8_str">
+    
+  </a>
+  <a name="_utf8_str">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    _utf8_str(s):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div>Convert unicode to utf-8.<table class="fieldTable"></table></div>
+  </div>
+</div><div class="function">
+  <a name="GTG.backends.tweepy.oauth.generate_timestamp">
+    
+  </a>
+  <a name="generate_timestamp">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    generate_timestamp():
+    
+  </div>
+  <div class="functionBody">
+    
+    <div>Get seconds since epoch (UTC).<table class="fieldTable"></table></div>
+  </div>
+</div><div class="function">
+  <a name="GTG.backends.tweepy.oauth.generate_nonce">
+    
+  </a>
+  <a name="generate_nonce">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    generate_nonce(length=8):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div>Generate pseudorandom number.<table class="fieldTable"></table></div>
+  </div>
+</div><div class="function">
+  <a name="GTG.backends.tweepy.oauth.generate_verifier">
+    
+  </a>
+  <a name="generate_verifier">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    generate_verifier(length=8):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div>Generate pseudorandom number.<table class="fieldTable"></table></div>
+  </div>
+</div>
+    <address>
+      <a href="index.html">API Documentation</a> for <a href="http://gtg.fritalk.com/">GTG</a>, generated by <a href="http://codespeak.net/~mwh/pydoctor/">pydoctor</a> at 2011-05-02 21:27:37.
+    </address>
+  </body>
+</html>

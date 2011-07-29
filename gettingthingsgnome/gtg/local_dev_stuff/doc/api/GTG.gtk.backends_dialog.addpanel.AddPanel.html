@@ -1,0 +1,263 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "DTD/xhtml1-strict.dtd">
+<html>
+  <head>
+    <title>GTG.gtk.backends_dialog.addpanel.AddPanel : API documentation</title>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type" />
+    <link href="apidocs.css" type="text/css" rel="stylesheet" />
+    
+    
+  </head>
+  <body>
+    <h1 class="class">G.g.b.a.AddPanel(<span title="gtk.VBox">gtk.VBox</span>) : class documentation</h1>
+    <p>
+      <span id="part">Part of <a href="GTG.html">GTG</a>.<a href="GTG.gtk.html">gtk</a>.<a href="GTG.gtk.backends_dialog.html">backends_dialog</a>.<a href="GTG.gtk.backends_dialog.addpanel.html">addpanel</a></span>
+      
+      <a href="classIndex.html#GTG.gtk.backends_dialog.addpanel.AddPanel">View In Hierarchy</a>
+    </p>
+    <div>
+      
+    </div>
+    <div>A VBox filled with gtk widgets to let the user choose a new backend.<table class="fieldTable"></table></div>
+
+    
+    
+    <div id="splitTables">
+      <table class="children sortable" id="id26">
+  
+  
+<tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.gtk.backends_dialog.addpanel.AddPanel.html#__init__">__init__</a></td>
+    <td><span>Constructor, just initializes the gtk widgets</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.gtk.backends_dialog.addpanel.AddPanel.html#refresh_backends">refresh_backends</a></td>
+    <td><span>Populates the combo box containing the available backends</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.gtk.backends_dialog.addpanel.AddPanel.html#on_confirm">on_confirm</a></td>
+    <td><span>Notifies the dialog holding this VBox that a backend has been</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.gtk.backends_dialog.addpanel.AddPanel.html#on_cancel">on_cancel</a></td>
+    <td><span>Aborts the addition of a new backend. Shows the configuration panel</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.gtk.backends_dialog.addpanel.AddPanel.html#on_combo_changed">on_combo_changed</a></td>
+    <td><span>Updates the backend description and icon.</span></td>
+  </tr><tr class="method private">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.gtk.backends_dialog.addpanel.AddPanel.html#_create_widgets">_create_widgets</a></td>
+    <td><span>gtk widgets initialization</span></td>
+  </tr><tr class="method private">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.gtk.backends_dialog.addpanel.AddPanel.html#_fill_top_hbox">_fill_top_hbox</a></td>
+    <td><span>Helper function to fill and hbox with a combobox that lists the</span></td>
+  </tr><tr class="method private">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.gtk.backends_dialog.addpanel.AddPanel.html#_fill_middle_hbox">_fill_middle_hbox</a></td>
+    <td><span>Helper function to fill an hbox with a label describing the backend</span></td>
+  </tr><tr class="method private">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.gtk.backends_dialog.addpanel.AddPanel.html#_fill_bottom_hbox">_fill_bottom_hbox</a></td>
+    <td><span>Helper function to fill and hbox with a buttonbox, featuring</span></td>
+  </tr>
+  
+</table>
+      
+      
+    </div>
+    
+    
+    
+
+    <div class="function">
+  <a name="GTG.gtk.backends_dialog.addpanel.AddPanel.__init__">
+    
+  </a>
+  <a name="__init__">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    __init__(self, backends_dialog):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div>Constructor, just initializes the gtk widgets<table class="fieldTable"><tr class="fieldStart"><td class="fieldName">Parameters</td><td class="fieldArg">backends_dialog</td><td>a reference to the dialog in which this is loaded
+</td></tr></table></div>
+  </div>
+</div><div class="function">
+  <a name="GTG.gtk.backends_dialog.addpanel.AddPanel._create_widgets">
+    
+  </a>
+  <a name="_create_widgets">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    _create_widgets(self):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div>gtk widgets initialization<table class="fieldTable"></table></div>
+  </div>
+</div><div class="function">
+  <a name="GTG.gtk.backends_dialog.addpanel.AddPanel._fill_top_hbox">
+    
+  </a>
+  <a name="_fill_top_hbox">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    _fill_top_hbox(self, hbox):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div>Helper function to fill and hbox with a combobox that lists the 
+available backends and a gtk.Label.<table class="fieldTable"><tr class="fieldStart"><td class="fieldName">Parameters</td><td class="fieldArg">hbox</td><td>the gtk.HBox to fill
+</td></tr></table></div>
+  </div>
+</div><div class="function">
+  <a name="GTG.gtk.backends_dialog.addpanel.AddPanel._fill_middle_hbox">
+    
+  </a>
+  <a name="_fill_middle_hbox">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    _fill_middle_hbox(self, hbox):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div>Helper function to fill an hbox with a label describing the backend and 
+a gtk.Image (that loads the backend image)<table class="fieldTable"><tr class="fieldStart"><td class="fieldName">Parameters</td><td class="fieldArg">hbox</td><td>the gtk.HBox to fill
+</td></tr></table></div>
+  </div>
+</div><div class="function">
+  <a name="GTG.gtk.backends_dialog.addpanel.AddPanel._fill_bottom_hbox">
+    
+  </a>
+  <a name="_fill_bottom_hbox">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    _fill_bottom_hbox(self, hbox):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div>Helper function to fill and hbox with a buttonbox, featuring and ok and 
+cancel buttons.<table class="fieldTable"><tr class="fieldStart"><td class="fieldName">Parameters</td><td class="fieldArg">hbox</td><td>the gtk.HBox to fill
+</td></tr></table></div>
+  </div>
+</div><div class="function">
+  <a name="GTG.gtk.backends_dialog.addpanel.AddPanel.refresh_backends">
+    
+  </a>
+  <a name="refresh_backends">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    refresh_backends(self):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div>Populates the combo box containing the available backends<table class="fieldTable"></table></div>
+  </div>
+</div><div class="function">
+  <a name="GTG.gtk.backends_dialog.addpanel.AddPanel.on_confirm">
+    
+  </a>
+  <a name="on_confirm">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    on_confirm(self, widget=None):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div>Notifies the dialog holding this VBox that a backend has been chosen<table class="fieldTable"><tr class="fieldStart"><td class="fieldName">Parameters</td><td class="fieldArg">widget</td><td>just to make this function usable as a signal callback. Not used.
+</td></tr></table></div>
+  </div>
+</div><div class="function">
+  <a name="GTG.gtk.backends_dialog.addpanel.AddPanel.on_cancel">
+    
+  </a>
+  <a name="on_cancel">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    on_cancel(self, widget=None):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div>Aborts the addition of a new backend. Shows the configuration panel 
+previously loaded.<table class="fieldTable"><tr class="fieldStart"><td class="fieldName">Parameters</td><td class="fieldArg">widget</td><td>just to make this function usable as a signal callback. Not used.
+</td></tr></table></div>
+  </div>
+</div><div class="function">
+  <a name="GTG.gtk.backends_dialog.addpanel.AddPanel.on_combo_changed">
+    
+  </a>
+  <a name="on_combo_changed">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    on_combo_changed(self, widget=None):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div>Updates the backend description and icon.<table class="fieldTable"><tr class="fieldStart"><td class="fieldName">Parameters</td><td class="fieldArg">widget</td><td>just to make this function usable as a signal callback. Not used.
+</td></tr></table></div>
+  </div>
+</div>
+    <address>
+      <a href="index.html">API Documentation</a> for <a href="http://gtg.fritalk.com/">GTG</a>, generated by <a href="http://codespeak.net/~mwh/pydoctor/">pydoctor</a> at 2011-04-15 17:43:34.
+    </address>
+  </body>
+</html>

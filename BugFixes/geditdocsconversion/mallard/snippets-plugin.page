@@ -1,0 +1,10 @@
+<page xmlns="http://projectmallard.org/1.0/"
+      type="topic"
+      id="snippets-plugin">
+
+  <info>
+    <link type="guide" xref="index#plugins"/>
+  </info>
+
+  <title>Snippets Plugin</title>
+</page>

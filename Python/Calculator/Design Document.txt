@@ -1,0 +1,14 @@
+Making a calculator
+
+Start simple
+
+v0.1
+----
+- Includes basic layout of calculator
+- 1-9,0, and +,-,/,*, Enter keys implemented
+
+v0.2
+----
+- Adds basic functionality to the calculator
+- If a key is pressed, apply the output of that key to the text field
+	- IE: if 1 is pressed, display a 1 in the text field

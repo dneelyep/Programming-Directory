@@ -1,0 +1,247 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "DTD/xhtml1-strict.dtd">
+<html>
+  <head>
+    <title>GTG.backends.syncengine.SyncEngine : API documentation</title>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type" />
+    <link href="apidocs.css" type="text/css" rel="stylesheet" />
+    
+    
+  </head>
+  <body>
+    <h1 class="class">G.b.s.SyncEngine(<span title="object">object</span>) : class documentation</h1>
+    <p>
+      <span id="part">Part of <a href="GTG.html">GTG</a>.<a href="GTG.backends.html">backends</a>.<a href="GTG.backends.syncengine.html">syncengine</a></span>
+      
+      <a href="classIndex.html#GTG.backends.syncengine.SyncEngine">View In Hierarchy</a>
+    </p>
+    <div>
+      
+    </div>
+    <div>The SyncEngine is an object useful in keeping two sets of objects 
+synchronized. One set is called the Local set, the other is the Remote one.
+It stores the state of the synchronization and the latest state of each 
+object. When asked, it can tell if a couple of related objects are up to 
+date in the sync and, if not, which one must be updated.</p>
+<p>It stores the state of each relationship in a series of SyncMeme.<table class="fieldTable"></table></div>
+
+    
+    
+    <div id="splitTables">
+      <table class="children sortable" id="id355">
+  
+  
+<tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.backends.syncengine.SyncEngine.html#__init__">__init__</a></td>
+    <td><span>Initializes the storage of object relationships.</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.backends.syncengine.SyncEngine.html#analyze_local_id">analyze_local_id</a></td>
+    <td><span>Shortcut to call _analyze_element for a local element</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.backends.syncengine.SyncEngine.html#analyze_remote_id">analyze_remote_id</a></td>
+    <td><span>Shortcut to call _analyze_element for a remote element</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.backends.syncengine.SyncEngine.html#record_relationship">record_relationship</a></td>
+    <td><span>Records that an object from the local set is related with one a 
+remote</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.backends.syncengine.SyncEngine.html#break_relationship">break_relationship</a></td>
+    <td><span>breaks a relationship between two objects.</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.backends.syncengine.SyncEngine.html#__getattr__">__getattr__</a></td>
+    <td><span>The functions listed here are passed directly to the SyncMeme object</span></td>
+  </tr><tr class="method private">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.backends.syncengine.SyncEngine.html#_analyze_element">_analyze_element</a></td>
+    <td><span>Given an object that should be synced with another one,</span></td>
+  </tr>
+  
+</table>
+      
+      
+    </div>
+    
+    
+    
+
+    <div class="function">
+  <a name="GTG.backends.syncengine.SyncEngine.__init__">
+    
+  </a>
+  <a name="__init__">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    __init__(self):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div>Initializes the storage of object relationships.<table class="fieldTable"></table></div>
+  </div>
+</div><div class="function">
+  <a name="GTG.backends.syncengine.SyncEngine._analyze_element">
+    
+  </a>
+  <a name="_analyze_element">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    _analyze_element(self, element_id, is_local, has_local, has_remote, is_syncable=True):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div>Given an object that should be synced with another one, it finds out 
+about the related object, and decides whether:</p>
+<ul>
+  <li>
+    the other object hasn't been created yet (thus must be added)
+  </li>
+  <li>
+    the other object has been deleted (thus this one must be deleted)
+  </li>
+  <li>
+    the other object is present, but either one has been changed
+  </li>
+</ul>
+<p>A particular case happens if the other object is present, but the 
+&quot;is_syncable&quot; parameter (which tells that we intend to keep these
+two objects in sync) is set to False. In this case, this function returns 
+that the Syncability property has been lost. This case is interesting if we
+want to delete one of the two objects (the one that has been cloned from 
+the original).<table class="fieldTable"><tr class="fieldStart"><td class="fieldName">Parameters</td><td class="fieldArg">element_id</td><td>the id of the element we're analysing.
+</td></tr><tr><td></td><td class="fieldArg">is_local</td><td>True if the element analysed is the local one (not the remote)
+</td></tr><tr><td></td><td class="fieldArg">has_local</td><td>function that accepts an id of the local set and returns True if the 
+element is present
+</td></tr><tr><td></td><td class="fieldArg">has_remote</td><td>function that accepts an id of the remote set and returns True if the 
+element is present
+</td></tr><tr><td></td><td class="fieldArg">is_syncable</td><td>explained above
+</td></tr><tr class="fieldStart"><td class="fieldName">Returns</td><td colspan="2">one of self.UPDATE, self.ADD, self.REMOVE, self.LOST_SYNCABILITY
+</td></tr></table></div>
+  </div>
+</div><div class="function">
+  <a name="GTG.backends.syncengine.SyncEngine.analyze_local_id">
+    
+  </a>
+  <a name="analyze_local_id">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    analyze_local_id(self, element_id, *other_args):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div>Shortcut to call _analyze_element for a local element<table class="fieldTable"></table></div>
+  </div>
+</div><div class="function">
+  <a name="GTG.backends.syncengine.SyncEngine.analyze_remote_id">
+    
+  </a>
+  <a name="analyze_remote_id">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    analyze_remote_id(self, element_id, *other_args):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div>Shortcut to call _analyze_element for a remote element<table class="fieldTable"></table></div>
+  </div>
+</div><div class="function">
+  <a name="GTG.backends.syncengine.SyncEngine.record_relationship">
+    
+  </a>
+  <a name="record_relationship">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    record_relationship(self, local_id, remote_id, meme):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div>Records that an object from the local set is related with one a remote 
+set.<table class="fieldTable"><tr class="fieldStart"><td class="fieldName">Parameters</td><td class="fieldArg">local_id</td><td>the id of the local task
+</td></tr><tr><td></td><td class="fieldArg">remote_id</td><td>the id of the remote task
+</td></tr><tr><td></td><td class="fieldArg">meme</td><td>the SyncMeme that keeps track of the relationship
+</td></tr></table></div>
+  </div>
+</div><div class="function">
+  <a name="GTG.backends.syncengine.SyncEngine.break_relationship">
+    
+  </a>
+  <a name="break_relationship">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    break_relationship(self, local_id=None, remote_id=None):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div>breaks a relationship between two objects. Only one of the two 
+parameters is necessary to identify the relationship.<table class="fieldTable"><tr class="fieldStart"><td class="fieldName">Parameters</td><td class="fieldArg">local_id</td><td>the id of the local task
+</td></tr><tr><td></td><td class="fieldArg">remote_id</td><td>the id of the remote task
+</td></tr></table></div>
+  </div>
+</div><div class="function">
+  <a name="GTG.backends.syncengine.SyncEngine.__getattr__">
+    
+  </a>
+  <a name="__getattr__">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    __getattr__(self, attr):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div>The functions listed here are passed directly to the SyncMeme object<table class="fieldTable"><tr class="fieldStart"><td class="fieldName">Parameters</td><td class="fieldArg">attr</td><td>a function name among the ones listed here
+</td></tr><tr class="fieldStart"><td class="fieldName">Returns</td><td colspan="2">the function return object.
+</td></tr></table></div>
+  </div>
+</div>
+    <address>
+      <a href="index.html">API Documentation</a> for <a href="http://gtg.fritalk.com/">GTG</a>, generated by <a href="http://codespeak.net/~mwh/pydoctor/">pydoctor</a> at 2011-05-02 21:27:37.
+    </address>
+  </body>
+</html>

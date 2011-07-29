@@ -1,0 +1,58 @@
+\documentclass{article}
+\usepackage{multirow}
+\setlength{\voffset}{-30mm}
+\setlength{\hoffset}{-30mm}
+
+\begin{document}
+%Basically, the idea is to create a quick, one-page, printable listing of handy shortcuts that people unexperienced with computers can gradually learn and apply in their daily lives.
+%Each item should have the effect of something like holding shift/control while selecting files in a file manager to select them more precisely. Or copy+paste. Or Ctrl+left/right arrow. Or tab/shift+tab for filling out forms.
+%The *goal* is to have people think/say "Wow, that's cool and helpful, why didn't I think of that before?" and subsequently incorporate shortcuts into their workflow. By doing so, this should help people feel more comfortable and productive with their computers, which is a Good Thing.
+%Target audience: Dad/Mom. People who use computers a *lot* but lack basic productivity-increasing knowledge.
+%Goal is to communicate to Mom/Dad these benefits while making it relevant/interesting to them. In-depth explanations, puns, etc. won't accomplish the *goal*. Show the coolness quickly and simply, don't tell about it.
+%The best way for this to work I think is multiple useful items that each contain the *wow* factor.
+%Maybe make it in LaTeX? Simple, looks nice, easy to print and use.
+
+%FIXME: License this correctly, under CC/GFDL/what have you
+%FIXME: Make a note at the bottom about the document being created with Free Software, etc. Include a link for people to learn more if they want.
+%Why do all this? One reason: There are many people with virtually 0 interest in computers. However, the more one learns about a given subject, the more interesting (I think) the subject is, and the more one is able to learn what's possible in that subject. By giving people who might not be interested in computers something they probably are interested in, they might indirectly learn about computers, and further increase their desire to learn more about the wonderful world of them. Less helpless Gary's, more Dad's.
+%FIXME: Include quote from Sagan about society increasingly depending on technology without knowing much about the tech itself.
+%FIXME: Make sure all relevant keywords are emphasized. IE all instances of ``Click''
+
+Hey there! Below is a list of handy keyboard shortcuts. I recommend that you print them out and keep them beside your computer, to be viewed whenever you think they might be useful.
+Once you've mastered these commands, you should feel much more productive and comfortable using your computer. Have fun! \\
+\begin{tabular*}{13cm}{| p{4cm} | p{3.5cm} | p{2cm} | p{2cm} |}
+    \hline
+    \textbf{Name} & \textbf{Shortcut} & \textbf{What it does} & \textbf{Example} \\
+    \hline
+    Copy & \emph{Ctrl + C} & Takes a selected region of text and stores it to later be \emph{Paste}'d & \multirow{2}{p{3cm}}{A friend tells you to type the following into your web browser: http://www.wikipedia.org Rather than type all 24 characters individually, you highlight the text and Copy it with Ctrl + C, then Paste it into the browser with Ctrl + V. 4 keystrokes instead of 24, and there's no chance that you'll type a letter incorrectly!} \\
+    Paste & \emph{Ctrl + V} & After some text has been \emph{Copy}'d, rewrite, in a manner of speaking, that text beside the cursor's current position. &  \\
+    \hline
+    Tab & \emph{Tab} & In most cases, jumps to the next available item. Handy when filling out forms. & You want to fill out government paperwork online [MOREPRACTICAL!]. This paperwork includes fields that ask for your name, address, and a large amount of other personal information. Rather than click on each input field individually, as you finish entering text for each item, you press \emph{Tab} to jump to the next item. When you make a mistake entering one item and have already pressed \emph{Tab}, just press \emph{Shift + Tab} to return to the previous field. \\
+
+    Reverse Tab & \emph{Shift + Tab} & Jump to the previous item.  & \\
+    \hline
+    Select range of items & \emph{Click} first item, hold \emph{Shift}, \emph{Click} last item & Select, starting from the first item you click, every item between and including the last item you click. & While copying photos from your digital camera to your desktop, you want to copy (for example) the 21\^{st} - 32\^{nd} photos from your camera to the desktop. You click the 21\^{st} item, hold \emph{shift}, then click the 32\^{nd} item. Now you can copy and paste them to the desktop quickly and easily. \\
+    Select multiple individual items & \emph{Click} first item, hold \emph{Ctrl}, \emph{Click} one or more other items & Select multiple individual items. & After selecting the 21\^{st} - 32\^{nd} photos from your camera, you decide you don't want to copy items 27 and 31. You hold \emph{Ctrl} and \emph{Click} items 27 and 31. Now items 21 - 26, 28 - 30, and 32 are available for copying. \\
+    \hline
+    Move forward/backward by word & \emph{Ctrl +} \Leftarrow or \Rightarrow & Moves the cursor forward one \emph{word}, rather than the usual one \emph{character}. & As you type up an email to a friend, you encounter the phrase, "I ate extremely delicious pizza." You want to change 'pizza' to 'macaroni', but the cursor is currently positioned to the left of the 'a' in 'ate'. Rather than press the right arrow 24 times (or holding it and waiting), you press \emph{Ctrl +} \Rightarrow 3 times and \Rightarrow once and arrive at the same place in the text. 4 key presses versus 24 - 1/6\^{th} the typing! \\
+    Highlight forward/backward by word & \emph{Ctrl + Shift +} \Leftarrow or \Rightarrow &  & \\
+    \hline
+    Move to beginning of line & \emph{Home} & Move the cursor to the beginning of the line it is currently positioned on. & As you continue in your email, you start a new line with the words "And then I went, after a long nap, to the movie theater." Your cursor is currently to the right of the '.', but you want to remove "And" and capitalize "then." Rather than press \Leftarrow around 50 times, or move your hand off the keyboard to use the mouse, you press \emph{Home} once to arrive at the start of the line. \\
+    Move to end of line & \emph{End} & Move the cursor to the end of the current line. & After making the edits in the \emph{Home} example, you want to write a new sentence. Rather arrow-over or take your hand off the keyboard to use the mouse, you press \emph{End} and resume typing. \\
+    \hline
+    Highlight to beginning of line & \emph{Shift + Home} & From the cursor's current position, highlight everything moving left to the beginning of the line.  & After you type in a sentence on a new line in your email, you decide to remove the sentence. Just press \emph{Shift + Home} then \emph{Backspace} and you're done.\\
+    Highlight to end of line & \emph{Shift + End} & Highlight, from the cursor's position, everything to the end of the current line. & You decide to remove the first sentence in the first paragraph of the email. You navigate to the beginning of the first sentence and press \emph{Shift + End} and \emph{Backspace}. \\
+    \hline
+    Switch current application (?) & \emph{Alt + Tab} & Displays a list of currently open applications. Pressing \emph{Tab} further cycles through and, when released, sets the current application to the one selected. & You decide to include a famous quote that you found on a website in your email. You pause from writing your email, press \emph{Alt + Tab} to select your browser, select and \emph{Copy} the quote, \emph{Alt + Tab} back to your email, and \emph{Paste} the quote into the email. Or, you decide to pick a different song to listen to, so you \emph{Alt + Tab} from your email to your media player, play a new song, then \emph{Alt + Tab} back to your email. \\
+    \hline
+    Delete & \emph{Delete} & Same as \emph{Backspace}, but deletes to the right rather than the left. & While composing your email, your cursor is to the left of the 'c' (in 'cell') in "My cell phone number is..." and you want to remove the word 'cell'. Rather than pressing \Rightarrow four times and \emph{Backspace} four times, you just press \emph{Delete} four times to remove the word.  \\
+    \hline
+    Save & \emph{Ctrl + S} & In most cases, store any changes you have made to a given document. & As you write up a report for school or work, you often want to save your progress to make sure you don't lose any work you've done. However, taking your hands off the keyboard to click the \emph{Save} icon is tedious and annoying. The solution: press \emph{Ctrl + S}. Now you don't have to take your hands off the keyboard! \\
+    Open & \emph{Ctrl + O} & In most cases, brings up some type of \emph{Open File} dialog box to allow you to select a file to work on. & As you continue working on your report, you realize you want to edit another file. Rather than clicking the \emph{Open} icon or pressing \emph{File > Open}, you press \emph{Ctrl + O}, again saving yourself some time. \\
+    \hline
+    \multicolumn{4}{| c |}{Notice how the \emph{Shift} and \emph{Ctrl} keys sometimes modify the behavior of an existing key, such as \emph{Shift +} \Rightarrow or \emph{Shift + End}.}
+    \hline
+  \end{tabular}
+Note: The items in the ``Name'' column are not ``official'' names for the shortcuts. [FIXME: keep this notice?]
+
+\end{document}

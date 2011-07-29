@@ -1,0 +1,4 @@
+<?php //Exploding a string into an array using spaces
+$temp = explode(' ', "This is a sentence wif nyne of da wurds");
+print_r($temp);
+?>

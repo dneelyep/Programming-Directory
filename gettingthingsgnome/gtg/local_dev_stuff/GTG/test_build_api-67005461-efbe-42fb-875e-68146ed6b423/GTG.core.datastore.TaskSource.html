@@ -1,0 +1,412 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "DTD/xhtml1-strict.dtd">
+<html>
+  <head>
+    <title>GTG.core.datastore.TaskSource : API documentation</title>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type" />
+    <link href="apidocs.css" type="text/css" rel="stylesheet" />
+    
+    
+  </head>
+  <body>
+    <h1 class="class">G.c.d.TaskSource : class documentation</h1>
+    <p>
+      <span id="part">Part of <a href="GTG.html">GTG</a>.<a href="GTG.core.html">core</a>.<a href="GTG.core.datastore.html">datastore</a></span>
+      
+      <a href="classIndex.html#GTG.core.datastore.TaskSource">View In Hierarchy</a>
+    </p>
+    <div>
+      
+    </div>
+    <div>Transparent interface between the real backend and the DataStore. Is in 
+charge of connecting and disconnecting to signals<table class="fieldTable"></table></div>
+
+    
+    
+    <div id="splitTables">
+      <table class="children sortable" id="id176">
+  
+  
+<tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.core.datastore.TaskSource.html#__init__">__init__</a></td>
+    <td><span>Instantiates a TaskSource object.</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.core.datastore.TaskSource.html#start_get_tasks">start_get_tasks</a></td>
+    <td><span>'</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.core.datastore.TaskSource.html#get_task_filter_for_backend">get_task_filter_for_backend</a></td>
+    <td><span>Filter that checks if the task should be stored in this backend.</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.core.datastore.TaskSource.html#should_task_id_be_stored">should_task_id_be_stored</a></td>
+    <td><span>Helper function:  Checks if a task should be stored in this backend</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.core.datastore.TaskSource.html#queue_set_task">queue_set_task</a></td>
+    <td><span>Updates the task in the DataStore.  Actually, it adds the task to a</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.core.datastore.TaskSource.html#launch_setting_thread">launch_setting_thread</a></td>
+    <td><span>Operates the threads to set and remove tasks.</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.core.datastore.TaskSource.html#queue_remove_task">queue_remove_task</a></td>
+    <td><span>Queues task to be removed.</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.core.datastore.TaskSource.html#initialize">initialize</a></td>
+    <td><span>Initializes the backend and starts looking for signals.</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.core.datastore.TaskSource.html#sync">sync</a></td>
+    <td><span>Forces the TaskSource to sync all the pending tasks</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.core.datastore.TaskSource.html#quit">quit</a></td>
+    <td><span>Quits the backend and disconnect the signals</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.core.datastore.TaskSource.html#__getattr__">__getattr__</a></td>
+    <td><span>Delegates all the functions not defined here to the real backend</span></td>
+  </tr><tr class="method private">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.core.datastore.TaskSource.html#__start_get_tasks">__start_get_tasks</a></td>
+    <td><span>Loads all task from the backend and connects its signals afterwards.</span></td>
+  </tr><tr class="method private">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.core.datastore.TaskSource.html#__try_launch_setting_thread">__try_launch_setting_thread</a></td>
+    <td><span>Helper function to launch the setting thread, if it's not running</span></td>
+  </tr><tr class="method private">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.core.datastore.TaskSource.html#_connect_signals">_connect_signals</a></td>
+    <td><span>Helper function to connect signals</span></td>
+  </tr><tr class="method private">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.core.datastore.TaskSource.html#_disconnect_signals">_disconnect_signals</a></td>
+    <td><span>Helper function to disconnect signals</span></td>
+  </tr>
+  
+</table>
+      
+      
+    </div>
+    
+    
+    
+
+    <div class="function">
+  <a name="GTG.core.datastore.TaskSource.__init__">
+    
+  </a>
+  <a name="__init__">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    __init__(self, requester, backend, datastore):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div>Instantiates a TaskSource object.<table class="fieldTable"><tr class="fieldStart"><td class="fieldName">Parameters</td><td class="fieldArg">requester</td><td>a Requester
+</td></tr><tr><td></td><td class="fieldArg">backend</td><td>the backend being wrapped
+</td></tr><tr><td></td><td class="fieldArg">datastore</td><td>a FilteredDatastore
+</td></tr></table></div>
+  </div>
+</div><div class="function">
+  <a name="GTG.core.datastore.TaskSource.start_get_tasks">
+    
+  </a>
+  <a name="start_get_tasks">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    start_get_tasks(self):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div>' Maps the TaskSource to the backend and starts threading.<table class="fieldTable"></table></div>
+  </div>
+</div><div class="function">
+  <a name="GTG.core.datastore.TaskSource.__start_get_tasks">
+    
+  </a>
+  <a name="__start_get_tasks">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    __start_get_tasks(self):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div>Loads all task from the backend and connects its signals afterwards. 
+Launched as a thread by start_get_tasks<table class="fieldTable"></table></div>
+  </div>
+</div><div class="function">
+  <a name="GTG.core.datastore.TaskSource.get_task_filter_for_backend">
+    
+  </a>
+  <a name="get_task_filter_for_backend">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    get_task_filter_for_backend(self):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div>Filter that checks if the task should be stored in this backend.<table class="fieldTable"><tr class="fieldStart"><td class="fieldName">Returns</td><td colspan="2">a function that accepts a task and returns True/False whether the task 
+should be stored or not
+</td></tr></table></div>
+  </div>
+</div><div class="function">
+  <a name="GTG.core.datastore.TaskSource.should_task_id_be_stored">
+    
+  </a>
+  <a name="should_task_id_be_stored">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    should_task_id_be_stored(self, task_id):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div>Helper function:  Checks if a task should be stored in this backend<table class="fieldTable"><tr class="fieldStart"><td class="fieldName">Parameters</td><td class="fieldArg">task_id</td><td>a task id
+</td></tr><tr class="fieldStart"><td class="fieldName">Returns</td><td colspan="2">True if the task should be stored
+</td></tr></table></div>
+  </div>
+</div><div class="function">
+  <a name="GTG.core.datastore.TaskSource.queue_set_task">
+    
+  </a>
+  <a name="queue_set_task">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    queue_set_task(self, sender, tid):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div>Updates the task in the DataStore.  Actually, it adds the task to a 
+queue to be updated asynchronously.<table class="fieldTable"><tr class="fieldStart"><td class="fieldName">Parameters</td><td class="fieldArg">sender</td><td>not used, any value will do.
+</td></tr><tr><td></td><td class="fieldArg">task</td><td>The Task object to be updated.
+</td></tr></table></div>
+  </div>
+</div><div class="function">
+  <a name="GTG.core.datastore.TaskSource.launch_setting_thread">
+    
+  </a>
+  <a name="launch_setting_thread">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    launch_setting_thread(self, bypass_please_quit=False):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div>Operates the threads to set and remove tasks. Releases the lock when it 
+is done.<table class="fieldTable"><tr class="fieldStart"><td class="fieldName">Parameters</td><td class="fieldArg">bypass_please_quit</td><td>if True, the self.please_quit &quot;quit condition&quot; is ignored. 
+Currently, it's turned to true after the quit condition has been issued, to
+execute eventual pending operations.
+</td></tr></table></div>
+  </div>
+</div><div class="function">
+  <a name="GTG.core.datastore.TaskSource.queue_remove_task">
+    
+  </a>
+  <a name="queue_remove_task">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    queue_remove_task(self, sender, tid):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div>Queues task to be removed.<table class="fieldTable"><tr class="fieldStart"><td class="fieldName">Parameters</td><td class="fieldArg">sender</td><td>not used, any value will do
+</td></tr><tr><td></td><td class="fieldArg">tid</td><td>The Task ID of the task to be removed
+</td></tr></table></div>
+  </div>
+</div><div class="function">
+  <a name="GTG.core.datastore.TaskSource.__try_launch_setting_thread">
+    
+  </a>
+  <a name="__try_launch_setting_thread">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    __try_launch_setting_thread(self):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div>Helper function to launch the setting thread, if it's not running<table class="fieldTable"></table></div>
+  </div>
+</div><div class="function">
+  <a name="GTG.core.datastore.TaskSource.initialize">
+    
+  </a>
+  <a name="initialize">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    initialize(self, connect_signals=True):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div>Initializes the backend and starts looking for signals.<table class="fieldTable"><tr class="fieldStart"><td class="fieldName">Parameters</td><td class="fieldArg">connect_signals</td><td>if True, it starts listening for signals
+</td></tr></table></div>
+  </div>
+</div><div class="function">
+  <a name="GTG.core.datastore.TaskSource._connect_signals">
+    
+  </a>
+  <a name="_connect_signals">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    _connect_signals(self):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div>Helper function to connect signals<table class="fieldTable"></table></div>
+  </div>
+</div><div class="function">
+  <a name="GTG.core.datastore.TaskSource._disconnect_signals">
+    
+  </a>
+  <a name="_disconnect_signals">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    _disconnect_signals(self):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div>Helper function to disconnect signals<table class="fieldTable"></table></div>
+  </div>
+</div><div class="function">
+  <a name="GTG.core.datastore.TaskSource.sync">
+    
+  </a>
+  <a name="sync">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    sync(self):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div>Forces the TaskSource to sync all the pending tasks<table class="fieldTable"></table></div>
+  </div>
+</div><div class="function">
+  <a name="GTG.core.datastore.TaskSource.quit">
+    
+  </a>
+  <a name="quit">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    quit(self, disable=False):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div>Quits the backend and disconnect the signals<table class="fieldTable"><tr class="fieldStart"><td class="fieldName">Parameters</td><td class="fieldArg">disable</td><td>if True, the backend is disabled.
+</td></tr></table></div>
+  </div>
+</div><div class="function">
+  <a name="GTG.core.datastore.TaskSource.__getattr__">
+    
+  </a>
+  <a name="__getattr__">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    __getattr__(self, attr):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div>Delegates all the functions not defined here to the real backend 
+(standard python function)<table class="fieldTable"><tr class="fieldStart"><td class="fieldName">Parameters</td><td class="fieldArg">attr</td><td>attribute to get
+</td></tr></table></div>
+  </div>
+</div>
+    <address>
+      <a href="index.html">API Documentation</a> for <a href="http://gtg.fritalk.com/">GTG</a>, generated by <a href="http://codespeak.net/~mwh/pydoctor/">pydoctor</a> at 2011-05-02 21:27:37.
+    </address>
+  </body>
+</html>

@@ -1,0 +1,43 @@
+Story: A giant Snorlax has stolen your Cheez-its. Now you need to find him and beat him up to get them back.
+
+Goals:
+- Implement a fighting system - ie: user types a word or two, attacks Snorlax, Snorlax responds, repeat until death of one or the other
+- Has fun
+
+v0.3
+=====
+
+- ???
+- Rewrite some simple functions, etc in C for fun - see how much performance improves maybe
+
+v0.2
+===============
+To Do:
+- REFACTOR. A LOT.
+- Add colors to text
+	- Dark green for Total Health
+	- Dark red, orange, yellow, green for Current Health, depending on Current Health's value
+	- Purple(?) for Attack Power
+	- Yellow(?) for user input
+- Implement a quit function (to close the game completely) that can be invoked at any time
+	- Add an "Are you sure?" prompt to the quit function
+- Implement an options menu (allowing them to change character name, etc)
+- Add formatting to story text (ie bold, italics, etc) if possible
+- Give Snorlax a hit counter - display the amount of hits it takes to kill him at end of game, along with a congrats, you suck, etc.
+	- Bonus if the person one shots him
+
+Done:
+
+v0.1
+===============
+
+To Do:
+
+Done:
+- Create v0.1
+- Finish up the main story, get everything working
+- Allow the person to specify their character name
+- Implement a training system, to increase health and attack power
+- Add a secret thing to the Training Center to allow a loop to constantly increase hitpoints, etc
+- Create a "main menu" with "help", "start", etc entries [no "continue" feature]
+- Prevent players from leaving the Snorlax battle - result in a game over, etc

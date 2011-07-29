@@ -1,0 +1,10 @@
+a:4:{i:0;s:35:"//skip dirty form
+	bSubmitted=true;";i:1;s:55:"function checkConfirmDeleteProject() {
+    strvalue = '";i:2;s:197:"';
+    actionSubmit = document.getElementById('actionSubmit').value;
+    if (actionSubmit == 'delete') {
+        return (confirm(strvalue)) ? true : false;
+    } else {
+        return true;
+    }
+}";i:3;s:18:"&nbsp;&nbsp;&nbsp;";}

@@ -1,0 +1,65 @@
+<html>
+  <head>
+    <title>Daniel Neel's Personal Resume</title>
+    <style type="text/css">
+      body {margin:20px;}
+      #contact_info {float:right;}
+      #skills_section {float:right;}
+    </style>
+  </head>
+
+  <body>
+    <p id="contact_info">Daniel Neel<br />Born January 8, 1991<br />Home: (502)-348-0410<br />Cell:[makesureisproperlyspaced] (502)-827-0524<br />dneelyep@gmail.com [special characters for the @'s, -'s, etc?]</p>
+
+    <h1>Objective</h1>
+    <p>Attain a job that will allow me to utilize technical skills I have acquired<br /> [USE BR'S?]throughout my life until I have obtained the training necessary for a<br /> professional career in the IT industry.</p>
+    <p>Seeking to attain additional technical and theoretical skills/knowledge<br /> through on-the-job experience. [ITALICIZE PARAGRAPH]
+    <div id="skills_section">
+      <!-- 'skills_section' used for styling this whole section -->
+      <h1>Skills</h1>
+      <!--Items again indented to improve readability-->
+      <!-- FIXME: is this a good layout? One paragrah for all this content... -->
+      <p>Strong English grammar and writing skills<br />(ACT English score of 31 - among the<br /> top 5% of students taking the test<br />nation-wide)
+	 Fast typer - have achieved ~80<br />words per minute consistently on<br />typing tests
+	 Skills operating the following software:<br />Microsoft Office Word/PowerPoint<br />OpenOffice Writer<br />Adobe Photoshop/GIMP/Inkscape<br />Windows Movie Maker<br />Various text editors<br />
+	 Web technologies<br />(X)HTML<br />CSS 2.0<br />Cpanel<br />Wikimarkup - over 400 edits to<br />Wikipedia<br />W3C Markup Validation Service<br />
+         Used/Administered Operating Systems<br />Windows XP, Vista, and 7<br />Android<br />Ubuntu &amp; other Linux distributions<br />
+         Graphic design<br />Limited drawing skills<br />Vector and raster image editing<br />
+         Programming<br />Some knowledge of Python<br />Launchpad and Bugzilla bug trackers<br />A small amount of skill using Git for<br />version control<br />Open source participation<br />
+         Computer Maintenance/Repair<br />Have performed general<br />maintenance on family<br />computers for years<br />Replaced hard-drives<br />Dissected several computers to find<br />spare parts</p>
+      <!--Is there a proper use of headings? IE h1, h2, etc? Or are they just used relatively?-->
+      <!--Should I indent the items under the h1's?-->
+    </div>
+
+
+    <h1>Education</h1>
+    <h2>Elizabethtown Community &amp; Technical College</h2>
+    <p>Currently Attending - Graduating in July 2011 with an Associate of Arts degree</p>
+    <p>Relevant courses:<br />
+         College Algebra - Aided in gaining a solid foundation of algebraic<br />mathematics - an important area of knowledge in programming.<br />
+         Introduction to Computers - Improved pre-existing knowledge of computer<br />theory and popular office software (Microsoft Office suite)<br />
+         English/Writing - Developed an improved ability to analyze various<br />forms of writing and an improved ability to write convincing arguments.</p><!--Fix indentation and such-->
+    <h2>Bethlehem High School</h2>
+    <p>Transferring to the <h2>University of Louisville</h2><!--FIXME--> in Fall 2011 to pursue a<br />Bachelor's degree in Computer Engineering &amp; Computer Science.</p>
+
+    <h1>Work</h1>
+    <!--Items in each <p> are indented to improve readability - no functional purpose.-->
+    <p>Fisher Auto Parts - Part Delivery Driver - Part Time<br />
+       Employed from August 2009 to the present<br />
+       Relevant skills: Fielding phone calls, inventory management, customer service<br />
+       Reason for leaving: Seeking a job that will provide experience in a future career<br />field. Please refrain from using this employer as a reference - currently employed here.</p>
+    <p>Web site for the band Shakedown<br />
+       Created a web site for the band Shakedown, complete with a small photo gallery<br />
+       and embedded video. Administered through CPanel.</p>
+    <p>Web site for Margaret Neel's campaign for Nelson County Clerk | <a href="http://www.margaretneelncc.webs.com">http://www.margaretneelncc.webs.com</a><!--Fix formatting and such--><br />
+       Created a web site to serve as a hub of information for Margaret Neel's campaign efforts.</p>
+    <p>Rewriting of documentation for the gedit text editor <!--add a '|' here on actual resume to fix--> <a href="http://gitorious.org/gedit-docs/gedit-docs">http://www.gitorious.org/gedit-docs/gedit-docs</a><br />
+       Worked to convert and rewrite the documentation of a popular open-source text editor using<br /> the XML-based Mallard markup language.</p>
+    <p>Several minor bug fixes (correcting typos and grammatical errors in documentation) in open-source software projects.</p>
+    <p>Created a short text game in Python that responds to user input.</p>
+  </body>
+</html>
+<!-- Include W3C validation links? -->
+<!-- The person asked if I was interested in a job after I graduate, not sure what he meant...Yes if he means after I graduate ECTC and move to U of L, no if he means after I graduate U of L -->
+<!-- Add Excel and OpenOffice suite to skills on new version of resume -->
+<!-- Fix typo - Cpanel and CPanel used inconsistently -->

@@ -1,0 +1,23 @@
+#include <stdio.h> /* header file, for stdio[?] */
+
+main ()
+
+{
+
+  /*Comment line 1*/
+  /*Another line*/
+  /*Multi line
+    ...
+    ...
+    ...
+    comment*/
+
+  do_little ();
+
+  printf ("Function 'main' completing now.\n");
+}
+
+do_little ()
+{
+  
+}

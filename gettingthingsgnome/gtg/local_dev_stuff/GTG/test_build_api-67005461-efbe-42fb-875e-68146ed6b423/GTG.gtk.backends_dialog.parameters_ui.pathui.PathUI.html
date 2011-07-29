@@ -1,0 +1,169 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "DTD/xhtml1-strict.dtd">
+<html>
+  <head>
+    <title>GTG.gtk.backends_dialog.parameters_ui.pathui.PathUI : API documentation</title>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type" />
+    <link href="apidocs.css" type="text/css" rel="stylesheet" />
+    
+    
+  </head>
+  <body>
+    <h1 class="class">G.g.b.p.p.PathUI(<span title="gtk.HBox">gtk.HBox</span>) : class documentation</h1>
+    <p>
+      <span id="part">Part of <a href="GTG.html">GTG</a>.<a href="GTG.gtk.html">gtk</a>.<a href="GTG.gtk.backends_dialog.html">backends_dialog</a>.<a href="GTG.gtk.backends_dialog.parameters_ui.html">parameters_ui</a>.<a href="GTG.gtk.backends_dialog.parameters_ui.pathui.html">pathui</a></span>
+      
+      <a href="classIndex.html#GTG.gtk.backends_dialog.parameters_ui.pathui.PathUI">View In Hierarchy</a>
+    </p>
+    <div>
+      
+    </div>
+    <div>Gtk widgets to show a path in a textbox, and a button to bring up a 
+filesystem explorer to modify that path (also, a label to describe 
+those)<table class="fieldTable"></table></div>
+
+    
+    
+    <div id="splitTables">
+      <table class="children sortable" id="id18">
+  
+  
+<tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.gtk.backends_dialog.parameters_ui.pathui.PathUI.html#__init__">__init__</a></td>
+    <td><span>Creates the textbox, the button and loads the current path.</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.gtk.backends_dialog.parameters_ui.pathui.PathUI.html#commit_changes">commit_changes</a></td>
+    <td><span>Saves the changes to the backend parameter</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.gtk.backends_dialog.parameters_ui.pathui.PathUI.html#on_path_modified">on_path_modified</a></td>
+    <td><span>Signal callback, executed when the user edits the path.</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.gtk.backends_dialog.parameters_ui.pathui.PathUI.html#on_button_clicked">on_button_clicked</a></td>
+    <td><span>Shows the filesystem explorer to choose a new file</span></td>
+  </tr><tr class="method private">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.gtk.backends_dialog.parameters_ui.pathui.PathUI.html#_populate_gtk">_populate_gtk</a></td>
+    <td><span>Creates the gtk.Label, the textbox and the button</span></td>
+  </tr>
+  
+</table>
+      
+      
+    </div>
+    
+    
+    
+
+    <div class="function">
+  <a name="GTG.gtk.backends_dialog.parameters_ui.pathui.PathUI.__init__">
+    
+  </a>
+  <a name="__init__">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    __init__(self, req, backend, width):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div>Creates the textbox, the button and loads the current path.<table class="fieldTable"><tr class="fieldStart"><td class="fieldName">Parameters</td><td class="fieldArg">req</td><td>a Requester
+</td></tr><tr><td></td><td class="fieldArg">backend</td><td>a backend object
+</td></tr><tr><td></td><td class="fieldArg">width</td><td>the width of the gtk.Label object
+</td></tr></table></div>
+  </div>
+</div><div class="function">
+  <a name="GTG.gtk.backends_dialog.parameters_ui.pathui.PathUI._populate_gtk">
+    
+  </a>
+  <a name="_populate_gtk">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    _populate_gtk(self, width):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div>Creates the gtk.Label, the textbox and the button<table class="fieldTable"><tr class="fieldStart"><td class="fieldName">Parameters</td><td class="fieldArg">width</td><td>the width of the gtk.Label object
+</td></tr></table></div>
+  </div>
+</div><div class="function">
+  <a name="GTG.gtk.backends_dialog.parameters_ui.pathui.PathUI.commit_changes">
+    
+  </a>
+  <a name="commit_changes">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    commit_changes(self):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div>Saves the changes to the backend parameter<table class="fieldTable"></table></div>
+  </div>
+</div><div class="function">
+  <a name="GTG.gtk.backends_dialog.parameters_ui.pathui.PathUI.on_path_modified">
+    
+  </a>
+  <a name="on_path_modified">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    on_path_modified(self, sender):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div>Signal callback, executed when the user edits the path. Disables the 
+backend. The user will re-enable it to confirm the changes (s)he made.<table class="fieldTable"><tr class="fieldStart"><td class="fieldName">Parameters</td><td class="fieldArg">sender</td><td>not used, only here for signal compatibility
+</td></tr></table></div>
+  </div>
+</div><div class="function">
+  <a name="GTG.gtk.backends_dialog.parameters_ui.pathui.PathUI.on_button_clicked">
+    
+  </a>
+  <a name="on_button_clicked">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    on_button_clicked(self, sender):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div>Shows the filesystem explorer to choose a new file<table class="fieldTable"><tr class="fieldStart"><td class="fieldName">Parameters</td><td class="fieldArg">sender</td><td>not used, only here for signal compatibility
+</td></tr></table></div>
+  </div>
+</div>
+    <address>
+      <a href="index.html">API Documentation</a> for <a href="http://gtg.fritalk.com/">GTG</a>, generated by <a href="http://codespeak.net/~mwh/pydoctor/">pydoctor</a> at 2011-05-02 21:27:37.
+    </address>
+  </body>
+</html>

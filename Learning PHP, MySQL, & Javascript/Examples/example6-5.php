@@ -1,0 +1,12 @@
+<?php //Using the array keyword to add items to an array
+$p1 = array("Copier", "Inkjet", "Laser", "Photo"); //A simple numeric array
+
+echo "A p1 element: " . $p1[2] . "<br />";
+
+$p2 = array('copier' => "Copier & Multipurpose", //A more usable associative array
+			'inkjet' => "Inkjet Printer",
+			'laser'  => "Laser Printer",
+			'photo'  => "Photographic Paper");
+
+echo "A p2 element: " . $p2['copier'] . "<br />";
+?>

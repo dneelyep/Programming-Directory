@@ -1,0 +1,71 @@
+#!/usr/bin/python
+# -*- Mode: Python; coding: utf-8; indent-tabs-mode: nil; tab-width: 4 -*-
+### BEGIN LICENSE
+# This file is in the public domain
+### END LICENSE
+
+###########################################################################
+# SWF file details
+# Edit these lines as appropriate
+###########################################################################
+
+GAME_NAME = "sentence_name"
+WINDOW_SIZE = (swf_width, swf_height)
+
+
+###########################################################################
+# No need to edit below here 
+###########################################################################
+
+
+import webkit, gtk, gio
+import json, os
+
+# Where your project will look for your data (for instance, images and ui
+# files). By default, this is ../data, relative your trunk layout
+__python_name_data_directory__ = '../data/'
+
+def get_data_file(*path_segments):
+    """Get the full path to a data file.
+
+    Returns the path to a file underneath the data directory (as defined by
+    `get_data_path`). Equivalent to os.path.join(get_data_path(),
+    *path_segments).
+    """
+    return os.path.join(get_data_path(), *path_segments)
+
+
+def get_data_path():
+    """Retrieve project_name data path
+
+    This path is by default <python_name_lib_path>/../data/ in trunk
+    and /usr/share/project_name in an installed version but this path
+    is specified at installation time.
+    """
+
+    # Get pathname absolute or relative.
+    path = os.path.join(
+        os.path.dirname(__file__), __python_name_data_directory__)
+
+    abs_data_path = os.path.abspath(path)
+    if not os.path.exists(abs_data_path):
+        raise project_path_not_found
+
+    return abs_data_path
+
+
+if __name__ == "__main__":
+    w = gtk.Window()
+    v = webkit.WebView()
+    w.add(v)
+    w.show_all() # have to have this before set_size_request
+    w.connect("destroy", lambda q: gtk.main_quit())
+    w.set_title(GAME_NAME)
+    htmlfp = gio.File(get_data_file('index.html'))
+    uri = htmlfp.get_uri()
+    html, _, _ = htmlfp.load_contents()
+    v.load_html_string(html, uri)
+    w.set_size_request(*WINDOW_SIZE)
+    v.queue_resize() # force a reallocation, https://bugs.webkit.org/show_bug.cgi?id=47742
+    gtk.main()
+

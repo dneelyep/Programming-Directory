@@ -1,0 +1,4 @@
+About the directories:
+
+gtg/trunk refers to the actual trunk branch I think.
+gtg/local_dev_stuff is for my own experimenting and such.

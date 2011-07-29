@@ -1,0 +1,464 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "DTD/xhtml1-strict.dtd">
+<html>
+  <head>
+    <title>GTG.gtk.backends_dialog.configurepanel.ConfigurePanel : API documentation</title>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type" />
+    <link href="apidocs.css" type="text/css" rel="stylesheet" />
+    
+    
+  </head>
+  <body>
+    <h1 class="class">G.g.b.c.ConfigurePanel(<span title="gtk.VBox">gtk.VBox</span>) : class documentation</h1>
+    <p>
+      <span id="part">Part of <a href="GTG.html">GTG</a>.<a href="GTG.gtk.html">gtk</a>.<a href="GTG.gtk.backends_dialog.html">backends_dialog</a>.<a href="GTG.gtk.backends_dialog.configurepanel.html">configurepanel</a></span>
+      
+      <a href="classIndex.html#GTG.gtk.backends_dialog.configurepanel.ConfigurePanel">View In Hierarchy</a>
+    </p>
+    <div>
+      
+    </div>
+    <div>A VBox that lets you configure a backend<table class="fieldTable"></table></div>
+
+    
+    
+    <div id="splitTables">
+      <table class="children sortable" id="id30">
+  
+  
+<tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.gtk.backends_dialog.configurepanel.ConfigurePanel.html#__init__">__init__</a></td>
+    <td><span>Constructor, creating all the gtk widgets</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.gtk.backends_dialog.configurepanel.ConfigurePanel.html#set_backend">set_backend</a></td>
+    <td><span>Changes the backend to configure, refreshing this view.</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.gtk.backends_dialog.configurepanel.ConfigurePanel.html#refresh_title">refresh_title</a></td>
+    <td><span>Callback for the signal that notifies backends name changes. It 
+changes</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.gtk.backends_dialog.configurepanel.ConfigurePanel.html#refresh_number_of_tasks">refresh_number_of_tasks</a></td>
+    <td><span>refreshes the number of synced tasks by this backend</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.gtk.backends_dialog.configurepanel.ConfigurePanel.html#refresh_sync_button">refresh_sync_button</a></td>
+    <td><span>Refreshes the state of the button that enables the backend</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.gtk.backends_dialog.configurepanel.ConfigurePanel.html#refresh_sync_status_label">refresh_sync_status_label</a></td>
+    <td><span>Refreshes the gtk.Label that shows the current state of this backend</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.gtk.backends_dialog.configurepanel.ConfigurePanel.html#refresh_sync_status">refresh_sync_status</a></td>
+    <td><span>Signal callback function, called when a backend state</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.gtk.backends_dialog.configurepanel.ConfigurePanel.html#set_hidden">set_hidden</a></td>
+    <td><span>Notifies this pane if it's hidden or not. We disconnect signals when</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.gtk.backends_dialog.configurepanel.ConfigurePanel.html#on_sync_button_clicked">on_sync_button_clicked</a></td>
+    <td><span>Signal callback when a backend is enabled/disabled via the UI button</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.gtk.backends_dialog.configurepanel.ConfigurePanel.html#on_sync_started">on_sync_started</a></td>
+    <td><span>If the backend has started syncing tasks, update the state of the</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.gtk.backends_dialog.configurepanel.ConfigurePanel.html#on_sync_ended">on_sync_ended</a></td>
+    <td><span>If the backend has stopped syncing tasks, update the state of the</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.gtk.backends_dialog.configurepanel.ConfigurePanel.html#on_spinner_show">on_spinner_show</a></td>
+    <td><span>This signal callback hides the spinner if it's not supposed to be</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.gtk.backends_dialog.configurepanel.ConfigurePanel.html#spinner_set_active">spinner_set_active</a></td>
+    <td><span>Enables/disables the gtk.Spinner, while showing/hiding it at the 
+same</span></td>
+  </tr><tr class="method private">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.gtk.backends_dialog.configurepanel.ConfigurePanel.html#_connect_signals">_connect_signals</a></td>
+    <td><span>Connects the backends generated signals</span></td>
+  </tr><tr class="method private">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.gtk.backends_dialog.configurepanel.ConfigurePanel.html#_create_widgets">_create_widgets</a></td>
+    <td><span>This function fills this Vbox with widgets</span></td>
+  </tr><tr class="method private">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.gtk.backends_dialog.configurepanel.ConfigurePanel.html#_fill_top_hbox">_fill_top_hbox</a></td>
+    <td><span>Helper function to fill an hbox with an image, a spinner and</span></td>
+  </tr><tr class="method private">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.gtk.backends_dialog.configurepanel.ConfigurePanel.html#_fill_middle_hbox">_fill_middle_hbox</a></td>
+    <td><span>Helper function to fill an hbox with a label and a button</span></td>
+  </tr>
+  
+</table>
+      
+      
+    </div>
+    
+    
+    
+
+    <div class="function">
+  <a name="GTG.gtk.backends_dialog.configurepanel.ConfigurePanel.__init__">
+    
+  </a>
+  <a name="__init__">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    __init__(self, backends_dialog):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div>Constructor, creating all the gtk widgets<table class="fieldTable"><tr class="fieldStart"><td class="fieldName">Parameters</td><td class="fieldArg">backends_dialog</td><td>a reference to the dialog in which this is loaded
+</td></tr></table></div>
+  </div>
+</div><div class="function">
+  <a name="GTG.gtk.backends_dialog.configurepanel.ConfigurePanel._connect_signals">
+    
+  </a>
+  <a name="_connect_signals">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    _connect_signals(self):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div>Connects the backends generated signals<table class="fieldTable"></table></div>
+  </div>
+</div><div class="function">
+  <a name="GTG.gtk.backends_dialog.configurepanel.ConfigurePanel._create_widgets">
+    
+  </a>
+  <a name="_create_widgets">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    _create_widgets(self):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div>This function fills this Vbox with widgets<table class="fieldTable"></table></div>
+  </div>
+</div><div class="function">
+  <a name="GTG.gtk.backends_dialog.configurepanel.ConfigurePanel._fill_top_hbox">
+    
+  </a>
+  <a name="_fill_top_hbox">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    _fill_top_hbox(self, hbox):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div>Helper function to fill an hbox with an image, a spinner and three 
+labels<table class="fieldTable"><tr class="fieldStart"><td class="fieldName">Parameters</td><td class="fieldArg">hbox</td><td>the gtk.HBox to fill
+</td></tr></table></div>
+  </div>
+</div><div class="function">
+  <a name="GTG.gtk.backends_dialog.configurepanel.ConfigurePanel._fill_middle_hbox">
+    
+  </a>
+  <a name="_fill_middle_hbox">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    _fill_middle_hbox(self, hbox):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div>Helper function to fill an hbox with a label and a button<table class="fieldTable"><tr class="fieldStart"><td class="fieldName">Parameters</td><td class="fieldArg">hbox</td><td>the gtk.HBox to fill
+</td></tr></table></div>
+  </div>
+</div><div class="function">
+  <a name="GTG.gtk.backends_dialog.configurepanel.ConfigurePanel.set_backend">
+    
+  </a>
+  <a name="set_backend">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    set_backend(self, backend_id):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div>Changes the backend to configure, refreshing this view.<table class="fieldTable"><tr class="fieldStart"><td class="fieldName">Parameters</td><td class="fieldArg">backend_id</td><td>the id of the backend to configure
+</td></tr></table></div>
+  </div>
+</div><div class="function">
+  <a name="GTG.gtk.backends_dialog.configurepanel.ConfigurePanel.refresh_title">
+    
+  </a>
+  <a name="refresh_title">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    refresh_title(self, sender=None, data=None):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div>Callback for the signal that notifies backends name changes. It changes 
+the title of this view<table class="fieldTable"><tr class="fieldStart"><td class="fieldName">Parameters</td><td class="fieldArg">sender</td><td>not used, here only for signal callback compatibility
+</td></tr><tr><td></td><td class="fieldArg">data</td><td>not used, here only for signal callback compatibility
+</td></tr></table></div>
+  </div>
+</div><div class="function">
+  <a name="GTG.gtk.backends_dialog.configurepanel.ConfigurePanel.refresh_number_of_tasks">
+    
+  </a>
+  <a name="refresh_number_of_tasks">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    refresh_number_of_tasks(self):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div>refreshes the number of synced tasks by this backend<table class="fieldTable"></table></div>
+  </div>
+</div><div class="function">
+  <a name="GTG.gtk.backends_dialog.configurepanel.ConfigurePanel.refresh_sync_button">
+    
+  </a>
+  <a name="refresh_sync_button">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    refresh_sync_button(self):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div>Refreshes the state of the button that enables the backend<table class="fieldTable"></table></div>
+  </div>
+</div><div class="function">
+  <a name="GTG.gtk.backends_dialog.configurepanel.ConfigurePanel.refresh_sync_status_label">
+    
+  </a>
+  <a name="refresh_sync_status_label">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    refresh_sync_status_label(self):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div>Refreshes the gtk.Label that shows the current state of this backend<table class="fieldTable"></table></div>
+  </div>
+</div><div class="function">
+  <a name="GTG.gtk.backends_dialog.configurepanel.ConfigurePanel.refresh_sync_status">
+    
+  </a>
+  <a name="refresh_sync_status">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    refresh_sync_status(self, sender=False, data=False):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div>Signal callback function, called when a backend state (enabled/disabled)
+changes. Refreshes this view.<table class="fieldTable"><tr class="fieldStart"><td class="fieldName">Parameters</td><td class="fieldArg">sender</td><td>not used, here only for signal callback compatibility
+</td></tr><tr><td></td><td class="fieldArg">data</td><td>not used, here only for signal callback compatibility
+</td></tr></table></div>
+  </div>
+</div><div class="function">
+  <a name="GTG.gtk.backends_dialog.configurepanel.ConfigurePanel.set_hidden">
+    
+  </a>
+  <a name="set_hidden">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    set_hidden(self, is_hidden):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div>Notifies this pane if it's hidden or not. We disconnect signals when 
+hidden, since there is no need to keep the UI updated. Hopefully, this 
+should make GTG faster :)<table class="fieldTable"><tr class="fieldStart"><td class="fieldName">Parameters</td><td class="fieldArg">is_hidden</td><td>boolean, True if the window is not visible
+</td></tr></table></div>
+  </div>
+</div><div class="function">
+  <a name="GTG.gtk.backends_dialog.configurepanel.ConfigurePanel.on_sync_button_clicked">
+    
+  </a>
+  <a name="on_sync_button_clicked">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    on_sync_button_clicked(self, sender):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div>Signal callback when a backend is enabled/disabled via the UI button<table class="fieldTable"><tr class="fieldStart"><td class="fieldName">Parameters</td><td class="fieldArg">sender</td><td>not used, here only for signal callback compatibility
+</td></tr></table></div>
+  </div>
+</div><div class="function">
+  <a name="GTG.gtk.backends_dialog.configurepanel.ConfigurePanel.on_sync_started">
+    
+  </a>
+  <a name="on_sync_started">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    on_sync_started(self, sender, backend_id):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div>If the backend has started syncing tasks, update the state of the 
+gtk.Spinner<table class="fieldTable"><tr class="fieldStart"><td class="fieldName">Parameters</td><td class="fieldArg">sender</td><td>not used, here only for signal callback compatibility
+</td></tr><tr><td></td><td class="fieldArg">backend_id</td><td>the id of the backend that emitted this signal
+</td></tr></table></div>
+  </div>
+</div><div class="function">
+  <a name="GTG.gtk.backends_dialog.configurepanel.ConfigurePanel.on_sync_ended">
+    
+  </a>
+  <a name="on_sync_ended">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    on_sync_ended(self, sender, backend_id):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div>If the backend has stopped syncing tasks, update the state of the 
+gtk.Spinner<table class="fieldTable"><tr class="fieldStart"><td class="fieldName">Parameters</td><td class="fieldArg">sender</td><td>not used, here only for signal callback compatibility
+</td></tr><tr><td></td><td class="fieldArg">backend_id</td><td>the id of the backend that emitted this signal
+</td></tr></table></div>
+  </div>
+</div><div class="function">
+  <a name="GTG.gtk.backends_dialog.configurepanel.ConfigurePanel.on_spinner_show">
+    
+  </a>
+  <a name="on_spinner_show">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    on_spinner_show(self, sender):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div>This signal callback hides the spinner if it's not supposed to be seen. 
+It's a workaround to let us call show_all on the whole window while keeping
+this hidden (it's the only widget that requires special attention)<table class="fieldTable"><tr class="fieldStart"><td class="fieldName">Parameters</td><td class="fieldArg">sender</td><td>not used, here only for signal callback compatibility
+</td></tr></table></div>
+  </div>
+</div><div class="function">
+  <a name="GTG.gtk.backends_dialog.configurepanel.ConfigurePanel.spinner_set_active">
+    
+  </a>
+  <a name="spinner_set_active">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    spinner_set_active(self, active):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div>Enables/disables the gtk.Spinner, while showing/hiding it at the same 
+time<table class="fieldTable"><tr class="fieldStart"><td class="fieldName">Parameters</td><td class="fieldArg">active</td><td>True if the spinner should spin
+</td></tr></table></div>
+  </div>
+</div>
+    <address>
+      <a href="index.html">API Documentation</a> for <a href="http://gtg.fritalk.com/">GTG</a>, generated by <a href="http://codespeak.net/~mwh/pydoctor/">pydoctor</a> at 2011-04-15 17:43:34.
+    </address>
+  </body>
+</html>

@@ -1,0 +1,87 @@
+<page>
+<!-- ============= Usage ===================================== -->
+  <sect1 id="gnome-dictionary-usage">
+    <title>Usage</title>
+    
+    <sect2 id="gnome-dictionary-lookup">
+      <title>Looking up a word</title>
+      
+      <para>To look up a word, type it into the <guilabel>entry field</guilabel>
+      and press <keycap>Enter</keycap>.</para>
+    
+      <para>If some definition for the word is found, it will appear inside
+      the main window area:</para>
+
+      <figure id="gnome-dictionary-lookup-fig">
+        <title>&app; Window</title>
+        <screenshot> 
+          <mediaobject>
+            <imageobject>
+              <imagedata fileref="figures/gnome-dictionary-lookup.png" format="PNG"/>
+            </imageobject>
+            <textobject><phrase>Shows a definition inside the &app; main window.</phrase></textobject> 
+          </mediaobject>
+        </screenshot>
+      </figure>
+      
+      <para>Otherwise, an error dialog will appear, with a message explaining the
+      nature of the error.</para>
+    
+    </sect2>
+    
+    <sect2 id="gnome-dictionary-save">
+      <title>Save look up results</title>
+      
+      <para>To save the results of a look up, choose <menuchoice><guimenu>File</guimenu><guimenuitem>Save a Copy</guimenuitem></menuchoice>. Enter a name for the file in the <guilabel>Save a Copy</guilabel> dialog, then click <guibutton>Save</guibutton>.</para>
+    
+    </sect2>
+    
+    <sect2 id="gnome-dictionary-print">
+      <title>Print look up results</title>
+      
+      <para>To print the results of a look up, choose <menuchoice><guimenu>File</guimenu><guimenuitem>Print</guimenuitem></menuchoice>.</para>
+
+      <para>Inside the <guilabel>Print</guilabel> dialog you can select the
+      printer to use, the paper format, the number of copies.</para>
+
+      <para>To see a preview of what will be printed, click
+      <guibutton>Preview</guibutton>.</para>
+
+      <para>To print, click <guibutton>Print</guibutton>.</para>
+    
+    </sect2>
+    
+    <sect2 id="gnome-dictionary-find">
+      <title>Find Text</title>
+
+      <figure id="gnome-dictionary-find-fig">
+        <title>&app; Window</title>
+        <screenshot> 
+          <mediaobject>
+            <imageobject>
+              <imagedata fileref="figures/gnome-dictionary-find.png" format="PNG"/>
+            </imageobject>
+            <textobject><phrase>Shows the &app; Find pane inside the main window.</phrase></textobject> 
+          </mediaobject>
+        </screenshot>
+      </figure>
+
+      
+      <para>To find text inside the results of a look up, perform the following
+      steps:</para>
+      
+      <orderedlist>
+        <listitem><para>Choose <menuchoice> <guimenu>Edit</guimenu> <guimenuitem>Find</guimenuitem> </menuchoice>
+        to display the <guilabel>Find</guilabel> pane.</para></listitem>
+        <listitem><para>Type the text you want to find inside the <guilabel>Search</guilabel>
+        entry.</para></listitem>
+        <listitem><para>To find the next occurrence of the text, click <guibutton>Next</guibutton>.
+        To find the previous occurrence of the text, click
+        <guibutton>Previous</guibutton>.</para></listitem>
+      </orderedlist>
+    
+    </sect2>
+      
+  </sect1>
+...stuff here...
+</page>

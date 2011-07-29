@@ -1,0 +1,906 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<manifest xmlns="http://www.imsglobal.org/xsd/imscp_v1p1"
+          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xmlns:adlcp="http://www.adlnet.org/xsd/adlcp_rootv1p2"
+          xmlns:cwsp="http://www.dspace.org/xmlns/cwspace_imscp"
+          xmlns:ocw="http://ocw.mit.edu/xmlns/ocw_imscp"
+          xmlns:lom="http://ocw.mit.edu/xmlns/LOM"
+          identifier="urn_edu.mit.ocw_6-189-a-gentle-introduction-to-programming-using-python-january-iap-2008"
+          version="2010-5-27T19:40:12"
+          cwsp:packageType="Course"
+          xml:base="6-189-january-iap-2008/"
+          xsi:schemaLocation="http://www.imsglobal.org/xsd/imscp_v1p1 http://www.imsglobal.org/xsd/imscp_v1p1.xsd  http://www.adlnet.org/xsd/adlcp_rootv1p2 http://www.adlnet.org/xsd/adlcp_rootv1p2.xsd http://www.dspace.org/xmlns/cwspace_imscp http://www.dspace.org/xsd/cwspace_imscp/version10/cwspace_imscpv10.xsd http://ocw.mit.edu/xmlns/ocw_imscp http://ocw.mit.edu/xsd/ocw_imscp/version10/ocw_imscpv10.xsd http://ocw.mit.edu/xmlns/LOM http://ocw.mit.edu/xsd/LOM/lomv1.0/lomv1.0.xsd">
+   	<metadata>
+   		<schema>IMS Content</schema>
+        <schemaversion>1.1</schemaversion>
+        <cwsp:packageMetadata>
+            <cwsp:sourceSystem>OCW</cwsp:sourceSystem>
+            <cwsp:profile>CWSpace</cwsp:profile>
+            <cwsp:profileVersion>0.1</cwsp:profileVersion>
+        </cwsp:packageMetadata>
+        <lom:general uniqueElementName="general">
+            <lom:title uniqueElementName="title">
+				<lom:string language="en">A Gentle Introduction to Programming Using Python</lom:string>
+			</lom:title>
+			<lom:identifier>
+				<lom:catalog uniqueElementName="catalog">OCW Master Course Number</lom:catalog>
+		      	<lom:entry uniqueElementName="entry">6.189</lom:entry>
+			</lom:identifier>
+        </lom:general>
+        <lom:lifecycle uniqueElementName="lifeCycle">
+            <lom:version uniqueElementName="version">
+				<lom:string language="en">January IAP 2008</lom:string>
+			</lom:version>
+            <lom:contribute>
+	            <lom:role>
+	                <lom:source uniqueElementName="source">OCW_LOMv1.0</lom:source>
+	                <lom:value uniqueElementName="value">Author</lom:value>
+	            </lom:role>
+	            <lom:entity>Mihir Kedia</lom:entity>
+	            <lom:date uniqueElementName="date">
+	                <lom:dateTime uniqueElementName="dateTime">2010-5-27</lom:dateTime>
+	            </lom:date>
+        	</lom:contribute>
+            <lom:contribute>
+	            <lom:role>
+	                <lom:source uniqueElementName="source">OCW_LOMv1.0</lom:source>
+	                <lom:value uniqueElementName="value">Author</lom:value>
+	            </lom:role>
+	            <lom:entity>Aseem Kishore</lom:entity>
+	            <lom:date uniqueElementName="date">
+	                <lom:dateTime uniqueElementName="dateTime">2010-5-27</lom:dateTime>
+	            </lom:date>
+        	</lom:contribute>
+        </lom:lifecycle>
+        <adlcp:location>contents/index.htm.xml</adlcp:location>
+    </metadata>
+    <organizations default="ocw_6-189-a-gentle-introduction-to-programming-using-python-january-iap-2008">
+        <organization identifier="ocw_6-189-a-gentle-introduction-to-programming-using-python-january-iap-2008">
+            <title>A Gentle Introduction to Programming Using Python</title>
+            <item identifier="i_6-189-a-gentle-introduction-to-programming-using-python-january-iap-2008.CourseHome"
+                  identifierref="r_contents.index.htm"
+                  ocw:sectionTemplateType="CourseHomePage"
+                  ocw:sectionTemplateVersion="2010-5-27">
+				<title>A Gentle Introduction to Programming Using Python</title>
+				<item identifier="i_6-189-a-gentle-introduction-to-programming-using-python-january-iap-2008.chp_python.jpg"
+          identifierref="r_contents.chp_python.jpg">
+				<title>chp_python.jpg</title>
+				</item>
+			</item>
+            <item identifier="i_6-189-a-gentle-introduction-to-programming-using-python-january-iap-2008.syllabus"
+                  identifierref="r_contents.syllabus.index.htm"
+                  ocw:sectionTemplateType="CourseSection"
+                  ocw:sectionTemplateVersion="2010-5-27">
+				<title>Syllabus</title>
+			</item>
+            <item identifier="i_6-189-a-gentle-introduction-to-programming-using-python-january-iap-2008.readings"
+                  identifierref="r_contents.readings.index.htm"
+                  ocw:sectionTemplateType="CourseSection"
+                  ocw:sectionTemplateVersion="2010-5-27">
+				<title>Readings</title>
+			</item>
+            <item identifier="i_6-189-a-gentle-introduction-to-programming-using-python-january-iap-2008.lecture-notes"
+                  identifierref="r_contents.lecture-notes.index.htm"
+                  ocw:sectionTemplateType="CourseSection"
+                  ocw:sectionTemplateVersion="2010-5-27">
+				<title>Lecture Notes</title>
+				<item identifier="i_6-189-a-gentle-introduction-to-programming-using-python-january-iap-2008.lecture-notes.notes8.pdf"
+          identifierref="r_contents.lecture-notes.notes8.pdf">
+				<title>notes8.pdf</title>
+				</item>
+				<item identifier="i_6-189-a-gentle-introduction-to-programming-using-python-january-iap-2008.lecture-notes.notes7.pdf"
+          identifierref="r_contents.lecture-notes.notes7.pdf">
+				<title>notes7.pdf</title>
+				</item>
+				<item identifier="i_6-189-a-gentle-introduction-to-programming-using-python-january-iap-2008.lecture-notes.handout5.pdf"
+          identifierref="r_contents.lecture-notes.handout5.pdf">
+				<title>handout5.pdf</title>
+				</item>
+				<item identifier="i_6-189-a-gentle-introduction-to-programming-using-python-january-iap-2008.lecture-notes.notes6.pdf"
+          identifierref="r_contents.lecture-notes.notes6.pdf">
+				<title>notes6.pdf</title>
+				</item>
+				<item identifier="i_6-189-a-gentle-introduction-to-programming-using-python-january-iap-2008.lecture-notes.notes9.pdf"
+          identifierref="r_contents.lecture-notes.notes9.pdf">
+				<title>notes9.pdf</title>
+				</item>
+				<item identifier="i_6-189-a-gentle-introduction-to-programming-using-python-january-iap-2008.lecture-notes.exam1_soln.pdf"
+          identifierref="r_contents.lecture-notes.exam1_soln.pdf">
+				<title>exam1_soln.pdf</title>
+				</item>
+				<item identifier="i_6-189-a-gentle-introduction-to-programming-using-python-january-iap-2008.lecture-notes.handout1.pdf"
+          identifierref="r_contents.lecture-notes.handout1.pdf">
+				<title>handout1.pdf</title>
+				</item>
+				<item identifier="i_6-189-a-gentle-introduction-to-programming-using-python-january-iap-2008.lecture-notes.handout2.pdf"
+          identifierref="r_contents.lecture-notes.handout2.pdf">
+				<title>handout2.pdf</title>
+				</item>
+				<item identifier="i_6-189-a-gentle-introduction-to-programming-using-python-january-iap-2008.lecture-notes.handout4.pdf"
+          identifierref="r_contents.lecture-notes.handout4.pdf">
+				<title>handout4.pdf</title>
+				</item>
+				<item identifier="i_6-189-a-gentle-introduction-to-programming-using-python-january-iap-2008.lecture-notes.notes1.pdf"
+          identifierref="r_contents.lecture-notes.notes1.pdf">
+				<title>notes1.pdf</title>
+				</item>
+				<item identifier="i_6-189-a-gentle-introduction-to-programming-using-python-january-iap-2008.lecture-notes.handout3.pdf"
+          identifierref="r_contents.lecture-notes.handout3.pdf">
+				<title>handout3.pdf</title>
+				</item>
+			</item>
+            <item identifier="i_6-189-a-gentle-introduction-to-programming-using-python-january-iap-2008.assignments"
+                  identifierref="r_contents.assignments.index.htm"
+                  ocw:sectionTemplateType="CourseSection"
+                  ocw:sectionTemplateVersion="2010-5-27">
+				<title>Assignments</title>
+				<item identifier="i_6-189-a-gentle-introduction-to-programming-using-python-january-iap-2008.assignments.operator.pdf"
+          identifierref="r_contents.assignments.operator.pdf">
+				<title>operator.pdf</title>
+				</item>
+				<item identifier="i_6-189-a-gentle-introduction-to-programming-using-python-january-iap-2008.assignments.inventory_soln.py"
+          identifierref="r_contents.assignments.inventory_soln.py">
+				<title>inventory_soln.py</title>
+				</item>
+				<item identifier="i_6-189-a-gentle-introduction-to-programming-using-python-january-iap-2008.assignments.piglatin.py"
+          identifierref="r_contents.assignments.piglatin.py">
+				<title>piglatin.py</title>
+				</item>
+				<item identifier="i_6-189-a-gentle-introduction-to-programming-using-python-january-iap-2008.assignments.mitsites20.txt"
+          identifierref="r_contents.assignments.mitsites20.txt">
+				<title>mitsites20.txt</title>
+				</item>
+				<item identifier="i_6-189-a-gentle-introduction-to-programming-using-python-january-iap-2008.assignments.localsites.zip"
+          identifierref="r_contents.assignments.localsites.zip">
+				<title>localsites.zip</title>
+				</item>
+				<item identifier="i_6-189-a-gentle-introduction-to-programming-using-python-january-iap-2008.assignments.lab5.pdf"
+          identifierref="r_contents.assignments.lab5.pdf">
+				<title>lab5.pdf</title>
+				</item>
+				<item identifier="i_6-189-a-gentle-introduction-to-programming-using-python-january-iap-2008.assignments.lab6.pdf"
+          identifierref="r_contents.assignments.lab6.pdf">
+				<title>lab6.pdf</title>
+				</item>
+				<item identifier="i_6-189-a-gentle-introduction-to-programming-using-python-january-iap-2008.assignments.namesages_soln.py"
+          identifierref="r_contents.assignments.namesages_soln.py">
+				<title>namesages_soln.py</title>
+				</item>
+				<item identifier="i_6-189-a-gentle-introduction-to-programming-using-python-january-iap-2008.assignments.lab3.pdf"
+          identifierref="r_contents.assignments.lab3.pdf">
+				<title>lab3.pdf</title>
+				</item>
+				<item identifier="i_6-189-a-gentle-introduction-to-programming-using-python-january-iap-2008.assignments.smallsites.txt"
+          identifierref="r_contents.assignments.smallsites.txt">
+				<title>smallsites.txt</title>
+				</item>
+				<item identifier="i_6-189-a-gentle-introduction-to-programming-using-python-january-iap-2008.assignments.inventory.py"
+          identifierref="r_contents.assignments.inventory.py">
+				<title>inventory.py</title>
+				</item>
+				<item identifier="i_6-189-a-gentle-introduction-to-programming-using-python-january-iap-2008.assignments.lab4.pdf"
+          identifierref="r_contents.assignments.lab4.pdf">
+				<title>lab4.pdf</title>
+				</item>
+				<item identifier="i_6-189-a-gentle-introduction-to-programming-using-python-january-iap-2008.assignments.webindexer1.py"
+          identifierref="r_contents.assignments.webindexer1.py">
+				<title>webindexer1.py</title>
+				</item>
+				<item identifier="i_6-189-a-gentle-introduction-to-programming-using-python-january-iap-2008.assignments.lab7.pdf"
+          identifierref="r_contents.assignments.lab7.pdf">
+				<title>lab7.pdf</title>
+				</item>
+				<item identifier="i_6-189-a-gentle-introduction-to-programming-using-python-january-iap-2008.assignments.htmltext.py"
+          identifierref="r_contents.assignments.htmltext.py">
+				<title>htmltext.py</title>
+				</item>
+				<item identifier="i_6-189-a-gentle-introduction-to-programming-using-python-january-iap-2008.assignments.webindexer2_soln.py"
+          identifierref="r_contents.assignments.webindexer2_soln.py">
+				<title>webindexer2_soln.py</title>
+				</item>
+				<item identifier="i_6-189-a-gentle-introduction-to-programming-using-python-january-iap-2008.assignments.sorting.py"
+          identifierref="r_contents.assignments.sorting.py">
+				<title>sorting.py</title>
+				</item>
+				<item identifier="i_6-189-a-gentle-introduction-to-programming-using-python-january-iap-2008.assignments.lab9.pdf"
+          identifierref="r_contents.assignments.lab9.pdf">
+				<title>lab9.pdf</title>
+				</item>
+				<item identifier="i_6-189-a-gentle-introduction-to-programming-using-python-january-iap-2008.assignments.nims1.py"
+          identifierref="r_contents.assignments.nims1.py">
+				<title>nims1.py</title>
+				</item>
+				<item identifier="i_6-189-a-gentle-introduction-to-programming-using-python-january-iap-2008.assignments.webindexer2.py"
+          identifierref="r_contents.assignments.webindexer2.py">
+				<title>webindexer2.py</title>
+				</item>
+				<item identifier="i_6-189-a-gentle-introduction-to-programming-using-python-january-iap-2008.assignments.webindexer1_soln.py"
+          identifierref="r_contents.assignments.webindexer1_soln.py">
+				<title>webindexer1_soln.py</title>
+				</item>
+				<item identifier="i_6-189-a-gentle-introduction-to-programming-using-python-january-iap-2008.assignments.websearch1.py"
+          identifierref="r_contents.assignments.websearch1.py">
+				<title>websearch1.py</title>
+				</item>
+				<item identifier="i_6-189-a-gentle-introduction-to-programming-using-python-january-iap-2008.assignments.login.py"
+          identifierref="r_contents.assignments.login.py">
+				<title>login.py</title>
+				</item>
+				<item identifier="i_6-189-a-gentle-introduction-to-programming-using-python-january-iap-2008.assignments.lab10.pdf"
+          identifierref="r_contents.assignments.lab10.pdf">
+				<title>lab10.pdf</title>
+				</item>
+				<item identifier="i_6-189-a-gentle-introduction-to-programming-using-python-january-iap-2008.assignments.genetic.py"
+          identifierref="r_contents.assignments.genetic.py">
+				<title>genetic.py</title>
+				</item>
+				<item identifier="i_6-189-a-gentle-introduction-to-programming-using-python-january-iap-2008.assignments.mitsites50.txt"
+          identifierref="r_contents.assignments.mitsites50.txt">
+				<title>mitsites50.txt</title>
+				</item>
+				<item identifier="i_6-189-a-gentle-introduction-to-programming-using-python-january-iap-2008.assignments.optional.pdf"
+          identifierref="r_contents.assignments.optional.pdf">
+				<title>optional.pdf</title>
+				</item>
+				<item identifier="i_6-189-a-gentle-introduction-to-programming-using-python-january-iap-2008.assignments.nims2.py"
+          identifierref="r_contents.assignments.nims2.py">
+				<title>nims2.py</title>
+				</item>
+				<item identifier="i_6-189-a-gentle-introduction-to-programming-using-python-january-iap-2008.assignments.namesages.py"
+          identifierref="r_contents.assignments.namesages.py">
+				<title>namesages.py</title>
+				</item>
+				<item identifier="i_6-189-a-gentle-introduction-to-programming-using-python-january-iap-2008.assignments.reportcard.py"
+          identifierref="r_contents.assignments.reportcard.py">
+				<title>reportcard.py</title>
+				</item>
+				<item identifier="i_6-189-a-gentle-introduction-to-programming-using-python-january-iap-2008.assignments.collision.py"
+          identifierref="r_contents.assignments.collision.py">
+				<title>collision.py</title>
+				</item>
+				<item identifier="i_6-189-a-gentle-introduction-to-programming-using-python-january-iap-2008.assignments.websearch2.py"
+          identifierref="r_contents.assignments.websearch2.py">
+				<title>websearch2.py</title>
+				</item>
+				<item identifier="i_6-189-a-gentle-introduction-to-programming-using-python-january-iap-2008.assignments.lab8.pdf"
+          identifierref="r_contents.assignments.lab8.pdf">
+				<title>lab8.pdf</title>
+				</item>
+			</item>
+            <item identifier="i_6-189-a-gentle-introduction-to-programming-using-python-january-iap-2008.projects"
+                  identifierref="r_contents.projects.index.htm"
+                  ocw:sectionTemplateType="CourseSection"
+                  ocw:sectionTemplateVersion="2010-5-27">
+				<title>Projects</title>
+				<item identifier="i_6-189-a-gentle-introduction-to-programming-using-python-january-iap-2008.projects.hangman_lib.py"
+          identifierref="r_contents.projects.hangman_lib.py">
+				<title>hangman_lib.py</title>
+				</item>
+				<item identifier="i_6-189-a-gentle-introduction-to-programming-using-python-january-iap-2008.projects.connectfour.py"
+          identifierref="r_contents.projects.connectfour.py">
+				<title>connectfour.py</title>
+				</item>
+				<item identifier="i_6-189-a-gentle-introduction-to-programming-using-python-january-iap-2008.projects.hangman_soln.py"
+          identifierref="r_contents.projects.hangman_soln.py">
+				<title>hangman_soln.py</title>
+				</item>
+				<item identifier="i_6-189-a-gentle-introduction-to-programming-using-python-january-iap-2008.projects.word_list.txt"
+          identifierref="r_contents.projects.word_list.txt">
+				<title>word_list.txt</title>
+				</item>
+				<item identifier="i_6-189-a-gentle-introduction-to-programming-using-python-january-iap-2008.projects.tictactoe.py"
+          identifierref="r_contents.projects.tictactoe.py">
+				<title>tictactoe.py</title>
+				</item>
+				<item identifier="i_6-189-a-gentle-introduction-to-programming-using-python-january-iap-2008.projects.project1.pdf"
+          identifierref="r_contents.projects.project1.pdf">
+				<title>project1.pdf</title>
+				</item>
+				<item identifier="i_6-189-a-gentle-introduction-to-programming-using-python-january-iap-2008.projects.hangman.py"
+          identifierref="r_contents.projects.hangman.py">
+				<title>hangman.py</title>
+				</item>
+			</item>
+            <item identifier="i_terms"
+                  identifierref="r_common.terms.index.htm"
+                  ocw:sectionTemplateType="GlobalSection"
+                  ocw:sectionTemplateVersion="2010-5-27">
+				<title>Legal Notices</title>
+			</item>
+            <item identifier="i_terms"
+                  identifierref="r_common.terms.index.htm"
+                  ocw:sectionTemplateType="GlobalSection"
+                  ocw:sectionTemplateVersion="2010-5-27">
+				<title>Privacy Statement</title>
+			</item>
+            <item identifier="i_terms.trademarks"
+                  identifierref="r_common.terms.trademarks.index.htm"
+                  ocw:sectionTemplateType="GlobalSection"
+                  ocw:sectionTemplateVersion="2010-5-27">
+				<title>Trademark Notices</title>
+			</item>
+        </organization>
+    </organizations>
+    <resources>
+        <resource identifier="r_contents.index.htm"
+                  type="webcontent"
+                  href="contents/index.htm">
+            <metadata>
+                <adlcp:location>contents/index.htm.xml</adlcp:location>
+            </metadata>
+            <file href="contents/index.htm"/>
+            <dependency identifierref="webrenderrequirements.6-189-a-gentle-introduction-to-programming-using-python-january-iap-2008"/>            
+        </resource>
+        <resource identifier="r_contents.chp_python.jpg"
+                  type="other"
+                  href="contents/chp_python.jpg">
+            <metadata>
+                <adlcp:location>contents/chp_python.jpg.xml</adlcp:location>
+            </metadata>
+            <file href="contents/chp_python.jpg"/>
+                        
+        </resource>
+        <resource identifier="r_contents.syllabus.index.htm"
+                  type="webcontent"
+                  href="contents/syllabus/index.htm">
+            <metadata>
+                <adlcp:location>contents/syllabus/index.htm.xml</adlcp:location>
+            </metadata>
+            <file href="contents/syllabus/index.htm"/>
+            <dependency identifierref="webrenderrequirements.6-189-a-gentle-introduction-to-programming-using-python-january-iap-2008"/>            
+        </resource>
+        <resource identifier="r_contents.readings.index.htm"
+                  type="webcontent"
+                  href="contents/readings/index.htm">
+            <metadata>
+                <adlcp:location>contents/readings/index.htm.xml</adlcp:location>
+            </metadata>
+            <file href="contents/readings/index.htm"/>
+            <dependency identifierref="webrenderrequirements.6-189-a-gentle-introduction-to-programming-using-python-january-iap-2008"/>            
+        </resource>
+        <resource identifier="r_contents.lecture-notes.index.htm"
+                  type="webcontent"
+                  href="contents/lecture-notes/index.htm">
+            <metadata>
+                <adlcp:location>contents/lecture-notes/index.htm.xml</adlcp:location>
+            </metadata>
+            <file href="contents/lecture-notes/index.htm"/>
+            <dependency identifierref="webrenderrequirements.6-189-a-gentle-introduction-to-programming-using-python-january-iap-2008"/>            
+        </resource>
+        <resource identifier="r_contents.lecture-notes.notes8.pdf"
+                  type="other"
+                  href="contents/lecture-notes/notes8.pdf">
+            <metadata>
+                <adlcp:location>contents/lecture-notes/notes8.pdf.xml</adlcp:location>
+            </metadata>
+            <file href="contents/lecture-notes/notes8.pdf"/>
+                        
+        </resource>
+        <resource identifier="r_contents.lecture-notes.notes7.pdf"
+                  type="other"
+                  href="contents/lecture-notes/notes7.pdf">
+            <metadata>
+                <adlcp:location>contents/lecture-notes/notes7.pdf.xml</adlcp:location>
+            </metadata>
+            <file href="contents/lecture-notes/notes7.pdf"/>
+                        
+        </resource>
+        <resource identifier="r_contents.lecture-notes.handout5.pdf"
+                  type="other"
+                  href="contents/lecture-notes/handout5.pdf">
+            <metadata>
+                <adlcp:location>contents/lecture-notes/handout5.pdf.xml</adlcp:location>
+            </metadata>
+            <file href="contents/lecture-notes/handout5.pdf"/>
+                        
+        </resource>
+        <resource identifier="r_contents.lecture-notes.notes6.pdf"
+                  type="other"
+                  href="contents/lecture-notes/notes6.pdf">
+            <metadata>
+                <adlcp:location>contents/lecture-notes/notes6.pdf.xml</adlcp:location>
+            </metadata>
+            <file href="contents/lecture-notes/notes6.pdf"/>
+                        
+        </resource>
+        <resource identifier="r_contents.lecture-notes.notes9.pdf"
+                  type="other"
+                  href="contents/lecture-notes/notes9.pdf">
+            <metadata>
+                <adlcp:location>contents/lecture-notes/notes9.pdf.xml</adlcp:location>
+            </metadata>
+            <file href="contents/lecture-notes/notes9.pdf"/>
+                        
+        </resource>
+        <resource identifier="r_contents.lecture-notes.exam1_soln.pdf"
+                  type="other"
+                  href="contents/lecture-notes/exam1_soln.pdf">
+            <metadata>
+                <adlcp:location>contents/lecture-notes/exam1_soln.pdf.xml</adlcp:location>
+            </metadata>
+            <file href="contents/lecture-notes/exam1_soln.pdf"/>
+                        
+        </resource>
+        <resource identifier="r_contents.lecture-notes.handout1.pdf"
+                  type="other"
+                  href="contents/lecture-notes/handout1.pdf">
+            <metadata>
+                <adlcp:location>contents/lecture-notes/handout1.pdf.xml</adlcp:location>
+            </metadata>
+            <file href="contents/lecture-notes/handout1.pdf"/>
+                        
+        </resource>
+        <resource identifier="r_contents.lecture-notes.handout2.pdf"
+                  type="other"
+                  href="contents/lecture-notes/handout2.pdf">
+            <metadata>
+                <adlcp:location>contents/lecture-notes/handout2.pdf.xml</adlcp:location>
+            </metadata>
+            <file href="contents/lecture-notes/handout2.pdf"/>
+                        
+        </resource>
+        <resource identifier="r_contents.lecture-notes.handout4.pdf"
+                  type="other"
+                  href="contents/lecture-notes/handout4.pdf">
+            <metadata>
+                <adlcp:location>contents/lecture-notes/handout4.pdf.xml</adlcp:location>
+            </metadata>
+            <file href="contents/lecture-notes/handout4.pdf"/>
+                        
+        </resource>
+        <resource identifier="r_contents.lecture-notes.notes1.pdf"
+                  type="other"
+                  href="contents/lecture-notes/notes1.pdf">
+            <metadata>
+                <adlcp:location>contents/lecture-notes/notes1.pdf.xml</adlcp:location>
+            </metadata>
+            <file href="contents/lecture-notes/notes1.pdf"/>
+                        
+        </resource>
+        <resource identifier="r_contents.lecture-notes.handout3.pdf"
+                  type="other"
+                  href="contents/lecture-notes/handout3.pdf">
+            <metadata>
+                <adlcp:location>contents/lecture-notes/handout3.pdf.xml</adlcp:location>
+            </metadata>
+            <file href="contents/lecture-notes/handout3.pdf"/>
+                        
+        </resource>
+        <resource identifier="r_contents.assignments.index.htm"
+                  type="webcontent"
+                  href="contents/assignments/index.htm">
+            <metadata>
+                <adlcp:location>contents/assignments/index.htm.xml</adlcp:location>
+            </metadata>
+            <file href="contents/assignments/index.htm"/>
+            <dependency identifierref="webrenderrequirements.6-189-a-gentle-introduction-to-programming-using-python-january-iap-2008"/>            
+        </resource>
+        <resource identifier="r_contents.assignments.operator.pdf"
+                  type="other"
+                  href="contents/assignments/operator.pdf">
+            <metadata>
+                <adlcp:location>contents/assignments/operator.pdf.xml</adlcp:location>
+            </metadata>
+            <file href="contents/assignments/operator.pdf"/>
+                        
+        </resource>
+        <resource identifier="r_contents.assignments.inventory_soln.py"
+                  type="other"
+                  href="contents/assignments/inventory_soln.py">
+            <metadata>
+                <adlcp:location>contents/assignments/inventory_soln.py.xml</adlcp:location>
+            </metadata>
+            <file href="contents/assignments/inventory_soln.py"/>
+                        
+        </resource>
+        <resource identifier="r_contents.assignments.piglatin.py"
+                  type="other"
+                  href="contents/assignments/piglatin.py">
+            <metadata>
+                <adlcp:location>contents/assignments/piglatin.py.xml</adlcp:location>
+            </metadata>
+            <file href="contents/assignments/piglatin.py"/>
+                        
+        </resource>
+        <resource identifier="r_contents.assignments.mitsites20.txt"
+                  type="other"
+                  href="contents/assignments/mitsites20.txt">
+            <metadata>
+                <adlcp:location>contents/assignments/mitsites20.txt.xml</adlcp:location>
+            </metadata>
+            <file href="contents/assignments/mitsites20.txt"/>
+                        
+        </resource>
+        <resource identifier="r_contents.assignments.localsites.zip"
+                  type="other"
+                  href="contents/assignments/localsites.zip">
+            <metadata>
+                <adlcp:location>contents/assignments/localsites.zip.xml</adlcp:location>
+            </metadata>
+            <file href="contents/assignments/localsites.zip"/>
+                        
+        </resource>
+        <resource identifier="r_contents.assignments.lab5.pdf"
+                  type="other"
+                  href="contents/assignments/lab5.pdf">
+            <metadata>
+                <adlcp:location>contents/assignments/lab5.pdf.xml</adlcp:location>
+            </metadata>
+            <file href="contents/assignments/lab5.pdf"/>
+                        
+        </resource>
+        <resource identifier="r_contents.assignments.lab6.pdf"
+                  type="other"
+                  href="contents/assignments/lab6.pdf">
+            <metadata>
+                <adlcp:location>contents/assignments/lab6.pdf.xml</adlcp:location>
+            </metadata>
+            <file href="contents/assignments/lab6.pdf"/>
+                        
+        </resource>
+        <resource identifier="r_contents.assignments.namesages_soln.py"
+                  type="other"
+                  href="contents/assignments/namesages_soln.py">
+            <metadata>
+                <adlcp:location>contents/assignments/namesages_soln.py.xml</adlcp:location>
+            </metadata>
+            <file href="contents/assignments/namesages_soln.py"/>
+                        
+        </resource>
+        <resource identifier="r_contents.assignments.lab3.pdf"
+                  type="other"
+                  href="contents/assignments/lab3.pdf">
+            <metadata>
+                <adlcp:location>contents/assignments/lab3.pdf.xml</adlcp:location>
+            </metadata>
+            <file href="contents/assignments/lab3.pdf"/>
+                        
+        </resource>
+        <resource identifier="r_contents.assignments.smallsites.txt"
+                  type="other"
+                  href="contents/assignments/smallsites.txt">
+            <metadata>
+                <adlcp:location>contents/assignments/smallsites.txt.xml</adlcp:location>
+            </metadata>
+            <file href="contents/assignments/smallsites.txt"/>
+                        
+        </resource>
+        <resource identifier="r_contents.assignments.inventory.py"
+                  type="other"
+                  href="contents/assignments/inventory.py">
+            <metadata>
+                <adlcp:location>contents/assignments/inventory.py.xml</adlcp:location>
+            </metadata>
+            <file href="contents/assignments/inventory.py"/>
+                        
+        </resource>
+        <resource identifier="r_contents.assignments.lab4.pdf"
+                  type="other"
+                  href="contents/assignments/lab4.pdf">
+            <metadata>
+                <adlcp:location>contents/assignments/lab4.pdf.xml</adlcp:location>
+            </metadata>
+            <file href="contents/assignments/lab4.pdf"/>
+                        
+        </resource>
+        <resource identifier="r_contents.assignments.webindexer1.py"
+                  type="other"
+                  href="contents/assignments/webindexer1.py">
+            <metadata>
+                <adlcp:location>contents/assignments/webindexer1.py.xml</adlcp:location>
+            </metadata>
+            <file href="contents/assignments/webindexer1.py"/>
+                        
+        </resource>
+        <resource identifier="r_contents.assignments.lab7.pdf"
+                  type="other"
+                  href="contents/assignments/lab7.pdf">
+            <metadata>
+                <adlcp:location>contents/assignments/lab7.pdf.xml</adlcp:location>
+            </metadata>
+            <file href="contents/assignments/lab7.pdf"/>
+                        
+        </resource>
+        <resource identifier="r_contents.assignments.htmltext.py"
+                  type="other"
+                  href="contents/assignments/htmltext.py">
+            <metadata>
+                <adlcp:location>contents/assignments/htmltext.py.xml</adlcp:location>
+            </metadata>
+            <file href="contents/assignments/htmltext.py"/>
+                        
+        </resource>
+        <resource identifier="r_contents.assignments.webindexer2_soln.py"
+                  type="other"
+                  href="contents/assignments/webindexer2_soln.py">
+            <metadata>
+                <adlcp:location>contents/assignments/webindexer2_soln.py.xml</adlcp:location>
+            </metadata>
+            <file href="contents/assignments/webindexer2_soln.py"/>
+                        
+        </resource>
+        <resource identifier="r_contents.assignments.sorting.py"
+                  type="other"
+                  href="contents/assignments/sorting.py">
+            <metadata>
+                <adlcp:location>contents/assignments/sorting.py.xml</adlcp:location>
+            </metadata>
+            <file href="contents/assignments/sorting.py"/>
+                        
+        </resource>
+        <resource identifier="r_contents.assignments.lab9.pdf"
+                  type="other"
+                  href="contents/assignments/lab9.pdf">
+            <metadata>
+                <adlcp:location>contents/assignments/lab9.pdf.xml</adlcp:location>
+            </metadata>
+            <file href="contents/assignments/lab9.pdf"/>
+                        
+        </resource>
+        <resource identifier="r_contents.assignments.nims1.py"
+                  type="other"
+                  href="contents/assignments/nims1.py">
+            <metadata>
+                <adlcp:location>contents/assignments/nims1.py.xml</adlcp:location>
+            </metadata>
+            <file href="contents/assignments/nims1.py"/>
+                        
+        </resource>
+        <resource identifier="r_contents.assignments.webindexer2.py"
+                  type="other"
+                  href="contents/assignments/webindexer2.py">
+            <metadata>
+                <adlcp:location>contents/assignments/webindexer2.py.xml</adlcp:location>
+            </metadata>
+            <file href="contents/assignments/webindexer2.py"/>
+                        
+        </resource>
+        <resource identifier="r_contents.assignments.webindexer1_soln.py"
+                  type="other"
+                  href="contents/assignments/webindexer1_soln.py">
+            <metadata>
+                <adlcp:location>contents/assignments/webindexer1_soln.py.xml</adlcp:location>
+            </metadata>
+            <file href="contents/assignments/webindexer1_soln.py"/>
+                        
+        </resource>
+        <resource identifier="r_contents.assignments.websearch1.py"
+                  type="other"
+                  href="contents/assignments/websearch1.py">
+            <metadata>
+                <adlcp:location>contents/assignments/websearch1.py.xml</adlcp:location>
+            </metadata>
+            <file href="contents/assignments/websearch1.py"/>
+                        
+        </resource>
+        <resource identifier="r_contents.assignments.login.py"
+                  type="other"
+                  href="contents/assignments/login.py">
+            <metadata>
+                <adlcp:location>contents/assignments/login.py.xml</adlcp:location>
+            </metadata>
+            <file href="contents/assignments/login.py"/>
+                        
+        </resource>
+        <resource identifier="r_contents.assignments.lab10.pdf"
+                  type="other"
+                  href="contents/assignments/lab10.pdf">
+            <metadata>
+                <adlcp:location>contents/assignments/lab10.pdf.xml</adlcp:location>
+            </metadata>
+            <file href="contents/assignments/lab10.pdf"/>
+                        
+        </resource>
+        <resource identifier="r_contents.assignments.genetic.py"
+                  type="other"
+                  href="contents/assignments/genetic.py">
+            <metadata>
+                <adlcp:location>contents/assignments/genetic.py.xml</adlcp:location>
+            </metadata>
+            <file href="contents/assignments/genetic.py"/>
+                        
+        </resource>
+        <resource identifier="r_contents.assignments.mitsites50.txt"
+                  type="other"
+                  href="contents/assignments/mitsites50.txt">
+            <metadata>
+                <adlcp:location>contents/assignments/mitsites50.txt.xml</adlcp:location>
+            </metadata>
+            <file href="contents/assignments/mitsites50.txt"/>
+                        
+        </resource>
+        <resource identifier="r_contents.assignments.optional.pdf"
+                  type="other"
+                  href="contents/assignments/optional.pdf">
+            <metadata>
+                <adlcp:location>contents/assignments/optional.pdf.xml</adlcp:location>
+            </metadata>
+            <file href="contents/assignments/optional.pdf"/>
+                        
+        </resource>
+        <resource identifier="r_contents.assignments.nims2.py"
+                  type="other"
+                  href="contents/assignments/nims2.py">
+            <metadata>
+                <adlcp:location>contents/assignments/nims2.py.xml</adlcp:location>
+            </metadata>
+            <file href="contents/assignments/nims2.py"/>
+                        
+        </resource>
+        <resource identifier="r_contents.assignments.namesages.py"
+                  type="other"
+                  href="contents/assignments/namesages.py">
+            <metadata>
+                <adlcp:location>contents/assignments/namesages.py.xml</adlcp:location>
+            </metadata>
+            <file href="contents/assignments/namesages.py"/>
+                        
+        </resource>
+        <resource identifier="r_contents.assignments.reportcard.py"
+                  type="other"
+                  href="contents/assignments/reportcard.py">
+            <metadata>
+                <adlcp:location>contents/assignments/reportcard.py.xml</adlcp:location>
+            </metadata>
+            <file href="contents/assignments/reportcard.py"/>
+                        
+        </resource>
+        <resource identifier="r_contents.assignments.collision.py"
+                  type="other"
+                  href="contents/assignments/collision.py">
+            <metadata>
+                <adlcp:location>contents/assignments/collision.py.xml</adlcp:location>
+            </metadata>
+            <file href="contents/assignments/collision.py"/>
+                        
+        </resource>
+        <resource identifier="r_contents.assignments.websearch2.py"
+                  type="other"
+                  href="contents/assignments/websearch2.py">
+            <metadata>
+                <adlcp:location>contents/assignments/websearch2.py.xml</adlcp:location>
+            </metadata>
+            <file href="contents/assignments/websearch2.py"/>
+                        
+        </resource>
+        <resource identifier="r_contents.assignments.lab8.pdf"
+                  type="other"
+                  href="contents/assignments/lab8.pdf">
+            <metadata>
+                <adlcp:location>contents/assignments/lab8.pdf.xml</adlcp:location>
+            </metadata>
+            <file href="contents/assignments/lab8.pdf"/>
+                        
+        </resource>
+        <resource identifier="r_contents.projects.index.htm"
+                  type="webcontent"
+                  href="contents/projects/index.htm">
+            <metadata>
+                <adlcp:location>contents/projects/index.htm.xml</adlcp:location>
+            </metadata>
+            <file href="contents/projects/index.htm"/>
+            <dependency identifierref="webrenderrequirements.6-189-a-gentle-introduction-to-programming-using-python-january-iap-2008"/>            
+        </resource>
+        <resource identifier="r_contents.projects.hangman_lib.py"
+                  type="other"
+                  href="contents/projects/hangman_lib.py">
+            <metadata>
+                <adlcp:location>contents/projects/hangman_lib.py.xml</adlcp:location>
+            </metadata>
+            <file href="contents/projects/hangman_lib.py"/>
+                        
+        </resource>
+        <resource identifier="r_contents.projects.connectfour.py"
+                  type="other"
+                  href="contents/projects/connectfour.py">
+            <metadata>
+                <adlcp:location>contents/projects/connectfour.py.xml</adlcp:location>
+            </metadata>
+            <file href="contents/projects/connectfour.py"/>
+                        
+        </resource>
+        <resource identifier="r_contents.projects.hangman_soln.py"
+                  type="other"
+                  href="contents/projects/hangman_soln.py">
+            <metadata>
+                <adlcp:location>contents/projects/hangman_soln.py.xml</adlcp:location>
+            </metadata>
+            <file href="contents/projects/hangman_soln.py"/>
+                        
+        </resource>
+        <resource identifier="r_contents.projects.word_list.txt"
+                  type="other"
+                  href="contents/projects/word_list.txt">
+            <metadata>
+                <adlcp:location>contents/projects/word_list.txt.xml</adlcp:location>
+            </metadata>
+            <file href="contents/projects/word_list.txt"/>
+                        
+        </resource>
+        <resource identifier="r_contents.projects.tictactoe.py"
+                  type="other"
+                  href="contents/projects/tictactoe.py">
+            <metadata>
+                <adlcp:location>contents/projects/tictactoe.py.xml</adlcp:location>
+            </metadata>
+            <file href="contents/projects/tictactoe.py"/>
+                        
+        </resource>
+        <resource identifier="r_contents.projects.project1.pdf"
+                  type="other"
+                  href="contents/projects/project1.pdf">
+            <metadata>
+                <adlcp:location>contents/projects/project1.pdf.xml</adlcp:location>
+            </metadata>
+            <file href="contents/projects/project1.pdf"/>
+                        
+        </resource>
+        <resource identifier="r_contents.projects.hangman.py"
+                  type="other"
+                  href="contents/projects/hangman.py">
+            <metadata>
+                <adlcp:location>contents/projects/hangman.py.xml</adlcp:location>
+            </metadata>
+            <file href="contents/projects/hangman.py"/>
+                        
+        </resource>        
+        <resource identifier="r_common.search.AdvancedSearch.htm"
+                  type="webcontent"
+                  href="common/search/AdvancedSearch.htm">
+            <file href="common/search/AdvancedSearch.htm"/>
+            <dependency identifierref="webrenderrequirements.6-189-a-gentle-introduction-to-programming-using-python-january-iap-2008"/>            
+        </resource>
+        <resource identifier="r_common.jsp.feedback.htm"
+                  type="webcontent"
+                  href="common/jsp/feedback.htm">
+            <file href="common/jsp/feedback.htm"/>
+            <dependency identifierref="webrenderrequirements.6-189-a-gentle-introduction-to-programming-using-python-january-iap-2008"/>            
+        </resource>
+        <resource identifier="r_common.terms.index.htm"
+                  type="webcontent"
+                  href="common/terms/index.htm">
+            <file href="common/terms/share.png"/>
+            <file href="common/terms/remix.png"/>
+            <file href="common/terms/by.png"/>
+            <file href="common/terms/nc.png"/>
+            <file href="common/terms/sa.png"/>
+            <file href="common/terms/deedheadyellow.png"/>
+            <file href="common/terms/freedomsheader.png"/>
+            <file href="common/terms/limitationsheader.png"/>
+            <file href="common/terms/deedfootyellow.png"/>
+            <dependency identifierref="webrenderrequirements.6-189-a-gentle-introduction-to-programming-using-python-january-iap-2008"/>            
+        </resource>
+        <resource identifier="r_common.terms.trademarks.index.htm"
+                  type="webcontent"
+                  href="common/terms/trademarks/index.htm">
+            <file href="common/terms/trademarks/index.htm"/>
+            <dependency identifierref="webrenderrequirements.6-189-a-gentle-introduction-to-programming-using-python-january-iap-2008"/>            
+        </resource>
+        <resource identifier="webrenderrequirements.6-189-a-gentle-introduction-to-programming-using-python-january-iap-2008"
+                  type="webcontent">
+        	<file href="common/styles/common.css"/>
+            <file href="common/styles/courses.css"/>
+            <file href="common/styles/global.css"/>
+            <file href="common/images/logo-ocw-home_new.gif"/>
+            <file href="common/images/newsletter_signup_trans.gif"/>
+            <file href="common/images/donate_now.gif"/>
+            <file href="common/images/trans.gif"/>
+            <file href="common/images/footer_rss_new.gif"/>
+            <file href="common/images/cc_logo_new.gif"/>
+            <file href="common/images/ocw-logo_new.gif"/>
+            <file href="common/images/go_new.gif"/>
+            <file href="common/images/a_logo_17.gif"/>
+            <file href="common/images/horizontal_dots.gif"/>
+            <file href="common/images/black-arrow.gif"/>
+            <file href="common/images/rss-small.gif"/>
+            <file href="common/images/bullet1.gif"/>
+            <file href="common/images/body_bg.gif"/>
+            <file href="common/images/red-arrow.gif"/>
+            <file href="common/images/bg.gif"/>
+            <file href="common/images/home-top-img.jpg"/>
+            <file href="common/images/global-nav-pipe.gif"/>
+            <file href="common/images/black-email-ico.gif"/>
+            <file href="common/images/mit-logo_new.gif"/>
+        </resource>        
+  </resources>
+</manifest>

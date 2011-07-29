@@ -1,0 +1,231 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "DTD/xhtml1-strict.dtd">
+<html>
+  <head>
+    <title>GTG.backends.BackendFactory : API documentation</title>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type" />
+    <link href="apidocs.css" type="text/css" rel="stylesheet" />
+    
+    
+  </head>
+  <body>
+    <h1 class="class">G.b.BackendFactory(<a href="GTG.tools.borg.Borg.html">Borg</a>) : class documentation</h1>
+    <p>
+      <span id="part">Part of <a href="GTG.html">GTG</a>.<a href="GTG.backends.html">backends</a></span>
+      
+      <a href="classIndex.html#GTG.backends.BackendFactory">View In Hierarchy</a>
+    </p>
+    <div>
+      
+    </div>
+    <div>This class holds the information about the backend types. Since it's 
+about types, all information is static. The instantiated backends are 
+handled in the Datastore. It is a Borg for what matters its only state 
+(_backend_modules), since it makes no sense of keeping multiple instances 
+of this.<table class="fieldTable"></table></div>
+
+    
+    
+    <div id="splitTables">
+      <table class="children sortable" id="id270">
+  
+  
+<tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.backends.BackendFactory.html#__init__">__init__</a></td>
+    <td><span>Creates a dictionary of the currently available backend modules</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.backends.BackendFactory.html#get_backend">get_backend</a></td>
+    <td><span>Returns the backend module for the backend matching</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.backends.BackendFactory.html#get_all_backends">get_all_backends</a></td>
+    <td><span>Returns a dictionary containing all the backends types</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.backends.BackendFactory.html#get_new_backend_dict">get_new_backend_dict</a></td>
+    <td><span>Constructs a new backend initialization dictionary. In more</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.backends.BackendFactory.html#restore_backend_from_xml">restore_backend_from_xml</a></td>
+    <td><span>Function restoring a backend from its xml description.</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.backends.BackendFactory.html#get_saved_backends_list">get_saved_backends_list</a></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="method private">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.backends.BackendFactory.html#_read_backend_configuration_file">_read_backend_configuration_file</a></td>
+    <td><span>Reads the file describing the current backend configuration 
+(project.xml)</span></td>
+  </tr>
+  
+</table>
+      
+      
+    </div>
+    
+    
+    
+
+    <div class="function">
+  <a name="GTG.backends.BackendFactory.__init__">
+    
+  </a>
+  <a name="__init__">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    __init__(self):
+    
+  </div>
+  <div class="functionBody">
+    <div class="interfaceinfo">overrides <a href="GTG.tools.borg.Borg.html#__init__">GTG.tools.borg.Borg.__init__</a></div>
+    <div>Creates a dictionary of the currently available backend modules<table class="fieldTable"></table></div>
+  </div>
+</div><div class="function">
+  <a name="GTG.backends.BackendFactory.get_backend">
+    
+  </a>
+  <a name="get_backend">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    get_backend(self, backend_name):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div>Returns the backend module for the backend matching backend_name. Else, 
+returns none<table class="fieldTable"></table></div>
+  </div>
+</div><div class="function">
+  <a name="GTG.backends.BackendFactory.get_all_backends">
+    
+  </a>
+  <a name="get_all_backends">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    get_all_backends(self):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div>Returns a dictionary containing all the backends types<table class="fieldTable"></table></div>
+  </div>
+</div><div class="function">
+  <a name="GTG.backends.BackendFactory.get_new_backend_dict">
+    
+  </a>
+  <a name="get_new_backend_dict">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    get_new_backend_dict(self, backend_name, additional_parameters={}):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div>Constructs a new backend initialization dictionary. In more exact terms,
+creates a dictionary, containing all the necessary entries to initialize a 
+backend.<table class="fieldTable"></table></div>
+  </div>
+</div><div class="function">
+  <a name="GTG.backends.BackendFactory.restore_backend_from_xml">
+    
+  </a>
+  <a name="restore_backend_from_xml">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    restore_backend_from_xml(self, dic):
+    
+  </div>
+  <div class="functionBody">
+    
+    <pre>Function restoring a backend from its xml description.
+dic should be a dictionary containing at least the key 
+- "module", with the module name
+- "xmlobject", with its xml description.
+Every other key is passed as-is to the backend, as parameter.
+
+Returns the backend instance, or None is something goes wrong</pre>
+  </div>
+</div><div class="function">
+  <a name="GTG.backends.BackendFactory.get_saved_backends_list">
+    
+  </a>
+  <a name="get_saved_backends_list">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    get_saved_backends_list(self):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div class="undocumented">Undocumented</div>
+  </div>
+</div><div class="function">
+  <a name="GTG.backends.BackendFactory._read_backend_configuration_file">
+    
+  </a>
+  <a name="_read_backend_configuration_file">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    _read_backend_configuration_file(self):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div><p>Reads the file describing the current backend configuration 
+(project.xml) and returns a list of dictionaries, each containing:</p>
+<ul>
+  <li>
+    the xml object defining the backend characteristics under 
+    &quot;xmlobject&quot;
+  </li>
+  <li>
+    the name of the backend under &quot;module&quot;
+  </li>
+</ul>
+<table class="fieldTable"></table></div>
+  </div>
+</div>
+    <address>
+      <a href="index.html">API Documentation</a> for <a href="http://gtg.fritalk.com/">GTG</a>, generated by <a href="http://codespeak.net/~mwh/pydoctor/">pydoctor</a> at 2011-05-02 21:27:37.
+    </address>
+  </body>
+</html>

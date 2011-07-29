@@ -1,0 +1,11 @@
+<?php
+$names = fix_names("DANIEL", "allen", "neEL");
+echo $names[0] . " " . $names[1] . " " . $names[2];
+
+function fix_names($n1, $n2, $n3)
+{
+	$n1 = ;
+	$n2 = ;
+	$n3 = ;
+}
+?>

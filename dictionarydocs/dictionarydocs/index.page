@@ -1,0 +1,40 @@
+<page xmlns="http://projectmallard.org/1.0/"
+      type="guide"
+      id="index">
+
+  <info>
+    <credit type="">
+      <name>Daniel Neel</name>
+      <email>dneelyep@gmail.com</email>
+    </credit>
+  </info>
+
+  <title>Dictionary
+    <media type="image" mime="image/png" src="figures/????">
+      Dictionary logo
+    </media>
+  </title>
+  
+  <p>Welcome to the <app>Dictionary</app> guide. [MOREHERE]</p>
+
+  <section id="introduction" style="2column">
+    <title>Introduction</title>
+  </section>
+
+  <section id="getting-started" style="2column">
+    <title>Getting Started</title>
+  </section>-
+
+  <section id="usage" style="2column">
+    <title>Usage</title>
+  </section>  
+
+  <section id="preferences" style="2column">
+    <title>Preferences</title>
+  </section>
+
+  <section id="the-dictionary-applet" style="2column">
+    <title>The Dictionary Applet</title>
+  </section>
+
+</page>

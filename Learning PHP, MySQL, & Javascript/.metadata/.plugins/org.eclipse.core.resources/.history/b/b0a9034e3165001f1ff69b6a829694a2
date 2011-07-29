@@ -1,0 +1,4 @@
+<?php //Using the compact function, to turn, in this example, a set of variables into
+	  //an array
+
+?>

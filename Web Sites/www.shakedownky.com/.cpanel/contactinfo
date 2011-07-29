@@ -1,0 +1,6 @@
+--- 
+email: drumperson@hotmail.com
+notify_bandwidth_limit: 1
+notify_disk_limit: 1
+notify_email_quota_limit: 1
+second_email: shakedownrocks@gmail.com

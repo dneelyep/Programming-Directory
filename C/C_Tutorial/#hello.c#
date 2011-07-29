@@ -1,0 +1,14 @@
+#include <stdio.h>
+#include <math.h>
+
+void main()
+{
+  int    angle_degree;
+  double angle_radian, pi, value;
+
+  printf ("\nCompute a table of the sine function\n\n");
+
+  pi = 4.0*atan(1.0);
+  printf ("Value of PI = %f \n
+
+}

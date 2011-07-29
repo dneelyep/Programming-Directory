@@ -1,0 +1,14 @@
+<?php //Creating and interacting with an object
+$object = new User;
+print_r($object); echo "<br />";
+echo "basd";
+class User
+{
+	public $name, $password;
+	
+	function save_user()
+	{
+		echo "Save User code goes here";
+	}
+}
+?>

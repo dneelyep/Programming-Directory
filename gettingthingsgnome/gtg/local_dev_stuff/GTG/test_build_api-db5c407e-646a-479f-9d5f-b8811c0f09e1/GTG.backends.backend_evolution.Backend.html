@@ -1,0 +1,663 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "DTD/xhtml1-strict.dtd">
+<html>
+  <head>
+    <title>GTG.backends.backend_evolution.Backend : API documentation</title>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type" />
+    <link href="apidocs.css" type="text/css" rel="stylesheet" />
+    
+    
+  </head>
+  <body>
+    <h1 class="class">G.b.b.Backend(<a href="GTG.backends.periodicimportbackend.PeriodicImportBackend.html">PeriodicImportBackend</a>) : class documentation</h1>
+    <p>
+      <span id="part">Part of <a href="GTG.html">GTG</a>.<a href="GTG.backends.html">backends</a>.<a href="GTG.backends.backend_evolution.html">backend_evolution</a></span>
+      
+      <a href="classIndex.html#GTG.backends.backend_evolution.Backend">View In Hierarchy</a>
+    </p>
+    <div>
+      
+    </div>
+    <div>Evolution backend<table class="fieldTable"></table></div>
+
+    
+    
+    <div id="splitTables">
+      <table class="children sortable" id="id282">
+  
+  
+<tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.backends.backend_evolution.Backend.html#__init__">__init__</a></td>
+    <td><span>See GenericBackend for an explanation of this function.</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.backends.backend_evolution.Backend.html#do_periodic_import">do_periodic_import</a></td>
+    <td><span>See PeriodicImportBackend for an explanation of this function.</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.backends.backend_evolution.Backend.html#save_state">save_state</a></td>
+    <td><span>See GenericBackend for an explanation of this function.</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.backends.backend_evolution.Backend.html#remove_task">remove_task</a></td>
+    <td><span>See GenericBackend for an explanation of this function.</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.backends.backend_evolution.Backend.html#set_task">set_task</a></td>
+    <td><span>See GenericBackend for an explanation of this function.</span></td>
+  </tr><tr class="method private">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.backends.backend_evolution.Backend.html#_process_evo_task">_process_evo_task</a></td>
+    <td><span>Takes an evolution task id and carries out the necessary operations 
+to</span></td>
+  </tr><tr class="method private">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.backends.backend_evolution.Backend.html#_evo_has_task">_evo_has_task</a></td>
+    <td><span>Returns true if Evolution has that task</span></td>
+  </tr><tr class="method private">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.backends.backend_evolution.Backend.html#_evo_get_task">_evo_get_task</a></td>
+    <td><span>Returns an Evolution task, given its uid</span></td>
+  </tr><tr class="method private">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.backends.backend_evolution.Backend.html#_evo_get_modified">_evo_get_modified</a></td>
+    <td><span>Returns the modified time of an Evolution task</span></td>
+  </tr><tr class="method private">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.backends.backend_evolution.Backend.html#_delete_evolution_task">_delete_evolution_task</a></td>
+    <td><span>Deletes an Evolution task, given the task object</span></td>
+  </tr><tr class="method private">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.backends.backend_evolution.Backend.html#_populate_task">_populate_task</a></td>
+    <td><span>Updates the attributes of a GTG task copying the ones of an 
+Evolution</span></td>
+  </tr><tr class="method private">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.backends.backend_evolution.Backend.html#_populate_evo_task">_populate_evo_task</a></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="method private">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.backends.backend_evolution.Backend.html#_exec_lost_syncability">_exec_lost_syncability</a></td>
+    <td><span>Executed when a relationship between tasks loses its syncability</span></td>
+  </tr><tr class="method private">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.backends.backend_evolution.Backend.html#_evo_task_is_syncable">_evo_task_is_syncable</a></td>
+    <td><span>Returns True if this Evolution task should be synced into GTG tasks.</span></td>
+  </tr><tr class="method private">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.backends.backend_evolution.Backend.html#__date_from_evo_to_gtg">__date_from_evo_to_gtg</a></td>
+    <td><span>Converts an evolution date object into the format understood by GTG</span></td>
+  </tr><tr class="method private">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.backends.backend_evolution.Backend.html#__date_from_gtg_to_evo">__date_from_gtg_to_evo</a></td>
+    <td><span>Converts a datetime.date object into the format understood by 
+Evolution</span></td>
+  </tr>
+  
+</table>
+      
+        <p>
+          Inherited from <a href="GTG.backends.periodicimportbackend.PeriodicImportBackend.html">PeriodicImportBackend</a>:
+        </p>
+        <table class="children sortable" id="id283">
+  
+  
+<tr class="basemethod">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.backends.periodicimportbackend.PeriodicImportBackend.html#start_get_tasks">start_get_tasks</a></td>
+    <td><span>This function launches the first periodic import, and schedules the</span></td>
+  </tr><tr class="basemethod">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.backends.periodicimportbackend.PeriodicImportBackend.html#quit">quit</a></td>
+    <td><span>Called when GTG quits or disconnects the backend.</span></td>
+  </tr><tr class="basemethod private">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.backends.periodicimportbackend.PeriodicImportBackend.html#_start_get_tasks">_start_get_tasks</a></td>
+    <td><span>This function executes an imports and schedules the next</span></td>
+  </tr>
+  
+</table>
+      
+        <p>
+          Inherited from <a href="GTG.backends.genericbackend.GenericBackend.html">GenericBackend</a> (via <a href="GTG.backends.periodicimportbackend.PeriodicImportBackend.html">PeriodicImportBackend</a>):
+        </p>
+        <table class="children sortable" id="id284">
+  
+  
+<tr class="basemethod">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.backends.genericbackend.GenericBackend.html#initialize">initialize</a></td>
+    <td><span>Called each time it is enabled (including on backend creation).</span></td>
+  </tr><tr class="basemethod">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.backends.genericbackend.GenericBackend.html#this_is_the_first_run">this_is_the_first_run</a></td>
+    <td><span>Optional, and almost surely not needed.</span></td>
+  </tr><tr class="basemethod">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.backends.genericbackend.GenericBackend.html#get_attached_tags">get_attached_tags</a></td>
+    <td><span>Returns the list of tags which are handled by this backend</span></td>
+  </tr><tr class="basemethod">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.backends.genericbackend.GenericBackend.html#set_attached_tags">set_attached_tags</a></td>
+    <td><span>Changes the set of attached tags</span></td>
+  </tr><tr class="baseclassmethod">
+    
+    
+    <td>Class Method</td>
+    <td><a href="GTG.backends.genericbackend.GenericBackend.html#get_static_parameters">get_static_parameters</a></td>
+    <td><span>Returns a dictionary of parameters necessary to create a backend.</span></td>
+  </tr><tr class="basemethod">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.backends.genericbackend.GenericBackend.html#get_parameters">get_parameters</a></td>
+    <td><span>Returns a dictionary of the current parameters.</span></td>
+  </tr><tr class="basemethod">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.backends.genericbackend.GenericBackend.html#set_parameter">set_parameter</a></td>
+    <td><span>Change a parameter for this backend</span></td>
+  </tr><tr class="baseclassmethod">
+    
+    
+    <td>Class Method</td>
+    <td><a href="GTG.backends.genericbackend.GenericBackend.html#get_name">get_name</a></td>
+    <td><span>Returns the name of the backend as it should be displayed in the UI</span></td>
+  </tr><tr class="baseclassmethod">
+    
+    
+    <td>Class Method</td>
+    <td><a href="GTG.backends.genericbackend.GenericBackend.html#get_description">get_description</a></td>
+    <td><span>Returns a description of the backend</span></td>
+  </tr><tr class="baseclassmethod">
+    
+    
+    <td>Class Method</td>
+    <td><a href="GTG.backends.genericbackend.GenericBackend.html#get_type">get_type</a></td>
+    <td><span>Returns the backend type(readonly, r/w, import, export)</span></td>
+  </tr><tr class="baseclassmethod">
+    
+    
+    <td>Class Method</td>
+    <td><a href="GTG.backends.genericbackend.GenericBackend.html#get_authors">get_authors</a></td>
+    <td><span>returns the backend author(s)</span></td>
+  </tr><tr class="baseclassmethod">
+    
+    
+    <td>Class Method</td>
+    <td><a href="GTG.backends.genericbackend.GenericBackend.html#cast_param_type_from_string">cast_param_type_from_string</a></td>
+    <td><span>Parameters are saved in a text format, so we have to cast them to 
+the</span></td>
+  </tr><tr class="basemethod">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.backends.genericbackend.GenericBackend.html#cast_param_type_to_string">cast_param_type_to_string</a></td>
+    <td><span>Inverse of cast_param_type_from_string</span></td>
+  </tr><tr class="basemethod">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.backends.genericbackend.GenericBackend.html#get_id">get_id</a></td>
+    <td><span>returns the backends id, used in the datastore for indexing backends</span></td>
+  </tr><tr class="baseclassmethod">
+    
+    
+    <td>Class Method</td>
+    <td><a href="GTG.backends.genericbackend.GenericBackend.html#get_human_default_name">get_human_default_name</a></td>
+    <td><span>returns the user friendly default backend name, without eventual 
+user</span></td>
+  </tr><tr class="basemethod">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.backends.genericbackend.GenericBackend.html#get_human_name">get_human_name</a></td>
+    <td><span>returns the user customized backend name. If the user hasn't</span></td>
+  </tr><tr class="basemethod">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.backends.genericbackend.GenericBackend.html#set_human_name">set_human_name</a></td>
+    <td><span>sets a custom name for the backend</span></td>
+  </tr><tr class="basemethod">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.backends.genericbackend.GenericBackend.html#is_enabled">is_enabled</a></td>
+    <td><span>Returns if the backend is enabled</span></td>
+  </tr><tr class="basemethod">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.backends.genericbackend.GenericBackend.html#is_default">is_default</a></td>
+    <td><span>Returns if the backend is enabled</span></td>
+  </tr><tr class="basemethod">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.backends.genericbackend.GenericBackend.html#is_initialized">is_initialized</a></td>
+    <td><span>Returns if the backend is up and running</span></td>
+  </tr><tr class="basemethod">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.backends.genericbackend.GenericBackend.html#get_parameter_type">get_parameter_type</a></td>
+    <td><span>Given the name of a parameter, returns its type. If the parameter is 
+one</span></td>
+  </tr><tr class="basemethod">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.backends.genericbackend.GenericBackend.html#register_datastore">register_datastore</a></td>
+    <td><span>Setter function to inform the backend about the datastore that's 
+loading</span></td>
+  </tr><tr class="basemethod">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.backends.genericbackend.GenericBackend.html#launch_setting_thread">launch_setting_thread</a></td>
+    <td><span>This function is launched as a separate thread. Its job is to 
+perform</span></td>
+  </tr><tr class="basemethod">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.backends.genericbackend.GenericBackend.html#queue_set_task">queue_set_task</a></td>
+    <td><span>Save the task in the backend. In particular, it just enqueues the</span></td>
+  </tr><tr class="basemethod">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.backends.genericbackend.GenericBackend.html#queue_remove_task">queue_remove_task</a></td>
+    <td><span>Queues task to be removed. In particular, it just enqueues the</span></td>
+  </tr><tr class="basemethod">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.backends.genericbackend.GenericBackend.html#sync">sync</a></td>
+    <td><span>Helper method. Forces the backend to perform all the pending 
+changes.</span></td>
+  </tr><tr class="baseclassmethod private">
+    
+    
+    <td>Class Method</td>
+    <td><a href="GTG.backends.genericbackend.GenericBackend.html#_get_static_parameters">_get_static_parameters</a></td>
+    <td><span>Helper method, used to obtain the full list of the static_parameters</span></td>
+  </tr><tr class="baseclassmethod private">
+    
+    
+    <td>Class Method</td>
+    <td><a href="GTG.backends.genericbackend.GenericBackend.html#_get_from_general_description">_get_from_general_description</a></td>
+    <td><span>Helper method to extract values from cls._general_description.</span></td>
+  </tr><tr class="basemethod private">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.backends.genericbackend.GenericBackend.html#_store_pickled_file">_store_pickled_file</a></td>
+    <td><span>A helper function to save some object in a file.</span></td>
+  </tr><tr class="basemethod private">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.backends.genericbackend.GenericBackend.html#_load_pickled_file">_load_pickled_file</a></td>
+    <td><span>A helper function to load some object from a file.</span></td>
+  </tr><tr class="basemethod private">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.backends.genericbackend.GenericBackend.html#_gtg_task_is_syncable_per_attached_tags">_gtg_task_is_syncable_per_attached_tags</a></td>
+    <td><span>Helper function which checks if the given task satisfies the 
+filtering</span></td>
+  </tr><tr class="basemethod private">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.backends.genericbackend.GenericBackend.html#__try_launch_setting_thread">__try_launch_setting_thread</a></td>
+    <td><span>Helper function to launch the setting thread, if it's not running.</span></td>
+  </tr>
+  
+</table>
+      
+      
+    </div>
+    
+    
+    
+
+    <div class="function">
+  <a name="GTG.backends.backend_evolution.Backend.__init__">
+    
+  </a>
+  <a name="__init__">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    __init__(self, parameters):
+    
+  </div>
+  <div class="functionBody">
+    <div class="interfaceinfo">overrides <a href="GTG.backends.periodicimportbackend.PeriodicImportBackend.html#__init__">GTG.backends.periodicimportbackend.PeriodicImportBackend.__init__</a></div>
+    <div>See GenericBackend for an explanation of this function. Loads the saved 
+state of the sync, if any<table class="fieldTable"></table></div>
+  </div>
+</div><div class="function">
+  <a name="GTG.backends.backend_evolution.Backend.do_periodic_import">
+    
+  </a>
+  <a name="do_periodic_import">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    do_periodic_import(self):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div>See PeriodicImportBackend for an explanation of this function.<table class="fieldTable"></table></div>
+  </div>
+</div><div class="function">
+  <a name="GTG.backends.backend_evolution.Backend.save_state">
+    
+  </a>
+  <a name="save_state">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    save_state(self):
+    
+  </div>
+  <div class="functionBody">
+    <div class="interfaceinfo">overrides <a href="GTG.backends.genericbackend.GenericBackend.html#save_state">GTG.backends.genericbackend.GenericBackend.save_state</a></div>
+    <div>See GenericBackend for an explanation of this function.<table class="fieldTable"></table></div>
+  </div>
+</div><div class="function">
+  <a name="GTG.backends.backend_evolution.Backend.remove_task">
+    
+  </a>
+  <a name="remove_task">
+    
+  </a>
+  <div class="functionHeader">
+    @interruptible<br />
+    def
+    remove_task(self, tid):
+    
+  </div>
+  <div class="functionBody">
+    <div class="interfaceinfo">overrides <a href="GTG.backends.genericbackend.GenericBackend.html#remove_task">GTG.backends.genericbackend.GenericBackend.remove_task</a></div>
+    <div>See GenericBackend for an explanation of this function.<table class="fieldTable"></table></div>
+  </div>
+</div><div class="function">
+  <a name="GTG.backends.backend_evolution.Backend.set_task">
+    
+  </a>
+  <a name="set_task">
+    
+  </a>
+  <div class="functionHeader">
+    @interruptible<br />
+    def
+    set_task(self, task):
+    
+  </div>
+  <div class="functionBody">
+    <div class="interfaceinfo">overrides <a href="GTG.backends.genericbackend.GenericBackend.html#set_task">GTG.backends.genericbackend.GenericBackend.set_task</a></div>
+    <div>See GenericBackend for an explanation of this function.<table class="fieldTable"></table></div>
+  </div>
+</div><div class="function">
+  <a name="GTG.backends.backend_evolution.Backend._process_evo_task">
+    
+  </a>
+  <a name="_process_evo_task">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    _process_evo_task(self, evo_task_id):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div>Takes an evolution task id and carries out the necessary operations to 
+refresh the sync state<table class="fieldTable"></table></div>
+  </div>
+</div><div class="function">
+  <a name="GTG.backends.backend_evolution.Backend._evo_has_task">
+    
+  </a>
+  <a name="_evo_has_task">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    _evo_has_task(self, evo_task_id):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div>Returns true if Evolution has that task<table class="fieldTable"></table></div>
+  </div>
+</div><div class="function">
+  <a name="GTG.backends.backend_evolution.Backend._evo_get_task">
+    
+  </a>
+  <a name="_evo_get_task">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    _evo_get_task(self, evo_task_id):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div>Returns an Evolution task, given its uid<table class="fieldTable"></table></div>
+  </div>
+</div><div class="function">
+  <a name="GTG.backends.backend_evolution.Backend._evo_get_modified">
+    
+  </a>
+  <a name="_evo_get_modified">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    _evo_get_modified(self, evo_task):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div>Returns the modified time of an Evolution task<table class="fieldTable"></table></div>
+  </div>
+</div><div class="function">
+  <a name="GTG.backends.backend_evolution.Backend._delete_evolution_task">
+    
+  </a>
+  <a name="_delete_evolution_task">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    _delete_evolution_task(self, evo_task):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div>Deletes an Evolution task, given the task object<table class="fieldTable"></table></div>
+  </div>
+</div><div class="function">
+  <a name="GTG.backends.backend_evolution.Backend._populate_task">
+    
+  </a>
+  <a name="_populate_task">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    _populate_task(self, task, evo_task):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div>Updates the attributes of a GTG task copying the ones of an Evolution 
+task<table class="fieldTable"></table></div>
+  </div>
+</div><div class="function">
+  <a name="GTG.backends.backend_evolution.Backend._populate_evo_task">
+    
+  </a>
+  <a name="_populate_evo_task">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    _populate_evo_task(self, task, evo_task):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div class="undocumented">Undocumented</div>
+  </div>
+</div><div class="function">
+  <a name="GTG.backends.backend_evolution.Backend._exec_lost_syncability">
+    
+  </a>
+  <a name="_exec_lost_syncability">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    _exec_lost_syncability(self, tid, evo_task):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div>Executed when a relationship between tasks loses its syncability 
+property. See SyncEngine for an explanation of that. This function finds 
+out which object is the original one and which is the copy, and deletes the
+copy.<table class="fieldTable"></table></div>
+  </div>
+</div><div class="function">
+  <a name="GTG.backends.backend_evolution.Backend._evo_task_is_syncable">
+    
+  </a>
+  <a name="_evo_task_is_syncable">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    _evo_task_is_syncable(self, evo_task):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div>Returns True if this Evolution task should be synced into GTG tasks.<table class="fieldTable"><tr class="fieldStart"><td class="fieldName">Parameters</td><td class="fieldArg">evo_task</td><td>an Evolution task @returns Boolean
+</td></tr></table></div>
+  </div>
+</div><div class="function">
+  <a name="GTG.backends.backend_evolution.Backend.__date_from_evo_to_gtg">
+    
+  </a>
+  <a name="__date_from_evo_to_gtg">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    __date_from_evo_to_gtg(self, evo_date_timestamp):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div>Converts an evolution date object into the format understood by GTG<table class="fieldTable"><tr class="fieldStart"><td class="fieldName">Parameters</td><td class="fieldArg">evo_date</td><td>an int, which represent time from epoch in UTC convention
+</td></tr></table></div>
+  </div>
+</div><div class="function">
+  <a name="GTG.backends.backend_evolution.Backend.__date_from_gtg_to_evo">
+    
+  </a>
+  <a name="__date_from_gtg_to_evo">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    __date_from_gtg_to_evo(self, gtg_date):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div>Converts a datetime.date object into the format understood by 
+Evolution<table class="fieldTable"><tr class="fieldStart"><td class="fieldName">Parameters</td><td class="fieldArg">gtg_date</td><td>a GTG Date object
+</td></tr></table></div>
+  </div>
+</div>
+    <address>
+      <a href="index.html">API Documentation</a> for <a href="http://gtg.fritalk.com/">GTG</a>, generated by <a href="http://codespeak.net/~mwh/pydoctor/">pydoctor</a> at 2011-05-02 21:27:37.
+    </address>
+  </body>
+</html>

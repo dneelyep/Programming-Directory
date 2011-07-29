@@ -1,0 +1,14 @@
+<html>
+<head>
+<title>Thanks for registering!</title>
+</head>
+<body>
+Thanks for registering!
+<br />
+<a href="Register.html">Registration</a><br />
+<a href="Home.html">Home page</a><br />
+<a href="Page1.html">Account Page 1</a><br />
+<a href="Welcome.html">Welcome Page</a>
+
+</body>
+</html>

@@ -1,0 +1,39 @@
+Text Game 3
+
+Story: You've been abandoned in a dungeon without your cheezits. There seem to be pocket monsters everywhere, darting hither and yon for any crums they may 
+       have dropped. You hear snoring a distance away and wonder what could possibly be that stinky and huge...
+
+Goals:
+- Create a small, one level dungeon-crawler
+- Create an overworld map (from arrays within arrays (?), 20x20(?) that is gradually made visible as the user explores the map
+	- Have the user randomly fight monsters every n steps he takes (n being a randomly generated number, likely in a given range of values [ie only a 
+          number between 5 and 10 steps)
+	- For each tile in the map, give it a property revealed(?) set to 0 when the player first starts. As the player discovers a given new tile, set 
+          that tile's revealed value to 1 and display the content of the tile permanently.
+	- The revealed property allows the tile to be displayed on the map - otherwise only a blank space(?) will show up
+- Create a main character with statistics (attack, health, etc) that can be improved through fighting monsters
+	- Fighting monsters gives the main character experience points which allows them to level up, increasing their health, attack, etc
+- Implement classes of monsters with randomly generated stats within a certain range
+	- IE a Snorlax could have between 200 and 220 health and between 5 and 6 attack
+	- ...and a rattata could have between 50 and 70 health and between 2 and 3 attack, for example
+- Display player stats in a fixed box at the bottom of the screen, have them update in response to changes (real-time)
+	- Implement bars for all stats - IE instead of just displaying 50/100 health, show a half-filled bar, maybe with 50/100 inside or beside it
+- Add a secret, Giant Turd, boss?
+- Have an icon on the top-right of screen indicating whether the player is in the Dungeon Map or a Battle
+
+
+Accomplished:
+- Implement a menu screen, options for Help, New Game, Quit
+- Let the player select their own name (limited to 6 or 7 characters - due to the fixed box at the bottom of the screen
+
+
+
+
+
+To Do:
+- Implement all of the above
+
+Completed:
+- Implement a menu screen, options for Help, New Game, Quit
+- Create fancy intro logo, with fancy menu
+- Let the player select their own name (limited to 6 or 7 characters - due to the fixed box at the bottom of the screen

@@ -1,0 +1,10 @@
+//(one of) mah first C++ programs! ZOMG!
+
+#include <iostream>
+using namespace std;
+
+int main ()
+{
+  cout << "HAITHARWORLD!/n";
+  return 0;
+}

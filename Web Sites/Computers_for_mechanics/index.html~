@@ -1,0 +1,26 @@
+<html>
+  <head>
+    <title>Computers for Mechanics | Home</title>
+  </head>
+
+  <body>
+    <h1>Computers for Mechanics:</h1>
+    <a href="why.html">Why this web site?</a>
+    <p>Welcome to Computers for Mechanics, a site focused on showing mechanically-inclined (or otherwise non-technical) people the joys of computers.</p>
+    <p>To get started, check out the <a href="progression.html">recommended progression of subjects</a>, the <a href="topics.html">topic overview</a>, or the <a href="subjects.html">alphabetical listing of subjects</a>. Most of all, have fun!
+Basic Idea:
+    Create a web site focused on providing articles, etc to teach mechanically-inclined
+        people (ie mechanics/maintenance people/etc) how computers work.
+
+Ideas for Structure:
+    An index of articles alphabetically.
+    Search functionality built-in.
+    A suggested progressison of articles to read.
+    Topics that list related articles.
+    Extensive cross-linking.
+
+    Eventually create a book with relevant info.
+    Figure out licensing information.
+
+  </body>
+</html>

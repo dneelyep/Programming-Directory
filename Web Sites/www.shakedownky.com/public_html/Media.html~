@@ -1,0 +1,36 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="Style Sheet.css" />
+<title>
+Shakedown | Media
+</title>
+</head>
+
+<body>
+<div style="text-align:center"><a href="index.html"><img src="Images/Nav Bar Logo.gif" alt="Shakedown" /></a></div>
+
+<div style="text-align:center"><a href="index.html" onmouseover='rollover1.src="Images/Buttons/HomeRollover.gif"' onmouseout='rollover1.src="Images/Buttons/Home.gif"'><img src="Images/Buttons/Home.gif" name="rollover1" alt="Home" /></a><a href="News.html" onmouseover='rollover2.src="Images/Buttons/NewsRollover.gif"' onmouseout='rollover2.src="Images/Buttons/News.gif"'><img src="Images/Buttons/News.gif" name="rollover2" alt="News" /></a><a href="Media.html"><img src="Images/Buttons/MediaRollover.gif" name="rollover6" alt="Media" /></a><a href="About.html" onmouseover='rollover3.src="Images/Buttons/AboutRollover.gif"' onmouseout='rollover3.src="Images/Buttons/About.gif"'><img src="Images/Buttons/About.gif" name="rollover3"    alt="About"></a><a href="Contact.html" onmouseover='rollover4.src="Images/Buttons/ContactRollover.gif"' onmouseout='rollover4.src="Images/Buttons/Contact.gif"'><img src="Images/Buttons/Contact.gif" name="rollover4" alt="Contact" /></a><a href="Links.html" onmouseover='rollover5.src="Images/Buttons/LinksRollover.gif"' onmouseout='rollover5.src="Images/Buttons/Links.gif"'><img src="Images/Buttons/Links.gif" name="rollover5" alt="Links" /></a></div>
+
+<br /><br /><br />
+
+<div style="text-align:center"><h3>Media:</h3>
+<br />
+
+<div style="text-align:center">
+<a href="PhotoGallery.html" onmouseover='rollover7.src="Images/PhotoGalleryRollover.gif"' onmouseout='rollover7.src="Images/PhotoGallery.gif"'><img src="Images/PhotoGallery.gif" name="rollover7" height="200" width="267"  alt="Photo Gallery"></a>
+<a href="Music.html" onmouseover='rollover8.src="Images/MusicRollover.gif"' onmouseout='rollover8.src="Images/Music.gif"'><img src="Images/Music.gif" name="rollover8" height="267" width="355"  alt="Music"></a>
+<a href="Video.html" onmouseover='rollover9.src="Images/VideoRollover.gif"' onmouseout='rollover9.src="Images/Video.gif"'><img src="Images/Video.gif" name="rollover9" height="200" width="267"  alt="Video"></a>
+</div>
+
+<br /><br />
+<script type="text/javascript" src="http://static.ak.connect.facebook.com/js/api_lib/v0.4/FeatureLoader.js.php/en_US"></script><script type="text/javascript">FB.init("c8c0ca5323a80a769fc22fd2b815eff0");</script><fb:fan profile_id="102769377793" stream="" connections="10" width="300"></fb:fan><div style="font-size:8px; padding-left:10px"><a href="http://www.facebook.com/pages/Shakedown/102769377793">Shakedown on Facebook</a> </div>
+</div>
+<br /><br /><br />
+
+<div style="text-align:center"><a href="index.html">Home </a> - <a href="News.html">News </a> - <a href="Media.html">Media </a> - <a href="About.html">About </a> - <a href="Contact.html">Contact </a> - <a href="Links.html">Links </a></div>
+ 
+</body>
+</html>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="ASCII"?>
+<cache:CacheIndex xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:cache="http://eclipse.org/dltk/cache_model" environment="org.eclipse.dltk.core.environment.localEnvironment">
+  <entries path="/home/daniel/Desktop/Programming/Learning PHP, MySQL, &amp; Javascript/Hello World/hellothar.php" timestamp="1273888825000" lastAccessTime="1273946752889"/>
+  <entries path="/home/daniel/.eclipse/org.eclipse.platform_3.5.0_155965261/plugins/org.eclipse.php.core_2.1.1.v20090921-1100/Resources/language/php5/PDO_OCI.php" timestamp="1253524420000" lastAccessTime="1275441189129"/>
+  <entries path="/home/daniel/.eclipse/org.eclipse.platform_3.5.0_155965261/plugins/org.eclipse.php.core_2.1.1.v20090921-1100/Resources/language/php5/pdo_sqlite.php" timestamp="1253524420000" lastAccessTime="1275441189139"/>
+  <entries path="/home/daniel/.eclipse/org.eclipse.platform_3.5.0_155965261/plugins/org.eclipse.php.core_2.1.1.v20090921-1100/Resources/language/php5/pdo_pgsql.php" timestamp="1253524420000" lastAccessTime="1275441189142"/>
+  <entries path="/home/daniel/.eclipse/org.eclipse.platform_3.5.0_155965261/plugins/org.eclipse.php.core_2.1.1.v20090921-1100/Resources/language/php5/pdo_mysql.php" timestamp="1253524420000" lastAccessTime="1275441189149"/>
+  <entries path="/home/daniel/Desktop/Programming/Learning PHP, MySQL, &amp; Javascript/Hello World/helloworld.php" timestamp="1273774573000" lastAccessTime="1273946752884"/>
+  <entries path="/home/daniel/Desktop/Programming/Learning PHP, MySQL, &amp; Javascript/Examples/example3-2.php" timestamp="1273947514000" lastAccessTime="1275441188827"/>
+  <entries path="/home/daniel/Desktop/Programming/Learning PHP, MySQL, &amp; Javascript/Examples/example4-19.php" timestamp="1274055382000" lastAccessTime="1274055382607"/>
+  <entries path="/home/daniel/Desktop/Programming/Learning PHP, MySQL, &amp; Javascript/Examples/example4-1.php" timestamp="1274049008000" lastAccessTime="1275441188848"/>
+  <entries path="/home/daniel/Desktop/Programming/Learning PHP, MySQL, &amp; Javascript/Examples/example4-5.php" timestamp="1274050548000" lastAccessTime="1275441188876"/>
+  <entries path="/home/daniel/Desktop/Programming/Learning PHP, MySQL, &amp; Javascript/Examples/example4-6.php" timestamp="1274050738000" lastAccessTime="1275441188589"/>
+  <entries path="/home/daniel/Desktop/Programming/Learning PHP, MySQL, &amp; Javascript/Examples/example4-26.php" timestamp="1274060511000" lastAccessTime="1275441188722"/>
+  <entries path="/home/daniel/Desktop/Programming/Learning PHP, MySQL, &amp; Javascript/Examples/example4-2.php" timestamp="1273957323000" lastAccessTime="1275441188963"/>
+  <entries path="/home/daniel/Desktop/Programming/Learning PHP, MySQL, &amp; Javascript/Examples/example4-7.php" timestamp="1274051192000" lastAccessTime="1275441188953"/>
+  <entries path="/home/daniel/Desktop/Programming/Learning PHP, MySQL, &amp; Javascript/Examples/example5-13.php" timestamp="1274381020000" lastAccessTime="1274387841919"/>
+  <entries path="/home/daniel/Desktop/Programming/Learning PHP, MySQL, &amp; Javascript/Examples/newfile.php" timestamp="1274387948000" lastAccessTime="1275441188916"/>
+</cache:CacheIndex>

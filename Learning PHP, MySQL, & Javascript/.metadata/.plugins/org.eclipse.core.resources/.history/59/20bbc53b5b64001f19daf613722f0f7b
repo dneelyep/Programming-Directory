@@ -1,0 +1,9 @@
+<?php //Associative arrays - allow you to reference items in an array by name
+	  //rather than number
+$paper[] = "Copier";
+$paper[] = "Inkjet";
+$paper[] = "Laser";
+$paper[] = "Photo";
+
+print_r($paper);
+?>

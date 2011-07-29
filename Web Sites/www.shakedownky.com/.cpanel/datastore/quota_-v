@@ -1,0 +1,4 @@
+Disk quotas for user shaknee7 (uid 659): 
+     Filesystem  blocks   quota   limit   grace   files   quota   limit   grace
+      /dev/sda2       4  1024000 1024000               5       0       0        
+      /dev/sdb1   16528  1024000 1024000             277       0       0        

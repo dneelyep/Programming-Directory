@@ -1,0 +1,76 @@
+QUICKLY
+=======
+
+Quickly is a container for sets of application templates and related commands.
+Together, a set of commands and a template taken together are called a
+"quickly template". Currently there is a single quickly template called the
+"ubuntu-application template". As it can be infered, it is for creating Ubuntu
+applications. :)
+
+However, Quickly is designed so that quickly templates are easy to write. So,
+if you are a fan of language, you can create a foo-project template. Or if
+you want to help people making plugins for your killer app, you can make a
+killer-app-plugin template. You can even create a template for managing
+corporate documents, creating your awesome LaTeX helper… The sky is the limit!
+
+
+Given the richness and variety of the Linux platform, programming on Linux
+should be easy and fun. However, it's not easy and fun because it is too hard
+to learn. It is too hard to learn because there are too many choices. Quickly
+strives to make programming easy and fun by bringing opinionated choices about
+how to write different kinds of programs to developers.
+
+GTD is easier with GTQD (Get Things Quickly Done)!
+
+
+
+HOW TO GET STARTED
+------------------
+
+You are now ready to start programming with quickly.
+
+How to Get Started:
+0. Having some basic information (optional)
+$ quickly getstarted
+
+
+1. create a ubuntu application and run the tutorial:
+$ quickly create ubuntu-application foo
+$ cd foo
+$ quickly help
+
+
+2. You can also try:
+$ quickly edit
+$ quickly design
+$ quickly run
+Use bash completion to get every available commands
+
+
+3. How to play with package and release:
+
+optional, but recommended to build first your package locally:
+$ quickly package
+
+BE WARNED: the two following commands will connect to Launchpad.
+You need at least having a Launchpad account and an opened ppa.
+You need also for quickly release a project where you can bind your
+work with.
+$ quickly release or $ quickly share
+
+
+
+RUNNING TESTS
+------------
+
+$ test/run.sh
+
+
+
+GETTING HELP
+------------
+
+Bugs and feature requests are tracked on Launchpad at:
+
+    https://bugs.launchpad.net/quickly
+

@@ -1,0 +1,2 @@
+<?php if ($t->isXMLType)  {?><?php echo "<"; ?>?xml version="1.0" encoding="<?php echo htmlspecialchars($t->charset);?>" ?><?php }?>
+<?php if ($this->options['strict'] || (isset($t) && method_exists($t, 'outputBody'))) echo htmlspecialchars($t->outputBody());?>

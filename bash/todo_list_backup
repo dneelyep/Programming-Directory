@@ -1,0 +1,6 @@
+#!/bin/bash
+
+# Also I should try to append a timestamp to the bottom of the file to keep a history of how many times/when the file's been backed up
+cp ~/Desktop/Programming/bash/todo_list_backup ~/Desktop/Programming/bash/todo_list_backup_test
+echo HAI
+echo YEP

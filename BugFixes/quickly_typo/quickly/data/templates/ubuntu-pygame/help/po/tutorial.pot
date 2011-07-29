@@ -1,0 +1,556 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2011-04-04 08:43-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: data/templates/ubuntu-pygame/help/tutorial.xml:13(firstname)
+msgid "Rick"
+msgstr ""
+
+#: data/templates/ubuntu-pygame/help/tutorial.xml:14(surname)
+msgid "Spencer"
+msgstr ""
+
+#: data/templates/ubuntu-pygame/help/tutorial.xml:16(corpauthor)
+msgid "Canonical ltd"
+msgstr ""
+
+#: data/templates/ubuntu-pygame/help/tutorial.xml:20(date) data/templates/ubuntu-pygame/help/tutorial.xml:25(invpartnumber)
+msgid "2010"
+msgstr ""
+
+#: data/templates/ubuntu-pygame/help/tutorial.xml:0(application)
+msgid "Quickly PyGame Template"
+msgstr ""
+
+#: data/templates/ubuntu-pygame/help/tutorial.xml:24(productnumber)
+msgid "0.6.1"
+msgstr ""
+
+#: data/templates/ubuntu-pygame/help/tutorial.xml:26(title)
+msgid "<application>Quickly PyGame Template</application> 0.6.1 Tutorial"
+msgstr ""
+
+#: data/templates/ubuntu-pygame/help/tutorial.xml:31(title)
+msgid "About This Guide"
+msgstr ""
+
+#: data/templates/ubuntu-pygame/help/tutorial.xml:32(para)
+msgid "Use <application>The Quickly Pygame Template</application> to write old school arcade games for running on Ubuntu. PyGame is a framework that handles sprites, collisons, sounds, and everything you need to make a game. You just need to add the game play. The Quickly template creates a starter game for you and comes ready for you to turn into your fun game, and then easily package and share it with other Ubuntu users."
+msgstr ""
+
+#: data/templates/ubuntu-pygame/help/tutorial.xml:35(para)
+msgid "The Quickly Pygame Template inherits from the Quickly Application template. So you get all the commands that you get from the that template, except \"design\"."
+msgstr ""
+
+#: data/templates/ubuntu-pygame/help/tutorial.xml:41(title)
+msgid "Creating and Running Your Game"
+msgstr ""
+
+#: data/templates/ubuntu-pygame/help/tutorial.xml:44(para)
+msgid "In this tutorial we will start making a top down shooter reminiscent of the space arcade shooters of the 1980s."
+msgstr ""
+
+#: data/templates/ubuntu-pygame/help/tutorial.xml:50(para)
+msgid "We'll do this by creating a default game, editing some of the generated code, writing some new code, and adding our images for sprits."
+msgstr ""
+
+#: data/templates/ubuntu-pygame/help/tutorial.xml:53(para)
+msgid "Creating a default working game couldn't be simpler. First, open a terminal window to type commands into. When it's open, type the command:"
+msgstr ""
+
+#: data/templates/ubuntu-pygame/help/tutorial.xml:56(programlisting)
+#, no-wrap
+msgid "\n$quickly create ubuntu-pygame shooter\n "
+msgstr ""
+
+#: data/templates/ubuntu-pygame/help/tutorial.xml:60(para)
+msgid "This will create a shooter sub directory containing a complete directory tree and files for an empty python application. The command finishes by running the newly created game. The game is played by using the \"s\" and \"f\" keys to rotate the guy, the \"j\" key to shoot, and the \"l\" key to thrust."
+msgstr ""
+
+#: data/templates/ubuntu-pygame/help/tutorial.xml:63(para)
+msgid "You can play the newly created game. Notice that the <application>Quickly PyGame Template</application> inferred that the game title is \"Shooter\". Also note that there is a guy that you can control with the s,f,j, and l keys. There is an enemy and a homing missle. You also get a \"Game Over\" screen, scoring, and levels build in for free."
+msgstr ""
+
+#: data/templates/ubuntu-pygame/help/tutorial.xml:66(para)
+msgid "Close the game by closing the window or using the Esc key. Since the game isn't installed into Ubuntu yet, you can't start the game from the application menu yet. To start the game, use the terminal to first cd into the new subdirectory, and then use \"quickly run\" to start the program."
+msgstr ""
+
+#: data/templates/ubuntu-pygame/help/tutorial.xml:69(programlisting)
+#, no-wrap
+msgid "\n$cd shooter\n$quickly run\n "
+msgstr ""
+
+#: data/templates/ubuntu-pygame/help/tutorial.xml:75(title)
+msgid "Creating your own Sprites"
+msgstr ""
+
+#: data/templates/ubuntu-pygame/help/tutorial.xml:79(listitem)
+msgid "Ink Scape is a great and free tool for creating your sprites. It's in the Featured Applications section of the Software Center."
+msgstr ""
+
+#: data/templates/ubuntu-pygame/help/tutorial.xml:80(listitem)
+msgid "If you use Ink Scape, you'll want to export the images as PNGs. But keep the Ink Scape files around in case you want to edit the sprites later."
+msgstr ""
+
+#: data/templates/ubuntu-pygame/help/tutorial.xml:81(listitem)
+msgid "Whatever size you make the sprites, that's the size they will be in the game."
+msgstr ""
+
+#: data/templates/ubuntu-pygame/help/tutorial.xml:82(listitem)
+msgid "The game will look for sprites in the data/media folder, so make sure you put them there."
+msgstr ""
+
+#: data/templates/ubuntu-pygame/help/tutorial.xml:76(para)
+msgid "The first think you probably noticed about the game is that the graphics are so blah! Let's start by adding our own sprites. We;ll do a compbination of replacing sprites with our own images, and also add a new sprite which we'll use later. Here's a few things to keep in mind: <placeholder-1/>"
+msgstr ""
+
+#: data/templates/ubuntu-pygame/help/tutorial.xml:85(para)
+msgid "I made new images for the guy (the sprite the player controls), enemies, bullets, and the game background. I also made a new sprite called \"enemy_bullet.png\" which we'll add into the game later. <placeholder-1/> Just drag your new sprite images into the shooter/data/media and tell it to replace the images. Now when you run the game, you'll see your new sprites at work. <placeholder-2/> Oops. As you can see, the background image I created was for a game of different dimensions. It's for a game that's 400 pixels wide by 500 pixels high. In the next section, we'll make the game that size."
+msgstr ""
+
+#: data/templates/ubuntu-pygame/help/tutorial.xml:98(title)
+msgid "Changing the Screen Dimensions"
+msgstr ""
+
+#: data/templates/ubuntu-pygame/help/tutorial.xml:99(para)
+msgid "The first change we'll make is to change the screen dimensions to be oriented from top to bottom. We do this by changing a little code. So let's fire up the code editor first. Run the edit command to fire up the editor."
+msgstr ""
+
+#: data/templates/ubuntu-pygame/help/tutorial.xml:102(programlisting)
+#, no-wrap
+msgid "$quickly edit"
+msgstr ""
+
+#: data/templates/ubuntu-pygame/help/tutorial.xml:104(programlisting)
+#, no-wrap
+msgid "\n#screen dimensions\nscreen_width = 400\nscreen_height = 500\n"
+msgstr ""
+
+#: data/templates/ubuntu-pygame/help/tutorial.xml:103(para)
+msgid "This command should open your code in Gedit. The screen dimensions are set in the file \"shooterconfig.py\". So just go to that file and change the width to 400 and the height to 500. <placeholder-1/> Save the file and run the game again. Notice that the screen wrapping and centering and everything was taken care of for you. That's because you made the change in the shooterconfig.py file. This is the right place to add and change variables that should be availble throughout the game. We'll be make a few more changes here later."
+msgstr ""
+
+#: data/templates/ubuntu-pygame/help/tutorial.xml:114(title)
+msgid "Programming the Guy"
+msgstr ""
+
+#: data/templates/ubuntu-pygame/help/tutorial.xml:115(para)
+msgid "For this game, what we want is the guy to move left and right across the bottom and not wrap through the screen. Also, we want to make the bullets look like they are coming out of the guy's front."
+msgstr ""
+
+#: data/templates/ubuntu-pygame/help/tutorial.xml:121(listitem)
+msgid "Place the guy at the beginning of each level at the middle and bottom of the screen."
+msgstr ""
+
+#: data/templates/ubuntu-pygame/help/tutorial.xml:122(listitem)
+msgid "Add functions to guy.py for moving and stop movig right and left, and remove the rotate functions."
+msgstr ""
+
+#: data/templates/ubuntu-pygame/help/tutorial.xml:123(listitem)
+msgid "Change the keyboard input in the bin/shooter file to call these new functions."
+msgstr ""
+
+#: data/templates/ubuntu-pygame/help/tutorial.xml:118(para)
+msgid "To make the guy move just left and right we need to: <placeholder-1/>"
+msgstr ""
+
+#: data/templates/ubuntu-pygame/help/tutorial.xml:128(programlisting)
+#, no-wrap
+msgid "\n     def init_position(self):\n        \"\"\"init_position - resets the Guy's position near the\n        bottom of the screen\n        \n        \"\"\"\n        sw = shooterconfig.screen_width\n        sh = shooterconfig.screen_height\n\n        self.x = sw/2\n        self.y = sh - 80\n"
+msgstr ""
+
+#: data/templates/ubuntu-pygame/help/tutorial.xml:143(listitem)
+msgid "start_moving_left: the user pressed the \"s\" key"
+msgstr ""
+
+#: data/templates/ubuntu-pygame/help/tutorial.xml:144(listitem)
+msgid "stop_moving_left: the user released the \"s\" key"
+msgstr ""
+
+#: data/templates/ubuntu-pygame/help/tutorial.xml:145(listitem)
+msgid "start_moving_right: the user pressed the \"f\" key"
+msgstr ""
+
+#: data/templates/ubuntu-pygame/help/tutorial.xml:146(listitem)
+msgid "stop_moving_right: the user released the \"f\" key"
+msgstr ""
+
+#: data/templates/ubuntu-pygame/help/tutorial.xml:150(listitem)
+msgid "Create two tracking variables, _moving_left and _moving_right"
+msgstr ""
+
+#: data/templates/ubuntu-pygame/help/tutorial.xml:151(listitem)
+msgid "Set these tracking variables to True or False in the start/stop_moving_left/right functions"
+msgstr ""
+
+#: data/templates/ubuntu-pygame/help/tutorial.xml:152(listitem)
+msgid "In the guy's update function, change the x coordinates of the guy based on these variables"
+msgstr ""
+
+#: data/templates/ubuntu-pygame/help/tutorial.xml:126(para)
+msgid "The functionaly that is specific to the player's sprite is in the guy.py file. The first thing we will do is work on placing the guy properly. Fortunately, the is an existing function that we can modify for this. The function init_position is called to each time the guy needs to be placed on the screen, like after he gets killed for instance . When created, the guy calls the based class function center_on_screen. As you may guess, we will want to change this function. so the guys is positionedhalfway down the screen, and we want him to start a few pixels from the bottom. Fortunaately we know how to get the screen dimensions, so it's easy make the change to init_position. <placeholder-1/> Now when you run the game, the guy starts at the bottom, which is what we want, but he also rotates when we use the s and the d button, which we do not want. So let's change that next by implementing four new functions: <placeholder-2/> Here's how we will implement these functions: <placeholder-3/>"
+msgstr ""
+
+#: data/templates/ubuntu-pygame/help/tutorial.xml:158(programlisting)
+#, no-wrap
+msgid "\n        self._moving_left = False\n        self._moving_right = False\n"
+msgstr ""
+
+#: data/templates/ubuntu-pygame/help/tutorial.xml:164(programlisting)
+#, no-wrap
+msgid "\n    def start_moving_right(self):\n        self._moving_left = False\n        self._moving_right = True\n\n    def start_moving_left(self):\n        self._moving_left = True\n        self._moving_right = False\n\n    def stop_moving_left(self):\n        self._moving_left = False\n\n    def stop_moving_right(self):\n        self._moving_right = False\n\n"
+msgstr ""
+
+#: data/templates/ubuntu-pygame/help/tutorial.xml:156(para)
+msgid "First, add the tracking variables to the Guy.__init__function. Add these after the call to BaseSprite.__init__(). <placeholder-1/> Now the functions for responding to keys simply set those tracking variables as appropriate. So we add these four new functions to guy.py. <placeholder-2/>"
+msgstr ""
+
+#: data/templates/ubuntu-pygame/help/tutorial.xml:181(para)
+msgid "Now we need change the guy's coordinates based on the tracking variable. Every sprite has an update function. This function is called for every \"tick\" in the game, and the sprite looks at it's internal data, and updates itself appropriately. By default, the guy's rotation is handled by BaseSprite, so we can ignore that, especially since we won't be using rotation anyway. We're also not using acceleration for the guy, so we can delete a bit of code. Funally, we don't want the guy to \"wrap\" though the screen, so we whould catch that condition."
+msgstr ""
+
+#: data/templates/ubuntu-pygame/help/tutorial.xml:186(programlisting)
+#, no-wrap
+msgid "\n    def update(self):\n        \"\"\"update - Update internal data for a game tick\"\"\" \n    \n        BaseSprite.update(self)\n\n        if self._moving_left:\n            self.x -= 5\n            if self.x &lt; 0:\n                self.x = 0\n        if self._moving_right:\n            self.x += 5\n            if self.x + self.rect.width &gt; shooterconfig.screen_width:\n                self.x = shooterconfig.screen_width - self.rect.width\n"
+msgstr ""
+
+#: data/templates/ubuntu-pygame/help/tutorial.xml:184(para)
+msgid "Let's start with moving the guy 5 pixels per tick. So we can change the top of the update function to look like this: <placeholder-1/>"
+msgstr ""
+
+#: data/templates/ubuntu-pygame/help/tutorial.xml:202(para)
+msgid "So the guy is ready. He starts in the right place, tracks whether he is moving left or right, and updates his position as desired. Now we just need to hook him up the keys."
+msgstr ""
+
+#: data/templates/ubuntu-pygame/help/tutorial.xml:205(para)
+msgid "Keyboard contol is handled in the shoort file in the bin directory. For each click of the clock, the controller_tick function is called. Detecting keyboard input and directing it as appropriate is handled in this funciton. So what we wante to do is find where the f and s key events are handled, and call the guy's start/stop_moving_left/right functions there."
+msgstr ""
+
+#: data/templates/ubuntu-pygame/help/tutorial.xml:211(listitem)
+msgid "Call the start_moving functions instead of rotate functions."
+msgstr ""
+
+#: data/templates/ubuntu-pygame/help/tutorial.xml:212(listitem)
+msgid "Remove the call to the accelerate function."
+msgstr ""
+
+#: data/templates/ubuntu-pygame/help/tutorial.xml:213(listitem)
+msgid "Remve the call to the hyperspace function."
+msgstr ""
+
+#: data/templates/ubuntu-pygame/help/tutorial.xml:216(programlisting)
+#, no-wrap
+msgid "\n            #control the guy\n            if not game.paused: \n                if event.key == pygame.K_f:\n                    g.start_moving_right()\n                if event.key == pygame.K_s:\n                    g.start_moving_left()\n                if event.key == pygame.K_j:\n                    g.shoot()\n\n"
+msgstr ""
+
+#: data/templates/ubuntu-pygame/help/tutorial.xml:208(para)
+msgid "Key down events are handled first, in a section commented \"control\" the guy. We want to make a few changes here. <placeholder-1/> These last two functions aren't needed for our new game. So let's make the changes and this part of the controller_tick function will change to this: <placeholder-2/>"
+msgstr ""
+
+#: data/templates/ubuntu-pygame/help/tutorial.xml:230(programlisting)
+#, no-wrap
+msgid "\n        #key up events, typically stop actions\n        if event.type == pygame.KEYUP:\n            if event.key == pygame.K_F11:\n                pygame.display.toggle_fullscreen() \n            if event.key == pygame.K_f:\n                g.stop_moving_right()\n            if event.key == pygame.K_s:\n                g.stop_moving_left()\n\n"
+msgstr ""
+
+#: data/templates/ubuntu-pygame/help/tutorial.xml:228(para)
+msgid "We'll handle the key up functions similarly. <placeholder-1/><placeholder-2/>"
+msgstr ""
+
+#: data/templates/ubuntu-pygame/help/tutorial.xml:248(listitem)
+msgid "The bullets accelerate and go way to fast, they'll miss enemies by skipping over them."
+msgstr ""
+
+#: data/templates/ubuntu-pygame/help/tutorial.xml:249(listitem)
+msgid "The bullets should go to the top of the screen, and not stop before or wrap around"
+msgstr ""
+
+#: data/templates/ubuntu-pygame/help/tutorial.xml:250(listitem)
+msgid "The bullets should appear to come out of the middle of the guy, instead of the side."
+msgstr ""
+
+#: data/templates/ubuntu-pygame/help/tutorial.xml:253(programlisting)
+#, no-wrap
+msgid "\n        self.max_velocity = 20\n        self.max_ticks = 20\n"
+msgstr ""
+
+#: data/templates/ubuntu-pygame/help/tutorial.xml:258(programlisting)
+#, no-wrap
+msgid "\n    def update(self):\n        \"\"\"update - update internal data and position.\n        Typically called by the game controller each game\n        tick.\n\n        \"\"\"\n\n        BaseSprite.update(self)\n\n        if self.y &lt; 1:\n            self.kill()\n        if self.y == shooterconfig.screen_height:\n            self.kill()\n"
+msgstr ""
+
+#: data/templates/ubuntu-pygame/help/tutorial.xml:282(programlisting)
+#, no-wrap
+msgid "\n    def shoot(self):\n        \"\"\"shoot - fire a bullet. Adds the bullet to the bullet sprite group.\n        If the maximum number of bullets premitted would be exceeded, \n        the bullet will not fire. If the guy is exploding, the guy will no\n        fire.\n\n        \"\"\"\n\n        if self.alive:\n            #only allow max numbe of  bullets on the screen at a time\n            if len(self.bullets.sprites()) &lt; self.max_bullets:\n                center_x = (self.x + self.rect.width / 2) - 3\n                b = Bullet(center_x,self.y,self.orientation)\n                self.bullets.add(b)\n"
+msgstr ""
+
+#: data/templates/ubuntu-pygame/help/tutorial.xml:245(para)
+msgid "Now we've got the guy working the way we want, but we need to make a few changes to to how the guy's bullets are working: <placeholder-1/> We'll handle the first problem my changing the Bullet class in the bullet.py file. The acceleration and speed of bullets in the game is configured in the __init__ function of this file. The rate at whcih a bullet accelerates is controlled by member variable acceleration_divisor. We won't need to change that. However, the maximum speed a bullet will reach is defined ny max_velocity, and the lifetme of the bullet is defined by max_ticks. Let's make the bullets go slower, but last longer, by changing max_velocity to 20, and max_ticks to 20 in the Bullet __init__ funciton. <placeholder-2/> This simple change is all that is necessary to control the bullets throughout the game. Note that making this change in the Bullet class means all bullets in the game, including enemy bullets, will now work this way. So let's quickly deal with stopping bullets from wrapping as well. We'll add to the Bullet class's update function to see if the bullet is above or below the screen, and if so, we'll remove it. So we'll change the to of the update function in bullet.py to look like this: <placeholder-3/> Note that a Sprite's kill function, removes it from the game immediately, and with no fanfare. Finally, we need to adjust the bullet so it comes out from the guys the way we want it to. Since this is only related to the way the guy shoots bullets and won't have anything to do with enemy bullets, we'll configure how bullets emerge in the guy.py file. Let's just tweak the shoot function a bit. As you can see in this function, when you create a bullet, you provide it x and y coordinates. We'll just calculate at better x coordinate to start. We'll find the middle of the width of the guy's image, and offset it a bit so the bullet sprite looks like it comes out correctly. <progamlisting> center_x = (self.x + self.rect.width / 2) - 3 </progamlisting> So we change change the ugy's shoot funciton to look like this: <placeholder-4/>"
+msgstr ""
+
+#: data/templates/ubuntu-pygame/help/tutorial.xml:299(para)
+msgid "<placeholder-1/> Now we have the guy working as desired. Moves back and forth across the bottom and shoots bullets the way we want. Next we'll go on to changing the way the enemies work."
+msgstr ""
+
+#: data/templates/ubuntu-pygame/help/tutorial.xml:308(title)
+msgid "Programming Enemies"
+msgstr ""
+
+#: data/templates/ubuntu-pygame/help/tutorial.xml:309(para)
+msgid "The generated game always adds two enemies for each level, a homing missle and a stock \"enemy\". The homing missle does pretty much what's it name suggests, homes in on the guy and kills him. The Enemy doesn't do much of anything. Just kind of plunks down and waits to get killed. First we're going to remove the homing missle from the game, and then we'll customize the enemies to be a bit more menancing."
+msgstr ""
+
+#: data/templates/ubuntu-pygame/help/tutorial.xml:314(programlisting)
+#, no-wrap
+msgid "\n    #TODO: set up enemies here\n    #You can add more enemies or use different enemies\n    #depening on the level\n    for i in xrange(0,game.level + 3):\n        enemies.add(Enemy())\n"
+msgstr ""
+
+#: data/templates/ubuntu-pygame/help/tutorial.xml:312(para)
+msgid "The bin/shooter fileset up a SpriteGroup already. It's called \"enemies\" and gets populated each time a new level is created. New levels are created in the next_level function in the bin/shooter file. The next_level function is pretty simple, it increments the game level bu 1, removes any remaining emenemities for the SpriteGroup and then repulates the enemies SpriteGroup. Let's make a couple of basic chagnnges here. First, we'll change the xrange so that it creates more enemies with each level, and second, we'll just delete the line that creates the homing missle. Change the next_level function to make the last few lines as below. <placeholder-1/> So for the first level, there will by for enemies, and each time there is an new level created the number of enemies will increase by 1. Aslo, no more homing missles. <placeholder-2/>"
+msgstr ""
+
+#: data/templates/ubuntu-pygame/help/tutorial.xml:326(para)
+msgid "However, there are two things we need to do to enhance the game play with our enemies. First, as you can see, they can start quite close to the guy, even under. We'll need to fix that. Also, we should put them in motion so they are a bit more of a challenge to shoot. We'll do both of the things by modifying the Enemy class in the enemy.py file. Specifically in the init_postion function."
+msgstr ""
+
+#: data/templates/ubuntu-pygame/help/tutorial.xml:329(para)
+msgid "If you open the enemy.py file and look for the init_position function, you'll see there is a call to the function in __init__ but there is no function for it. That's because enemy inherits from BaseSprite, which has a default init_position implementation that randomly places it on the screen. So we'll simply override the init_position function in the Enemy class in enemy.py."
+msgstr ""
+
+#: data/templates/ubuntu-pygame/help/tutorial.xml:334(programlisting)
+#, no-wrap
+msgid "\n        sh = shooterconfig.screen_height\n        sw = shooterconfig.screen_width\n"
+msgstr ""
+
+#: data/templates/ubuntu-pygame/help/tutorial.xml:339(programlisting)
+#, no-wrap
+msgid "\nimport random\n"
+msgstr ""
+
+#: data/templates/ubuntu-pygame/help/tutorial.xml:343(programlisting)
+#, no-wrap
+msgid "\n        self.x = random.randint(20,sw - self.rect.width - 20)\n        self.y = random.randint(20,sh/2)\n"
+msgstr ""
+
+#: data/templates/ubuntu-pygame/help/tutorial.xml:348(programlisting)
+#, no-wrap
+msgid "\n        self.velocity_x = random.randint(-30,30)\n"
+msgstr ""
+
+#: data/templates/ubuntu-pygame/help/tutorial.xml:352(programlisting)
+#, no-wrap
+msgid "\n    def init_position(self):\n        sh = shooterconfig.screen_height\n        sw = shooterconfig.screen_width\n\n        self.x = random.randint(20,sw - self.rect.width - 20)\n        self.y = random.randint(20,sh/2)\n        self.velocity_x = random.randint(-30,30)\n"
+msgstr ""
+
+#: data/templates/ubuntu-pygame/help/tutorial.xml:332(para)
+msgid "First, to make it a bitter easier to code, grab a reference to the screen height and widgth that you configured and keep those in easier to use variables. <placeholder-1/> Next, we want to choose random start position along the X axis. But we don't want the enemy to start too close to either side or it might get stuck in a spot where the guy can't shoot it. To generate random integers, use the randome module, so you'll have to add an import to the top of the file. <placeholder-2/> We can use the screenwidth to and the enemies own width to determine the right most starting position. For the Y axis, we want the enemies to be far enough away that they can't too easily kill the guy. We'll also make sure they don't get out of reach of the guy's bullets. So between 20 and half way down seems about right. <placeholder-3/> Finally, let's put each enemy in motion by picking a random velocity_x within some reasonable bounds. <placeholder-4/> Notice that one in 60 of the enemies won't be moving. That's okay because we added padding to keep the enemies from ending up too close to the sides. The full init_position function you need to add looks like this: <placeholder-5/> When you run the game, you can see that the enemies are moving and are good targets to shoot at. But next we'll make the enemies fight back."
+msgstr ""
+
+#: data/templates/ubuntu-pygame/help/tutorial.xml:366(listitem)
+msgid "Figure out where to place the bullet on the screen"
+msgstr ""
+
+#: data/templates/ubuntu-pygame/help/tutorial.xml:367(listitem)
+msgid "Configure the bullet's velocity and maximum speed"
+msgstr ""
+
+#: data/templates/ubuntu-pygame/help/tutorial.xml:368(listitem)
+msgid "Create the bullet object and add it to a SpriteGroup"
+msgstr ""
+
+#: data/templates/ubuntu-pygame/help/tutorial.xml:371(programlisting)
+#, no-wrap
+msgid "\n#create the player's guy and some enemies\nbullets = pygame.sprite.RenderUpdates()\ng = Guy(bullets)\nenemies = pygame.sprite.RenderUpdates()\nenemy_bullets = pygame.sprite.RenderUpdates()\n"
+msgstr ""
+
+#: data/templates/ubuntu-pygame/help/tutorial.xml:380(listitem)
+msgid "Clear out all the sprites in the group when creating a new level or resetting a level after the guy dies."
+msgstr ""
+
+#: data/templates/ubuntu-pygame/help/tutorial.xml:381(listitem)
+msgid "Tell the bullets in the sprite group to update themselves at the right time."
+msgstr ""
+
+#: data/templates/ubuntu-pygame/help/tutorial.xml:382(listitem)
+msgid "Tell the bullets to draw themselves at the right time."
+msgstr ""
+
+#: data/templates/ubuntu-pygame/help/tutorial.xml:383(listitem)
+msgid "Pass a reference to the sprite group to each enemy that is created, so it can add it's bullets to the group."
+msgstr ""
+
+#: data/templates/ubuntu-pygame/help/tutorial.xml:386(programlisting)
+#, no-wrap
+msgid "\n    enemies.empty()\n"
+msgstr ""
+
+#: data/templates/ubuntu-pygame/help/tutorial.xml:390(programlisting)
+#, no-wrap
+msgid "\ndef update_sprites():\n    \"\"\"update_sprites - call update() for all sprites\"\"\"\n    g.update()\n    bullets.update()\n    enemies.update() \n    enemy_bullets.update()\n"
+msgstr ""
+
+#: data/templates/ubuntu-pygame/help/tutorial.xml:399(programlisting)
+#, no-wrap
+msgid "\n    #draw enemies\n    enemies.draw(screen)\n    enemy_bullets.draw(screen)\n"
+msgstr ""
+
+#: data/templates/ubuntu-pygame/help/tutorial.xml:405(programlisting)
+#, no-wrap
+msgid "\n    def __init__(self,enemy_bullets):\n        \"\"\"Creates an Enemy \"\"\"\n        self.enemy_bullets = enemy_bullets\n\n"
+msgstr ""
+
+#: data/templates/ubuntu-pygame/help/tutorial.xml:412(programlisting)
+#, no-wrap
+msgid "\n        enemies.add(Enemy(enemy_bullets))\n"
+msgstr ""
+
+#: data/templates/ubuntu-pygame/help/tutorial.xml:416(programlisting)
+#, no-wrap
+msgid "\nfrom bullet import Bullet\n"
+msgstr ""
+
+#: data/templates/ubuntu-pygame/help/tutorial.xml:421(programlisting)
+#, no-wrap
+msgid "\n    def shoot(self):\n        if self.alive:\n            b = Bullet(self.x,self.y, 180)\n            b.max_velocity = 6\n            b.max_ticks = 50\n            self.enemy_bullets.add(b)\n"
+msgstr ""
+
+#: data/templates/ubuntu-pygame/help/tutorial.xml:431(programlisting)
+#, no-wrap
+msgid "\n    if not game.paused:\n        for e in enemies:\n            if random.randint(0,20) == 1:\n                e.shoot()\n"
+msgstr ""
+
+#: data/templates/ubuntu-pygame/help/tutorial.xml:441(programlisting)
+#, no-wrap
+msgid "\nenemy_bullet_image = image_path + \"enemy_bullet.png\"\n"
+msgstr ""
+
+#: data/templates/ubuntu-pygame/help/tutorial.xml:445(programlisting)
+#, no-wrap
+msgid "\n    def shoot(self):\n        if self.alive:\n            img = shooterconfig.enemy_bullet_image\n            b = Bullet(self.x,self.y, 180, img)\n            b.max_velocity = 6\n            b.max_ticks = 50\n            self.enemy_bullets.add(b)\n"
+msgstr ""
+
+#: data/templates/ubuntu-pygame/help/tutorial.xml:363(para)
+msgid "Let's add the ability for an enemy to drop a bomb. By default, enemies can't do anything like that, so we'll have to add a new function. The function will need to do the following things: <placeholder-1/> We should probably start with this last part. We'll want to create a special sprite group for the bullets to go into. This is primarily so that we can use the SpriteGroups collision detection capabilities later. Also it's easier to manage updates of sprites when they are in a group. First things first, we'll create the sprite group. There's a place in the bin/shooter for setting up enemies and such, so create another sprite group there. You create a sprite group by calling a function in the pygame.sprite module called \"RenderUpdates\". Lookk for the code block below, and notice the new line creating the new sprite group by calling RenderUpdates. <placeholder-2/> Now that we have the sprite group called enemy_bullets we want to do three more things with it for now. <placeholder-3/> So for the first part, we'll call the sprite group's empty function in next_level and reset_level This function simply removes each sprite in the sprite group from game play. Do this as the first thing for each of these function. <placeholder-4/> For the second point, we'll add to the function in bin/shooter called update_sprites. As you may have guessed, this function is called each tick and tells each sprite to update. For sprites in a sprite group, this is easy, because the SpriteGroup class includes an update function that calls update for each of it's sprites. So just add that to the end of the update_sprites function in bin/shooter, so it looks like the listing here: <placeholder-5/> The view_tick function is called once per tick as well. This funciton updates the view on the screen. We'll add a line of code to tell the bullets to draw themselves right under where the enemies draw themselves. <placeholder-6/> Finally, we need to pass a reference to each enemy as it is created and create a member variable to store that reference. So we need to make a change in the enemy.py fil, to add an argument for the SpriteGroup in the __init__ function, and also we need to pass the SpriteGroup when creating enemies. So change the Enemy class in enemy.py so the top of the __init__ function looks like so: <placeholder-7/> And then back in the bin/shooter file in the next_level function when creating enemies, pass in enemy_bullets. <placeholder-8/> Now we have a functioning sprite group and the enemies have a reference to it, we are ready to start actually adding some bullets to it. We'll do this by adding a member function called \"shoot\" to the enemy. Don't forget to import the Bullet class into the enemy.py file. <placeholder-9/> First thing is we'll check that the enemy is alive. We don't have to do this, but for this game, we don't want it to shoot if it's int the process of exploding. Then we'll just create a bullet and add it to the SpriteGroup. The last argument we'll pass in is to set the orientatin to 180. Orientation goes clockwise for 360 degrees, with zero being directly up, and 180 being directly down. In code, it looks like the listing below. <placeholder-10/> So now we just need to tell the enemies to shoot. We'll do this back in the bin/shooter file, in the\"controller_tick function. After the section where we respond to keyboard input, we'll add a few lines to make the enemies shoot. First, we'll make sure the game is not paused, not very fair to shoot in a paused game, is it? Next we'll loop through the enemies and desider if we should call shoot. using our friend random.randint, we'll do this say, one time twenty. So if you add this code to the end of the controller_tick function, your enemies will start dropping bombs. <placeholder-11/><placeholder-12/> So if you run the game, you'll see that the enemies are dropping bulltes like bombs. Nice. However, maybe it would be nicer if the sprites for the enemy bullets were different than the sprites for the guy's bullets. Remember at the beginning of the tutorial we added an image called enemy_bullet.png to the data/media directory. Now we'll write a bit of code to use that image. First thing, we should add a reference to it in the shooterconfig.py file. In this way, the Enemy class will be able to find it. Just add the following line along with the other image path setting code in shooterconfig.py. <placeholder-13/> So now we need to tell the bullets in the Enemy class to use that image. Fortunately the Bullet class takes an optional parameter for the name of an image to use. So just modify the shoot function in the Enemy class to include the path. <placeholder-14/> Now the enemies are dropping bombs with our new image. <placeholder-15/>"
+msgstr ""
+
+#: data/templates/ubuntu-pygame/help/tutorial.xml:459(para)
+msgid "But of course, you many notice the bombs aren't too menancing. In the next chapter we'll add collision detection to make the bombs kill the guy."
+msgstr ""
+
+#: data/templates/ubuntu-pygame/help/tutorial.xml:464(title)
+msgid "Collision Detection"
+msgstr ""
+
+#: data/templates/ubuntu-pygame/help/tutorial.xml:465(para)
+msgid "Collision detection is when you check for sprites that are overlapping, and run code based on what happened. PyGame makes this very easy by providing some functions to check for overlapping sprites for you. As you will see, it works for individual sprites as well as sprite groups."
+msgstr ""
+
+#: data/templates/ubuntu-pygame/help/tutorial.xml:470(programlisting)
+#, no-wrap
+msgid "\n        b = pygame.sprite.spritecollideany(g, enemy_bullets)\n        if b != None:\n            g.explode()\n            b.kill()\n"
+msgstr ""
+
+#: data/templates/ubuntu-pygame/help/tutorial.xml:481(programlisting)
+#, no-wrap
+msgid "\n    hits_dict = pygame.sprite.groupcollide(bullets, enemy_bullets, True, False)\n"
+msgstr ""
+
+#: data/templates/ubuntu-pygame/help/tutorial.xml:468(para)
+msgid "Ok, so let's start by making the bombs that the enemies drop actually kill the guy. To do this, we want to check if the bombs ever collide with the guy, and if they do, we'll tell the guy to explode, and then we'll remove the bomb from the screen. So the logic is \"tell me if the guy collides with any enemy_bullets\". There is a funciton for this called, pygame.sprite.spritecollideany, which takes a single sprite and a sprite group and returns a reference to any sprite in the sprite group that collided with the single sprite. If there were no collisions, than e will be None. Otherwise, we'll want to tell the guy to explode and tell the bullet to just \"kill\", which will remove it from play. So we can call it like this: <placeholder-1/> There is a function in bin/shooter called check_collisions which is called once per tick, and is the perfect place to add this code. Add it right under the similar test for the guy colliding with enemies. Now those bombs can kill the guys. <placeholder-2/> If you play for a bit, you may notice that the bullets and the bombs just kind of pass by each other. We can ramp up the game play by making the enemy bullets destroy the guy's bullets, but not visa versa. So that logic here is, have any of the sprites in the bullets sprite group collided with the bullets in the enemy bullets sprite group. There is function for this as well, pygame.sprite.groupcollide. groupcollide takes two sprite lists and returns a dictionary. The keys in the dictionary are any sprites from the first group that are involved in a collision, and the values are the sprites from the second group that collided with the sprite that for key. It's a bit hard to explain, but I bet the code is pretty readable. Add this line to the check_collisions function. <placeholder-3/> Now if you run the game, it's a bit more challenging as the enemies are a bit more offensive. This code just kills the bullets involed in any collisions. Notice that I passed in True False at the end of this function. These paramaters determine whether to kill sprites form either group involved in the collusion. The True tells the function to kill any bullets involved in collisions, so this was simple to code."
+msgstr ""
+
+#: data/templates/ubuntu-pygame/help/tutorial.xml:488(title)
+msgid "Playing Sounds"
+msgstr ""
+
+#: data/templates/ubuntu-pygame/help/tutorial.xml:491(programlisting)
+#, no-wrap
+msgid "\ntink_sound = sound_path + \"tink.wav\" \n "
+msgstr ""
+
+#: data/templates/ubuntu-pygame/help/tutorial.xml:495(programlisting)
+#, no-wrap
+msgid "\n#set up some objects and models\ntink_sound = pygame.mixer.Sound(shooter.shooterconfig.tink_sound) \n "
+msgstr ""
+
+#: data/templates/ubuntu-pygame/help/tutorial.xml:500(programlisting)
+#, no-wrap
+msgid "\n    hits_dict = pygame.sprite.groupcollide(bullets, enemy_bullets, True, False)\n    if len(hits_dict) &gt; 0:\n        tink_sound.play() \n "
+msgstr ""
+
+#: data/templates/ubuntu-pygame/help/tutorial.xml:506(programlisting)
+#, no-wrap
+msgid "\n        self.launch_sound = pygame.mixer.Sound(shooterconfig.guy_shoot_sound)\n        self.launch_sound.set_volume(.2)\n        self.launch_sound.play() \n "
+msgstr ""
+
+#: data/templates/ubuntu-pygame/help/tutorial.xml:489(para)
+msgid "The game is pretty much done in terms of game play, but I want to make one small enhancement. When the enemy bullets kill one of the guy's bullets, I'd like to play a little sound to signify this. So first, I added a little \"tink\" sound to the data/media directory. After you add your sound, you need to add a reference to it in the shootercongif.py file. <placeholder-1/> Now, I want to add a little code after the collision detection between the bullets to play that sound if they collided. I can't just hop straight to that though, first I have to create a sound object.In pygame you manage sounds with the \"mixer\" module. I don't want to create this object over and over again. So I'll add it to the bin/shooter file where the other objects and such for the game are set up. <placeholder-2/> Now that I've told the mixer module to give me a sound, I can go ahead and check if there were any collisions between bullets, and play my sound. <placeholder-3/> So it seems to be working well, but what if you are finding that one of the sounds is too quiet or too loud? Or perhpas you want a certain sound to be loud sometimes and queit other times, for example to simulate distance. This is easy to do because each sound object has a set_volume function that you can use to set the sound between 0 (for slient) and 1 (for normal volume). The bullet launch sound I used was a bit loud, so in the bullet.py file, I'll adjust the Bullet class to play the sound a bit more quietly. <placeholder-4/>"
+msgstr ""
+
+#: data/templates/ubuntu-pygame/help/tutorial.xml:514(title)
+msgid "Conclusion"
+msgstr ""
+
+#: data/templates/ubuntu-pygame/help/tutorial.xml:518(listitem)
+msgid "Creating a game using $quickly create ubuntu-pygame"
+msgstr ""
+
+#: data/templates/ubuntu-pygame/help/tutorial.xml:519(listitem)
+msgid "Adding your own sprites to the game"
+msgstr ""
+
+#: data/templates/ubuntu-pygame/help/tutorial.xml:520(listitem)
+msgid "Setting the screen size and other info in the config file"
+msgstr ""
+
+#: data/templates/ubuntu-pygame/help/tutorial.xml:521(listitem)
+msgid "Programming a player's guy to respond to keyboard input and to shoot"
+msgstr ""
+
+#: data/templates/ubuntu-pygame/help/tutorial.xml:522(listitem)
+msgid "Programming enemies to move and shoot"
+msgstr ""
+
+#: data/templates/ubuntu-pygame/help/tutorial.xml:523(listitem)
+msgid "Using collision detection to blow up Sprites"
+msgstr ""
+
+#: data/templates/ubuntu-pygame/help/tutorial.xml:524(listitem)
+msgid "Playing and adjusting sounds"
+msgstr ""
+
+#: data/templates/ubuntu-pygame/help/tutorial.xml:528(listitem)
+msgid "The bullets that the guy shoots and the bombs that the enemies drop make the same sound, it would probably be nicer if they each made a different sounds."
+msgstr ""
+
+#: data/templates/ubuntu-pygame/help/tutorial.xml:529(listitem)
+msgid "The default explosions are crayon drawings, they don't fit in much with the look of the game. Perhaps some new images for the explosion stages would be good."
+msgstr ""
+
+#: data/templates/ubuntu-pygame/help/tutorial.xml:530(listitem)
+msgid "There are no power ups! You could create power up classes the derive from BaseSprite to give the guy extra powers, like bigger bullets, more bullets, or extra lives."
+msgstr ""
+
+#: data/templates/ubuntu-pygame/help/tutorial.xml:531(listitem)
+msgid "More special enemies, for example you could use the HomingMissle class to create harder to kill enemies."
+msgstr ""
+
+#: data/templates/ubuntu-pygame/help/tutorial.xml:532(listitem)
+msgid "The high score list is stored in desktopcouch, so it will sync with your other computers. But it will have to be adjusted to the size we set for the window, and perhaps you can also let the player choose the name that's stored."
+msgstr ""
+
+#: data/templates/ubuntu-pygame/help/tutorial.xml:515(para)
+msgid "So now you have a working game! This tutorial introduced the following key concepts for using the Quickly PyGame Template. <placeholder-1/> But there is still a lot to do to have a propper game. For example: <placeholder-2/>"
+msgstr ""
+
+#. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2
+#: data/templates/ubuntu-pygame/help/tutorial.xml:0(None)
+msgid "translator-credits"
+msgstr ""
+

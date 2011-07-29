@@ -1,0 +1,10 @@
+<page xmlns="http://projectmallard.org/1.0/"
+      type="topic"
+      id="undoing-redoing-changes">
+
+  <info>
+    <link type="guide" xref="index#work-text"/>
+  </info>
+
+  <title>Undoing and Redoing Changes</title>
+</page>

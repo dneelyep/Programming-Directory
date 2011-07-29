@@ -1,0 +1,13 @@
+Quickly: quickly project handler
+
+Files: *
+Copyright (C) 2009 Rick Spencer
+Copyright (C) 2009-2011 Didier Roche
+Copyright (C) 2010-2011 Michael Terry
+License: GPL v3
+ The full text of the GPL is distributed in
+ /usr/share/common-licenses/GPL-3 on Debian systems.
+
+Files: data/templates/ubuntu-application/{bin,data,project_root,python}/*
+Licence: public domain
+ All those files are licenced in public domain

@@ -1,0 +1,725 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "DTD/xhtml1-strict.dtd">
+<html>
+  <head>
+    <title>GTG.core.datastore.DataStore : API documentation</title>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type" />
+    <link href="apidocs.css" type="text/css" rel="stylesheet" />
+    
+    
+  </head>
+  <body>
+    <h1 class="class">G.c.d.DataStore(<span title="object">object</span>) : class documentation</h1>
+    <p>
+      <span id="part">Part of <a href="GTG.html">GTG</a>.<a href="GTG.core.html">core</a>.<a href="GTG.core.datastore.html">datastore</a></span>
+      
+      <a href="classIndex.html#GTG.core.datastore.DataStore">View In Hierarchy</a>
+    </p>
+    <div>
+      
+    </div>
+    <div>A wrapper around all backends that is responsible for keeping the 
+backend instances. It can enable, disable, register and destroy backends, 
+and acts as interface between the backends and GTG core. You should not 
+interface yourself directly with the DataStore: use the Requester instead 
+(which also sends signals as you issue commands).<table class="fieldTable"></table></div>
+
+    
+    
+    <div id="splitTables">
+      <table class="children sortable" id="id175">
+  
+  
+<tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.core.datastore.DataStore.html#__init__">__init__</a></td>
+    <td><span>Initializes a DataStore object</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.core.datastore.DataStore.html#get_tagstore">get_tagstore</a></td>
+    <td><span>Helper function to obtain the Tagstore associated with this 
+DataStore</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.core.datastore.DataStore.html#get_requester">get_requester</a></td>
+    <td><span>Helper function to get the Requester associate with this DataStore</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.core.datastore.DataStore.html#get_tasks_tree">get_tasks_tree</a></td>
+    <td><span>Helper function to get a Tree with all the tasks contained in this</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.core.datastore.DataStore.html#new_tag">new_tag</a></td>
+    <td><span>Create a new tag and return it or return the existing one</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.core.datastore.DataStore.html#rename_tag">rename_tag</a></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.core.datastore.DataStore.html#get_tag">get_tag</a></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.core.datastore.DataStore.html#load_tag_tree">load_tag_tree</a></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.core.datastore.DataStore.html#save_tagtree">save_tagtree</a></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.core.datastore.DataStore.html#get_all_tasks">get_all_tasks</a></td>
+    <td><span>Returns list of all keys of open tasks</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.core.datastore.DataStore.html#has_task">has_task</a></td>
+    <td><span>Returns true if the tid is among the open or closed tasks for</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.core.datastore.DataStore.html#get_task">get_task</a></td>
+    <td><span>Returns the internal task object for the given tid, or None if the</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.core.datastore.DataStore.html#task_factory">task_factory</a></td>
+    <td><span>Instantiates the given task id as a Task object.</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.core.datastore.DataStore.html#new_task">new_task</a></td>
+    <td><span>Creates a blank new task in this DataStore.</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.core.datastore.DataStore.html#push_task">push_task</a></td>
+    <td><span>Adds the given task object to the task tree. In other words, 
+registers</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.core.datastore.DataStore.html#get_all_backends">get_all_backends</a></td>
+    <td><span>returns list of all registered backends for this DataStore.</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.core.datastore.DataStore.html#get_backend">get_backend</a></td>
+    <td><span>Returns a backend given its id.</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.core.datastore.DataStore.html#register_backend">register_backend</a></td>
+    <td><span>Registers a TaskSource as a backend for this DataStore</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.core.datastore.DataStore.html#set_backend_enabled">set_backend_enabled</a></td>
+    <td><span>The backend corresponding to backend_id is enabled or disabled</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.core.datastore.DataStore.html#remove_backend">remove_backend</a></td>
+    <td><span>Removes a backend, and forgets it ever existed.</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.core.datastore.DataStore.html#backend_change_attached_tags">backend_change_attached_tags</a></td>
+    <td><span>Changes the tags for which a backend should store a task</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.core.datastore.DataStore.html#flush_all_tasks">flush_all_tasks</a></td>
+    <td><span>This function will cause all tasks to be checked against the backend</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.core.datastore.DataStore.html#save">save</a></td>
+    <td><span>Saves the backends parameters.</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.core.datastore.DataStore.html#request_task_deletion">request_task_deletion</a></td>
+    <td><span>This is a proxy function to request a task deletion from a backend</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.core.datastore.DataStore.html#get_backend_mutex">get_backend_mutex</a></td>
+    <td><span>Returns the mutex object used by backends to avoid modifying a task</span></td>
+  </tr><tr class="method private">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.core.datastore.DataStore.html#_activate_non_default_backends">_activate_non_default_backends</a></td>
+    <td><span>Non-default backends have to wait until the default loads before</span></td>
+  </tr><tr class="method private">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.core.datastore.DataStore.html#_backend_startup">_backend_startup</a></td>
+    <td><span>Helper function to launch a thread that starts a backend.</span></td>
+  </tr>
+  
+</table>
+      
+      
+    </div>
+    
+    
+    
+
+    <div class="function">
+  <a name="GTG.core.datastore.DataStore.__init__">
+    
+  </a>
+  <a name="__init__">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    __init__(self, global_conf):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div>Initializes a DataStore object<table class="fieldTable"></table></div>
+  </div>
+</div><div class="function">
+  <a name="GTG.core.datastore.DataStore.get_tagstore">
+    
+  </a>
+  <a name="get_tagstore">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    get_tagstore(self):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div>Helper function to obtain the Tagstore associated with this 
+DataStore<table class="fieldTable"><tr class="fieldStart"><td class="fieldName">Returns</td><td colspan="2">the tagstore object
+</td></tr></table></div>
+  </div>
+</div><div class="function">
+  <a name="GTG.core.datastore.DataStore.get_requester">
+    
+  </a>
+  <a name="get_requester">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    get_requester(self):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div>Helper function to get the Requester associate with this DataStore<table class="fieldTable"><tr class="fieldStart"><td class="fieldName">Returns</td><td colspan="2">the requester associated with this datastore
+</td></tr></table></div>
+  </div>
+</div><div class="function">
+  <a name="GTG.core.datastore.DataStore.get_tasks_tree">
+    
+  </a>
+  <a name="get_tasks_tree">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    get_tasks_tree(self):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div>Helper function to get a Tree with all the tasks contained in this 
+Datastore.<table class="fieldTable"><tr class="fieldStart"><td class="fieldName">Returns</td><td colspan="2">a task tree (the main one)
+</td></tr></table></div>
+  </div>
+</div><div class="function">
+  <a name="GTG.core.datastore.DataStore.new_tag">
+    
+  </a>
+  <a name="new_tag">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    new_tag(self, tagname):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div>Create a new tag and return it or return the existing one with 
+corresponding name<table class="fieldTable"></table></div>
+  </div>
+</div><div class="function">
+  <a name="GTG.core.datastore.DataStore.rename_tag">
+    
+  </a>
+  <a name="rename_tag">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    rename_tag(self, oldname, newname):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div class="undocumented">Undocumented</div>
+  </div>
+</div><div class="function">
+  <a name="GTG.core.datastore.DataStore.get_tag">
+    
+  </a>
+  <a name="get_tag">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    get_tag(self, tagname):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div class="undocumented">Undocumented</div>
+  </div>
+</div><div class="function">
+  <a name="GTG.core.datastore.DataStore.load_tag_tree">
+    
+  </a>
+  <a name="load_tag_tree">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    load_tag_tree(self):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div class="undocumented">Undocumented</div>
+  </div>
+</div><div class="function">
+  <a name="GTG.core.datastore.DataStore.save_tagtree">
+    
+  </a>
+  <a name="save_tagtree">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    save_tagtree(self):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div class="undocumented">Undocumented</div>
+  </div>
+</div><div class="function">
+  <a name="GTG.core.datastore.DataStore.get_all_tasks">
+    
+  </a>
+  <a name="get_all_tasks">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    get_all_tasks(self):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div>Returns list of all keys of open tasks<table class="fieldTable"><tr class="fieldStart"><td class="fieldName">Returns</td><td colspan="2">a list of task ids
+</td></tr></table></div>
+  </div>
+</div><div class="function">
+  <a name="GTG.core.datastore.DataStore.has_task">
+    
+  </a>
+  <a name="has_task">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    has_task(self, tid):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div>Returns true if the tid is among the open or closed tasks for this 
+DataStore, False otherwise.<table class="fieldTable"><tr class="fieldStart"><td class="fieldName">Parameters</td><td class="fieldArg">tid</td><td>Task ID to search for
+</td></tr><tr class="fieldStart"><td class="fieldName">Returns</td><td colspan="2">True if the task is present
+</td></tr></table></div>
+  </div>
+</div><div class="function">
+  <a name="GTG.core.datastore.DataStore.get_task">
+    
+  </a>
+  <a name="get_task">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    get_task(self, tid):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div>Returns the internal task object for the given tid, or None if the tid 
+is not present in this DataStore.<table class="fieldTable"><tr class="fieldStart"><td class="fieldName">Parameters</td><td class="fieldArg">tid</td><td>Task ID to retrieve
+</td></tr><tr class="fieldStart"><td class="fieldName">Returns</td><td colspan="2">whether the Task is present or not
+</td></tr></table></div>
+  </div>
+</div><div class="function">
+  <a name="GTG.core.datastore.DataStore.task_factory">
+    
+  </a>
+  <a name="task_factory">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    task_factory(self, tid, newtask=False):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div>Instantiates the given task id as a Task object.<table class="fieldTable"><tr class="fieldStart"><td class="fieldName">Parameters</td><td class="fieldArg">tid</td><td>a task id. Must be unique
+</td></tr><tr><td></td><td class="fieldArg">newtask</td><td>True if the task has never been seen before
+</td></tr><tr class="fieldStart"><td class="fieldName">Returns</td><td colspan="2">a Task instance
+</td></tr></table></div>
+  </div>
+</div><div class="function">
+  <a name="GTG.core.datastore.DataStore.new_task">
+    
+  </a>
+  <a name="new_task">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    new_task(self):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div>Creates a blank new task in this DataStore. New task is created in all 
+the backends that collect all tasks (among them, the default backend). The 
+default backend uses the same task id in its own internal 
+representation.<table class="fieldTable"><tr class="fieldStart"><td class="fieldName">Returns</td><td colspan="2">The task object that was created.
+</td></tr></table></div>
+  </div>
+</div><div class="function">
+  <a name="GTG.core.datastore.DataStore.push_task">
+    
+  </a>
+  <a name="push_task">
+    
+  </a>
+  <div class="functionHeader">
+    @synchronized<br />
+    def
+    push_task(self, task):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div>Adds the given task object to the task tree. In other words, registers 
+the given task in the GTG task set. This function is used in mutual 
+exclusion: only a backend at a time is allowed to push tasks.<table class="fieldTable"><tr class="fieldStart"><td class="fieldName">Parameters</td><td class="fieldArg">task</td><td>A valid task object  (a GTG.core.task.Task)
+</td></tr><tr class="fieldStart"><td class="fieldName">Returns</td><td colspan="2">True if the task has been accepted
+</td></tr></table></div>
+  </div>
+</div><div class="function">
+  <a name="GTG.core.datastore.DataStore.get_all_backends">
+    
+  </a>
+  <a name="get_all_backends">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    get_all_backends(self, disabled=False):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div>returns list of all registered backends for this DataStore.<table class="fieldTable"><tr class="fieldStart"><td class="fieldName">Parameters</td><td class="fieldArg">disabled</td><td>If disabled is True, attaches also the list of disabled backends
+</td></tr><tr class="fieldStart"><td class="fieldName">Returns</td><td colspan="2">a list of TaskSource objects
+</td></tr></table></div>
+  </div>
+</div><div class="function">
+  <a name="GTG.core.datastore.DataStore.get_backend">
+    
+  </a>
+  <a name="get_backend">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    get_backend(self, backend_id):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div>Returns a backend given its id.<table class="fieldTable"><tr class="fieldStart"><td class="fieldName">Parameters</td><td class="fieldArg">backend_id</td><td>a backend id
+</td></tr><tr class="fieldStart"><td class="fieldName">Returns</td><td colspan="2">the requested backend, or None
+</td></tr></table></div>
+  </div>
+</div><div class="function">
+  <a name="GTG.core.datastore.DataStore.register_backend">
+    
+  </a>
+  <a name="register_backend">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    register_backend(self, backend_dic):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div>Registers a TaskSource as a backend for this DataStore<table class="fieldTable"><tr class="fieldStart"><td class="fieldName">Parameters</td><td class="fieldArg">backend_dic</td><td>Dictionary object containing all the parameters to initialize the backend 
+(filename...). It should also contain the backend class (under 
+&quot;backend&quot;), and its unique id (under &quot;pid&quot;)
+</td></tr></table></div>
+  </div>
+</div><div class="function">
+  <a name="GTG.core.datastore.DataStore._activate_non_default_backends">
+    
+  </a>
+  <a name="_activate_non_default_backends">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    _activate_non_default_backends(self, sender=None):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div>Non-default backends have to wait until the default loads before being  
+activated. This function is called after the first default backend has 
+loaded all its tasks.<table class="fieldTable"><tr class="fieldStart"><td class="fieldName">Parameters</td><td class="fieldArg">sender</td><td>not used, just here for signal compatibility
+</td></tr></table></div>
+  </div>
+</div><div class="function">
+  <a name="GTG.core.datastore.DataStore._backend_startup">
+    
+  </a>
+  <a name="_backend_startup">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    _backend_startup(self, backend):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div>Helper function to launch a thread that starts a backend.<table class="fieldTable"><tr class="fieldStart"><td class="fieldName">Parameters</td><td class="fieldArg">backend</td><td>the backend object
+</td></tr></table></div>
+  </div>
+</div><div class="function">
+  <a name="GTG.core.datastore.DataStore.set_backend_enabled">
+    
+  </a>
+  <a name="set_backend_enabled">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    set_backend_enabled(self, backend_id, state):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div>The backend corresponding to backend_id is enabled or disabled according
+to &quot;state&quot;. Disable: Quits a backend and disables it (which means
+it won't be automatically loaded next time GTG is started) Enable: Reloads 
+a disabled backend. Backend must be already known by the Datastore<table class="fieldTable"><tr class="fieldStart"><td class="fieldName">Parameters</td><td class="fieldArg">state</td><td>True to enable, False to disable
+</td></tr><tr class="fieldStart"><td class="fieldName">Unknown Field: parma</td><td class="fieldArg">backend_id</td><td>a backend id
+</td></tr></table></div>
+  </div>
+</div><div class="function">
+  <a name="GTG.core.datastore.DataStore.remove_backend">
+    
+  </a>
+  <a name="remove_backend">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    remove_backend(self, backend_id):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div>Removes a backend, and forgets it ever existed.<table class="fieldTable"><tr class="fieldStart"><td class="fieldName">Parameters</td><td class="fieldArg">backend_id</td><td>a backend id
+</td></tr></table></div>
+  </div>
+</div><div class="function">
+  <a name="GTG.core.datastore.DataStore.backend_change_attached_tags">
+    
+  </a>
+  <a name="backend_change_attached_tags">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    backend_change_attached_tags(self, backend_id, tag_names):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div>Changes the tags for which a backend should store a task<table class="fieldTable"><tr class="fieldStart"><td class="fieldName">Parameters</td><td class="fieldArg">backend_id</td><td>a backend_id
+</td></tr><tr><td></td><td class="fieldArg">tag_names</td><td>the new set of tags. This should not be a tag object, just the tag name.
+</td></tr></table></div>
+  </div>
+</div><div class="function">
+  <a name="GTG.core.datastore.DataStore.flush_all_tasks">
+    
+  </a>
+  <a name="flush_all_tasks">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    flush_all_tasks(self, backend_id):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div>This function will cause all tasks to be checked against the backend 
+identified with backend_id. If tasks need to be added or removed, it will 
+be done here. It has to be run after the creation of a new backend (or an 
+alteration of its &quot;attached tags&quot;), so that the tasks which are 
+already loaded in the Tree will be saved in the proper backends<table class="fieldTable"><tr class="fieldStart"><td class="fieldName">Parameters</td><td class="fieldArg">backend_id</td><td>a backend id
+</td></tr></table></div>
+  </div>
+</div><div class="function">
+  <a name="GTG.core.datastore.DataStore.save">
+    
+  </a>
+  <a name="save">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    save(self, quit=False):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div>Saves the backends parameters.<table class="fieldTable"><tr class="fieldStart"><td class="fieldName">Parameters</td><td class="fieldArg">quit</td><td>If quit is true, backends are shut down
+</td></tr></table></div>
+  </div>
+</div><div class="function">
+  <a name="GTG.core.datastore.DataStore.request_task_deletion">
+    
+  </a>
+  <a name="request_task_deletion">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    request_task_deletion(self, tid):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div>This is a proxy function to request a task deletion from a backend<table class="fieldTable"><tr class="fieldStart"><td class="fieldName">Parameters</td><td class="fieldArg">tid</td><td>the tid of the task to remove
+</td></tr></table></div>
+  </div>
+</div><div class="function">
+  <a name="GTG.core.datastore.DataStore.get_backend_mutex">
+    
+  </a>
+  <a name="get_backend_mutex">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    get_backend_mutex(self):
+    
+  </div>
+  <div class="functionBody">
+    
+    <pre>Returns the mutex object used by backends to avoid modifying a task
+at the same time.
+
+@returns threading.Lock</pre>
+  </div>
+</div>
+    <address>
+      <a href="index.html">API Documentation</a> for <a href="http://gtg.fritalk.com/">GTG</a>, generated by <a href="http://codespeak.net/~mwh/pydoctor/">pydoctor</a> at 2011-04-15 17:43:34.
+    </address>
+  </body>
+</html>

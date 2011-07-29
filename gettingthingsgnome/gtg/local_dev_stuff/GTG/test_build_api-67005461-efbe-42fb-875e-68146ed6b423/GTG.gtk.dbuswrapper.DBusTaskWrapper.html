@@ -1,0 +1,442 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "DTD/xhtml1-strict.dtd">
+<html>
+  <head>
+    <title>GTG.gtk.dbuswrapper.DBusTaskWrapper : API documentation</title>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type" />
+    <link href="apidocs.css" type="text/css" rel="stylesheet" />
+    
+    
+  </head>
+  <body>
+    <h1 class="class">G.g.d.DBusTaskWrapper(<span title="dbus.service.Object">dbus.service.Object</span>) : class documentation</h1>
+    <p>
+      <span id="part">Part of <a href="GTG.html">GTG</a>.<a href="GTG.gtk.html">gtk</a>.<a href="GTG.gtk.dbuswrapper.html">dbuswrapper</a></span>
+      
+      <a href="classIndex.html#GTG.gtk.dbuswrapper.DBusTaskWrapper">View In Hierarchy</a>
+    </p>
+    <div>
+      
+    </div>
+    <div>D-Bus service object that exposes GTG's task store to third-party 
+apps<table class="fieldTable"></table></div>
+
+    
+    
+    <div id="splitTables">
+      <table class="children sortable" id="id64">
+  
+  
+<tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.gtk.dbuswrapper.DBusTaskWrapper.html#__init__">__init__</a></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.gtk.dbuswrapper.DBusTaskWrapper.html#get_task">get_task</a></td>
+    <td><span>Retrieve a specific task by ID and return the data</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.gtk.dbuswrapper.DBusTaskWrapper.html#get_tasks">get_tasks</a></td>
+    <td><span>Retrieve a list of task data dicts</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.gtk.dbuswrapper.DBusTaskWrapper.html#get_active_tasks">get_active_tasks</a></td>
+    <td><span>Retrieve a list of task data dicts</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.gtk.dbuswrapper.DBusTaskWrapper.html#get_task_ids_filtered">get_task_ids_filtered</a></td>
+    <td><span>Filters the task list and provides list of remaining ids</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.gtk.dbuswrapper.DBusTaskWrapper.html#get_tasks_filtered">get_tasks_filtered</a></td>
+    <td><span>Gets a list of tasks for the given filters</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.gtk.dbuswrapper.DBusTaskWrapper.html#has_task">has_task</a></td>
+    <td><span>Returns true if the task id is present in the task backend.</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.gtk.dbuswrapper.DBusTaskWrapper.html#delete_task">delete_task</a></td>
+    <td><span>Delete the given task id from the repository.</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.gtk.dbuswrapper.DBusTaskWrapper.html#new_task">new_task</a></td>
+    <td><span>Generate a new task object and return the task data as a dict</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.gtk.dbuswrapper.DBusTaskWrapper.html#modify_task">modify_task</a></td>
+    <td><span>Updates the task with ID tid using the provided information</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.gtk.dbuswrapper.DBusTaskWrapper.html#open_task_editor">open_task_editor</a></td>
+    <td><span>Launches the GUI task editor showing the task with ID tid.</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.gtk.dbuswrapper.DBusTaskWrapper.html#open_new_task">open_new_task</a></td>
+    <td><span>Launches the GUI task editor with a new task.  The task is not</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.gtk.dbuswrapper.DBusTaskWrapper.html#hide_task_browser">hide_task_browser</a></td>
+    <td><span>Causes the main task browser to become invisible.  It is still</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.gtk.dbuswrapper.DBusTaskWrapper.html#iconify_task_browser">iconify_task_browser</a></td>
+    <td><span>Minimizes the task browser</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.gtk.dbuswrapper.DBusTaskWrapper.html#show_task_browser">show_task_browser</a></td>
+    <td><span>Shows and unminimizes the task browser and brings it to the</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.gtk.dbuswrapper.DBusTaskWrapper.html#is_task_browser_visible">is_task_browser_visible</a></td>
+    <td><span>Returns true if task browser is visible, either minimized or</span></td>
+  </tr>
+  
+</table>
+      
+      
+    </div>
+    
+    
+    
+
+    <div class="function">
+  <a name="GTG.gtk.dbuswrapper.DBusTaskWrapper.__init__">
+    
+  </a>
+  <a name="__init__">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    __init__(self, req, view_manager):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div class="undocumented">Undocumented</div>
+  </div>
+</div><div class="function">
+  <a name="GTG.gtk.dbuswrapper.DBusTaskWrapper.get_task">
+    
+  </a>
+  <a name="get_task">
+    
+  </a>
+  <div class="functionHeader">
+    @dbus.service.method(BUSNAME)<br />
+    def
+    get_task(self, tid):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div>Retrieve a specific task by ID and return the data<table class="fieldTable"></table></div>
+  </div>
+</div><div class="function">
+  <a name="GTG.gtk.dbuswrapper.DBusTaskWrapper.get_tasks">
+    
+  </a>
+  <a name="get_tasks">
+    
+  </a>
+  <div class="functionHeader">
+    @dbus.service.method(BUSNAME)<br />
+    def
+    get_tasks(self):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div>Retrieve a list of task data dicts<table class="fieldTable"></table></div>
+  </div>
+</div><div class="function">
+  <a name="GTG.gtk.dbuswrapper.DBusTaskWrapper.get_active_tasks">
+    
+  </a>
+  <a name="get_active_tasks">
+    
+  </a>
+  <div class="functionHeader">
+    @dbus.service.method(BUSNAME, 'as')<br />
+    def
+    get_active_tasks(self, tags):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div>Retrieve a list of task data dicts<table class="fieldTable"></table></div>
+  </div>
+</div><div class="function">
+  <a name="GTG.gtk.dbuswrapper.DBusTaskWrapper.get_task_ids_filtered">
+    
+  </a>
+  <a name="get_task_ids_filtered">
+    
+  </a>
+  <div class="functionHeader">
+    @dbus.service.method(BUSNAME, 'as')<br />
+    def
+    get_task_ids_filtered(self, filters):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div>Filters the task list and provides list of remaining ids<table class="fieldTable"><tr class="fieldStart"><td class="fieldName">Parameters</td><td colspan="2">List of strings for filters to apply.  See the filters_bank documentation 
+for a list of stock filters.
+</td></tr><tr class="fieldStart"><td class="fieldName">Returns</td><td colspan="2">List of ids
+</td></tr></table></div>
+  </div>
+</div><div class="function">
+  <a name="GTG.gtk.dbuswrapper.DBusTaskWrapper.get_tasks_filtered">
+    
+  </a>
+  <a name="get_tasks_filtered">
+    
+  </a>
+  <div class="functionHeader">
+    @dbus.service.method(BUSNAME, 'as')<br />
+    def
+    get_tasks_filtered(self, filters):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div>Gets a list of tasks for the given filters<table class="fieldTable"><tr class="fieldStart"><td class="fieldName">Parameters</td><td colspan="2">List of strings for filters to apply.  See the filters_bank documentation 
+for a list of stock filters.
+</td></tr><tr class="fieldStart"><td class="fieldName">Returns</td><td colspan="2">List of task dicts
+</td></tr></table></div>
+  </div>
+</div><div class="function">
+  <a name="GTG.gtk.dbuswrapper.DBusTaskWrapper.has_task">
+    
+  </a>
+  <a name="has_task">
+    
+  </a>
+  <div class="functionHeader">
+    @dbus.service.method(BUSNAME)<br />
+    def
+    has_task(self, tid):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div>Returns true if the task id is present in the task backend. Task could 
+be either open or closed, but not deleted.<table class="fieldTable"></table></div>
+  </div>
+</div><div class="function">
+  <a name="GTG.gtk.dbuswrapper.DBusTaskWrapper.delete_task">
+    
+  </a>
+  <a name="delete_task">
+    
+  </a>
+  <div class="functionHeader">
+    @dbus.service.method(BUSNAME)<br />
+    def
+    delete_task(self, tid):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div>Delete the given task id from the repository.<table class="fieldTable"></table></div>
+  </div>
+</div><div class="function">
+  <a name="GTG.gtk.dbuswrapper.DBusTaskWrapper.new_task">
+    
+  </a>
+  <a name="new_task">
+    
+  </a>
+  <div class="functionHeader">
+    @dbus.service.method(BUSNAME, 'sssssassas')<br />
+    def
+    new_task(self, status, title, duedate, startdate, donedate, tags, text, subtasks):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div>Generate a new task object and return the task data as a dict<table class="fieldTable"><tr class="fieldStart"><td class="fieldName">Parameters</td><td class="fieldArg">status</td><td>One of 'Active', 'Dismiss', or 'Done'
+</td></tr><tr><td></td><td class="fieldArg">title</td><td>String name of the task
+</td></tr><tr><td></td><td class="fieldArg">duedate</td><td>Date the task is due, such as &quot;2010-05-01&quot;. also supports 'now', 
+'soon', 'later'
+</td></tr><tr><td></td><td class="fieldArg">startdate</td><td>Date the task will be started
+</td></tr><tr><td></td><td class="fieldArg">donedate</td><td>Date the task was finished
+</td></tr><tr><td></td><td class="fieldArg">tags</td><td>List of strings for tags to apply for this task
+</td></tr><tr><td></td><td class="fieldArg">text</td><td>String description
+</td></tr><tr><td></td><td class="fieldArg">subtasks</td><td>A list of task ids of tasks to add as children
+</td></tr><tr class="fieldStart"><td class="fieldName">Returns</td><td colspan="2">A dictionary with the data of the newly created task
+</td></tr></table></div>
+  </div>
+</div><div class="function">
+  <a name="GTG.gtk.dbuswrapper.DBusTaskWrapper.modify_task">
+    
+  </a>
+  <a name="modify_task">
+    
+  </a>
+  <div class="functionHeader">
+    @dbus.service.method(BUSNAME)<br />
+    def
+    modify_task(self, tid, task_data):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div>Updates the task with ID tid using the provided information in the 
+task_data structure.  Note that any fields left blank or undefined in 
+task_data will clear the value in the task, so the best way to update a 
+task is to first retrieve it via get_task(tid), modify entries as desired, 
+and send it back via this function.<table class="fieldTable"></table></div>
+  </div>
+</div><div class="function">
+  <a name="GTG.gtk.dbuswrapper.DBusTaskWrapper.open_task_editor">
+    
+  </a>
+  <a name="open_task_editor">
+    
+  </a>
+  <div class="functionHeader">
+    @dbus.service.method(BUSNAME)<br />
+    def
+    open_task_editor(self, tid):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div>Launches the GUI task editor showing the task with ID tid.</p>
+<p>This routine returns as soon as the GUI has launched.<table class="fieldTable"></table></div>
+  </div>
+</div><div class="function">
+  <a name="GTG.gtk.dbuswrapper.DBusTaskWrapper.open_new_task">
+    
+  </a>
+  <a name="open_new_task">
+    
+  </a>
+  <div class="functionHeader">
+    @dbus.service.method(BUSNAME, 'ss')<br />
+    def
+    open_new_task(self, title, description):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div>Launches the GUI task editor with a new task.  The task is not 
+guaranteed to exist after the editor is closed, since the user could cancel
+the editing session.</p>
+<p>This routine returns as soon as the GUI has launched.<table class="fieldTable"></table></div>
+  </div>
+</div><div class="function">
+  <a name="GTG.gtk.dbuswrapper.DBusTaskWrapper.hide_task_browser">
+    
+  </a>
+  <a name="hide_task_browser">
+    
+  </a>
+  <div class="functionHeader">
+    @dbus.service.method(BUSNAME)<br />
+    def
+    hide_task_browser(self):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div>Causes the main task browser to become invisible.  It is still running 
+but there will be no visible indication of this.<table class="fieldTable"></table></div>
+  </div>
+</div><div class="function">
+  <a name="GTG.gtk.dbuswrapper.DBusTaskWrapper.iconify_task_browser">
+    
+  </a>
+  <a name="iconify_task_browser">
+    
+  </a>
+  <div class="functionHeader">
+    @dbus.service.method(BUSNAME)<br />
+    def
+    iconify_task_browser(self):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div>Minimizes the task browser<table class="fieldTable"></table></div>
+  </div>
+</div><div class="function">
+  <a name="GTG.gtk.dbuswrapper.DBusTaskWrapper.show_task_browser">
+    
+  </a>
+  <a name="show_task_browser">
+    
+  </a>
+  <div class="functionHeader">
+    @dbus.service.method(BUSNAME)<br />
+    def
+    show_task_browser(self):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div>Shows and unminimizes the task browser and brings it to the top of the 
+z-order.<table class="fieldTable"></table></div>
+  </div>
+</div><div class="function">
+  <a name="GTG.gtk.dbuswrapper.DBusTaskWrapper.is_task_browser_visible">
+    
+  </a>
+  <a name="is_task_browser_visible">
+    
+  </a>
+  <div class="functionHeader">
+    @dbus.service.method(BUSNAME)<br />
+    def
+    is_task_browser_visible(self):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div>Returns true if task browser is visible, either minimized or 
+unminimized, with or without active focus.<table class="fieldTable"></table></div>
+  </div>
+</div>
+    <address>
+      <a href="index.html">API Documentation</a> for <a href="http://gtg.fritalk.com/">GTG</a>, generated by <a href="http://codespeak.net/~mwh/pydoctor/">pydoctor</a> at 2011-05-02 21:27:37.
+    </address>
+  </body>
+</html>

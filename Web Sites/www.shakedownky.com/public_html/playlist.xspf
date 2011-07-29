@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<playlist version="0" xmlns = "http://xspf.org/ns/0/">
+  <trackList>
+  
+   <track>
+    <location>Radar Love.mp3</location>
+    <image>Images/coverart.jpg</image>
+    <annotation>Radar Love (Cover)</annotation>
+   </track>
+   
+   
+   <track>
+    <location>Mustang Sally.mp3</location>
+    <image>Images/coverart.jpg</image>
+    <annotation>Mustang Sally (Cover)</annotation>
+   </track>
+   
+   <track>
+    <location>Sittin' In a Bar.mp3</location>
+    <image>Images/coverart.jpg</image>
+    <annotation>Sittin' In a Bar (Cover)</annotation>
+   </track>
+   
+   <track>
+    <location>Keep Your Hands to Yourself.mp3</location>
+    <image>Images/coverart.jpg</image>
+    <annotation>Keep Your Hands to Yourself (Cover)</annotation>
+   </track>
+   
+   <track>
+    <location>Mony Mony.mp3</location>
+    <image>Images/coverart.jpg</image>
+    <annotation>Mony Mony (Cover)</annotation>
+   </track>
+   
+   <track>
+    <location>Strut.mp3</location>
+    <image>Images/coverart.jpg</image>
+    <annotation>Strut (Cover)</annotation>
+   </track>
+   
+   <track>
+    <location>Born to Be Wild.mp3</location>
+    <image>Images/coverart.jpg</image>
+    <annotation>Born to Be Wild (Cover)</annotation>
+   </track>
+   
+  </trackList>
+</playlist>

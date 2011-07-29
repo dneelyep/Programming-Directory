@@ -1,0 +1,461 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "DTD/xhtml1-strict.dtd">
+<html>
+  <head>
+    <title>GTG.backends.tweepy.oauth.OAuthServer : API documentation</title>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type" />
+    <link href="apidocs.css" type="text/css" rel="stylesheet" />
+    
+    
+  </head>
+  <body>
+    <h1 class="class">G.b.t.o.OAuthServer(<span title="object">object</span>) : class documentation</h1>
+    <p>
+      <span id="part">Part of <a href="GTG.html">GTG</a>.<a href="GTG.backends.html">backends</a>.<a href="GTG.backends.tweepy.html">tweepy</a>.<a href="GTG.backends.tweepy.oauth.html">oauth</a></span>
+      
+      <a href="classIndex.html#GTG.backends.tweepy.oauth.OAuthServer">View In Hierarchy</a>
+    </p>
+    <div>
+      
+    </div>
+    <div>A worker to check the validity of a request against a data store.<table class="fieldTable"></table></div>
+
+    
+    
+    <div id="splitTables">
+      <table class="children sortable" id="id317">
+  
+  
+<tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.backends.tweepy.oauth.OAuthServer.html#__init__">__init__</a></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.backends.tweepy.oauth.OAuthServer.html#set_data_store">set_data_store</a></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.backends.tweepy.oauth.OAuthServer.html#get_data_store">get_data_store</a></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.backends.tweepy.oauth.OAuthServer.html#add_signature_method">add_signature_method</a></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.backends.tweepy.oauth.OAuthServer.html#fetch_request_token">fetch_request_token</a></td>
+    <td><span>Processes a request_token request and returns the</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.backends.tweepy.oauth.OAuthServer.html#fetch_access_token">fetch_access_token</a></td>
+    <td><span>Processes an access_token request and returns the</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.backends.tweepy.oauth.OAuthServer.html#verify_request">verify_request</a></td>
+    <td><span>Verifies an api call and checks all the parameters.</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.backends.tweepy.oauth.OAuthServer.html#authorize_token">authorize_token</a></td>
+    <td><span>Authorize a request token.</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.backends.tweepy.oauth.OAuthServer.html#get_callback">get_callback</a></td>
+    <td><span>Get the callback URL.</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.backends.tweepy.oauth.OAuthServer.html#build_authenticate_header">build_authenticate_header</a></td>
+    <td><span>Optional support for the authenticate header.</span></td>
+  </tr><tr class="method private">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.backends.tweepy.oauth.OAuthServer.html#_get_version">_get_version</a></td>
+    <td><span>Verify the correct version request for this server.</span></td>
+  </tr><tr class="method private">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.backends.tweepy.oauth.OAuthServer.html#_get_signature_method">_get_signature_method</a></td>
+    <td><span>Figure out the signature with some defaults.</span></td>
+  </tr><tr class="method private">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.backends.tweepy.oauth.OAuthServer.html#_get_consumer">_get_consumer</a></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="method private">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.backends.tweepy.oauth.OAuthServer.html#_get_token">_get_token</a></td>
+    <td><span>Try to find the token for the provided request token key.</span></td>
+  </tr><tr class="method private">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.backends.tweepy.oauth.OAuthServer.html#_get_verifier">_get_verifier</a></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="method private">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.backends.tweepy.oauth.OAuthServer.html#_check_signature">_check_signature</a></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="method private">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.backends.tweepy.oauth.OAuthServer.html#_check_timestamp">_check_timestamp</a></td>
+    <td><span>Verify that timestamp is recentish.</span></td>
+  </tr><tr class="method private">
+    
+    
+    <td>Method</td>
+    <td><a href="GTG.backends.tweepy.oauth.OAuthServer.html#_check_nonce">_check_nonce</a></td>
+    <td><span>Verify that the nonce is uniqueish.</span></td>
+  </tr>
+  
+</table>
+      
+      
+    </div>
+    
+    
+    
+
+    <div class="function">
+  <a name="GTG.backends.tweepy.oauth.OAuthServer.__init__">
+    
+  </a>
+  <a name="__init__">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    __init__(self, data_store=None, signature_methods=None):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div class="undocumented">Undocumented</div>
+  </div>
+</div><div class="function">
+  <a name="GTG.backends.tweepy.oauth.OAuthServer.set_data_store">
+    
+  </a>
+  <a name="set_data_store">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    set_data_store(self, data_store):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div class="undocumented">Undocumented</div>
+  </div>
+</div><div class="function">
+  <a name="GTG.backends.tweepy.oauth.OAuthServer.get_data_store">
+    
+  </a>
+  <a name="get_data_store">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    get_data_store(self):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div class="undocumented">Undocumented</div>
+  </div>
+</div><div class="function">
+  <a name="GTG.backends.tweepy.oauth.OAuthServer.add_signature_method">
+    
+  </a>
+  <a name="add_signature_method">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    add_signature_method(self, signature_method):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div class="undocumented">Undocumented</div>
+  </div>
+</div><div class="function">
+  <a name="GTG.backends.tweepy.oauth.OAuthServer.fetch_request_token">
+    
+  </a>
+  <a name="fetch_request_token">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    fetch_request_token(self, oauth_request):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div>Processes a request_token request and returns the request token on 
+success.<table class="fieldTable"></table></div>
+  </div>
+</div><div class="function">
+  <a name="GTG.backends.tweepy.oauth.OAuthServer.fetch_access_token">
+    
+  </a>
+  <a name="fetch_access_token">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    fetch_access_token(self, oauth_request):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div>Processes an access_token request and returns the access token on 
+success.<table class="fieldTable"></table></div>
+  </div>
+</div><div class="function">
+  <a name="GTG.backends.tweepy.oauth.OAuthServer.verify_request">
+    
+  </a>
+  <a name="verify_request">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    verify_request(self, oauth_request):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div>Verifies an api call and checks all the parameters.<table class="fieldTable"></table></div>
+  </div>
+</div><div class="function">
+  <a name="GTG.backends.tweepy.oauth.OAuthServer.authorize_token">
+    
+  </a>
+  <a name="authorize_token">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    authorize_token(self, token, user):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div>Authorize a request token.<table class="fieldTable"></table></div>
+  </div>
+</div><div class="function">
+  <a name="GTG.backends.tweepy.oauth.OAuthServer.get_callback">
+    
+  </a>
+  <a name="get_callback">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    get_callback(self, oauth_request):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div>Get the callback URL.<table class="fieldTable"></table></div>
+  </div>
+</div><div class="function">
+  <a name="GTG.backends.tweepy.oauth.OAuthServer.build_authenticate_header">
+    
+  </a>
+  <a name="build_authenticate_header">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    build_authenticate_header(self, realm=''):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div>Optional support for the authenticate header.<table class="fieldTable"></table></div>
+  </div>
+</div><div class="function">
+  <a name="GTG.backends.tweepy.oauth.OAuthServer._get_version">
+    
+  </a>
+  <a name="_get_version">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    _get_version(self, oauth_request):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div>Verify the correct version request for this server.<table class="fieldTable"></table></div>
+  </div>
+</div><div class="function">
+  <a name="GTG.backends.tweepy.oauth.OAuthServer._get_signature_method">
+    
+  </a>
+  <a name="_get_signature_method">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    _get_signature_method(self, oauth_request):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div>Figure out the signature with some defaults.<table class="fieldTable"></table></div>
+  </div>
+</div><div class="function">
+  <a name="GTG.backends.tweepy.oauth.OAuthServer._get_consumer">
+    
+  </a>
+  <a name="_get_consumer">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    _get_consumer(self, oauth_request):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div class="undocumented">Undocumented</div>
+  </div>
+</div><div class="function">
+  <a name="GTG.backends.tweepy.oauth.OAuthServer._get_token">
+    
+  </a>
+  <a name="_get_token">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    _get_token(self, oauth_request, token_type='access'):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div>Try to find the token for the provided request token key.<table class="fieldTable"></table></div>
+  </div>
+</div><div class="function">
+  <a name="GTG.backends.tweepy.oauth.OAuthServer._get_verifier">
+    
+  </a>
+  <a name="_get_verifier">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    _get_verifier(self, oauth_request):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div class="undocumented">Undocumented</div>
+  </div>
+</div><div class="function">
+  <a name="GTG.backends.tweepy.oauth.OAuthServer._check_signature">
+    
+  </a>
+  <a name="_check_signature">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    _check_signature(self, oauth_request, consumer, token):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div class="undocumented">Undocumented</div>
+  </div>
+</div><div class="function">
+  <a name="GTG.backends.tweepy.oauth.OAuthServer._check_timestamp">
+    
+  </a>
+  <a name="_check_timestamp">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    _check_timestamp(self, timestamp):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div>Verify that timestamp is recentish.<table class="fieldTable"></table></div>
+  </div>
+</div><div class="function">
+  <a name="GTG.backends.tweepy.oauth.OAuthServer._check_nonce">
+    
+  </a>
+  <a name="_check_nonce">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    _check_nonce(self, consumer, token, nonce):
+    
+  </div>
+  <div class="functionBody">
+    
+    <div>Verify that the nonce is uniqueish.<table class="fieldTable"></table></div>
+  </div>
+</div>
+    <address>
+      <a href="index.html">API Documentation</a> for <a href="http://gtg.fritalk.com/">GTG</a>, generated by <a href="http://codespeak.net/~mwh/pydoctor/">pydoctor</a> at 2011-05-02 21:27:37.
+    </address>
+  </body>
+</html>

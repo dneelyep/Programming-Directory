@@ -1,0 +1,10 @@
+<page xmlns="http://projectmallard.org/1.0/"
+      type="topic"
+      id="about-this-doc">
+
+  <info>
+    <link type="guide" xref="index"/>
+  </info>
+
+  <title>About This Document</title>
+</page>

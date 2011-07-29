@@ -1,0 +1,86 @@
+<page xmlns="http://projectmallard.org/1.0/"
+      type="guide" >
+
+<!-- ============= Dictionary Applet ======================== -->
+  <sect1 id="gnome-dictionary-applet">
+  <title>The &applet;</title>
+  
+  <para>The <application>&app;</application> application comes with a
+  panel applet, the <application>&applet;</application>.  You can add
+  the <application>&applet;</application> applet to a panel and look
+  up words in dictionaries.</para>
+
+  <figure id="gnome-dictionary-applet-fig">
+    <title>&applet; Window</title>
+    <screenshot> 
+      <mediaobject>
+        <imageobject>
+          <imagedata fileref="figures/gnome-dictionary-applet.png" format="PNG"/>
+        </imageobject>
+        <textobject><phrase>Shows &applet;.</phrase></textobject> 
+      </mediaobject>
+    </screenshot>
+  </figure>
+
+
+<!-- ============= Dictionary Applet Start ================== -->
+    <sect2 id="gnome-dictionary-applet-start">
+      <title>To Start &applet;</title>
+    
+      <para>To add <application>&applet;</application> to a panel, right-click
+      on the panel, then choose <guimenuitem>Add to Panel</guimenuitem>.
+      Select &applet; in the <application>Add to the panel</application>
+      dialog, then click <guibutton>OK</guibutton>.</para>
+      
+    </sect2>
+
+<!-- ============= Dictionary Applet Start ================== -->
+    <sect2 id="gnome-dictionary-applet-usage">
+      <title>Using the &applet;</title>
+      
+      <para>To look up a word, type it into the <guilabel>entry field</guilabel>,
+      and press <keycap>Enter</keycap> or right-click on the dictionary icon
+      and then choose <guimenuitem>Look up</guimenuitem>.
+      </para>
+      
+      <para>If some definition for the word was found, a window will appear,
+      with the text of the definitions:</para>
+
+      <figure id="gnome-dictionary-applet-window-fig">
+        <title>&applet; Window</title>
+        <screenshot> 
+          <mediaobject>
+            <imageobject>
+              <imagedata fileref="figures/gnome-dictionary-applet-window.png" format="PNG"/>
+            </imageobject>
+            <textobject><phrase>Shows &applet; main window.</phrase></textobject> 
+          </mediaobject>
+        </screenshot>
+      </figure>
+      
+      <para>Click <guibutton>Save</guibutton> to save the definitions to a
+      text file.  Click <guibutton>Print</guibutton> to print the definitions.
+      Click <guibutton>Clear</guibutton> to clear the definitions.</para>
+      
+      <para>You can make the window disappear by left-clicking on the dictionary
+      icon or by pressing <keycap>Esc</keycap>.</para>
+
+    </sect2>
+    
+    <sect2 id="gnome-dictionary-applet-preferences">
+      <title>Preferences</title>
+      
+      <para>To configure the <application>&applet;</application>, right-click on
+      the dictionary icon, then choose <guimenuitem>Preferences</guimenuitem>.</para>
+      
+      <para>The <guilabel>Preferences</guilabel> dialog is the same used by
+      the <application>&app;</application> application, so refer to
+      <xref linkend="gnome-dictionary-preferences"/></para>
+      
+    </sect2>
+    
+  </sect1>
+
+</article>
+
+</page>

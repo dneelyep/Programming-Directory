@@ -1,0 +1,9 @@
+<?php //Valid and invalid property declarations, within a class
+class Test
+{
+	public $name	= "Paul Smith"
+	public $age		= 42;
+	public $time	= time();
+	public $score	= $level * 2;
+}
+?>

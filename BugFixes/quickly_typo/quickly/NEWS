@@ -1,0 +1,414 @@
+Quickly 11.04
+------------------------------------
+
+ + ubuntu-application-template:
+   - Separated user-modifiable code from quickly-owned code by adding new
+     *_lib module in new projects that contains quickly-maintained code
+   - Support self.ui['my widget'] widget access
+   - Refresh tutorial for Ubuntu 11.04 with new screenshots and more editing
+ + ubuntu-application-template and derivatives:
+   - Add 'quickly test' command that will run unit tests on your code; some
+     sample tests are included
+ + ubuntu-pygame-template:
+   - Add hiscores support by Alejandro J. Cura
+ + common:
+   - Fixed LP login support to work with latest liblaunchpad
+   - Updated translations
+
+Quickly 11.03.1
+------------------------------------
+
+ + ubuntu-application-template:
+   - Use one scalable application icon, instead of 3 differently sized ones
+ + ubuntu-application-template and derivatives:
+   - Support writing metadata required by the Application Review Board when
+     packaging (can enable with 'submitubuntu' or 'package --extras')
+   - Add yelp to dependencies if your application uses ghelp: URLs
+   - Some minor cleanups
+ + ubuntu-flash-game-template:
+   - First release of a flash game template by Stuart Langridge
+
+Quickly 11.03
+------------------------------------
+
+ + ubuntu-application-template:
+   - tutorial command reference 4.4 glade should be design (Tony Byrne)
+     LP: #661699
+   - refresh the branding to the new ubuntu brand (Daniel Fore) (LP: #666557)
+   - Support self.ui.label1 syntax
+   - If glade defined handler is missing connect to default_handler.
+   - Support auto-connection of signal handlers named on_widget_signal()
+   - Support auto-connection of several widgets to a handler.
+   - support submitubuntu command to install applications in /opt (LP: #625581)
+ + ubuntu-application-template and derivatives:
+   - Fix apport code to not fail when lp-project name changes
+   - Fix apport test to run cleanly by always upgrading from 0.3 to 0.4
+     template (test was originally written to test that upgrade)
+   - Add many tests
+   - Provide mallard-formatted starter help files (Tony Byrne)
+   - Fix 'add dialog' to rename dialog name with dashes correctly
+   - Add 'add help-guide' and 'add help-topic' (Tony Byrne)
+   - Support custom licenses better by noticing when they are being used
+   - add QUICKLY_EDITOR variable to override SELECTED_EDITOR or EDITOR
+     if we want a dedicated editor for Quickly (Dennis Craven)
+   - regenerate debian/copyright at each quickly release/package (LP: #656943)
+   - When getting Launchpad credentials, only allow choosing full access
+   - Cleanup various help descriptions to be more consistent
+ + common:
+   - Reorganize tests to be easier to run as a group (./test/run.sh)
+   - quickly quickly should remove *.pyc files as commands are imported
+     (LP: #658710)
+   - If not running under X, use nano instead of gedit as fallback editor
+
+Quickly 0.6.1
+------------------------------------
+
+ + ubuntu-application-template and derivatives:
+   - don't overwrite files in add command if already exists (Tony Byrne)
+     (LP: #645490)
+   - fix crash in in help() (Michael Terry) (LP: #649881)
+   - force utf8 when creating a gpg key (LP: #640689)
+ + common:
+   - revert internal bzr calls to use subprocess calls again
+     (LP: #648496, #642455)
+   - translations update (en_GB, es, fr, uk)
+   - urkkk, just saw that the tutorial contains the name and revision number. 
+     Update that as a workaround. Should be removed for next release.
+
+Quickly 0.6
+------------------------------------
+
+  quickly core:
+  - enhance API with real case usage: nautilus extension
+  - move bzr call to use internal API (Jelmer Vernooij)
+  - support user defined template paths (Barry Warsaw) (LP: #585617)
+  - quickly quickly now uses import command functionality from the origin
+    template
+  - fix copyright file (Kyle Nitzsche) (LP: #610096)
+  ubuntu-application-template and derivatives:
+  - push the tarball to launchpad instead of the .changes (LP: #594256)
+  - move bzr call to use internal API (Jelmer Vernooij)
+  - add apache license (Monty Taylor)
+  - update and improvment of the tutorial (Ryan Macnish)
+  - "$ quickly add indicator" to add indicator support to your project
+    (Owais Lone)
+  - add yelp dep for tutorial (Umang Varma) (LP: #610026)
+  - some fixes to the tutorial (Henrik H.) (LP: #608421)
+  - don't add changelog for quickly package command (Umang Varma)
+    (LP: #587538)
+  - add quickly configure distribution <distro> to release to another
+    distribution than your current one (Umang Varma) (LP: #608191)
+  - Provide a modeline in generated source (Michael Terry) (LP: #606285)
+
+Quickly 0.4.3
+------------------------------------
+
+  quickly core:
+  - fix wrong template proposal for commands not followed by template
+  ubuntu-application template:
+  - change label caption from glade to design (LP: #571409)
+  - fix dialog when having - in title name (LP: #578710)
+  - fix unicode problems in About dialog (LP: #582584) (Petar Vasić)
+  - fix the boiler plate for faulty preferences dialog code (LP: #587090)
+    (Nick Veitch)
+  ubuntu-application and inherited:
+  - fix configure stripping team name for ppa (LP: #587314) (Frederik Elwert)
+  - fix not all syntax for dependencies supported (LP: #587520) (Frederik
+    Elwert)
+  - fix issue and description of release: quickly release <number>
+  updated translations
+
+Quickly 0.4.2
+------------------------------------
+
+  ubuntu-application template (and inherited):
+  - fix verbose check in quicklyutils making release and share fail
+    (LP: #570239)
+  - updated translations
+
+Quickly 0.4.1
+------------------------------------
+
+  ubuntu-application template (and inherited):
+  - add more debugging info in --verbose mode for gpg keys
+  - remove ~/.selected_editor detection. Introduced confusion for users
+    (LP: #565586)
+  - better message and user help when ppa not found (LP: #565581)
+  - fix again some tutorial issues which had been lost during html -> docbook
+    transition (LP: #499356)
+  - fix gpg key creation with no email address (LP: #567272)
+  - Updated translations
+
+Quickly 0.4
+------------------------------------
+
+  Quickly core:
+  - check now that --template has one argument
+  - -- enables to give options to templates (unknown options and arguments
+    are still given to templates but -- specify explicity what to give to
+    templates commands like -h, --version...)
+  - check and enable recreation of the credential if user deletes it on
+    Launchpad
+  - Use realpath so that we can symlink to the binary in trunk.
+    (Jonathan Lange)
+  - project_path_not_found is raised when data_path_not_found should be
+    (originated from Philip Peitsch's patch). (LP: #497688)
+  - importing command in one template from another template is now possible
+    support as well "all" keyword to import all commands from a template
+    into another one (take care of overridden commands too)
+    (LP: #452306, #487301)
+  - add an apport hook to get installed templates (LP: #411127)
+  - enable option completion for templates
+  - handle now version upgrade, launching script for templates and handling
+    versionning on them
+  - change getstarted wording (LP: #486180) - Grant
+  - Quickly ship now "version" tag instead of "format" tag
+  - add some templatetools to check X display
+  - if a commands exit with 4, do not show "ERROR:" (case of wrong command
+    usage, for instance)
+  - Rewrote importing module in both bin/quickly and ubuntu-project binary
+  - Add get_camel_case_name() and get_sentence_name() to templatetools
+  - Refactor some code in pre_create hook()
+  - Now dashes and spaces support in project name! Dealing with python and
+    packaging issues for you. (LP: #493130)
+  - Provide Quickly API (LP: #426480)
+  - Fix some issues in the man page
+  ubuntu-application Template:
+  - Enabling upload to team or user ppa, as well as any ppa.
+    Use --ppa ppaname or --ppa team/ppaname
+    .quickly file can be used as well with ppa = ppaname or
+    ppa = team/ppaname (LP: #470192)
+    ppa completion is also available
+  - Change BSD header by full license
+  - Add MIT license
+  - Fixes an error when launchpad display name contains unicode character
+    (Petar Vasić)
+  - Fix typo in quickly help save (Petar Vasić)
+  - Adds logo.png as logo property in about dialog (LP: #478389)
+    (Petar Vasić)
+  - Remove lp-project-change command and add configure command.
+    configure lp-project [project_name] to set/reset lp project binded to
+    your Quickly project
+    ppa <ppa name> to set a default ppa with your project
+  - Fix ~/.selected-editor being ignored (LP: #484730)
+  - Fix wrong shell completion when in a template (it wrongly proposed
+    all commands followed by templates)
+  - Check if we have a X display available before running "run" or launching
+    GUI in "create" command.
+  - add -- support in quickly run to pass options like --help, --version so
+    that Quickly core don't take them.
+  - enable preferences save call being called multiple times (Philip Peitsch)
+  - Use realpath so that we can symlink to the binary in trunk.
+  - Fixed some errors in the tutorial (Brian) (LP: #499356)
+  - Fix missing import sys in setup.py (Philip Peitsch) (LP: #499712)
+  - rename ubuntu-project to ubuntu-application
+  - enhance quickly license (no more Copyright file, only one AUTHORS file)
+    personal license needs COPYING file now (and the header will be copied in
+    every files). No more # needed in those files too. Some other little
+    refactoring too (LP: #469330)
+  - autolicence by default on first share/release (with LP info and on GPL-3)
+  - change versionning support in ubuntu application: (LP: #476814)
+   + quickly share just adds -publicX to current version where X is bumped
+     at each "quicky share" execution
+   + quickly release remove -publicX (if any) and release with current YY.MM.
+     If there is already a release with that version, it will be YY.MM.1, 
+     then YY.MM.2
+  - add accelerators to menu items (jens persson)
+  - set correctly title dialog (Philip Peitsch) (LP: #501999)
+  - about dialog box is now fully automated: (LP: #478414)
+   + update copyright, authors, license (when licensing)
+   + version (when sharing and releasing)
+   + homepage (when changing launchpad project: release and configure)
+  - add an 'add' command. $ quickly dialog … is now $ quickly add dialog …
+    (LP: #438320)
+  - enable automatic release and milestone built in LP, releasing and pushing
+    upstream tarball (LP: #470344)
+  - automatic collect and publish changelog message from commits and save
+    messages used during devlopment. (LP: #476572)
+  - add i18n to boiler plate (LP: #423529)
+  - enable adding manual depdencies to quickly project (LP: #474639)
+  - enable configure its own bzr branch and resetting parent branch even once
+    already configured (quickly configure bzr <branch-path>)
+  - now recommends seahorse-plugins to have a graphical prompt for signing
+    package
+  - rename quickly glade to quickly design (LP: #528664)
+  - create command is now more flexible and enable people to inherit from
+    other template more easily
+  - add translation domain to gtkbuilder and fix some items that shouldn't
+    been translatable (Łukasz Jernaś)
+  - add apport and launchpadintegration to new and existing project once
+    bounded to LP (Philip Peitsch)
+  - fix spelling mistake "connexion" (Łukasz Jernaś) (LP: #532667)
+  - the ubuntu-application tutorial is now internationalized and use docbook
+    format. Translators, it's yours! (Shane Fagan) (LP: #525168)
+  - package/share/release are now more quiet and only print something on error
+    warning as a summary as with unfound packages, and so on (LP: #482915)
+  - new algorithm to select good email automatically. Try to get the preferred
+    email and update the AUTHOR file with it.
+  - test GPG key and create one automatically if none is available. The
+    corresponding public key availabity in launchpad is also checked.
+    (LP: #427730, #408993)
+  - add devscripts as a dependency (bug #465833), will fix all the depends
+     mess later
+  - bump python-distutils-extra (>= 2.18bzr1)
+  - add debug command relying on winpdb
+  ubuntu-cli Template:
+  - first release using import command feature (no command written into the
+    template itself). This is a basic ubuntu CLI application
+  ubuntu-pygame Template:
+  - first release using import command feature. python-pygame added as a
+    depends
+
+Quickly 0.2.6
+-------------------------------------
+
+  ubuntu-project Template:
+  - Fix desktop.in file not installed due to new python-distutils-extra
+    policy (LP: #460355)
+
+  common:
+  - Remove outdated information in README
+
+Quickly 0.2.5
+-------------------------------------
+
+  Quickly Core:
+  - deactivate option validity checking so that templates can have their
+    own options. Discuss at UDS how to shape a better solution
+  ubuntu-project Template:
+  - Fixed some some errors and oversites in the tutorial
+  - Remove request height/width for the default application and add a
+    bigger marge on the label (LP: #494388)
+
+Quickly 0.2.4
+-------------------------------------
+
+  Quickly Core:
+  - add comment regarding why certain characters are not allowed
+    and remove any whitespace around project name (Mike Pontillo)
+  - Fixed a bad project name variable in a function comment and a typo in
+    the tutorial (Sense Hofstede)
+  - Enable quickly running without an existing data path (LP: #447089)
+  - Some refactoring on error handling with incorrect template path
+
+  ubuntu-project Template:
+  - Fix share unicode issue when localized (LP: #444070)
+  - quickly dialog needs input validation (LP: #442446)
+  - Fix wrong link in tutorial (LP: #446310) (Johannes Mockenhaupt)
+  - Added <p></p> paragraph where missing, adjust link to no point directly
+    to rick's personal folder, removed stray, 'd' and 'su' on the second page
+    of the dialog, changed couchgrid initialization should follow new way of
+    doing it, change copyright file in tutorial to us '(C)', change packaging
+    tutorial from svg to png (LP: #439111)
+  - Focus is on the main window file when executing quickly glad (fix
+    regression when project name has some capital letters)
+
+  common:
+  - update translations
+
+-------------------------------------
+Quickly 0.2.3
+-------------------------------------
+
+  Quickly Core:
+  - Fix tutorial command not shown outside a project
+    (previously overwriten because of = instead of extend())
+  - Bump requirement on distutilsextra to 2.10 to use desktopcouch bug
+    fixing
+
+  ubuntu-project Template:
+  - Launch gedit in background, keep default for others (LP: #425305)
+  - Focus is on the main window file when executing quickly glade
+  - Add Launchpad display name to DEBEMAIL
+
+  common:
+  - updated translations
+
+-------------------------------------
+  quickly 0.2.2
+-------------------------------------
+
+  Quickly Core:
+  - Fix wrong release handling when not a number (bug: #424581)
+  - Forbide bin and data as a project name (bug: #424635)
+
+-------------------------------------
+  quickly 0.2.1
+-------------------------------------
+
+This is mostely a fix release, but we still have few must-have
+minor features so that people can easily begin develop templates
+
+Here are the changes:
+
+   Quickly Core:
+   - Reshape variables in commandsconfig template file (LP: #421858)
+   - Reshape command attributes for builtin commands
+   - quickly without parameter now prints help
+   - move some functions from ubuntu-project template to templatetools
+     Quickly module to make them available to all templates
+     (handle_additional_parameters, quickly_name, apply_file_rights,
+      in_verbose_mode)
+   - add missing quotes around new version number format [Ken VanDine]
+
+   ubuntu-project template:
+   - quickly release and share should not start if there are no pgp keys
+     available (LP: #419407)
+   - Typo in preferences code for ubuntu-project template (LP: #421642)
+   - preferences code stores record type rather than _id (LP: #421644)
+   - Adapt new commandsconfig format
+   - quickly edit fails if EDITOR=vim (support now interactive command)
+     (LP: #418351)
+   - quickly edit supports now sensible-editor choice
+   - created application does not suport standard command line options
+     (LP: #418355)
+   - Quickly licence should create an AUTHORS file (LP: #424489)
+   - ubuntu-project main python file code has stray, strange line of code
+     (LP: #421653)
+   - Typo in error message of $ quickly tutorial (LP: #422212), patch from
+     [Niall Jackson] (LP: #422212)
+   - Typo in the index page of the tutorial of ubuntu-project template
+     [Niall Jackson] (LP: #422209)
+   - Destroy the dialogs outright instead of merely hideing them since we
+     always create new ones when the event is fired [John C Barstow]
+   - ubuntu-project main python module commented code uses wrong naming
+     convention for preferences dialog (LP: #421648)
+   - Some output messages correction
+
+   common:
+   - updated translations
+
+-------------------------------------
+  quickly 0.2 "desktopcouchified" 
+-------------------------------------
+
+This release contains added highly desirable features to 0.1 version
+but not essential one.
+Of course, some bug fixes came to the party.
+
+Most noticeable features/fixes are:
+  - ubuntu-project should depend on cdbs and debhelper (LP: #408884)
+  - Preferences should use client records API (LP: #402241)
+  - Tutorial should use CouchWidget (LP: #402244)
+  - quickly license should infer contact and name info from setup.py
+    (LP: #402664)
+  - quickly needs a command to list all commands (LP: #412900)
+  - quickly can now handle special command very easily, reading from
+    some configuration file which can be launched outside or inside a
+    project, which have to be followed by a template…
+    All of this also update automatically shell-completion behavior
+  - "quickly help [command]" is needed (LP: #412902)
+  - ubuntu-projects can be created with unpackagable names (LP: #414218)
+  - quickly package doesn't have to sign packages (LP: #408992)
+  - quickly needs a proper command class (LP: #411126)
+  - shell-completion must call the script with a shell-completion parameter
+    (LP: #412903)
+  - quickly can now handle better command filtering. Use it! (LP: #412905)
+  - quickly needs a manpage (LP: #406212)
+  - ubuntu-project uses spaces instead tabs, which conflicts with gedit
+    default settings (LP: #416527)
+  - removed devscripts deps to use only dpkg-dev
+  - Having no EMAIL environment variable set makes quickly release fail fixed
+    (LP: #418369)
+  - quickly needs using launchpad translation (LP: #406906)
+  - updated translations (ca, es)
